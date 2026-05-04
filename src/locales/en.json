@@ -1,0 +1,591 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "solutions": "Solutions",
+    "support": "Support",
+    "contact": "Contact"
+  },
+  "solutions_dropdown": {
+    "pda": "PDA / RDC 45",
+    "studex": "Studex SYSTEM 75",
+    "equipment": "Medical Equipment"
+  },
+  "cta": {
+    "demo": "Request a Demo",
+    "discover": "Discover Our Solutions",
+    "quote": "Get a Quote",
+    "demo_free": "Request a Free Demo",
+    "contact_us": "Contact Us",
+    "download_spec": "Download Spec Sheet",
+    "learn_more": "Learn More About MediMesk"
+  },
+  "footer": {
+    "tagline": "Innovative solutions for pharmacies in Morocco",
+    "solutions_heading": "Solutions",
+    "company_heading": "Company",
+    "contact_heading": "Contact",
+    "address": "Résidence Meskellil Bldg. 3 N°1, Av. Assabir, Hay Riad, Rabat, Morocco",
+    "phone": "+212 526272812",
+    "email": "contact@medimesk.ma",
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "copyright": "MediMesk. All rights reserved."
+  },
+  "lang": {
+    "fr": "FR",
+    "en": "EN",
+    "label": "Language:"
+  },
+  "common": {
+    "breadcrumb_home": "Home",
+    "breadcrumb_solutions": "Solutions"
+  },
+  "home": {
+    "hero": {
+      "title_line1": "Innovative solutions",
+      "title_line2": "for Moroccan pharmacies",
+      "subtitle": "MediMesk supports pharmacists with automation systems and reliable medical equipment to improve precision, efficiency, and quality of service.",
+      "image_alt": "Photo RDC 45"
+    },
+    "trust_partners_label": "Partners",
+    "trust": [
+      "Founded by Dr. Hassan El Youssfi",
+      "40+ pharmacies equipped"
+    ],
+    "solutions": {
+      "title": "Our Solutions",
+      "subtitle": "Reliable and innovative solutions to modernize your pharmacy, improve operational efficiency, and deliver better service to your patients.",
+      "cards": [
+        {
+          "title": "PDA / RDC 45",
+          "image_alt": "RDC 45 automated dispensing system",
+          "benefits": [
+            "Dispensing error reduction",
+            "Capacity up to 120 patients",
+            "Full MDS software integration"
+          ]
+        },
+        {
+          "title": "Studex SYSTEM 75",
+          "image_alt": "Studex SYSTEM 75 professional piercing system",
+          "benefits": [
+            "Professional-grade hygiene",
+            "Additional revenue stream",
+            "Training and support included"
+          ]
+        },
+        {
+          "title": "Medical Equipment",
+          "image_alt": "Medical equipment for pharmacies",
+          "benefits": [
+            "Technologies from recognized manufacturers",
+            "Maintenance and after-sales service",
+            "Continuously expanding catalog"
+          ]
+        }
+      ]
+    },
+    "why": {
+      "title": "Why MediMesk?",
+      "subtitle": "Six reasons to trust MediMesk to modernize your pharmacy and improve the quality of your services.",
+      "items": [
+        {
+          "title": "Error Reduction",
+          "description": "Our automated systems minimize dispensing errors and improve patient safety."
+        },
+        {
+          "title": "Local Partner",
+          "description": "Based in Morocco, we understand the specific needs of Moroccan pharmacies and provide hands-on support."
+        },
+        {
+          "title": "Training & Support",
+          "description": "Complete training for your team, on-site installation, and ongoing technical assistance."
+        },
+        {
+          "title": "Proven Technology",
+          "description": "Certified equipment used in thousands of pharmacies worldwide."
+        },
+        {
+          "title": "Software Integration",
+          "description": "Compatibility with pharmacy management software for a seamless, uninterrupted transition."
+        },
+        {
+          "title": "Responsive After-Sales",
+          "description": "Fast after-sales service with short response times to ensure business continuity."
+        }
+      ]
+    },
+    "rdc45_spotlight": {
+      "badge": "Flagship Product",
+      "title": "RDC 45 — Automated Dispensing",
+      "description": "The RDC 45 is the ideal entry-level solution for pharmacies looking to automate dose preparation. A profitable investment with a clear upgrade path.",
+      "cta_demo": "Watch the Demo",
+      "video_label": "RDC 45 Demo Video",
+      "specs": [
+        {
+          "label": "Patient Capacity",
+          "value": "0 to 120"
+        },
+        {
+          "label": "Loading",
+          "value": "LED-guided cell by cell"
+        },
+        {
+          "label": "Sealing",
+          "value": "Automatic"
+        },
+        {
+          "label": "Software",
+          "value": "MDS compatible"
+        },
+        {
+          "label": "Mode",
+          "value": "Semi-automatic"
+        },
+        {
+          "label": "Sachets",
+          "value": "Customizable with patient labeling"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Pharmacists across Morocco trust MediMesk to modernize their practice.",
+      "items": [
+        {
+          "quote": "Since installing the RDC 45, we've reduced our dispensing errors by 95%. An investment that transformed our pharmacy.",
+          "author": "Dr. Fatima Zahra B.",
+          "role": "Pharmacy Owner, Casablanca"
+        },
+        {
+          "quote": "The MediMesk team supported us from A to Z: training, installation, and technical support. A truly reliable partner.",
+          "author": "M. Youssef A.",
+          "role": "Pharmacy Manager, Rabat"
+        },
+        {
+          "quote": "The Studex SYSTEM 75 service has become a significant additional revenue stream. Our customers love the service.",
+          "author": "Dr. Amina K.",
+          "role": "Pharmacist, Marrakech"
+        }
+      ]
+    },
+    "about_teaser": {
+      "label": "Our Story",
+      "title": "Founded by a pharmacist, for pharmacists",
+      "p1": "Dr. Hassan El Youssfi founded MediMesk with a clear vision: to bring Moroccan pharmacies the same automation technologies and medical equipment that have revolutionized pharmacy practice in Europe.",
+      "p2": "Drawing on his pharmacy experience and knowledge of the Moroccan market, he built a team dedicated to supporting healthcare professionals in their transition to a more modern, safer, and more efficient pharmacy.",
+      "photo_label": "Photo Dr. Hassan El Youssfi"
+    },
+    "cta_banner": {
+      "title": "Ready to modernize your pharmacy?",
+      "subtitle": "Join the Moroccan pharmacists who chose MediMesk to improve their practice. Request a free demo or contact our team."
+    },
+    "meta": {
+      "title": "MediMesk — Innovative Solutions for Pharmacies in Morocco",
+      "description": "Pharmacy automation, Studex ear piercing systems and medical equipment. MediMesk helps Moroccan pharmacies achieve excellence."
+    }
+  },
+  "pda": {
+    "breadcrumb": "RDC 45",
+    "hero": {
+      "badge": "Unit Dose Dispensing",
+      "title": "RDC 45",
+      "description": "The RDC 45 is the ideal semi-automatic solution for pharmacies looking to begin automating dispensing. Designed to handle up to 120 patients, it combines LED guidance, automatic sealing, and MDS software integration for maximum precision at a controlled cost.",
+      "image_alt": "Photo RDC 45 — Main View"
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "subtitle": "All specifications for the RDC 45 dispensing system.",
+      "items": [
+        {
+          "label": "Patient Capacity",
+          "value": "0 to 120 patients"
+        },
+        {
+          "label": "Loading System",
+          "value": "LED-guided cell by cell (minimizes errors)"
+        },
+        {
+          "label": "Sealing",
+          "value": "Automatic sachet sealing"
+        },
+        {
+          "label": "Software",
+          "value": "Compatible with MDS pharmacy management software"
+        },
+        {
+          "label": "Dispensing Mode",
+          "value": "Semi-automatic"
+        },
+        {
+          "label": "Sachets",
+          "value": "Customizable with patient labeling"
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Benefits for Your Pharmacy",
+      "subtitle": "The RDC 45 transforms your daily operations with measurable benefits from the very first weeks.",
+      "items": [
+        {
+          "title": "Error Reduction",
+          "text": "LED cell-by-cell guidance virtually eliminates loading errors and ensures the right dose for every patient."
+        },
+        {
+          "title": "Operational Efficiency",
+          "text": "Automate dose preparation and free up time for pharmaceutical consulting and patient relationships."
+        },
+        {
+          "title": "Guaranteed Scalability",
+          "text": "Shared software architecture with fully automated systems — a simple upgrade path as your pharmacy grows."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "How It Works",
+      "subtitle": "A simple three-step process for reliable and traceable dispensing.",
+      "steps": [
+        {
+          "title": "Semi-Automatic Loading",
+          "text": "Cells light up one by one via LED guidance. The operator loads each medication into the indicated cell — impossible to make a mistake."
+        },
+        {
+          "title": "Automatic Sealing",
+          "text": "Once the dose is complete, the system automatically seals the sachet with personalized patient labeling: name, dosage, and time of intake."
+        },
+        {
+          "title": "Dispensing & Traceability",
+          "text": "Sachets are ready for patient pickup or delivery. Every dose is tracked in the MDS software for complete follow-up."
+        }
+      ]
+    },
+    "video_label": "Video Demo — RDC 45",
+    "cta_banner": {
+      "title": "Ready to equip your pharmacy?",
+      "subtitle": "Contact us for a personalized RDC 45 demonstration at your pharmacy. Our team supports you every step of the way."
+    },
+    "meta": {
+      "title": "PDA RDC-45 — Dispensing Automation Robot | MediMesk",
+      "description": "Discover the RDC-45 robot: automated dose preparation, reliability and time savings for your pharmacy."
+    }
+  },
+  "studex": {
+    "breadcrumb": "Studex SYSTEM 75",
+    "hero": {
+      "badge": "Official Studex Partner",
+      "title": "Studex SYSTEM 75",
+      "description": "MediMesk is the official distributor of the Studex SYSTEM 75 in Morocco. This professional piercing system allows your pharmacy to offer a premium, hygienic ear piercing service — a new revenue stream with the Studex quality guarantee.",
+      "image_alt": "Photo Studex SYSTEM 75"
+    },
+    "specs": {
+      "title": "System Features",
+      "subtitle": "Everything you need to know about the Studex SYSTEM 75.",
+      "items": [
+        {
+          "label": "Brand",
+          "value": "Studex — world leader in professional piercing"
+        },
+        {
+          "label": "System",
+          "value": "SYSTEM 75 — gentle piercing, no pressure"
+        },
+        {
+          "label": "Hygiene",
+          "value": "Pre-sterilized single-use cartridges"
+        },
+        {
+          "label": "Materials",
+          "value": "Surgical steel, titanium, and 18k gold"
+        },
+        {
+          "label": "Piercing Areas",
+          "value": "Lobes, cartilage, tragus, helix"
+        },
+        {
+          "label": "Training",
+          "value": "Complete training provided by MediMesk"
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Why Offer Studex in Your Pharmacy?",
+      "subtitle": "A high-value service that builds customer loyalty and differentiates your pharmacy.",
+      "items": [
+        {
+          "title": "Additional Revenue",
+          "text": "Offer a premium in-pharmacy piercing service and generate an additional revenue stream with minimal investment."
+        },
+        {
+          "title": "Impeccable Hygiene",
+          "text": "Pre-sterilized single-use cartridges guarantee the highest hygiene standards, compliant with pharmaceutical environment requirements."
+        },
+        {
+          "title": "Ease of Use",
+          "text": "Your team is trained and operational within hours. The SYSTEM 75 is designed to be safely used by non-specialized staff."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "The In-Pharmacy Customer Journey",
+      "subtitle": "A simple and reassuring process for your clients, from jewelry selection to post-piercing care.",
+      "steps": [
+        {
+          "title": "Consultation & Jewelry Selection",
+          "text": "The client chooses from a range of surgical steel, titanium, or gold earrings. The pharmacist advises on the appropriate material and piercing area."
+        },
+        {
+          "title": "Piercing with the SYSTEM 75",
+          "text": "The pre-sterilized cartridge is inserted into the instrument. The piercing is done gently, with no pressure and no noise — a comfortable experience for the client."
+        },
+        {
+          "title": "Post-Piercing Care Advice",
+          "text": "The pharmacist provides care instructions and the recommended antiseptic product. In-pharmacy follow-up strengthens the client relationship."
+        }
+      ]
+    },
+    "video_label": "Video Demo — Studex SYSTEM 75",
+    "cta_banner": {
+      "title": "Add professional piercing to your pharmacy",
+      "subtitle": "Contact us to discover how the SYSTEM 75 can enrich your service offering and build customer loyalty."
+    },
+    "meta": {
+      "title": "Studex System75 — Professional Ear Piercing | MediMesk",
+      "description": "Sterile and painless Studex System75 ear piercing solution, ideal for pharmacies and healthcare professionals."
+    }
+  },
+  "equipment": {
+    "breadcrumb": "Medical Equipment",
+    "hero": {
+      "badge": "Expanding Catalog",
+      "title": "Medical Equipment",
+      "description": "MediMesk selects and distributes reliable medical technologies from internationally recognized manufacturers. Our catalog is continuously expanding to meet the evolving needs of Moroccan pharmacies.",
+      "image_alt": "Photo Medical Equipment",
+      "cta_primary": "Request a Quote",
+      "cta_secondary": "Browse Catalog"
+    },
+    "categories": {
+      "title": "Our Product Categories",
+      "subtitle": "A complete range of equipment to cover all your pharmacy's needs.",
+      "items": [
+        {
+          "title": "Diagnostics & Measurement",
+          "description": "Blood pressure monitors, glucometers, oximeters, and other measurement instruments from recognized manufacturers for reliable in-pharmacy diagnostics."
+        },
+        {
+          "title": "Furniture & Layout",
+          "description": "Layout solutions and technical furniture to optimize your pharmacy's space and improve the patient journey."
+        },
+        {
+          "title": "Consumables & Hygiene",
+          "description": "Complete range of medical consumables and professional hygiene products for your pharmacy's daily operations."
+        }
+      ]
+    },
+    "differentiators": {
+      "title": "The MediMesk Advantage",
+      "subtitle": "More than a distributor — a partner that supports you from selection to maintenance.",
+      "items": [
+        {
+          "title": "Recognized Manufacturers",
+          "text": "We exclusively select equipment from certified, internationally recognized manufacturers."
+        },
+        {
+          "title": "On-Site Installation",
+          "text": "Our technical team handles installation, commissioning, and staff training for each piece of equipment."
+        },
+        {
+          "title": "After-Sales & Maintenance",
+          "text": "Preventive and corrective maintenance contracts with fast response times throughout Morocco."
+        }
+      ]
+    },
+    "process": {
+      "title": "Our Process",
+      "subtitle": "From needs assessment to post-installation follow-up, we support you every step of the way.",
+      "steps": [
+        {
+          "title": "Needs Assessment",
+          "text": "Our team visits your pharmacy to analyze your specific needs and recommend the right solutions."
+        },
+        {
+          "title": "Supply & Installation",
+          "text": "We handle delivery, installation, and commissioning of each piece of equipment with complete technical support."
+        },
+        {
+          "title": "Training & Follow-Up",
+          "text": "Your team is trained on each device. A maintenance contract ensures the longevity of your investment."
+        }
+      ]
+    },
+    "cta_banner": {
+      "title": "Need equipment for your pharmacy?",
+      "subtitle": "Contact our team for a personalized needs assessment and a quote tailored to your pharmacy."
+    },
+    "meta": {
+      "title": "Medical Equipment — Professional Supplies | MediMesk",
+      "description": "Complete range of medical equipment for pharmacies: diagnostics, furniture and quality consumables."
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "About Us",
+      "title_line1": "Founded by a pharmacist,",
+      "title_line2": "for pharmacists",
+      "subtitle": "MediMesk supports Moroccan pharmacies with innovative solutions, hands-on service, and an unwavering commitment to quality."
+    },
+    "story": {
+      "label": "Our Story",
+      "title": "The MediMesk Story",
+      "p1_before": "MediMesk was born from the vision of ",
+      "p1_name": "Dr. Hassan El Youssfi",
+      "p1_after": ", a pharmacist by training and a passionate entrepreneur. After years of practicing in community pharmacy, he noticed a growing gap between the technologies available internationally and those accessible to Moroccan pharmacists.",
+      "p2": "Convinced that every pharmacy deserves tools that match its public health mission, he founded MediMesk to become the bridge between world-class manufacturers and the Moroccan market. Since its creation, the company has specialized in distributing innovative solutions — from unit dose dispensing (PDA) with the RDC 45, to professional piercing with Studex, to a growing range of medical equipment.",
+      "p3": "Today, MediMesk is proud to serve a growing network of pharmacies across the Kingdom, with a simple promise: reliable products, human support, and impeccable after-sales service."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "Six convictions that guide every decision and every interaction with our partners.",
+      "items": [
+        {
+          "title": "Innovation",
+          "text": "We introduce cutting-edge technologies adapted to the realities of the Moroccan market to modernize pharmacy practice."
+        },
+        {
+          "title": "Integrity",
+          "text": "We only select certified equipment from recognized manufacturers, because health allows no compromise."
+        },
+        {
+          "title": "Proximity",
+          "text": "Founded by a pharmacist, we understand the challenges on the ground. Every client receives personalized support."
+        },
+        {
+          "title": "Excellence",
+          "text": "From installation to maintenance, we aim for operational excellence to ensure the continuity of your business."
+        },
+        {
+          "title": "Local Commitment",
+          "text": "Based in Morocco, we contribute to raising the standard of Moroccan pharmacy with concrete, lasting solutions."
+        },
+        {
+          "title": "Lasting Partnership",
+          "text": "We build long-term relationships with our clients and suppliers, founded on trust and transparency."
+        }
+      ]
+    },
+    "founder": {
+      "title": "Our Founder",
+      "subtitle": "The driving force behind MediMesk's mission.",
+      "name": "Dr. Hassan El Youssfi",
+      "role": "Founder & CEO",
+      "bio": "A pharmacist by training, an entrepreneur by conviction. Dr. El Youssfi puts his field expertise to work for pharmaceutical innovation in Morocco."
+    },
+    "cta_banner": {
+      "title": "Want to work with us?",
+      "subtitle": "Whether you're a pharmacist, distributor, or healthcare professional, we'd love to hear from you."
+    },
+    "meta": {
+      "title": "About MediMesk — Our Story",
+      "description": "Meet the MediMesk team and our mission to innovate for pharmacies in Morocco."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "A question, a project, or a quote request? Our team is here to help."
+    },
+    "info": {
+      "title": "Our Contact Details",
+      "subtitle": "Feel free to reach out by phone, email, or visit us in person.",
+      "phone_label": "Phone",
+      "email_label": "Email",
+      "address_label": "Address",
+      "phone": "+212 526272812",
+      "email": "contact@medimesk.ma",
+      "address": "Résidence Meskellil Bldg. 3 N°1, Av. Assabir, Hay Riad, Rabat, Morocco",
+      "map_title": "Google Maps",
+      "map_subtitle": "Map integration here"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "required_note": "Fields marked with * are required.",
+      "full_name": "Full Name",
+      "full_name_placeholder": "Your first and last name",
+      "pharmacy_name": "Pharmacy Name",
+      "pharmacy_placeholder": "Pharmacy …",
+      "email": "Email",
+      "email_placeholder": "you@example.com",
+      "phone": "Phone",
+      "phone_placeholder": "+212 6XX-XXXXXX",
+      "subject": "Subject",
+      "subject_placeholder": "Select a subject",
+      "subjects": [
+        "Demo Request",
+        "Quote Request",
+        "Support",
+        "Other"
+      ],
+      "message": "Message",
+      "message_placeholder": "Describe your request…",
+      "consent": "I agree that my data may be processed in accordance with the",
+      "consent_link": "privacy policy",
+      "submit": "Send Message",
+      "submitting": "Sending…",
+      "success_title": "Message Sent!",
+      "success_message": "Thank you for your message. Our team will get back to you shortly.",
+      "success_reset": "Send another message",
+      "error_unknown": "An error occurred. Please try again."
+    },
+    "meta": {
+      "title": "Contact MediMesk — Request a Demo",
+      "description": "Get in touch with our team for a demonstration or a personalized quote."
+    }
+  },
+  "support": {
+    "hero": {
+      "title": "Help Center",
+      "subtitle": "Quickly find answers to your questions about our products and services.",
+      "search_placeholder": "Search the knowledge base…"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Answers to the most commonly asked questions from our clients.",
+      "items": [
+        {
+          "q": "How does the RDC 45 Unit Dose Dispensing (PDA) system work?",
+          "a": "The RDC 45 automates the preparation of individual pill organizers by cutting the original blisters. The pharmacist programs the prescriptions via the integrated software, and the machine prepares the doses with complete traceability — reducing dispensing errors by over 99%."
+        },
+        {
+          "q": "What types of pharmacies can benefit from MediMesk solutions?",
+          "a": "Our solutions are designed for all pharmacies, regardless of size. Whether you're a neighborhood pharmacy or a large network, we tailor our offerings to your volume and available space. We also serve hospital pharmacies and nursing homes."
+        },
+        {
+          "q": "How does the installation and training process work?",
+          "a": "After a diagnostic visit, our technical team installs the equipment on-site, performs commissioning, and trains your entire staff. Training includes software familiarization, first-level maintenance procedures, and dedicated phone support during the first weeks."
+        },
+        {
+          "q": "Do you offer after-sales service and maintenance contracts?",
+          "a": "Yes. Each piece of equipment is covered by a manufacturer's warranty. We also offer preventive and corrective maintenance contracts with fast response times throughout Morocco. Our technical support is available by phone and email Monday through Friday."
+        },
+        {
+          "q": "How can I request a quote or a demonstration?",
+          "a": "Visit our Contact page or click 'Request a Demo' from any page on the site. Fill in the form with your details and the product you're interested in, and our sales team will get back to you within 24 business hours."
+        }
+      ]
+    },
+    "contact_card": {
+      "title": "Contact Support",
+      "subtitle": "Didn't find the answer to your question? Our technical team is available Monday to Friday, 9am to 6pm.",
+      "email_label": "Email",
+      "email": "contact@medimesk.ma",
+      "phone_label": "Phone",
+      "phone": "+212 526272812",
+      "cta": "Open a Ticket"
+    },
+    "meta": {
+      "title": "Technical Support — MediMesk",
+      "description": "Need help? Our support team is available to assist you."
+    }
+  }
+}

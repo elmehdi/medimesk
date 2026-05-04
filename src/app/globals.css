@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-body text-dark-text;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    @apply font-playfair text-h1-sm md:text-h1;
+  }
+
+  h2 {
+    @apply font-playfair text-h2-sm md:text-h2;
+  }
+
+  h3 {
+    @apply font-playfair text-h3;
+  }
+}
+
+/* ── Scroll-triggered reveal animations ─────────────── */
+/* Default: visible (SSR-safe). JS adds .reveal-hidden for off-screen elements */
+.reveal-section {
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal-section.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-hidden {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-section {
+    transition: none;
+  }
+}

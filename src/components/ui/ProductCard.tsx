@@ -1,0 +1,87 @@
+import Image from "next/image";
+import Link from "next/link";
+
+interface ProductCardProps {
+  /** Product image src path */
+  imageSrc: string;
+  /** Alt text for the image */
+  imageAlt: string;
+  /** Card headline */
+  title: string;
+  /** Three key benefits */
+  benefits: [string, string, string];
+  /** Link to full product page */
+  href: string;
+  /** Link label */
+  linkLabel?: string;
+}
+
+export default function ProductCard({
+  imageSrc,
+  imageAlt,
+  title,
+  benefits,
+  href,
+  linkLabel = "En savoir plus",
+}: ProductCardProps) {
+  return (
+    <div className="group flex flex-col overflow-hidden rounded-xl border border-light-teal bg-white transition-shadow hover:shadow-lg">
+      {/* Image */}
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-section-bg">
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="flex flex-1 flex-col p-6">
+        <h3 className="text-dark-text">{title}</h3>
+
+        <ul className="mt-4 flex-1 space-y-2">
+          {benefits.map((benefit, i) => (
+            <li key={i} className="flex items-start gap-2 text-sm text-dark-text/70">
+              <svg
+                className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary-teal"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              {benefit}
+            </li>
+          ))}
+        </ul>
+
+        <Link
+          href={href}
+          className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-primary-teal hover:underline underline-offset-4 group/link"
+        >
+          {linkLabel}
+          <svg
+            className="h-4 w-4 transition-transform group-hover/link:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </Link>
+      </div>
+    </div>
+  );
+}
