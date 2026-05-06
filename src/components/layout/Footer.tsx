@@ -46,7 +46,7 @@ export default function Footer({ locale, t }: FooterProps) {
               className="flex items-center gap-3"
             >
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="MediMesk"
                 width={609}
                 height={662}

@@ -11,7 +11,7 @@ export default function RDC45Spotlight({ locale, t }: { locale: string; t: Trans
         <div className="flex-1">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
             <Image
-              src="/images/pda-robot.png"
+              src="/images/pda-robot.webp"
               alt={s.video_label}
               fill
               className="object-cover"

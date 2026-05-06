@@ -3,8 +3,8 @@ import ProductCard from "@/components/ui/ProductCard";
 import type { Translations } from "@/i18n/useTranslations";
 
 const solutionMeta = [
-  { imageSrc: "/images/pda-robot.png", href: "/solutions/pda-rdc45" },
-  { imageSrc: "/images/studex-system75.png", href: "/solutions/studex-system75" },
+  { imageSrc: "/images/pda-robot.webp", href: "/solutions/pda-rdc45" },
+  { imageSrc: "/images/studex-system75.webp", href: "/solutions/studex-system75" },
   { imageSrc: "/images/equipment-medical.jpg", href: "/solutions/equipement-medical" },
 ];
 

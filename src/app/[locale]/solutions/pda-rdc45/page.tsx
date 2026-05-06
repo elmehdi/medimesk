@@ -32,7 +32,7 @@ export default function PdaRdc45Page({
     "@type": "Product",
     name: p.hero.title,
     description: p.hero.description,
-    image: "https://medimesk.ma/images/pda-robot.png",
+    image: "https://medimesk.ma/images/pda-robot.webp",
     brand: { "@type": "Brand", name: "MediMesk" },
     url: `https://medimesk.ma/${locale}/solutions/pda-rdc45`,
   };
@@ -83,7 +83,7 @@ export default function PdaRdc45Page({
             <div className="absolute -inset-6 rounded-full bg-light-teal/20 blur-3xl pointer-events-none" />
             <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden">
               <Image
-                src="/images/pda-robot.png"
+                src="/images/pda-robot.webp"
                 alt={p.hero.image_alt}
                 fill
                 className="object-cover"

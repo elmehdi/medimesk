@@ -11,7 +11,7 @@ export default function AboutTeaser({ locale, t }: { locale: string; t: Translat
         <div className="flex-shrink-0 w-full max-w-sm lg:max-w-md">
           <div className="flex items-center justify-center aspect-square w-full rounded-2xl bg-white p-12">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt={s.photo_label}
               width={609}
               height={662}

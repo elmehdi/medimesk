@@ -75,7 +75,7 @@ export default function Navbar({ locale, t }: NavbarProps) {
             className="relative z-50 flex items-center gap-2"
           >
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="MediMesk"
               width={609}
               height={662}

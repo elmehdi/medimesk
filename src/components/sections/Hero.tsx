@@ -37,7 +37,7 @@ export default function Hero({ locale, t }: { locale: string; t: Translations })
           <div className="relative mt-12 lg:mt-0 flex-shrink-0">
             <div className="absolute inset-0 -m-8 rounded-full bg-light-teal/15 blur-2xl pointer-events-none" />
             <Image
-              src="/images/pda-sachet.png"
+              src="/images/pda-sachet.webp"
               alt={t.home.hero.image_alt}
               width={600}
               height={500}

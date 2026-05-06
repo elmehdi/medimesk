@@ -32,7 +32,7 @@ export default function StudexPage({
     "@type": "Product",
     name: s.hero.title,
     description: s.hero.description,
-    image: "https://medimesk.ma/images/studex-system75.png",
+    image: "https://medimesk.ma/images/studex-system75.webp",
     brand: { "@type": "Brand", name: "Studex" },
     url: `https://medimesk.ma/${locale}/solutions/studex-system75`,
   };
@@ -83,7 +83,7 @@ export default function StudexPage({
             <div className="absolute -inset-6 rounded-full bg-light-teal/20 blur-3xl pointer-events-none" />
             <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden">
               <Image
-                src="/images/studex-system75.png"
+                src="/images/studex-system75.webp"
                 alt={s.hero.image_alt}
                 fill
                 className="object-cover"

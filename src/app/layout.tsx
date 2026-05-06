@@ -32,7 +32,7 @@ export default function RootLayout({
     "@type": "Organization",
     name: "MediMesk",
     url: "https://medimesk.ma",
-    logo: "https://medimesk.ma/images/logo.png",
+    logo: "https://medimesk.ma/images/logo.webp",
     description:
       "Solutions innovantes d'automatisation et d'équipement médical pour les pharmacies au Maroc.",
     address: {
