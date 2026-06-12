@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devis — Site Web MediMesk</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: #1A2332;
+      background: #fff;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 40px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 3px solid #00A99D;
+    }
+
+    .header-left h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #00A99D;
+      margin-bottom: 4px;
+    }
+
+    .header-left .subtitle {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .header-right {
+      text-align: right;
+    }
+
+    .devis-label {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1A2332;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .devis-meta {
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+
+    /* Parties */
+    .parties {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 36px;
+      gap: 40px;
+    }
+
+    .party {
+      flex: 1;
+    }
+
+    .party-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #00A99D;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .party-name {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .party-detail {
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
+    /* Project summary */
+    .project-summary {
+      background: #F7F9FA;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+
+    .project-summary h3 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #00A99D;
+    }
+
+    .project-summary p {
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.7;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+    }
+
+    thead th {
+      background: #1A2332;
+      color: #fff;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    thead th:last-child {
+      text-align: right;
+    }
+
+    thead th:first-child {
+      border-radius: 6px 0 0 0;
+    }
+
+    thead th:last-child {
+      border-radius: 0 6px 0 0;
+    }
+
+    tbody td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e5e7eb;
+      vertical-align: top;
+    }
+
+    tbody tr:hover {
+      background: #f9fafb;
+    }
+
+    .item-number {
+      font-weight: 700;
+      color: #00A99D;
+      width: 30px;
+    }
+
+    .item-title {
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .item-desc {
+      font-size: 12px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    .item-desc p {
+      margin-bottom: 6px;
+    }
+
+    .item-desc ul {
+      list-style: none;
+      padding: 0;
+      margin: 6px 0 0 0;
+    }
+
+    .item-desc ul li {
+      padding: 2px 0 2px 14px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .item-desc ul li::before {
+      content: "–";
+      color: #00A99D;
+      font-weight: 700;
+      position: absolute;
+      left: 0;
+    }
+
+    .item-price {
+      text-align: right;
+      font-weight: 600;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    /* Total section */
+    .totals {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 40px;
+    }
+
+    .totals-box {
+      width: 280px;
+    }
+
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+
+    .total-row.subtotal {
+      border-bottom: 1px solid #e5e7eb;
+      color: #6b7280;
+    }
+
+    .total-row.tva {
+      color: #6b7280;
+      font-size: 13px;
+    }
+
+    .total-row.grand-total {
+      border-top: 2px solid #1A2332;
+      margin-top: 8px;
+      padding-top: 12px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #00A99D;
+    }
+
+    /* Notes */
+    .notes {
+      margin-bottom: 40px;
+    }
+
+    .notes h3 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #1A2332;
+    }
+
+    .notes ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .notes li {
+      font-size: 13px;
+      color: #4b5563;
+      padding: 4px 0;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .notes li::before {
+      content: "•";
+      color: #00A99D;
+      font-weight: 700;
+      position: absolute;
+      left: 0;
+    }
+
+    /* Validity */
+    .validity {
+      background: #E0F5F3;
+      border-radius: 8px;
+      padding: 16px 24px;
+      margin-bottom: 40px;
+      font-size: 13px;
+      color: #1A2332;
+    }
+
+    .validity strong {
+      color: #00A99D;
+    }
+
+    /* Signature */
+    .signature {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 48px;
+      padding-top: 24px;
+    }
+
+    .sig-block {
+      flex: 1;
+    }
+
+    .sig-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7280;
+      font-weight: 600;
+      margin-bottom: 48px;
+    }
+
+    .sig-line {
+      border-top: 1px solid #d1d5db;
+      padding-top: 8px;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    /* Footer */
+    .doc-footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+      text-align: center;
+      font-size: 11px;
+      color: #9ca3af;
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 15mm 12mm;
+      }
+
+      body {
+        background: #fff;
+        font-size: 11px;
+        line-height: 1.5;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
+
+      .page {
+        padding: 0;
+        max-width: 100%;
+      }
+
+      .header {
+        margin-bottom: 24px;
+        padding-bottom: 16px;
+      }
+
+      .header-left h1 { font-size: 22px; }
+      .devis-label { font-size: 20px; }
+
+      .parties { margin-bottom: 24px; }
+      .project-summary { margin-bottom: 20px; padding: 14px 18px; }
+
+      .item-title { font-size: 12px; }
+      .item-desc { font-size: 10px; line-height: 1.4; }
+      .item-desc ul li { padding: 1px 0 1px 12px; }
+      .item-price { font-size: 12px; }
+
+      thead th {
+        font-size: 10px;
+        padding: 8px 12px;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      tbody td { padding: 10px 12px; }
+      tbody tr:hover { background: transparent; }
+
+      /* Prevent rows from being split across pages */
+      tr { page-break-inside: avoid; break-inside: avoid; }
+      thead { display: table-header-group; }
+
+      /* Prevent sections from being split */
+      .notes, .validity, .signature, .totals, .header, .parties, .project-summary {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      /* Keep signature and footer together on last page */
+      .signature { margin-top: 32px; }
+      .doc-footer { margin-top: 24px; }
+
+      /* Phase 2 separator */
+      div[style*="border-top: 2px dashed"] {
+        margin: 20px 0 16px 0 !important;
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+
+      /* Yellow box */
+      .notes[style*="background: #FFF8E1"] {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      /* Totals box */
+      .total-row { font-size: 12px; }
+      .total-row.grand-total { font-size: 16px; }
+
+      /* Notes */
+      .notes li { font-size: 11px; }
+      .notes h3 { font-size: 12px; }
+
+      /* Validity */
+      .validity {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-left">
+        <h1>Anas & El Mehdi</h1>
+        <div class="subtitle">Développeurs Web Freelance</div>
+      </div>
+      <div class="header-right">
+        <div class="devis-label">Devis</div>
+        <div class="devis-meta">
+          N° DEVIS-2026-001<br>
+          Date : 31 mai 2026
+        </div>
+      </div>
+    </div>
+
+    <!-- Parties -->
+    <div class="parties">
+      <div class="party">
+        <div class="party-label">Prestataires</div>
+        <div class="party-name">Anas & El Mehdi</div>
+        <div class="party-detail">
+          Ingénieurs — Développement Web<br>
+          email@ <br>
+          +212 661585859
+        </div>
+      </div>
+      <div class="party">
+        <div class="party-label">Client</div>
+        <div class="party-name">MediMesk</div>
+        <div class="party-detail">
+          Fondateur : Dr. Hassan El Youssfi<br>
+          Rabat, Maroc
+        </div>
+      </div>
+    </div>
+
+    <!-- Project summary -->
+    <div class="project-summary">
+      <h3>Objet du devis</h3>
+      <p>
+        Conception, développement et mise en ligne du site web vitrine de MediMesk — 
+        un site professionnel présentant les solutions de la société aux pharmaciens et professionnels 
+        de santé au Maroc. Le site comprend une page d'accueil complète, des pages produits détaillées, 
+        un formulaire de contact fonctionnel avec envoi d'emails, et un référencement optimisé pour les moteurs de recherche.
+      </p>
+    </div>
+
+    <!-- Itemized table -->
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 30px;">#</th>
+          <th>Désignation</th>
+          <th style="width: 120px;">Montant (MAD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="item-number">1</td>
+          <td>
+            <div class="item-title">Conception & Architecture du site</div>
+            <div class="item-desc">
+              <p>Phase préparatoire au développement, incluant :</p>
+              <ul>
+                <li>Échanges avec M. Hassan pour cerner l'activité de MediMesk, ses solutions (PDA / RDC 45, Studex, équipement médical), sa cible (pharmaciens et professionnels de santé au Maroc), et les objectifs attendus du site (génération de leads, demandes de démo, crédibilité)</li>
+                <li>Audit de la présence web existante : analyse de la structure, du contenu, du design et de l'expérience utilisateur du site actuel pour identifier les points à repenser et les opportunités d'amélioration</li>
+                <li>Définition de l'arborescence complète du site : pages principales, sous-pages produits, pages légales, navigation principale et navigation de pied de page</li>
+                <li>Rédaction d'un document de brief projet résumant les pages à créer, le contenu à y placer, et les fonctionnalités attendues (formulaire de contact, FAQ, etc.)</li>
+                <li>Choix et mise en place de la stack technique : framework, hébergement, gestion des formulaires, envoi d'emails</li>
+              </ul>
+            </div>
+          </td>
+          <td class="item-price">1 500</td>
+        </tr>
+        <tr>
+          <td class="item-number">2</td>
+          <td>
+            <div class="item-title">Design & Identité visuelle</div>
+            <div class="item-desc">
+              <p>Création intégrale de l'identité visuelle du site, adaptée au secteur médical et pharmaceutique :</p>
+              <ul>
+                <li>Palette de 6 couleurs sur mesure :
+                  Teal principal (<strong>#00A99D</strong>) pour la navigation et les boutons,
+                  Teal clair (<strong>#E0F5F3</strong>) pour les fonds de cartes,
+                  Jaune CTA (<strong>#F5C518</strong>) pour les boutons d'action prioritaires,
+                  Texte foncé (<strong>#1A2332</strong>),
+                  Fond de section (<strong>#F7F9FA</strong>),
+                  Rouge erreur (<strong>#E63946</strong>) pour la validation des formulaires</li>
+                <li>Sélection typographique professionnelle : <strong>Playfair Display</strong> pour les titres (autorité, confiance) et <strong>DM Sans</strong> pour le corps de texte et l'interface (lisibilité, modernité)</li>
+                <li>Échelle typographique complète : 7 tailles de texte définies (H1 48–56px, H2 32–36px, H3 24px, corps 16px, petit 13px) avec hauteurs de ligne et graisses adaptées</li>
+                <li>Conception d'icônes personnalisées en style trait (stroke) pour les avantages, les valeurs de l'entreprise, et les étapes de processus</li>
+                <li>Système de grille à 12 colonnes, largeur maximale 1280px, marges de 24px, garantissant un espacement aéré et professionnel sur toutes les pages</li>
+                <li>Design entièrement responsive — chaque page, chaque section et chaque composant a été conçu et testé pour s'afficher correctement sur 3 tailles d'écran :
+                  <strong>mobile</strong> (≤ 640px), <strong>tablette</strong> (641–1024px) et <strong>ordinateur</strong> (≥ 1025px),
+                  avec des mises en page, tailles de texte et espacements adaptés à chaque format</li>
+              </ul>
+            </div>
+          </td>
+          <td class="item-price">3 000</td>
+        </tr>
+        <tr>
+          <td class="item-number">3</td>
+          <td>
+            <div class="item-title">Développement des pages du site</div>
+            <div class="item-desc">
+              <p>Développement de l'ensemble des pages du site, incluant :</p>
+              <ul>
+                <li><strong>Page d'accueil</strong> — composée de 8 sections distinctes :
+                  bannière principale avec message et 2 boutons d'action,
+                  barre de confiance (logos partenaires Studex et TI-Medi, crédential fondateur),
+                  aperçu des 3 solutions en cartes avec images et avantages,
+                  grille des 6 avantages MediMesk avec icônes,
+                  section spotlight RDC 45 (image, spécifications, boutons d'action),
+                  3 témoignages clients,
+                  présentation du fondateur avec lien vers la page À propos,
+                  bannière d'appel à l'action finale</li>
+                <li><strong>Page PDA / RDC 45</strong> — page produit complète : fil d'Ariane, section héro avec image produit, tableau de spécifications techniques (capacité patients, système de chargement LED, scellage, logiciel, etc.), 3 cartes d'avantages, processus en 3 étapes, emplacement vidéo de démonstration, bannière d'action</li>
+                <li><strong>Page Studex System 75</strong> — même structure que la page RDC 45, adaptée au produit de piercing professionnel : spécifications (matériaux, stérilisation, types de bijoux), avantages pour les pharmaciens, processus d'utilisation</li>
+                <li><strong>Page Équipement médical</strong> — page catalogue : 3 catégories de produits avec icônes, 3 différenciateurs, processus d'accompagnement en 3 étapes</li>
+                <li><strong>Page hub Solutions</strong> — page d'entrée regroupant les liens vers les 3 catégories de solutions</li>
+                <li><strong>Page À propos</strong> — 4 sections : héro avec fond dégradé, histoire de la fondation de MediMesk, grille de 6 valeurs d'entreprise avec icônes SVG personnalisées, carte de présentation du fondateur Dr. Hassan El Youssfi</li>
+                <li><strong>Page Contact</strong> — formulaire complet avec 7 champs validés en temps réel (nom, pharmacie, email, téléphone, sujet avec 4 choix, message, case de consentement), envoi automatique d'email à la boîte de réception MediMesk à chaque soumission, écran de confirmation, gestion des erreurs, barre latérale avec coordonnées (adresse, téléphone, email)</li>
+                <li><strong>Page Support / FAQ</strong> — barre de recherche, section FAQ avec accordéon interactif (questions/réponses qui se déplient avec animation), bloc de contact support avec email et numéro de téléphone</li>
+                <li><strong>Pages légales (×3)</strong> — Mentions légales, Politique de confidentialité, Conditions générales d'utilisation</li>
+              </ul>
+            </div>
+          </td>
+          <td class="item-price">5 500</td>
+        </tr>
+        <tr>
+          <td class="item-number">4</td>
+          <td>
+            <div class="item-title">Animations & Interactions</div>
+            <div class="item-desc">
+              <p>Développement des animations et interactions pour une expérience utilisateur moderne et fluide :</p>
+              <ul>
+                <li>Animations d'apparition au défilement (fade-up) sur toutes les sections du site — chaque bloc apparaît progressivement lorsque le visiteur fait défiler la page</li>
+                <li>Menu de navigation mobile entièrement animé : icône hamburger qui se transforme en croix, panneau coulissant avec fond flouté, verrouillage du défilement de la page en arrière-plan</li>
+                <li>Menu déroulant « Solutions » sur ordinateur avec animation d'ouverture (opacité + translation)</li>
+                <li>Effets de survol sur les cartes produits (agrandissement de l'image, élévation de l'ombre), les cartes de témoignage, les cartes de valeurs (changement de bordure et de fond)</li>
+                <li>Boutons interactifs : effet de pression (réduction d'échelle au clic), changement de luminosité au survol, flèche animée sur les liens</li>
+                <li>Accordéon FAQ animé avec rotation de chevron et transition fluide d'ouverture/fermeture</li>
+                <li>Bouton de lecture vidéo avec effet d'agrandissement au survol</li>
+              </ul>
+            </div>
+          </td>
+          <td class="item-price">1 500</td>
+        </tr>
+        <tr>
+          <td class="item-number">5</td>
+          <td>
+            <div class="item-title">Référencement SEO & Performance</div>
+            <div class="item-desc">
+              <p>Optimisation complète pour que le site soit bien référencé sur Google et se charge rapidement :</p>
+              <ul>
+                <li><strong>Métadonnées par page</strong> — chaque page du site possède son propre titre et sa propre description optimisés pour les résultats de recherche Google (7 pages + 2 sections avec métadonnées dédiées)</li>
+                <li><strong>Plan du site XML (sitemap)</strong> — fichier généré automatiquement listant toutes les pages du site avec leur fréquence de mise à jour et leur priorité, soumis à Google pour une indexation rapide</li>
+                <li><strong>Fichier robots.txt</strong> — configuration indiquant aux moteurs de recherche quelles pages explorer et où trouver le plan du site</li>
+                <li><strong>Données structurées (JSON-LD)</strong> — informations techniques intégrées dans le code pour que Google comprenne mieux le contenu :
+                  fiche Organisation (nom, logo, coordonnées de MediMesk),
+                  fiche Produit sur chacune des 3 pages solutions (RDC 45, Studex, Équipement médical)</li>
+                <li><strong>Optimisation des images</strong> — toutes les images sont compressées, converties au format WebP (plus léger), et se chargent uniquement lorsque le visiteur les voit à l'écran (chargement différé)</li>
+                <li><strong>URLs propres et lisibles</strong> — adresses de pages claires et descriptives (ex : medimesk.ma/solutions/pda-rdc45) sans caractères techniques</li>
+                <li><strong>Performance de chargement</strong> — polices de texte chargées de manière optimisée (display swap), CSS minifié, site statique pré-généré pour un temps de chargement minimal</li>
+              </ul>
+            </div>
+          </td>
+          <td class="item-price">2 000</td>
+        </tr>
+        <tr>
+          <td class="item-number">6</td>
+          <td>
+            <div class="item-title">Tests, Déploiement & Mise en ligne</div>
+            <div class="item-desc">
+              <p>Phase finale de vérification, de mise en production et de résolution des problèmes :</p>
+              <ul>
+                <li><strong>Tests multi-appareils</strong> — vérification de l'affichage et du fonctionnement sur mobile (Android, iPhone), tablette et ordinateur, avec ajustements pour chaque taille d'écran</li>
+                <li><strong>Tests multi-navigateurs</strong> — vérification sur Chrome, Safari, Firefox et Edge pour garantir un rendu identique partout</li>
+                <li><strong>Tests du formulaire de contact</strong> — vérification de la validation des champs, de l'envoi d'emails, de l'affichage des messages d'erreur et de la confirmation de soumission</li>
+                <li><strong>Résolution de difficultés techniques</strong> — correction de problèmes de compatibilité et de bugs rencontrés durant le développement (configurations spécifiques, optimisations, ajustements de performance)</li>
+                <li><strong>Hébergement Cloudflare</strong> — configuration de l'hébergement sur un réseau mondial de serveurs rapides (CDN), garantissant un chargement rapide depuis n'importe quel pays</li>
+                <li><strong>Certificat de sécurité SSL</strong> — mise en place du certificat HTTPS (cadenas vert dans le navigateur) pour sécuriser la connexion des visiteurs</li>
+                <li><strong>Nom de domaine</strong> — liaison du site avec le nom de domaine medimesk.ma, configuration des redirections (www → sans www, / → page d'accueil)</li>
+                <li><strong>Déploiement en production</strong> — mise en ligne du site final, vérification complète de toutes les pages et fonctionnalités en conditions réelles</li>
+              </ul>
+            </div>
+          </td>
+          <td class="item-price">2 000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Separator -->
+    <div style="margin: 32px 0 24px 0; padding: 12px 0; border-top: 2px dashed #00A99D; border-bottom: 2px dashed #00A99D; text-align: center;">
+      <span style="font-size: 14px; font-weight: 700; color: #00A99D; letter-spacing: 1px; text-transform: uppercase;">Phase 2 — Fonctionnalités complémentaires</span>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 30px;">#</th>
+          <th>Désignation</th>
+          <th style="width: 120px;">Montant (MAD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="item-number">7</td>
+          <td>
+            <div class="item-title">Blog / Ressources — Espace de publication d'articles</div>
+            <div class="item-desc">
+              <p>Mise en place d'un système de blog complet permettant à MediMesk de publier des articles pédagogiques (observance, PDA, pharmacie de services, Studex, etc.) pour attirer des visiteurs via Google et renforcer la crédibilité :</p>
+              <ul>
+                <li><strong>Tableau de bord Sanity (CMS)</strong> — interface d'administration accessible via un lien privé (ex : studio.medimesk.ma). M. Hassan s'y connecte avec son email et mot de passe, et accède à un espace simple pour gérer ses articles : créer, modifier, enregistrer en brouillon, publier ou retirer un article</li>
+                <li><strong>Éditeur d'articles</strong> — éditeur visuel fourni par Sanity, similaire à Word : le client tape son texte, met en gras, ajoute des titres, insère des images ou des vidéos, sans toucher au code. Chaque article comprend : titre, image de couverture, catégorie, contenu riche, titre SEO et description pour Google</li>
+                <li><strong>Gestion des images</strong> — les images sont uploadées directement dans l'éditeur et stockées par Sanity (aucune gestion technique côté MediMesk), avec redimensionnement automatique</li>
+                <li><strong>Catégories d'articles</strong> — possibilité de classer les articles par thème (ex : « Observance », « PDA », « Studex », « Pharmacie de services »), permettant aux visiteurs de filtrer par sujet</li>
+                <li><strong>Système brouillon / publication</strong> — un article peut être enregistré en brouillon (visible uniquement dans le tableau de bord) avant d'être publié sur le site. Possibilité de dépublier un article à tout moment</li>
+                <li><strong>Page liste des articles</strong> — page publique /ressources affichant tous les articles publiés avec image, titre, date, catégorie et extrait, triés du plus récent au plus ancien</li>
+                <li><strong>Page article individuel</strong> — page /ressources/titre-de-l-article affichant l'article complet avec mise en page soignée, image de couverture, date de publication, catégorie, et boutons d'appel à l'action</li>
+                <li><strong>Publication automatique</strong> — quand M. Hassan clique « Publier » dans le tableau de bord, le site se reconstruit automatiquement (1 à 2 minutes) et l'article apparaît en ligne sans intervention technique</li>
+              </ul>
+            </div>
+          </td>
+          <td class="item-price">3 500</td>
+        </tr>
+        <tr>
+          <td class="item-number">8</td>
+          <td>
+            <div class="item-title">Autonomie de contenu — Édition des textes du site via le CMS</div>
+            <div class="item-desc">
+              <p>En plus du blog, le même tableau de bord Sanity permettra à MediMesk de modifier certains contenus du site existant sans faire appel au développeur :</p>
+              <ul>
+                <li><strong>FAQ</strong> — ajouter, modifier ou supprimer des questions/réponses depuis le tableau de bord (ex : ajouter une nouvelle question fréquente sans nous contacter)</li>
+                <li><strong>Témoignages</strong> — ajouter ou mettre à jour les témoignages clients affichés sur la page d'accueil (citation, nom, pharmacie, ville)</li>
+                <li><strong>Chiffres clés</strong> — modifier les statistiques affichées sur le site (ex : « 40+ pharmacies équipées » → « 80+ pharmacies équipées » quand le chiffre évolue)</li>
+                <li><strong>Coordonnées de contact</strong> — mettre à jour l'adresse, le téléphone ou l'email affichés sur le site</li>
+                <li><strong>Images produits</strong> — remplacer les photos des produits par de nouvelles versions sans intervention technique</li>
+              </ul>
+            </div>
+          </td>
+          <td class="item-price">1 500</td>
+        </tr>
+        <tr>
+          <td class="item-number">9</td>
+          <td>
+            <div class="item-title">Newsletter — Inscription et intégration Brevo</div>
+            <div class="item-desc">
+              <p>Mise en place d'un formulaire d'inscription à la newsletter pour collecter les emails des pharmaciens intéressés :</p>
+              <ul>
+                <li><strong>Formulaire d'inscription</strong> — champ email + bouton « S'inscrire » ajouté dans le pied de page du site et/ou en bas des articles de blog. Design intégré à l'identité visuelle du site</li>
+                <li><strong>Connexion à Brevo</strong> — chaque inscription envoie automatiquement l'email vers une liste de contacts dans le compte Brevo de MediMesk. M. Hassan pourra ensuite envoyer des newsletters depuis Brevo (interface fournie par Brevo, pas par nous)</li>
+                <li><strong>Consentement explicite</strong> — case à cocher confirmant que l'utilisateur accepte de recevoir des emails de MediMesk</li>
+                <li><strong>Double opt-in</strong> (si retenu) — l'inscrit reçoit un email de confirmation et doit cliquer sur un lien pour valider son inscription (géré automatiquement par Brevo)</li>
+                <li><strong>Messages de retour</strong> — confirmation d'inscription réussie, message d'erreur en cas de problème, protection anti-spam</li>
+              </ul>
+            </div>
+          </td>
+          <td class="item-price">400</td>
+        </tr>
+        <tr>
+          <td class="item-number">10</td>
+          <td>
+            <div class="item-title">Pages légales — Rédaction et mise en page du contenu juridique</div>
+            <div class="item-desc">
+              <p>Intégration du contenu juridique fourni ou validé par MediMesk dans les 3 pages légales existantes :</p>
+              <ul>
+                <li><strong>Mentions légales</strong> — raison sociale, forme juridique, siège social, numéro RC, ICE, directeur de publication, hébergeur du site</li>
+                <li><strong>Politique de confidentialité</strong> — types de données collectées (formulaire de contact, newsletter), finalité du traitement, durée de conservation, droits des utilisateurs, coordonnées du responsable</li>
+                <li><strong>Conditions générales d'utilisation (CGU)</strong> — conditions d'accès au site, propriété intellectuelle, limitation de responsabilité</li>
+                <li>Mise en page soignée avec titres, sous-sections et paragraphes lisibles, cohérente avec le design du reste du site</li>
+              </ul>
+              <p style="margin-top: 6px;"><em>Note : le contenu juridique doit être fourni ou validé par MediMesk. Nous nous chargeons de l'intégration et de la mise en page.</em></p>
+            </div>
+          </td>
+          <td class="item-price">100</td>
+        </tr>
+        <tr>
+          <td class="item-number">11</td>
+          <td>
+            <div class="item-title">Documentation & Transmission</div>
+            <div class="item-desc">
+              <p>Remise de tous les accès et documentation nécessaire pour que MediMesk soit autonome :</p>
+              <ul>
+                <li><strong>Guide d'utilisation du blog</strong> — document illustré (captures d'écran) expliquant étape par étape comment se connecter au tableau de bord, créer un article, ajouter des images, enregistrer en brouillon, publier, modifier ou retirer un article</li>
+                <li><strong>Guide de modification du contenu</strong> — explication de comment modifier les FAQ, témoignages, chiffres et coordonnées via le tableau de bord</li>
+                <li><strong>Remise des accès</strong> — tous les identifiants et mots de passe transmis de manière sécurisée :
+                  accès administrateur Sanity (tableau de bord),
+                  accès Cloudflare (hébergement),
+                  accès Brevo (newsletter),
+                  accès au code source (GitHub)</li>
+                <li><strong>Sauvegarde initiale</strong> — une copie complète du code source et de la configuration est fournie à MediMesk</li>
+              </ul>
+            </div>
+          </td>
+          <td class="item-price">100</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Totals -->
+    <div class="totals">
+      <div class="totals-box">
+        <div class="total-row subtotal">
+          <span>Phase 1 — Site vitrine</span>
+          <span>15 500 MAD</span>
+        </div>
+        <div class="total-row subtotal">
+          <span>Phase 2 — Blog, CMS, Newsletter</span>
+          <span>5 600 MAD</span>
+        </div>
+        <div class="total-row tva">
+          <span>TVA (20%)</span>
+          <span>4 220 MAD</span>
+        </div>
+        <div class="total-row grand-total">
+          <span>Total TTC</span>
+          <span>25 320 MAD</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Éléments en attente -->
+    <div class="notes" style="background: #FFF8E1; border-radius: 8px; padding: 20px 24px; border-left: 4px solid #F5C518;">
+      <h3 style="color: #1A2332;">Éléments en attente — Action requise de MediMesk</h3>
+      <p style="font-size: 13px; color: #4b5563; margin-bottom: 12px;">Les éléments suivants nécessitent des informations ou des validations de la part de MediMesk pour pouvoir être finalisés :</p>
+      <ul>
+        <li><strong>Témoignages clients</strong> — Les témoignages affichés sur le site sont actuellement des emplacements réservés. MediMesk doit fournir de vrais témoignages de pharmaciens clients, avec leur accord : nom complet, pharmacie, ville, et citation. Les chiffres avancés (réduction d'erreurs, etc.) doivent être vérifiables.</li>
+        <li><strong>Chiffres et statistiques</strong> — Tout chiffre affiché sur le site (par exemple « 40+ pharmacies équipées », « réduction des erreurs de 95% », « plus de 99% », etc.) doit être confirmé, corrigé ou retiré par MediMesk. Ces données ne peuvent être publiées sans validation de votre part.</li>
+        <li><strong>Contenu des pages légales</strong> — Les pages Mentions légales, Politique de confidentialité et CGU sont en place mais leur contenu juridique doit être rédigé ou validé par MediMesk (raison sociale, numéro RC, ICE, responsable de publication, etc.).</li>
+        <li><strong>Relecture des pages produits (PDA / RDC 45)</strong> — Les descriptions techniques, les spécifications et les formulations liées à la sécurité et à la dispensation doivent être relues et validées par MediMesk pour s'assurer de leur exactitude.</li>
+        <li><strong>Images et visuels définitifs</strong> — Photos professionnelles des produits (RDC 45 en environnement pharmacie, Studex en utilisation), photo du fondateur Dr. Hassan El Youssfi, et vidéos de démonstration si disponibles.</li>
+      </ul>
+    </div>
+
+    <!-- Notes -->
+    <div class="notes">
+      <h3>Conditions & Remarques</h3>
+      <ul>
+        <li>Ce devis couvre l'ensemble du travail réalisé pour la conception, le développement et la mise en ligne du site web MediMesk.</li>
+        <li>Le montant inclut la résolution de difficultés techniques rencontrées durant le développement (compatibilité, bugs, optimisations).</li>
+        <li>L'hébergement sur Cloudflare est gratuit — aucun frais mensuel d'hébergement à prévoir.</li>
+        <li>Le tableau de bord Sanity (CMS) est configuré sur le plan gratuit, qui inclut 3 utilisateurs et 10 Go de stockage d'images — largement suffisant pour les besoins de MediMesk pendant plusieurs années, même avec une publication régulière d'articles. Pour donner un ordre de grandeur : le plan gratuit supporte jusqu'à 500 000 consultations de contenu par mois, ce qui correspond à environ 3 000 visiteurs par jour consultant chacun 5 pages — un volume très au-delà de ce qu'un site vitrine B2B génère habituellement. Dans le cas très improbable où le volume de contenu dépasserait ces limites (des centaines d'articles et des milliers d'images), un abonnement à 15 $/mois serait alors nécessaire.</li>
+        <li>Toute évolution majeure ou ajout de nouvelles fonctionnalités fera l'objet d'un devis complémentaire.</li>
+      </ul>
+    </div>
+
+    <!-- Validity -->
+
+    <!-- Signature -->
+    <div class="signature">
+      <div class="sig-block">
+        <div class="sig-label">Les prestataires</div>
+        <div class="sig-line">Anas & El Mehdi</div>
+      </div>
+      <div class="sig-block">
+        <div class="sig-label">Le client — Bon pour accord</div>
+        <div class="sig-line">MediMesk</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="doc-footer">
+      Devis N° DEVIS-2026-001 — Émis le 31 mai 2026 — Anas & El Mehdi, Développeurs Web
+    </div>
+
+  </div>
+</body>
+</html>

@@ -22,9 +22,9 @@ export type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-cta-yellow text-dark-text font-semibold px-6 py-3 rounded-lg hover:brightness-95 transition-all inline-flex items-center justify-center",
+    "bg-cta-yellow text-dark-text font-semibold px-6 py-3 rounded-lg hover:brightness-95 transition-all inline-flex items-center justify-center text-center leading-snug",
   secondary:
-    "border-2 border-primary-teal text-primary-teal font-semibold px-6 py-3 rounded-lg hover:bg-primary-teal hover:text-white transition-all inline-flex items-center justify-center",
+    "border-2 border-primary-teal text-primary-teal font-semibold px-6 py-3 rounded-lg hover:bg-primary-teal hover:text-white transition-all inline-flex items-center justify-center text-center leading-snug",
   link: "text-primary-teal font-medium hover:underline underline-offset-4 transition-all inline-flex items-center gap-1.5 group",
 };
 

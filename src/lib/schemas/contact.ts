@@ -23,7 +23,7 @@ export const contactSchema = z.object({
     .min(10, "Le message doit contenir au moins 10 caractères."),
   consent: z
     .literal(true, {
-      message: "Vous devez accepter la politique de confidentialité.",
+      message: "Veuillez cocher cette case pour envoyer votre message.",
     }),
 });
 

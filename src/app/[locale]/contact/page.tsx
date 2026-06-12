@@ -187,16 +187,12 @@ export default function ContactPage({
                       <textarea rows={4} placeholder={c.form.message_placeholder} {...register("message")} className={`${inputClass(!!errors.message)} resize-y`} />
                     </Field>
 
-                    {/* GDPR consent */}
+                    {/* Consent */}
                     <div>
                       <label className="flex items-start gap-3 cursor-pointer">
                         <input type="checkbox" {...register("consent")} className="mt-0.5 h-4 w-4 rounded border-dark-text/20 text-primary-teal focus:ring-primary-teal" />
                         <span className="text-sm text-dark-text/70 leading-relaxed">
-                          {c.form.consent}{" "}
-                          <a href={`/${locale}/politique-confidentialite`} className="text-primary-teal underline hover:no-underline">
-                            {c.form.consent_link}
-                          </a>
-                          . *
+                          {c.form.consent} *
                         </span>
                       </label>
                       {errors.consent && (

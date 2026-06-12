@@ -2,8 +2,8 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "solutions": "Solutions",
-    "support": "Support",
+    "solutions": "Products",
+    "support": "FAQ",
     "contact": "Contact"
   },
   "solutions_dropdown": {
@@ -11,9 +11,25 @@
     "studex": "Studex SYSTEM 75",
     "equipment": "Medical Equipment"
   },
+  "products_dropdown": [
+    { "label": "Manual UDD", "sub": "Venalink Page" },
+    { "label": "Semi-Automatic Dual Blist - Blister", "sub": "" },
+    { "label": "Semi-Automatic RDC 45 Dose Sachet", "sub": "" },
+    { "label": "Automatic UDD – Clinics & Hospitals", "sub": "" },
+    { "label": "UDD: Control Devices & Accessories", "sub": "" },
+    { "label": "Advanced Piercing", "sub": "Studex Presentation / No catalog" }
+  ],
+  "products_page": {
+    "meta": {
+      "title": "Our Products — UDD & Piercing Solutions | MediMesk",
+      "description": "Discover the MediMesk range: manual, semi-automatic and automatic UDD, control devices and Advanced Piercing for your pharmacy."
+    }
+  },
   "cta": {
     "demo": "Request a Demo",
     "discover": "Discover Our Solutions",
+    "pharmacy_support": "Discover Our Pharmacy Support",
+    "discover_products": "Discover Our Products",
     "quote": "Get a Quote",
     "demo_free": "Request a Free Demo",
     "contact_us": "Contact Us",
@@ -22,7 +38,7 @@
   },
   "footer": {
     "tagline": "Innovative solutions for pharmacies in Morocco",
-    "solutions_heading": "Solutions",
+    "solutions_heading": "Products",
     "company_heading": "Company",
     "contact_heading": "Contact",
     "address": "Résidence Meskellil Bldg. 3 N°1, Av. Assabir, Hay Riad, Rabat, Morocco",
@@ -31,7 +47,8 @@
     "legal": "Legal Notice",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-    "copyright": "MediMesk. All rights reserved."
+    "copyright": "MediMesk. All rights reserved.",
+    "faq": "FAQ"
   },
   "lang": {
     "fr": "FR",
@@ -40,7 +57,7 @@
   },
   "common": {
     "breadcrumb_home": "Home",
-    "breadcrumb_solutions": "Solutions"
+    "breadcrumb_solutions": "Products"
   },
   "home": {
     "hero": {
@@ -55,12 +72,30 @@
       "40+ pharmacies equipped"
     ],
     "solutions": {
-      "title": "Our Solutions",
+      "title": "Our Products",
       "subtitle": "Reliable and innovative solutions to modernize your pharmacy, improve operational efficiency, and deliver better service to your patients.",
       "cards": [
         {
-          "title": "PDA / RDC 45",
-          "image_alt": "RDC 45 automated dispensing system",
+          "title": "Manual Unit Dose Dispensing",
+          "image_alt": "Manual Unit Dose Dispensing",
+          "benefits": [
+            "Simple, cost-effective start",
+            "Organized by day and intake",
+            "Ideal for small volumes"
+          ]
+        },
+        {
+          "title": "Semi-Automatic Dual Blist - Blister",
+          "image_alt": "Semi-Automatic Dual Blist - Blister",
+          "benefits": [
+            "Secure blister packaging",
+            "Increased productivity",
+            "Clear patient presentation"
+          ]
+        },
+        {
+          "title": "Semi-Automatic RDC 45 - Dose Sachet",
+          "image_alt": "RDC 45 automated dispensing system — dose sachet",
           "benefits": [
             "Dispensing error reduction",
             "Capacity up to 120 patients",
@@ -68,52 +103,61 @@
           ]
         },
         {
-          "title": "Studex SYSTEM 75",
-          "image_alt": "Studex SYSTEM 75 professional piercing system",
+          "title": "Automatic UDD – Clinics & Hospitals",
+          "image_alt": "Automatic Unit Dose Dispensing for clinics and hospitals",
+          "benefits": [
+            "High throughput for large volumes",
+            "Complete dose traceability",
+            "End-to-end automation"
+          ]
+        },
+        {
+          "title": "UDD: Control Devices & Accessories",
+          "image_alt": "Unit Dose Dispensing control devices and accessories",
+          "benefits": [
+            "Enhanced quality control",
+            "Compatible consumables",
+            "Secured UDD process"
+          ]
+        },
+        {
+          "title": "Advanced Piercing",
+          "image_alt": "Advanced Piercing professional piercing system",
           "benefits": [
             "Professional-grade hygiene",
             "Additional revenue stream",
             "Training and support included"
           ]
-        },
-        {
-          "title": "Medical Equipment",
-          "image_alt": "Medical equipment for pharmacies",
-          "benefits": [
-            "Technologies from recognized manufacturers",
-            "Maintenance and after-sales service",
-            "Continuously expanding catalog"
-          ]
         }
       ]
     },
     "why": {
-      "title": "Why MediMesk?",
-      "subtitle": "Six reasons to trust MediMesk to modernize your pharmacy and improve the quality of your services.",
+      "title": "MediMesk Supports You",
+      "subtitle": "From installation to commercialization, we support you at every step for a smooth start-up and lasting use of your solution.",
       "items": [
         {
-          "title": "Error Reduction",
-          "description": "Our automated systems minimize dispensing errors and improve patient safety."
+          "title": "Installation",
+          "description": "The machines and their software, where applicable, are installed by a specialized technician to ease the start-up and adapt the setup to your pharmacy's organization."
         },
         {
-          "title": "Local Partner",
-          "description": "Based in Morocco, we understand the specific needs of Moroccan pharmacies and provide hands-on support."
+          "title": "Training",
+          "description": "You are trained on operating the machine, using the software, and the key preparation steps: programming, guided filling, printing, sealing, and packaging."
         },
         {
-          "title": "Training & Support",
-          "description": "Complete training for your team, on-site installation, and ongoing technical assistance."
+          "title": "Support Hotline",
+          "description": "Assistance is available to support the pharmacy in case of a technical question, usage difficulty, potential bug, or error during preparation."
         },
         {
-          "title": "Proven Technology",
-          "description": "Certified equipment used in thousands of pharmacies worldwide."
+          "title": "Maintenance",
+          "description": "MediMesk supports you with the routine maintenance of the machine to promote regular, smooth, and lasting use."
         },
         {
-          "title": "Software Integration",
-          "description": "Compatibility with pharmacy management software for a seamless, uninterrupted transition."
+          "title": "Patient Information Kit",
+          "description": "A support kit helps you answer patients' main questions and simply explain how the service works."
         },
         {
-          "title": "Responsive After-Sales",
-          "description": "Fast after-sales service with short response times to ensure business continuity."
+          "title": "Sales Enablement Guide",
+          "description": "MediMesk also provides a guide to identify the patients concerned, present the service, handle objections, and turn UDD into a truly differentiating offering for your pharmacy."
         }
       ]
     },
@@ -428,6 +472,152 @@
       "description": "Complete range of medical equipment for pharmacies: diagnostics, furniture and quality consumables."
     }
   },
+  "products": {
+    "pdaManuelle": {
+      "breadcrumb": "Manual UDD",
+      "hero": {
+        "badge": "Unit Dose Dispensing",
+        "title": "Manual Unit Dose Dispensing",
+        "description": "The entry-level way to start Unit Dose Dispensing without heavy equipment investment. Organize treatments by day and intake time in clear, secure pill organizers — ideal for small volumes and first steps into UDD.",
+        "image_alt": "Manual Unit Dose Dispensing",
+        "image": "/images/pda-sachet.webp"
+      },
+      "benefits": {
+        "title": "Benefits for your pharmacy",
+        "subtitle": "A simple, cost-effective entry into Unit Dose Dispensing.",
+        "items": [
+          {
+            "title": "Simple, cost-effective start",
+            "text": "Launch a UDD service without heavy equipment investment and with immediate adoption by your team."
+          },
+          {
+            "title": "Clear organization",
+            "text": "Treatments are organized by day and intake time to improve adherence and reassure patients."
+          },
+          {
+            "title": "Ideal for small volumes",
+            "text": "Perfectly suited to pharmacies starting UDD or managing a limited number of patients."
+          }
+        ]
+      },
+      "cta_banner": {
+        "title": "Ready to start UDD?",
+        "subtitle": "Contact us to learn how to easily launch Unit Dose Dispensing in your pharmacy."
+      },
+      "meta": {
+        "title": "Manual UDD — Unit Dose Dispensing | MediMesk",
+        "description": "Start Unit Dose Dispensing manually: organized by day and intake time, with no heavy investment."
+      }
+    },
+    "pdaDualBlist": {
+      "breadcrumb": "Dual Blist - Blister",
+      "hero": {
+        "badge": "Unit Dose Dispensing",
+        "title": "Semi-Automatic Dual Blist - Blister",
+        "description": "The Dual Blist semi-automatic system packages treatments into multi-dose blister cards. It combines the robustness and readability of blisters with semi-automatic productivity, with visual control at every step.",
+        "image_alt": "Semi-Automatic Dual Blist - Blister",
+        "image": "/images/pda-robot.webp"
+      },
+      "benefits": {
+        "title": "Benefits for your pharmacy",
+        "subtitle": "Blister reliability with semi-automatic productivity.",
+        "items": [
+          {
+            "title": "Secure blister packaging",
+            "text": "Resealable, durable cards that protect medications and make intake tracking easier."
+          },
+          {
+            "title": "Increased productivity",
+            "text": "Prepare more doses in less time than fully manual preparation."
+          },
+          {
+            "title": "Clear patient presentation",
+            "text": "A simple read by day and intake time that strengthens adherence and patient trust."
+          }
+        ]
+      },
+      "cta_banner": {
+        "title": "Move to semi-automatic blister packaging",
+        "subtitle": "Contact us for a demonstration of the Dual Blist system in your pharmacy."
+      },
+      "meta": {
+        "title": "Semi-Automatic Dual Blist - Blister | MediMesk",
+        "description": "Semi-automatic blister packaging system for Unit Dose Dispensing."
+      }
+    },
+    "pdaAutomatique": {
+      "breadcrumb": "Automatic UDD",
+      "hero": {
+        "badge": "Clinics & Hospitals",
+        "title": "Automatic UDD – Clinics & Hospitals",
+        "description": "A fully automated Unit Dose Dispensing system designed for the high volumes of clinics and hospitals. From deblistering to sealing, every step is automated with full traceability.",
+        "image_alt": "Automatic Unit Dose Dispensing for clinics and hospitals",
+        "image": "/images/pda-robot.webp"
+      },
+      "benefits": {
+        "title": "Benefits for your facility",
+        "subtitle": "Full automation for high hospital volumes.",
+        "items": [
+          {
+            "title": "High throughput",
+            "text": "Process large volumes of doses continuously to meet the needs of clinics and hospitals."
+          },
+          {
+            "title": "Complete traceability",
+            "text": "Every dose is traced end to end for maximum patient safety and compliance."
+          },
+          {
+            "title": "Error reduction",
+            "text": "Full automation minimizes manual handling and the risk of error."
+          }
+        ]
+      },
+      "cta_banner": {
+        "title": "Automate your facility's UDD",
+        "subtitle": "Contact us to design an automated solution tailored to your clinic or hospital."
+      },
+      "meta": {
+        "title": "Automatic UDD — Clinics & Hospitals | MediMesk",
+        "description": "Automated Unit Dose Dispensing system for the high volumes of clinics and hospitals."
+      }
+    },
+    "pdaAccessoires": {
+      "breadcrumb": "Control & Accessories",
+      "hero": {
+        "badge": "Unit Dose Dispensing",
+        "title": "UDD: Control Devices & Accessories",
+        "description": "Secure your UDD chain with our range of quality-control devices and accessories: visual control, consumables, sachets, labels and accessories compatible with your dispensing systems.",
+        "image_alt": "Unit Dose Dispensing control devices and accessories",
+        "image": "/images/equipment-medical.jpg"
+      },
+      "benefits": {
+        "title": "Benefits for your pharmacy",
+        "subtitle": "The essential complement to make your UDD process reliable.",
+        "items": [
+          {
+            "title": "Enhanced quality control",
+            "text": "Verify each preparation to guarantee the correct dose and the safety of every patient."
+          },
+          {
+            "title": "Compatible consumables",
+            "text": "Sachets, labels and consumables suited to your dispensing systems."
+          },
+          {
+            "title": "Secured process",
+            "text": "Accessories designed to make your entire UDD chain reliable, from preparation to control."
+          }
+        ]
+      },
+      "cta_banner": {
+        "title": "Complete your UDD equipment",
+        "subtitle": "Contact us to discover our control devices and accessories compatible with your installation."
+      },
+      "meta": {
+        "title": "UDD Control Devices & Accessories | MediMesk",
+        "description": "Quality-control devices and accessories to secure your Unit Dose Dispensing chain."
+      }
+    }
+  },
   "about": {
     "hero": {
       "badge": "About Us",
@@ -528,8 +718,7 @@
       ],
       "message": "Message",
       "message_placeholder": "Describe your request…",
-      "consent": "I agree that my data may be processed in accordance with the",
-      "consent_link": "privacy policy",
+      "consent": "I agree to be contacted by MediMesk following this request.",
       "submit": "Send Message",
       "submitting": "Sending…",
       "success_title": "Message Sent!",
@@ -544,17 +733,18 @@
   },
   "support": {
     "hero": {
-      "title": "Help Center",
-      "subtitle": "Quickly find answers to your questions about our products and services.",
-      "search_placeholder": "Search the knowledge base…"
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to the most common questions about our solutions, their installation, and our support."
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "subtitle": "Answers to the most commonly asked questions from our clients.",
       "items": [
-        {
-          "q": "How does the RDC 45 Unit Dose Dispensing (PDA) system work?",
-          "a": "The RDC 45 automates the preparation of individual pill organizers by cutting the original blisters. The pharmacist programs the prescriptions via the integrated software, and the machine prepares the doses with complete traceability — reducing dispensing errors by over 99%."
+        {          "q": "What is Unit Dose Dispensing (PDA)?",
+          "a": "Unit Dose Dispensing (PDA - Préparation des Doses à Administrer) is a high-value professional pharmaceutical service. It involves repackaging oral solid medications into organized devices by day and intake time for a specified period. The goal of PDA systems is to maximize therapeutic adherence and ensure patient safety by eliminating risks associated with handling multiple packages. This service transforms the pharmacy into a proactive health center, optimizing pharmacotherapeutic monitoring and positioning the professional as a key player in the sustainability of the healthcare system."
+        },
+        {          "q": "How does the RDC 45 Unit Dose Dispensing (PDA) system work?",
+          "a": "The RDC 45 automates the preparation of individual pill organizers by cutting the original blisters. The pharmacist programs the prescriptions via the integrated software, and the machine prepares the doses with complete traceability — reducing dispensing errors by over 99%."
         },
         {
           "q": "What types of pharmacies can benefit from MediMesk solutions?",
@@ -584,8 +774,8 @@
       "cta": "Open a Ticket"
     },
     "meta": {
-      "title": "Technical Support — MediMesk",
-      "description": "Need help? Our support team is available to assist you."
+      "title": "FAQ — MediMesk",
+      "description": "Find answers to the most common questions about our solutions and our support."
     }
   }
 }

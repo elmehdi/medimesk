@@ -24,7 +24,7 @@ export default function Footer({ locale, t }: FooterProps) {
 
   const companyLinks = [
     { label: t.nav.about, href: `/${locale}/a-propos` },
-    { label: t.nav.support, href: `/${locale}/support` },
+    { label: t.footer.faq, href: `/${locale}/support#faq` },
     { label: t.nav.contact, href: `/${locale}/contact` },
   ];
 

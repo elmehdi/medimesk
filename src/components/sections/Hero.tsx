@@ -21,14 +21,16 @@ export default function Hero({ locale, t }: { locale: string; t: Translations })
             </p>
 
             {/* CTAs */}
-            <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 lg:justify-start">
-              <Button href={`/${locale}/contact`}>{t.cta.demo}</Button>
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-md mx-auto lg:mx-0">
+              <Button href={`/${locale}/support`} className="w-full">
+                {t.cta.pharmacy_support}
+              </Button>
               <Button
                 variant="secondary"
-                href={`/${locale}/solutions`}
-                className="border-white text-white hover:bg-white hover:text-primary-teal"
+                href="#produits"
+                className="w-full border-white text-white hover:bg-white hover:text-primary-teal"
               >
-                {t.cta.discover}
+                {t.cta.discover_products}
               </Button>
             </div>
           </div>

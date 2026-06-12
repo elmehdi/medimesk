@@ -2,8 +2,8 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "solutions": "Solutions",
-    "support": "Support",
+    "solutions": "Produits",
+    "support": "FAQ",
     "contact": "Contact"
   },
   "solutions_dropdown": {
@@ -11,9 +11,25 @@
     "studex": "Studex SYSTEM 75",
     "equipment": "Équipement médical"
   },
+  "products_dropdown": [
+    { "label": "PDA Manuelle", "sub": "Page Venalink" },
+    { "label": "PDA Semi-automatique Dual Blist - Blister", "sub": "" },
+    { "label": "PDA Semi-automatique RDC 45 Sachet dose", "sub": "" },
+    { "label": "PDA Automatique – Cliniques et hôpitaux", "sub": "" },
+    { "label": "PDA : Appareils de contrôle et accessoires", "sub": "" },
+    { "label": "Advanced Piercing", "sub": "Présentation Studex / Sans catalogue" }
+  ],
+  "products_page": {
+    "meta": {
+      "title": "Nos Produits — Solutions PDA et perçage | MediMesk",
+      "description": "Découvrez la gamme MediMesk : PDA manuelle, semi-automatique, automatique, appareils de contrôle et Advanced Piercing pour votre pharmacie."
+    }
+  },
   "cta": {
     "demo": "Demander une démo",
     "discover": "Découvrir nos solutions",
+    "pharmacy_support": "Découvrir notre accompagnement pharmacie",
+    "discover_products": "Découvrir nos produits",
     "quote": "Obtenir un devis",
     "demo_free": "Demander une démo gratuite",
     "contact_us": "Nous contacter",
@@ -22,7 +38,7 @@
   },
   "footer": {
     "tagline": "Solutions innovantes pour les pharmacies au Maroc",
-    "solutions_heading": "Solutions",
+    "solutions_heading": "Produits",
     "company_heading": "Entreprise",
     "contact_heading": "Contact",
     "address": "Résidence Meskellil Imm. 3 N°1, Av. Assabir, Hay Riad, Rabat, Maroc",
@@ -31,7 +47,8 @@
     "legal": "Mentions légales",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions générales d'utilisation",
-    "copyright": "MediMesk. Tous droits réservés."
+    "copyright": "MediMesk. Tous droits réservés.",
+    "faq": "FAQ"
   },
   "lang": {
     "fr": "FR",
@@ -40,7 +57,7 @@
   },
   "common": {
     "breadcrumb_home": "Accueil",
-    "breadcrumb_solutions": "Solutions"
+    "breadcrumb_solutions": "Produits"
   },
   "home": {
     "hero": {
@@ -55,12 +72,30 @@
       "40+ pharmacies équipées"
     ],
     "solutions": {
-      "title": "Nos Solutions",
+      "title": "Nos Produits",
       "subtitle": "Des solutions fiables et innovantes pour moderniser votre pharmacie, améliorer l'efficacité opérationnelle et offrir un meilleur service à vos patients.",
       "cards": [
         {
-          "title": "PDA / RDC 45",
-          "image_alt": "Système de dispensation automatisé RDC 45",
+          "title": "PDA Manuelle",
+          "image_alt": "PDA Manuelle — préparation manuelle des doses",
+          "benefits": [
+            "Démarrage simple et économique",
+            "Organisation par jour et par prise",
+            "Idéal pour les petits volumes"
+          ]
+        },
+        {
+          "title": "PDA Semi-automatique Dual Blist - Blister",
+          "image_alt": "PDA Semi-automatique Dual Blist - Blister",
+          "benefits": [
+            "Conditionnement blister sécurisé",
+            "Productivité accrue",
+            "Présentation patient claire"
+          ]
+        },
+        {
+          "title": "PDA Semi-automatique RDC 45 - Sachet dose",
+          "image_alt": "Système de dispensation automatisé RDC 45 — sachet dose",
           "benefits": [
             "Réduction des erreurs de dispensation",
             "Capacité jusqu'à 120 patients",
@@ -68,52 +103,61 @@
           ]
         },
         {
-          "title": "Studex SYSTEM 75",
-          "image_alt": "Système de perçage professionnel Studex SYSTEM 75",
+          "title": "PDA Automatique – Cliniques et hôpitaux",
+          "image_alt": "PDA Automatique pour cliniques et hôpitaux",
+          "benefits": [
+            "Haut débit pour grands volumes",
+            "Traçabilité complète des doses",
+            "Automatisation de bout en bout"
+          ]
+        },
+        {
+          "title": "PDA : Appareils de contrôle et accessoires",
+          "image_alt": "Appareils de contrôle et accessoires PDA",
+          "benefits": [
+            "Contrôle qualité renforcé",
+            "Consommables compatibles",
+            "Sécurisation du processus PDA"
+          ]
+        },
+        {
+          "title": "Advanced Piercing",
+          "image_alt": "Système de perçage professionnel Advanced Piercing",
           "benefits": [
             "Hygiène de grade professionnel",
             "Source de revenus additionnels",
             "Formation et support inclus"
           ]
-        },
-        {
-          "title": "Équipement médical",
-          "image_alt": "Équipement médical pour pharmacies",
-          "benefits": [
-            "Technologies de fabricants reconnus",
-            "Maintenance et service après-vente",
-            "Catalogue en expansion continue"
-          ]
         }
       ]
     },
     "why": {
-      "title": "Pourquoi MediMesk ?",
-      "subtitle": "Six raisons de faire confiance à MediMesk pour moderniser votre pharmacie et améliorer la qualité de vos services.",
+      "title": "MediMesk vous accompagne",
+      "subtitle": "De l'installation à la commercialisation, nous vous accompagnons à chaque étape pour une mise en route sereine et une utilisation durable de votre solution.",
       "items": [
         {
-          "title": "Réduction des erreurs",
-          "description": "Nos systèmes automatisés minimisent les erreurs de dispensation et améliorent la sécurité des patients."
+          "title": "Installation",
+          "description": "Les machines et leur logiciel, le cas échéant, sont installés par un technicien spécialisé, afin de faciliter la mise en route et d'adapter le démarrage à l'organisation de votre officine."
         },
         {
-          "title": "Partenaire local",
-          "description": "Basés au Maroc, nous comprenons les besoins spécifiques des pharmacies marocaines et offrons un accompagnement de proximité."
+          "title": "Formation",
+          "description": "Vous êtes formés à l'utilisation de la machine, au fonctionnement du logiciel et aux étapes clés de préparation : programmation, remplissage guidé, impression, scellage et mise en boîte."
         },
         {
-          "title": "Formation & support",
-          "description": "Formation complète de votre équipe, installation sur site et assistance technique continue."
+          "title": "Hotline d'accompagnement",
+          "description": "Une assistance est disponible pour accompagner l'officine en cas de question technique, de difficulté d'utilisation, de bug éventuel ou d'erreur lors de la préparation."
         },
         {
-          "title": "Technologie éprouvée",
-          "description": "Des équipements certifiés et utilisés dans des milliers de pharmacies à travers le monde."
+          "title": "Maintenance",
+          "description": "MediMesk vous accompagne dans la maintenance usuelle de la machine, afin de favoriser une utilisation régulière, fluide et durable."
         },
         {
-          "title": "Intégration logicielle",
-          "description": "Compatibilité avec les logiciels de gestion officinale pour une transition fluide et sans interruption."
+          "title": "Kit d'information patient",
+          "description": "Un kit d'accompagnement vous aide à répondre aux principales questions des patients et à expliquer simplement le fonctionnement du service."
         },
         {
-          "title": "SAV réactif",
-          "description": "Service après-vente rapide avec des délais d'intervention courts pour garantir la continuité de votre activité."
+          "title": "Guide d'aide à la commercialisation",
+          "description": "MediMesk vous fournit également un guide pour identifier les patients concernés, présenter le service, répondre aux objections et faire de la PDA une véritable offre différenciante pour votre officine."
         }
       ]
     },
@@ -428,6 +472,152 @@
       "description": "Gamme complète d'équipement médical pour pharmacies : diagnostic, mobilier et consommables de qualité."
     }
   },
+  "products": {
+    "pdaManuelle": {
+      "breadcrumb": "PDA Manuelle",
+      "hero": {
+        "badge": "Préparation des Doses à Administrer",
+        "title": "PDA Manuelle",
+        "description": "La solution d'entrée pour démarrer la Préparation des Doses à Administrer sans investissement matériel lourd. Organisez les traitements par jour et par prise dans des piluliers clairs et sécurisés — idéal pour les petits volumes et les premiers pas en PDA.",
+        "image_alt": "PDA Manuelle — préparation manuelle des doses",
+        "image": "/images/pda-sachet.webp"
+      },
+      "benefits": {
+        "title": "Les avantages pour votre pharmacie",
+        "subtitle": "Une entrée simple et économique dans la Préparation des Doses à Administrer.",
+        "items": [
+          {
+            "title": "Démarrage simple et économique",
+            "text": "Lancez un service PDA sans investissement matériel lourd, avec une prise en main immédiate par votre équipe."
+          },
+          {
+            "title": "Organisation claire",
+            "text": "Les traitements sont organisés par jour et par prise pour améliorer l'observance et rassurer le patient."
+          },
+          {
+            "title": "Idéal pour les petits volumes",
+            "text": "Parfaitement adapté aux officines qui débutent en PDA ou gèrent un nombre limité de patients."
+          }
+        ]
+      },
+      "cta_banner": {
+        "title": "Prêt à démarrer la PDA ?",
+        "subtitle": "Contactez-nous pour découvrir comment lancer simplement la Préparation des Doses à Administrer dans votre officine."
+      },
+      "meta": {
+        "title": "PDA Manuelle — Préparation des doses | MediMesk",
+        "description": "Démarrez la Préparation des Doses à Administrer manuellement : organisation par jour et par prise, sans investissement lourd."
+      }
+    },
+    "pdaDualBlist": {
+      "breadcrumb": "Dual Blist - Blister",
+      "hero": {
+        "badge": "Préparation des Doses à Administrer",
+        "title": "PDA Semi-automatique Dual Blist - Blister",
+        "description": "Le système semi-automatique Dual Blist conditionne les traitements en plaquettes blister multi-doses. Il allie la robustesse et la lisibilité du blister à la productivité du semi-automatique, avec un contrôle visuel à chaque étape.",
+        "image_alt": "PDA Semi-automatique Dual Blist - Blister",
+        "image": "/images/pda-robot.webp"
+      },
+      "benefits": {
+        "title": "Les avantages pour votre pharmacie",
+        "subtitle": "La fiabilité du blister, la productivité du semi-automatique.",
+        "items": [
+          {
+            "title": "Conditionnement blister sécurisé",
+            "text": "Des plaquettes refermables et résistantes qui protègent les médicaments et facilitent le suivi des prises."
+          },
+          {
+            "title": "Productivité accrue",
+            "text": "Préparez davantage de doses en moins de temps qu'une préparation entièrement manuelle."
+          },
+          {
+            "title": "Présentation patient claire",
+            "text": "Une lecture simple par jour et par prise, qui renforce l'observance et la confiance du patient."
+          }
+        ]
+      },
+      "cta_banner": {
+        "title": "Passez au conditionnement blister semi-automatique",
+        "subtitle": "Contactez-nous pour une démonstration du système Dual Blist dans votre pharmacie."
+      },
+      "meta": {
+        "title": "PDA Dual Blist - Blister semi-automatique | MediMesk",
+        "description": "Système semi-automatique de conditionnement en blister pour la Préparation des Doses à Administrer."
+      }
+    },
+    "pdaAutomatique": {
+      "breadcrumb": "PDA Automatique",
+      "hero": {
+        "badge": "Cliniques & hôpitaux",
+        "title": "PDA Automatique – Cliniques et hôpitaux",
+        "description": "Un système entièrement automatisé de Préparation des Doses à Administrer, conçu pour les volumes élevés des cliniques et des hôpitaux. Du déconditionnement au scellage, chaque étape est automatisée avec une traçabilité totale.",
+        "image_alt": "PDA Automatique pour cliniques et hôpitaux",
+        "image": "/images/pda-robot.webp"
+      },
+      "benefits": {
+        "title": "Les avantages pour votre établissement",
+        "subtitle": "L'automatisation complète au service des grands volumes hospitaliers.",
+        "items": [
+          {
+            "title": "Haut débit",
+            "text": "Traitez de grands volumes de doses en continu pour répondre aux besoins des cliniques et hôpitaux."
+          },
+          {
+            "title": "Traçabilité complète",
+            "text": "Chaque dose est tracée de bout en bout pour une sécurité patient et une conformité maximales."
+          },
+          {
+            "title": "Réduction des erreurs",
+            "text": "L'automatisation intégrale minimise les interventions manuelles et les risques d'erreur."
+          }
+        ]
+      },
+      "cta_banner": {
+        "title": "Automatisez la PDA de votre établissement",
+        "subtitle": "Contactez-nous pour étudier une solution automatisée adaptée à votre clinique ou votre hôpital."
+      },
+      "meta": {
+        "title": "PDA Automatique — Cliniques et hôpitaux | MediMesk",
+        "description": "Système automatisé de Préparation des Doses à Administrer pour les volumes élevés des cliniques et hôpitaux."
+      }
+    },
+    "pdaAccessoires": {
+      "breadcrumb": "Contrôle & accessoires",
+      "hero": {
+        "badge": "Préparation des Doses à Administrer",
+        "title": "PDA : Appareils de contrôle et accessoires",
+        "description": "Sécurisez votre chaîne PDA avec notre gamme d'appareils de contrôle qualité et d'accessoires : contrôle visuel, consommables, sachets, étiquettes et accessoires compatibles avec vos systèmes de dispensation.",
+        "image_alt": "Appareils de contrôle et accessoires PDA",
+        "image": "/images/equipment-medical.jpg"
+      },
+      "benefits": {
+        "title": "Les avantages pour votre pharmacie",
+        "subtitle": "Le complément indispensable pour fiabiliser votre processus PDA.",
+        "items": [
+          {
+            "title": "Contrôle qualité renforcé",
+            "text": "Vérifiez chaque préparation pour garantir la bonne dose et la sécurité de chaque patient."
+          },
+          {
+            "title": "Consommables compatibles",
+            "text": "Sachets, étiquettes et consommables adaptés à vos systèmes de dispensation."
+          },
+          {
+            "title": "Sécurisation du processus",
+            "text": "Des accessoires pensés pour fiabiliser l'ensemble de votre chaîne PDA, de la préparation au contrôle."
+          }
+        ]
+      },
+      "cta_banner": {
+        "title": "Complétez votre équipement PDA",
+        "subtitle": "Contactez-nous pour découvrir nos appareils de contrôle et accessoires compatibles avec votre installation."
+      },
+      "meta": {
+        "title": "Appareils de contrôle et accessoires PDA | MediMesk",
+        "description": "Appareils de contrôle qualité et accessoires pour sécuriser votre chaîne de Préparation des Doses à Administrer."
+      }
+    }
+  },
   "about": {
     "hero": {
       "badge": "Qui sommes-nous",
@@ -528,8 +718,7 @@
       ],
       "message": "Message",
       "message_placeholder": "Décrivez votre demande…",
-      "consent": "J'accepte que mes données soient traitées conformément à la",
-      "consent_link": "politique de confidentialité",
+      "consent": "J'accepte d'être contacté par MediMesk suite à cette demande.",
       "submit": "Envoyer le message",
       "submitting": "Envoi en cours…",
       "success_title": "Message envoyé !",
@@ -544,17 +733,18 @@
   },
   "support": {
     "hero": {
-      "title": "Centre d'aide",
-      "subtitle": "Trouvez rapidement des réponses à vos questions sur nos produits et services.",
-      "search_placeholder": "Rechercher dans la base de connaissances…"
+      "title": "Foire aux questions",
+      "subtitle": "Retrouvez les réponses aux questions les plus fréquentes sur nos solutions, leur installation et notre accompagnement."
     },
     "faq": {
       "title": "Questions fréquentes",
       "subtitle": "Les réponses aux questions les plus posées par nos clients.",
       "items": [
-        {
-          "q": "Comment fonctionne le système de Préparation de Doses Administrées (PDA) RDC 45 ?",
-          "a": "Le RDC 45 automatise la préparation de piluliers individuels en découpant les blisters d'origine. Le pharmacien programme les prescriptions via le logiciel intégré, et la machine prépare les doses avec une traçabilité complète — réduisant les erreurs de dispensation de plus de 99 %."
+        {          "q": "Qu'est-ce que la PDA ?",
+          "a": "La Préparation des Doses à Administrer (PDA) est un service pharmaceutique professionnel à forte valeur ajoutée. Elle consiste en un reconditionnement des médicaments solides oraux dans des dispositifs organisés par jours et prises pour une période déterminée. L'objectif de ces systèmes PDA est de maximiser l'observance thérapeutique et de garantir la sécurité du patient, en éliminant les risques liés à la manipulation de multiples conditionnements. Ce service transforme la pharmacie en un centre de santé proactif, en optimisant le suivi pharmacothérapeutique et en positionnant le professionnel comme un acteur clé de la pérennité du système de santé."
+        },
+        {          "q": "Comment fonctionne le système de Préparation de Doses Administrées (PDA) RDC 45 ?",
+          "a": "Le RDC 45 automatise la préparation de piluliers individuels en découpant les blisters d'origine. Le pharmacien programme les prescriptions via le logiciel intégré, et la machine prépare les doses avec une traçabilité complète — réduisant les erreurs de dispensation de plus de 99 %."
         },
         {
           "q": "Quels types de pharmacies peuvent bénéficier des solutions MediMesk ?",
@@ -584,8 +774,8 @@
       "cta": "Ouvrir un ticket"
     },
     "meta": {
-      "title": "Support technique — MediMesk",
-      "description": "Besoin d'aide ? Notre équipe support est disponible pour vous accompagner."
+      "title": "FAQ — MediMesk",
+      "description": "Retrouvez les réponses aux questions les plus fréquentes sur nos solutions et notre accompagnement."
     }
   }
 }

@@ -15,10 +15,13 @@ interface NavbarProps {
   t: Translations;
 }
 
-const solutionsDropdownItems = [
-  { key: "pda" as const, href: "/solutions/pda-rdc45" },
-  { key: "studex" as const, href: "/solutions/studex-system75" },
-  { key: "equipment" as const, href: "/solutions/equipement-medical" },
+const productsDropdownMeta: { href: string; subHref?: string }[] = [
+  { href: "/solutions/pda-manuelle", subHref: "/solutions/pda-manuelle" },
+  { href: "/solutions/pda-dual-blist" },
+  { href: "/solutions/pda-rdc45" },
+  { href: "/solutions/pda-automatique" },
+  { href: "/solutions/pda-accessoires" },
+  { href: "/solutions/studex-system75", subHref: "/solutions/studex-system75" },
 ];
 
 export default function Navbar({ locale, t }: NavbarProps) {
@@ -141,26 +144,39 @@ export default function Navbar({ locale, t }: NavbarProps) {
                         : "opacity-0 -translate-y-1 pointer-events-none"
                     }`}
                   >
-                    <ul className="w-60 bg-white rounded-xl shadow-lg border border-light-teal py-2">
-                      {solutionsDropdownItems.map((item) => (
-                        <li key={item.key}>
-                          <Link
-                            href={`/${locale}${item.href}`}
-                            className={`flex items-center gap-3 px-4 py-2.5 text-sm transition-colors ${
-                              isActive(`/${locale}${item.href}`)
-                                ? "text-primary-teal bg-light-teal/50"
-                                : "text-dark-text hover:bg-light-teal hover:text-primary-teal"
-                            }`}
-                          >
-                            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-light-teal text-primary-teal">
-                              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                              </svg>
-                            </span>
-                            {t.solutions_dropdown[item.key]}
-                          </Link>
-                        </li>
-                      ))}
+                    <ul className="w-[23rem] bg-white rounded-xl shadow-lg border border-light-teal py-2">
+                      {t.products_dropdown.map((item, i) => {
+                        const meta = productsDropdownMeta[i];
+                        const href = `/${locale}${meta.href}`;
+                        return (
+                          <li key={meta.href}>
+                            <Link
+                              href={href}
+                              className={`flex items-center gap-3 px-4 py-2.5 text-sm transition-colors ${
+                                isActive(href)
+                                  ? "text-primary-teal bg-light-teal/50"
+                                  : "text-dark-text hover:bg-light-teal hover:text-primary-teal"
+                              }`}
+                            >
+                              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-light-teal text-primary-teal">
+                                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                </svg>
+                              </span>
+                              {item.label}
+                            </Link>
+                            {item.sub && meta.subHref && (
+                              <Link
+                                href={`/${locale}${meta.subHref}`}
+                                className="flex items-center gap-2 pl-14 pr-4 py-1.5 text-xs text-dark-text/70 hover:text-primary-teal hover:bg-light-teal/60 transition-colors"
+                              >
+                                <span aria-hidden>&#8627;</span>
+                                {item.sub}
+                              </Link>
+                            )}
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 )}
@@ -273,28 +289,43 @@ export default function Navbar({ locale, t }: NavbarProps) {
                   )}
                 </Link>
 
-                {/* Mobile Solutions sub-links */}
+                {/* Mobile Products sub-links */}
                 {link.hasDropdown && (
                   <div className="border-b border-section-bg">
-                    {solutionsDropdownItems.map((item) => (
-                      <Link
-                        key={item.key}
-                        href={`/${locale}${item.href}`}
-                        className={`flex items-center gap-3 py-3 pl-4 text-base transition-colors ${
-                          isActive(`/${locale}${item.href}`)
-                            ? "text-primary-teal"
-                            : "text-dark-text/60 hover:text-primary-teal"
-                        }`}
-                        onClick={closeMobile}
-                      >
-                        <span className="flex h-7 w-7 items-center justify-center rounded-md bg-light-teal text-primary-teal">
-                          <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                          </svg>
-                        </span>
-                        {t.solutions_dropdown[item.key]}
-                      </Link>
-                    ))}
+                    {t.products_dropdown.map((item, i) => {
+                      const meta = productsDropdownMeta[i];
+                      const href = `/${locale}${meta.href}`;
+                      return (
+                        <div key={meta.href}>
+                          <Link
+                            href={href}
+                            className={`flex items-center gap-3 py-3 pl-4 text-base transition-colors ${
+                              isActive(href)
+                                ? "text-primary-teal"
+                                : "text-dark-text/70 hover:text-primary-teal"
+                            }`}
+                            onClick={closeMobile}
+                          >
+                            <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-md bg-light-teal text-primary-teal">
+                              <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                              </svg>
+                            </span>
+                            <span className="leading-snug">{item.label}</span>
+                          </Link>
+                          {item.sub && meta.subHref && (
+                            <Link
+                              href={`/${locale}${meta.subHref}`}
+                              className="flex items-center gap-2 py-2 pl-[3.25rem] text-sm text-dark-text/50 hover:text-primary-teal transition-colors"
+                              onClick={closeMobile}
+                            >
+                              <span className="text-primary-teal/60">&#8627;</span>
+                              <span className="leading-snug">{item.sub}</span>
+                            </Link>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
               </div>
