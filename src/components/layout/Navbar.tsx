@@ -16,12 +16,11 @@ interface NavbarProps {
 }
 
 const productsDropdownMeta: { href: string; subHref?: string }[] = [
-  { href: "/solutions/pda-manuelle", subHref: "/solutions/pda-manuelle" },
   { href: "/solutions/pda-dual-blist" },
   { href: "/solutions/pda-rdc45" },
   { href: "/solutions/pda-automatique" },
   { href: "/solutions/pda-accessoires" },
-  { href: "/solutions/studex-system75", subHref: "/solutions/studex-system75" },
+  { href: "/solutions/studex-system75" },
 ];
 
 export default function Navbar({ locale, t }: NavbarProps) {
@@ -53,8 +52,8 @@ export default function Navbar({ locale, t }: NavbarProps) {
 
   const navLinks = [
     { label: t.nav.home, href: `/${locale}` },
-    { label: t.nav.about, href: `/${locale}/a-propos` },
     { label: t.nav.solutions, href: `/${locale}/solutions`, hasDropdown: true },
+    { label: t.nav.about, href: `/${locale}/a-propos` },
     { label: t.nav.support, href: `/${locale}/support` },
     { label: t.nav.contact, href: `/${locale}/contact` },
   ];
@@ -215,7 +214,7 @@ export default function Navbar({ locale, t }: NavbarProps) {
               href={`/${locale}/contact`}
               className="bg-cta-yellow text-dark-text font-semibold text-sm px-5 py-2.5 rounded-lg hover:shadow-md hover:brightness-95 active:scale-[0.98] transition-all"
             >
-              {t.cta.demo}
+              {t.cta.pharmacy_support}
             </Link>
           </div>
 

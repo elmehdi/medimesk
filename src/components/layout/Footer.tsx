@@ -10,17 +10,17 @@ interface FooterProps {
 export default function Footer({ locale, t }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
-  const solutionsLinks = [
-    { label: t.solutions_dropdown.pda, href: `/${locale}/solutions/pda-rdc45` },
-    {
-      label: t.solutions_dropdown.studex,
-      href: `/${locale}/solutions/studex-system75`,
-    },
-    {
-      label: t.solutions_dropdown.equipment,
-      href: `/${locale}/solutions/equipement-medical`,
-    },
+  const productRoutes = [
+    "/solutions/pda-dual-blist",
+    "/solutions/pda-rdc45",
+    "/solutions/pda-automatique",
+    "/solutions/pda-accessoires",
+    "/solutions/studex-system75",
   ];
+  const solutionsLinks = t.home.solutions.cards.map((product, index) => ({
+    label: product.title,
+    href: `/${locale}${productRoutes[index]}`,
+  }));
 
   const companyLinks = [
     { label: t.nav.about, href: `/${locale}/a-propos` },

@@ -22,15 +22,15 @@ export default function Hero({ locale, t }: { locale: string; t: Translations })
 
             {/* CTAs */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-md mx-auto lg:mx-0">
-              <Button href={`/${locale}/support`} className="w-full">
-                {t.cta.pharmacy_support}
+              <Button href="#produits" className="w-full">
+                {t.home.hero.cta_solutions}
               </Button>
               <Button
                 variant="secondary"
-                href="#produits"
+                href={`/${locale}/contact`}
                 className="w-full border-white text-white hover:bg-white hover:text-primary-teal"
               >
-                {t.cta.discover_products}
+                {t.home.hero.cta_project}
               </Button>
             </div>
           </div>
@@ -46,6 +46,18 @@ export default function Hero({ locale, t }: { locale: string; t: Translations })
               className="relative w-[320px] sm:w-[480px] lg:w-[600px] h-auto rounded-2xl"
               priority
             />
+
+            <details className="group relative mt-4 w-[320px] sm:w-[480px] lg:w-[600px] rounded-xl border border-white/25 bg-white/10 text-left shadow-lg backdrop-blur-sm open:bg-white">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 rounded-xl px-5 py-3.5 font-semibold text-white transition-colors hover:bg-white/10 group-open:text-primary-teal [&::-webkit-details-marker]:hidden">
+                {t.home.hero.pda_question}
+                <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-white/15 text-xl leading-none transition-transform group-open:rotate-45 group-open:bg-light-teal">
+                  +
+                </span>
+              </summary>
+              <p className="px-5 pb-5 text-sm leading-relaxed text-dark-text/75">
+                {t.home.hero.pda_definition}
+              </p>
+            </details>
           </div>
         </div>
       </div>

@@ -26,18 +26,30 @@ export default function RDC45Spotlight({ locale, t }: { locale: string; t: Trans
           <h2 className="mt-4 text-dark-text">{s.title}</h2>
           <p className="mt-4 text-dark-text/70 leading-relaxed">{s.description}</p>
 
-          <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4">
-            {s.specs.map((spec) => (
-              <div key={spec.label}>
-                <dt className="text-xs font-semibold uppercase tracking-wider text-dark-text/40">{spec.label}</dt>
-                <dd className="mt-1 text-sm font-medium text-dark-text">{spec.value}</dd>
-              </div>
+          <h3 className="mt-7 text-lg font-semibold text-dark-text font-sans">
+            {s.steps_intro}
+          </h3>
+          <ol className="mt-5 grid gap-4 sm:grid-cols-2">
+            {s.steps.map((step, i) => (
+              <li key={step.title} className="flex gap-3">
+                <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary-teal text-sm font-bold text-white">
+                  {i + 1}
+                </span>
+                <div>
+                  <h4 className="text-sm font-semibold text-dark-text">{step.title}</h4>
+                  <p className="mt-1 text-sm leading-relaxed text-dark-text/60">{step.description}</p>
+                </div>
+              </li>
             ))}
-          </dl>
+          </ol>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <Button href={`/${locale}/solutions/pda-rdc45`}>{s.cta_demo}</Button>
-            <Button variant="link" href={`/${locale}/contact`}>{t.cta.quote}</Button>
+            <Button href={`/${locale}/solutions/pda-rdc45#specifications`}>
+              {s.cta_spec}
+            </Button>
+            <Button variant="secondary" href={`/${locale}/solutions/pda-rdc45#demonstration`}>
+              {s.cta_demo}
+            </Button>
           </div>
         </div>
       </div>

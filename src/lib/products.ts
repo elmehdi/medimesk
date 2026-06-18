@@ -3,9 +3,8 @@ export interface ProductCardMeta {
   href: string;
 }
 
-/** Shared card image + route metadata for the 6 products (homepage + products page). */
+/** Shared card image + route metadata for the 5 products (homepage + products page). */
 export const productCardMeta: ProductCardMeta[] = [
-  { imageSrc: "/images/pda-sachet.webp", href: "/solutions/pda-manuelle" },
   { imageSrc: "/images/pda-robot.webp", href: "/solutions/pda-dual-blist" },
   { imageSrc: "/images/pda-sachet.webp", href: "/solutions/pda-rdc45" },
   { imageSrc: "/images/pda-robot.webp", href: "/solutions/pda-automatique" },

@@ -48,3 +48,21 @@
     transition: none;
   }
 }
+
+@media (min-width: 1280px) {
+  .product-section-nav {
+    left: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .product-section-nav ~ .reveal-section > div {
+    padding-left: 15rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .product-section-nav {
+    left: max(1.5rem, calc((100vw - 1280px) / 2 - 13.5rem));
+  }
+}

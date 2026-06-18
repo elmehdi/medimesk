@@ -12,17 +12,16 @@
     "equipment": "Medical Equipment"
   },
   "products_dropdown": [
-    { "label": "Manual UDD", "sub": "Venalink Page" },
-    { "label": "Semi-Automatic Dual Blist - Blister", "sub": "" },
-    { "label": "Semi-Automatic RDC 45 Dose Sachet", "sub": "" },
-    { "label": "Automatic UDD – Clinics & Hospitals", "sub": "" },
-    { "label": "UDD: Control Devices & Accessories", "sub": "" },
-    { "label": "Advanced Piercing", "sub": "Studex Presentation / No catalog" }
+    { "label": "Dual Blist", "sub": "" },
+    { "label": "RDC 45", "sub": "" },
+    { "label": "Hospital and clinic automation", "sub": "" },
+    { "label": "PDA control devices and accessories", "sub": "" },
+    { "label": "Advanced Piercing with STUDEX", "sub": "" }
   ],
   "products_page": {
     "meta": {
       "title": "Our Products — UDD & Piercing Solutions | MediMesk",
-      "description": "Discover the MediMesk range: manual, semi-automatic and automatic UDD, control devices and Advanced Piercing for your pharmacy."
+      "description": "Discover the MediMesk range: Dual Blist, RDC 45, hospital automation, PDA control devices, and Advanced Piercing with STUDEX."
     }
   },
   "cta": {
@@ -62,9 +61,13 @@
   "home": {
     "hero": {
       "title_line1": "Innovative solutions",
-      "title_line2": "for Moroccan pharmacies",
-      "subtitle": "MediMesk supports pharmacists with automation systems and reliable medical equipment to improve precision, efficiency, and quality of service.",
-      "image_alt": "Photo RDC 45"
+      "title_line2": "for healthcare professionals",
+      "subtitle": "MediMesk supports healthcare professionals with reliable technological solutions that make their practices safer, optimize their organizations, and help them develop high-value services for the benefit of patients and users.",
+      "image_alt": "Personalized medication pouches for PDA",
+      "cta_solutions": "Discover our solutions",
+      "cta_project": "Discuss your project",
+      "pda_question": "What is PDA?",
+      "pda_definition": "Preparation of Doses for Administration (PDA) is a pharmaceutical service that organizes orally administered solid medicines into personalized dispensing devices to improve treatment adherence and enhance the safety and effectiveness of a patient’s pharmacotherapy."
     },
     "trust_partners_label": "Partners",
     "trust": [
@@ -76,63 +79,54 @@
       "subtitle": "Reliable and innovative solutions to modernize your pharmacy, improve operational efficiency, and deliver better service to your patients.",
       "cards": [
         {
-          "title": "Manual Unit Dose Dispensing",
-          "image_alt": "Manual Unit Dose Dispensing",
+          "title": "Dual Blist — Semi-Automated PDA",
+          "image_alt": "Dual Blist semi-automated PDA solution",
           "benefits": [
-            "Simple, cost-effective start",
-            "Organized by day and intake",
-            "Ideal for small volumes"
+            "LED-guided preparation",
+            "Two PDA packs prepared simultaneously",
+            "Advanced traceability and control"
           ]
         },
         {
-          "title": "Semi-Automatic Dual Blist - Blister",
-          "image_alt": "Semi-Automatic Dual Blist - Blister",
+          "title": "RDC 45 — Sachet-Based PDA",
+          "image_alt": "Compact RDC 45 sachet-based PDA solution",
           "benefits": [
-            "Secure blister packaging",
-            "Increased productivity",
-            "Clear patient presentation"
+            "Compact, scalable solution",
+            "Packaging in identified sachets",
+            "Guided, organized preparation"
           ]
         },
         {
-          "title": "Semi-Automatic RDC 45 - Dose Sachet",
-          "image_alt": "RDC 45 automated dispensing system — dose sachet",
+          "title": "Automated PDA — Hospitals & Clinics",
+          "image_alt": "JVM automated PDA machines for hospitals and clinics",
           "benefits": [
-            "Dispensing error reduction",
-            "Capacity up to 120 patients",
-            "Full MDS software integration"
+            "Large-scale automated production",
+            "Complementary range of JVM machines",
+            "Stronger control and traceability"
           ]
         },
         {
-          "title": "Automatic UDD – Clinics & Hospitals",
-          "image_alt": "Automatic Unit Dose Dispensing for clinics and hospitals",
+          "title": "PDA Control Devices & Accessories",
+          "image_alt": "PDA control devices and accessories",
           "benefits": [
-            "High throughput for large volumes",
-            "Complete dose traceability",
-            "End-to-end automation"
+            "Optical sachet inspection",
+            "Inspection archiving and traceability",
+            "Automated organization and cutting"
           ]
         },
         {
-          "title": "UDD: Control Devices & Accessories",
-          "image_alt": "Unit Dose Dispensing control devices and accessories",
+          "title": "Advanced Piercing with STUDEX",
+          "image_alt": "STUDEX System75 professional piercing system",
           "benefits": [
-            "Enhanced quality control",
-            "Compatible consumables",
-            "Secured UDD process"
-          ]
-        },
-        {
-          "title": "Advanced Piercing",
-          "image_alt": "Advanced Piercing professional piercing system",
-          "benefits": [
-            "Professional-grade hygiene",
-            "Additional revenue stream",
-            "Training and support included"
+            "Sterile single-use cartridges",
+            "Premium, profitable service",
+            "MediMesk training and support"
           ]
         }
       ]
     },
     "why": {
-      "title": "MediMesk Supports You",
+      "title": "MediMesk supports you in implementing PDA",
       "subtitle": "From installation to commercialization, we support you at every step for a smooth start-up and lasting use of your solution.",
       "items": [
         {
@@ -163,9 +157,29 @@
     },
     "rdc45_spotlight": {
       "badge": "Flagship Product",
-      "title": "RDC 45 — Automated Dispensing",
-      "description": "The RDC 45 is the ideal entry-level solution for pharmacies looking to automate dose preparation. A profitable investment with a clear upgrade path.",
-      "cta_demo": "Watch the Demo",
+      "title": "Structure your PDA service with a reliable, compact, and scalable solution",
+      "description": "Do your patients take several medications every day? The RDC 45 helps pharmacies make dose preparation safer, organize production more effectively, and provide a clear, personalized, and professional PDA service.",
+      "steps_intro": "Guided preparation in 4 steps:",
+      "steps": [
+        {
+          "title": "Program the preparation",
+          "description": "The pharmacist enters the treatments, patients, and administration times into the software to set up production."
+        },
+        {
+          "title": "Fill the cells",
+          "description": "Guided by the machine’s LEDs, the pharmacist loads the medicines into the indicated cells."
+        },
+        {
+          "title": "Produce the dose sachets",
+          "description": "Once loading is complete, the RDC 45 automatically packages the medicines in printed, sealed sachets."
+        },
+        {
+          "title": "Prepare delivery to the patient",
+          "description": "You check the finished sachets and place them in the MediMesk dispensing box before handing them to the patient."
+        }
+      ],
+      "cta_spec": "Download the technical data sheet",
+      "cta_demo": "Watch the demonstration (video)",
       "video_label": "RDC 45 Demo Video",
       "specs": [
         {
@@ -234,81 +248,128 @@
   "pda": {
     "breadcrumb": "RDC 45",
     "hero": {
-      "badge": "Unit Dose Dispensing",
-      "title": "RDC 45",
-      "description": "The RDC 45 is the ideal semi-automatic solution for pharmacies looking to begin automating dispensing. Designed to handle up to 120 patients, it combines LED guidance, automatic sealing, and MDS software integration for maximum precision at a controlled cost.",
-      "image_alt": "Photo RDC 45 — Main View"
+      "badge": "Preparation of Doses for Administration",
+      "title": "The compact sachet-based PDA solution for structuring your dose preparation service",
+      "paragraphs": [
+        "The RDC 45 enables pharmacies to professionalize dose preparation with a compact, scalable, semi-automated solution.",
+        "Designed for sachet-based PDA, it supports pharmacies wishing to provide a clearer, better-organized, and safer service for patients taking multiple medicines, living with chronic conditions, or receiving long-term treatment.",
+        "With the RDC 45, a pharmacy can move from a difficult manual preparation process to one that is guided, structured, and easier to promote to patients, families, and healthcare partners."
+      ],
+      "image_alt": "RDC 45 — Main View",
+      "cta_demo": "Request a demonstration",
+      "cta_product_sheet": "Download the product sheet"
     },
-    "specs": {
-      "title": "Technical Specifications",
-      "subtitle": "All specifications for the RDC 45 dispensing system.",
-      "items": [
-        {
-          "label": "Patient Capacity",
-          "value": "0 to 120 patients"
-        },
-        {
-          "label": "Loading System",
-          "value": "LED-guided cell by cell (minimizes errors)"
-        },
-        {
-          "label": "Sealing",
-          "value": "Automatic sachet sealing"
-        },
-        {
-          "label": "Software",
-          "value": "Compatible with MDS pharmacy management software"
-        },
-        {
-          "label": "Dispensing Mode",
-          "value": "Semi-automatic"
-        },
-        {
-          "label": "Sachets",
-          "value": "Customizable with patient labeling"
-        }
+    "why_rdc45": {
+      "title": "Why choose the RDC 45?",
+      "subtitle": "Launch a professional PDA service without oversizing your equipment",
+      "paragraphs": [
+        "The RDC 45 is designed for pharmacies that want to establish themselves in PDA with a robust solution suited to gradual growth.",
+        "It makes it possible to create a differentiated treatment follow-up service without remaining fully manual or immediately investing in a very high-capacity industrial system."
+      ],
+      "manual_title": "Manual preparation",
+      "manual_items": [
+        "A process that is difficult to standardize",
+        "Unpredictable preparation times",
+        "Risk of confusion between doses",
+        "Limited traceability",
+        "A service that is difficult to promote",
+        "Difficult to scale up"
+      ],
+      "rdc_title": "With the RDC 45",
+      "rdc_items": [
+        "Guided, better-organized preparation",
+        "Smoother production",
+        "Sachets identified by patient and administration time",
+        "A better-documented process",
+        "A more professional PDA offering",
+        "A solution suited to gradual growth in patient numbers"
       ]
     },
-    "benefits": {
-      "title": "Benefits for Your Pharmacy",
-      "subtitle": "The RDC 45 transforms your daily operations with measurable benefits from the very first weeks.",
-      "items": [
-        {
-          "title": "Error Reduction",
-          "text": "LED cell-by-cell guidance virtually eliminates loading errors and ensures the right dose for every patient."
-        },
-        {
-          "title": "Operational Efficiency",
-          "text": "Automate dose preparation and free up time for pharmaceutical consulting and patient relationships."
-        },
-        {
-          "title": "Guaranteed Scalability",
-          "text": "Shared software architecture with fully automated systems — a simple upgrade path as your pharmacy grows."
-        }
-      ]
-    },
-    "how_it_works": {
-      "title": "How It Works",
-      "subtitle": "A simple three-step process for reliable and traceable dispensing.",
+    "workflow": {
+      "title": "How the solution works",
+      "subtitle": "A simple workflow for producing dose sachets",
+      "video_title": "RDC 45 demonstration video",
       "steps": [
         {
-          "title": "Semi-Automatic Loading",
-          "text": "Cells light up one by one via LED guidance. The operator loads each medication into the indicated cell — impossible to make a mistake."
+          "title": "Create the patient and treatment",
+          "description": "The pharmacy enters the relevant information: patient, prescription, administration times, and treatment organization."
         },
         {
-          "title": "Automatic Sealing",
-          "text": "Once the dose is complete, the system automatically seals the sachet with personalized patient labeling: name, dosage, and time of intake."
+          "title": "Plan the preparation",
+          "description": "The software organizes the doses to be prepared according to the patient’s schedule."
         },
         {
-          "title": "Dispensing & Traceability",
-          "text": "Sachets are ready for patient pickup or delivery. Every dose is tracked in the MDS software for complete follow-up."
+          "title": "Guided medicine loading",
+          "description": "The pharmacy team is guided through medicine placement to reduce confusion and structure the preparation process."
+        },
+        {
+          "title": "Package into sachets",
+          "description": "Doses are packaged in sachets suited to each administration time."
+        },
+        {
+          "title": "Automatic sealing",
+          "description": "The RDC 45 seals the sachets to produce a clear, clean, and ready-to-use preparation."
+        },
+        {
+          "title": "Patient identification",
+          "description": "Sachets can include the information needed to understand the treatment correctly: patient name, date, administration time, medicines, and pharmacy."
+        },
+        {
+          "title": "Handover or follow-up organization",
+          "description": "The pharmacy gives the sachets to the patient or caregiver in a MediMesk dispensing box."
         }
       ]
     },
-    "video_label": "Video Demo — RDC 45",
-    "cta_banner": {
-      "title": "Ready to equip your pharmacy?",
-      "subtitle": "Contact us for a personalized RDC 45 demonstration at your pharmacy. Our team supports you every step of the way."
+    "features": {
+      "title": "Key features",
+      "subtitle": "A solution designed for sachet-based PDA",
+      "groups": [
+        {
+          "title": "Semi-automated preparation",
+          "items": ["Assisted preparation", "A more structured process than manual preparation", "Suitable for pharmacies wishing to increase volumes gradually", "A compact solution for integrating PDA into pharmacy operations"]
+        },
+        {
+          "title": "Sachet format",
+          "items": ["Doses prepared in sachets", "An easy-to-read format for patients or caregivers", "Organization by date and administration time", "A format suited to ongoing treatment follow-up"]
+        },
+        {
+          "title": "Automatic sealing",
+          "items": ["Automated sachet sealing", "More consistent production", "A better-presented PDA service", "A more professional process than manual preparation"]
+        },
+        {
+          "title": "Personalization",
+          "items": ["Customizable sachets", "Patient information", "Administration information", "Clear treatment identification", "Option to include the pharmacy’s identity"]
+        },
+        {
+          "title": "Scalable capacity",
+          "items": ["Suitable for launching or structuring a PDA activity", "Capacity that supports gradual growth", "Relevant for pharmacies wishing to test, develop, and then consolidate their PDA service"]
+        },
+        {
+          "title": "Software and organization",
+          "items": ["Patient management", "Treatment organization", "Administration schedule planning", "A clearer preparation process for the team", "Clearer process monitoring"]
+        }
+      ],
+      "cta": "Download the technical data sheet"
+    },
+    "ideal_for": {
+      "title": "Which pharmacies is it for?",
+      "subtitle": "A solution for pharmacies wishing to create or structure their PDA service",
+      "description": "The RDC 45 is particularly well suited to pharmacies wishing to establish an early position in PDA, create a new differentiated service, and support patients whose treatments require rigorous organization.",
+      "list_intro": "The solution is designed for pharmacies that:",
+      "items": ["want to launch a PDA service without immediately investing in heavy automation;", "support patients taking multiple medicines or living with chronic conditions;", "want to provide a useful service to families and caregivers;", "aim to build loyalty among long-term patients;", "want to strengthen their role in pharmaceutical follow-up;", "want a more professional preparation process than a manual approach;", "want to increase volumes gradually;"],
+      "cta": "Assess my pharmacy’s PDA potential"
+    },
+    "support": {
+      "eyebrow": "MediMesk support",
+      "title": "Turn PDA into a genuine pharmacy service—not simply an installed machine",
+      "paragraphs": [
+        "Acquiring a PDA solution involves more than installing equipment. To succeed, the pharmacy must define its organization, train its team, structure the preparation workflow, and know how to present the service to patients.",
+        "MediMesk supports pharmacies throughout RDC 45 deployment, from needs analysis to operational adoption.",
+        "MediMesk support may include:"
+      ],
+      "items": ["analysis of needs and potential volumes;", "selection of the appropriate solution;", "equipment installation;", "pharmacy team training;", "software onboarding;", "preparation workflow organization;", "traceability best practices;", "launch support;", "technical support after installation."],
+      "cta_demo": "Request an RDC 45 demonstration",
+      "cta_quote": "Get a quote"
     },
     "meta": {
       "title": "PDA RDC-45 — Dispensing Automation Robot | MediMesk",
@@ -512,37 +573,104 @@
     "pdaDualBlist": {
       "breadcrumb": "Dual Blist - Blister",
       "hero": {
-        "badge": "Unit Dose Dispensing",
-        "title": "Semi-Automatic Dual Blist - Blister",
-        "description": "The Dual Blist semi-automatic system packages treatments into multi-dose blister cards. It combines the robustness and readability of blisters with semi-automatic productivity, with visual control at every step.",
-        "image_alt": "Semi-Automatic Dual Blist - Blister",
-        "image": "/images/pda-robot.webp"
+        "badge": "Preparation of Doses for Administration",
+        "title": "Create, structure, and grow a professional PDA service in your pharmacy",
+        "paragraphs": [
+          "Dual Blist is a semi-automated PDA solution designed to help pharmacies provide a more structured, traceable, and efficient dose preparation service.",
+          "With an aging population, chronic treatments, and polypharmacy, PDA offers Moroccan pharmacies an opportunity to stand out: strengthening pharmaceutical follow-up, building patient loyalty, and providing a valuable service to families, caregivers, and partner organizations.",
+          "With Dual Blist, the pharmacy does more than prepare doses. It builds a high-value pharmacy service founded on organization, traceability, and preparation quality."
+        ],
+        "image_alt": "Dual Blist semi-automated PDA solution",
+        "cta_primary": "Request a demonstration",
+        "cta_secondary": "Receive the product sheet"
       },
-      "benefits": {
-        "title": "Benefits for your pharmacy",
-        "subtitle": "Blister reliability with semi-automatic productivity.",
+      "opportunity": {
+        "title": "Why is PDA becoming an opportunity for Moroccan pharmacies?",
+        "subtitle": "A new pharmacy service to create, structure, and promote",
+        "paragraphs": [
+          "PDA is still relatively underdeveloped in Morocco. That is precisely what makes it an opportunity for pharmacies wishing to move ahead of the market.",
+          "Older patients and people with chronic conditions or multiple medications need clearer support in managing their treatment. Families are looking for ways to make their loved ones’ daily routines safer. Healthcare and social-care organizations need medication processes that are clear, reliable, and traceable."
+        ],
+        "list_intro": "For a pharmacy, PDA can become:",
         "items": [
-          {
-            "title": "Secure blister packaging",
-            "text": "Resealable, durable cards that protect medications and make intake tracking easier."
-          },
-          {
-            "title": "Increased productivity",
-            "text": "Prepare more doses in less time than fully manual preparation."
-          },
-          {
-            "title": "Clear patient presentation",
-            "text": "A simple read by day and intake time that strengthens adherence and patient trust."
-          }
+          "a service that differentiates it from competitors;",
+          "a way to build loyalty among long-term patients;",
+          "a practical way to strengthen the pharmacist’s role in the proper use of medicines;",
+          "a new high-value business activity;",
+          "a relationship-building tool for families, caregivers, and partner facilities;",
+          "a practical response to the needs created by aging, chronic illness, and polypharmacy."
+        ],
+        "conclusion": "PDA is more than a technical development. It changes the pharmacy’s positioning: moving from a model centered on dispensing to one built around service, follow-up, and support."
+      },
+      "concrete_benefits": {
+        "title": "The practical benefits of PDA",
+        "patient": {
+          "title": "For patients",
+          "description": "PDA makes treatment easier to understand. Doses are organized by administration time, clearly identified, and prepared according to a defined process. It can help patients taking multiple medicines, older people, and patients with chronic conditions navigate their daily treatment more easily.",
+          "list_title": "Key benefits:",
+          "items": ["clearer medication schedules;", "fewer mix-ups involving multiple treatments;", "support for patients receiving long-term treatment;", "support for families and caregivers;", "greater continuity in treatment follow-up."]
+        },
+        "pharmacy": {
+          "title": "For pharmacies",
+          "description": "PDA enables a pharmacy to develop a professional, recognizable, and marketable service. It strengthens the patient relationship and gives pharmacists a more visible role in treatment follow-up.",
+          "list_title": "Key benefits:",
+          "items": ["creation of a premium service;", "greater patient loyalty;", "commercial differentiation;", "a structured recurring activity;", "greater value placed on pharmaceutical advice;", "better internal organization."]
+        }
+      },
+      "why": {
+        "title": "Why Dual Blist?",
+        "subtitle": "A semi-automated solution that turns manual PDA into a controlled operation",
+        "paragraphs": [
+          "PDA can be carried out manually. But as patient numbers grow, manual preparation quickly becomes time-consuming, difficult to standardize, and more complex to trace.",
+          "Dual Blist helps the pharmacy structure its activity through a solution combining equipment, software, guidance, control, and traceability."
         ]
       },
-      "cta_banner": {
-        "title": "Move to semi-automatic blister packaging",
-        "subtitle": "Contact us for a demonstration of the Dual Blist system in your pharmacy."
+      "comparison": {
+        "manual_title": "Manual preparation",
+        "manual_items": ["Process depends on individual organization", "Preparation time is difficult to control", "Limited traceability", "More burdensome control documentation", "Difficult to scale up", "Service is difficult to promote commercially"],
+        "dual_title": "With Dual Blist",
+        "dual_items": ["Guided, standardized process", "Smoother, better-organized preparation", "Photo traceability, reports, and history", "Easier verification and validation", "Two PDA packs prepared simultaneously", "A structured, professional, premium service"]
+      },
+      "features": {
+        "title": "Dual Blist’s key features",
+        "groups": [
+          { "title": "Assisted preparation", "description": "", "items": ["LED guidance;", "operator assistance;", "a smoother preparation process;", "standardized preparation procedures."] },
+          { "title": "Simultaneous dual preparation", "description": "", "items": ["two PDA packs prepared simultaneously;", "a faster preparation rate;", "a solution suited to increasing volumes;", "better team organization."] },
+          { "title": "Integrated PDA software", "description": "", "items": ["patient management;", "treatment management;", "administration schedule planning;", "action tracking;", "report generation;", "preparation history."] },
+          { "title": "Personalized identification", "description": "", "items": ["customizable labels;", "patient identification;", "administration information;", "clearer treatment instructions."] },
+          { "title": "Advanced traceability", "description": "", "items": ["photographic records;", "DataMatrix scanning;", "batch numbers and expiry dates;", "action history;", "preparation reports."] },
+          { "title": "Control and validation", "description": "Remote verification by a second person strengthens quality control. The pharmacy can therefore establish a more robust validation process.", "items": ["remote verification;", "optional double-checking;", "error detection and flagging;", "documented validation."] }
+        ]
+      },
+      "workflow": {
+        "title": "How Dual Blist works",
+        "subtitle": "A clear PDA workflow, from planning through validation",
+        "video_title": "Dual Blist demonstration video",
+        "steps": [
+          { "title": "Create the patient and enter the treatment", "description": "The pharmacy enters the patient’s information, treatments, and administration times." },
+          { "title": "Plan the preparation", "description": "The software organizes administration times and prepares the information required for production." },
+          { "title": "Guided preparation", "description": "The team follows the software instructions and LED guidance to prepare each dose." },
+          { "title": "Prepare two PDA packs simultaneously", "description": "Dual Blist handles two preparations in parallel to create a smoother production flow." },
+          { "title": "Identification and traceability", "description": "Doses are identified, medicines can be photographed, and batch numbers and expiry dates can be documented." },
+          { "title": "Control, validation, and report generation", "description": "The preparation is checked, validated, and documented to maintain a clear process record." }
+        ],
+        "cta": "Download the product sheet"
+      },
+      "support": {
+        "eyebrow": "MediMesk support",
+        "title": "Turn PDA into a genuine pharmacy service—not simply an installed machine",
+        "paragraphs": [
+          "Acquiring a PDA solution involves more than installing equipment. To succeed, the pharmacy must define its organization, train its team, structure the preparation process, and know how to present the service to patients.",
+          "MediMesk supports pharmacies throughout the deployment of Dual Blist, from needs analysis to operational adoption.",
+          "MediMesk support may include:"
+        ],
+        "items": ["analysis of needs and potential volumes;", "selection of the appropriate solution;", "equipment installation;", "pharmacy team training;", "software onboarding;", "preparation workflow organization;", "traceability best practices;", "launch support;", "technical support after installation."],
+        "cta_demo": "Request a Dual Blist demonstration",
+        "cta_quote": "Get a quote"
       },
       "meta": {
-        "title": "Semi-Automatic Dual Blist - Blister | MediMesk",
-        "description": "Semi-automatic blister packaging system for Unit Dose Dispensing."
+        "title": "Dual Blist — Semi-Automated PDA Solution | MediMesk",
+        "description": "Create and structure a professional PDA service with Dual Blist: guided preparation, dual production, traceability, and control."
       }
     },
     "pdaAutomatique": {
@@ -616,6 +744,198 @@
         "title": "UDD Control Devices & Accessories | MediMesk",
         "description": "Quality-control devices and accessories to secure your Unit Dose Dispensing chain."
       }
+    }
+  },
+  "advanced_piercing": {
+    "breadcrumb": "Advanced Piercing with STUDEX",
+    "hero": {
+      "badge": "Advanced Piercing",
+      "title": "Advanced Piercing with STUDEX",
+      "subtitle": "Offer a premium, safe, and profitable piercing service",
+      "paragraphs": [
+        "MediMesk supports pharmacies, parapharmacies, beauty institutes, and healthcare professionals in establishing an ear-piercing service with STUDEX, an international benchmark in professional piercing.",
+        "With the STUDEX System75, you offer customers a modern, fast, hygienic, and reassuring piercing experience: sterile single-use cartridges, hypoallergenic earrings, precise operation, virtually silent performance, and a wide choice of piercing jewelry.",
+        "A turnkey solution for developing an additional service with high perceived value, building customer loyalty, and strengthening your image as a well-equipped, trained, and exacting professional."
+      ],
+      "image_alt": "STUDEX System75 professional piercing system",
+      "cta_primary": "Request a STUDEX presentation",
+      "cta_secondary": "Request a callback from MediMesk"
+    },
+    "system": {
+      "title": "The STUDEX System75 solution",
+      "subtitle": "A piercing system designed for hygiene, precision, and comfort",
+      "paragraphs": [
+        "STUDEX System75 is a modern professional piercing system designed to provide gentle, fast, precise, and hygienic ear piercing.",
+        "The piercing earring and its back are contained in a sterile single-use cartridge. The cartridge is inserted directly into the instrument without direct contact with the earring or back. In one action, the ear is pierced, the earring positioned, and the back secured."
+      ],
+      "benefits_intro": "This system offers several advantages:",
+      "benefits": ["enhanced hygiene through individual sterile cartridges;", "no direct contact with the piercing earring or back;", "fast, smooth operation;", "precise positioning;", "automatic fastening of the earring back;", "virtually silent operation;", "a more reassuring experience, particularly for children;", "hypoallergenic, skin-friendly piercing earrings;", "varied designs for children, teenagers, and adults."],
+      "conclusion": "The system therefore delivers a more premium, reassuring, and professional experience than traditional piercing methods."
+    },
+    "offer": {
+      "title": "A complete offering",
+      "subtitle": "Instrument, cartridges, jewelry, aftercare, and training",
+      "paragraphs": ["MediMesk provides more than a piercing system. We support professionals in establishing a complete, clear, and commercially viable offering.", "The offering may include:"],
+      "element_heading": "Element",
+      "role_heading": "Role",
+      "rows": [
+        { "element": "STUDEX System75 instrument", "role": "Perform piercing with a professional, precise, and virtually silent tool" },
+        { "element": "Sterile single-use cartridges", "role": "Ensure optimal hygiene and prevent direct contact with piercing components" },
+        { "element": "Hypoallergenic piercing earrings", "role": "Offer suitable, safe, and attractive jewelry from the initial piercing" },
+        { "element": "Jewelry ranges", "role": "Provide an attractive choice for children, teenagers, and adults" },
+        { "element": "After-piercing care products", "role": "Support customers after the procedure and encourage complementary sales" },
+        { "element": "Team training", "role": "Ensure safe product handling, technique, customer advice, and after-piercing recommendations" }
+      ],
+      "conclusion": "This approach enables professionals to offer a structured, profitable service consistent with a premium image."
+    },
+    "meta": {
+      "title": "Advanced Piercing with STUDEX System75 | MediMesk",
+      "description": "Develop a premium ear-piercing service with STUDEX System75: sterile cartridges, hypoallergenic jewelry, and team training."
+    }
+  },
+  "accessories": {
+    "breadcrumb": "PDA control devices and accessories",
+    "hero": {
+      "badge": "PDA control and accessories",
+      "title": "PDA control devices and accessories",
+      "subtitle": "Control, trace, and optimize your PDA operation",
+      "paragraphs": [
+        "MediMesk offers a range of PDA control devices and accessories designed to strengthen the reliability, traceability, and efficiency of your production.",
+        "This equipment complements automated and semi-automated PDA solutions at essential process stages: sachet inspection, photographic archiving, correction, rolling, cutting, deblistering, organization, and dispensing."
+      ],
+      "image_alt": "PDA control devices and accessories",
+      "cta_primary": "Request a range presentation",
+      "cta_secondary": "Get advice from MediMesk"
+    },
+    "key_points": {
+      "title": "Key points",
+      "items": ["Optical sachet inspection", "Photographic archiving", "Discrepancy detection", "Inspection traceability", "Sachet rolling and cutting", "Medicine deblistering", "Patient dispensing boxes", "MediMesk training and support"],
+      "conclusion": "PDA control devices and accessories professionalize these stages and improve teams’ day-to-day organization."
+    },
+    "range": {
+      "title": "A complete range for controlling, organizing, and streamlining the PDA process",
+      "intro": "Complementary equipment for every critical production stage, from sachet inspection through organization and final handover.",
+      "equipment_heading": "Equipment",
+      "role_heading": "Primary role",
+      "value_heading": "Value for your PDA operation",
+      "rows": [
+        { "equipment": "VIZEN IA", "role": "Photographic archiving and assisted visual validation", "value": "Document finished sachets, facilitate verification, and retain visual proof of preparations" },
+        { "equipment": "VIZEN DE", "role": "Compact automatic inspection", "value": "Inspect sachets in a format suited to limited spaces, with image and result storage" },
+        { "equipment": "VIZEN EX", "role": "High-performance optical inspection", "value": "Rapidly inspect high sachet volumes and detect discrepancies in shape, quantity, or size" },
+        { "equipment": "VIZEN CAM", "role": "Correction documentation", "value": "Record sachets modified after an error is detected and strengthen traceability across the correction-validation cycle" },
+        { "equipment": "WIZER", "role": "Sachet rolling, cutting, and organization", "value": "Automate final strip management, organize batches, and separate sachets requiring verification" },
+        { "equipment": "DIY Canister Kit", "role": "Canister configuration", "value": "Gain autonomy when integrating new medicines into the automated workflow" },
+        { "equipment": "Autocanister", "role": "Automatic feeding without a fixed canister", "value": "Handle occasional, specific, or variably used medicines more flexibly" },
+        { "equipment": "STS Trays", "role": "Preparation of low-turnover medicines", "value": "Prepare special medicines without interrupting the main production flow" },
+        { "equipment": "I-Rolly and reels", "role": "Automatic rolling of PDA strips", "value": "Facilitate storage, transport, and the transition between production, inspection, and dispensing" },
+        { "equipment": "Wizer DE", "role": "Flexible semi-automatic rolling", "value": "Organize strips by patient, unit, volume, or delivery format" },
+        { "equipment": "Ez-CUT", "role": "Automated splitting and counting", "value": "Cut, count, and handle tablets more consistently with less direct manipulation" },
+        { "equipment": "Deblistering devices", "role": "Removal of medicines from blister packs", "value": "Accelerate and secure deblistering before PDA preparation" },
+        { "equipment": "Dispensing boxes", "role": "Organization of the final handover", "value": "Present, protect, and organize sachets for the patient, caregiver, or partner facility" }
+      ],
+      "conclusion": "This range can be integrated when launching a PDA operation or added gradually according to volume, the desired level of control, and organizational needs."
+    },
+    "meta": {
+      "title": "PDA Control Devices and Accessories | MediMesk",
+      "description": "Discover VIZEN and WIZER devices, canisters, deblistering equipment, and accessories for controlling, tracing, and organizing PDA production."
+    }
+  },
+  "hospital": {
+    "breadcrumb": "Hospitals & clinics",
+    "hero": {
+      "badge": "Automated hospital PDA",
+      "title": "Automate dose preparation at scale",
+      "description": "MediMesk provides clinics, hospitals, and healthcare facilities with automated machines designed to prepare, package, identify, and inspect doses for administration in sachets.",
+      "image_alt": "Automated PDA machine for hospitals and clinics"
+    },
+    "why": {
+      "title": "Why equip a clinic or hospital?",
+      "subtitle": "Move toward more reliable, faster, and more traceable production",
+      "intro": ["In clinics and hospitals, treatment preparation involves high volumes, multiple prescriptions, frequent changes, and stringent safety requirements.", "When preparation relies mainly on manual operations, teams may face several limitations:"],
+      "limitations": ["significant time spent sorting and packaging;", "dependence on repetitive manual tasks;", "difficulty absorbing increased volumes;", "risk of confusion between patients, medicines, or administration times;", "time-consuming manual inspection;", "traceability that may lack sufficient structure;", "difficulty standardizing production across multiple operators."],
+      "conclusion": ["Our automated machines address these challenges by automating the key stages of hospital PDA: dispensing, packaging, printing, inspection, sachet organization, and production monitoring.", "The objective is not to replace pharmacists or hospital teams. It is to give them industrial tools with which to produce more, improve traceability, and focus their expertise on control, validation, and supervision."]
+    },
+    "range": {
+      "title": "The Ti-medi JVM range offered by MediMesk",
+      "subtitle": "Complementary machines that automate every stage of hospital PDA",
+      "description": "MediMesk offers a range of JVM solutions that can be deployed according to the desired level of automation, production volume, and facility requirements.",
+      "machine_heading": "Machine / solution",
+      "role_heading": "Primary role",
+      "rows": [
+        { "machine": "ATDPS", "role": "Automate medicine dispensing and sachet packaging" },
+        { "machine": "MENITH", "role": "Robotize preparation and packaging for very high volumes" },
+        { "machine": "VIZEN", "role": "Automatically inspect prepared sachets" },
+        { "machine": "WIZER", "role": "Organize, cut, roll, or group sachets" },
+        { "machine": "OnCube", "role": "Control machines, monitor production, and manage data" }
+      ],
+      "conclusion": "This approach makes it possible to build a tailored production line, from automated packaging through inspection and organization of the finished sachets.",
+      "cta": "Receive a presentation of the JVM machines"
+    },
+    "machines": [
+      {
+        "slug": "atdps", "name": "ATDPS",
+        "title": "ATDPS: automated sachet packaging",
+        "subtitle": "Automate dose preparation and packaging",
+        "paragraphs": ["ATDPS systems are designed to automate treatment preparation from medication orders transmitted to the machine.", "They dispense medicines from canisters, package them into sachets, print the required information on each sachet, and monitor production.", "ATDPS systems are particularly well suited to facilities wishing to adopt automated sachet production with smoother organization and stronger traceability."],
+        "features_title": "Key features:",
+        "features": ["automated tablet dispensing;", "sachet packaging;", "printing of patient and treatment information;", "canister-based medicine management;", "production by patient, schedule, or administration time;", "machine inventory control;", "production monitoring;", "optional connection to control software."],
+        "benefits_title": "Benefits for the facility:",
+        "benefits": ["increase preparation capacity;", "reduce repetitive tasks;", "standardize packaging;", "improve dose readability;", "strengthen traceability;", "professionalize hospital production."],
+        "cta": "Get a quote"
+      },
+      {
+        "slug": "menith", "name": "MENITH",
+        "title": "MENITH: the robotic solution for very high volumes",
+        "subtitle": "A highly automated machine for intensive production",
+        "paragraphs": ["MENITH is a JVM robotic solution designed for facilities with high production requirements.", "Depending on the selected configuration, it automates replenishment, placement, dispensing, packaging, and inspection. It is intended for organizations seeking high production capacity and a high level of automation in a single machine.", "MENITH is particularly relevant for high-volume hospitals, clinics with centralized production, healthcare groups, hospital pharmacies serving several units, and organizations wishing to structure intensive PDA production."],
+        "features_title": "Key features:",
+        "features": ["robotic dispensing;", "automated packaging;", "high production capacity;", "integrated inspection depending on configuration;", "optimized canister management;", "sachet production;", "result monitoring and recording."],
+        "benefits_title": "Benefits for the facility:",
+        "benefits": ["produce at scale;", "handle high volumes more smoothly;", "reduce time spent on repetitive operations;", "strengthen production control;", "limit workflow interruptions;", "use a solution designed for advanced hospital automation."],
+        "cta": "Get a quote"
+      },
+      {
+        "slug": "vizen", "name": "VIZEN",
+        "title": "VIZEN: automatic sachet inspection",
+        "subtitle": "Inspect finished sachets with a dedicated solution",
+        "paragraphs": ["Inspection is an essential stage in automated production. VIZEN automatically inspects prepared sachets to verify their contents against the data available in the medicine database.", "The solution complements packaging machines by adding a technical inspection layer."],
+        "features_title": "Key features:",
+        "features": ["automatic sachet inspection;", "comparison with recorded medicine information;", "detection of non-compliant sachets depending on configuration;", "storage of inspection results;", "support for process traceability."],
+        "benefits_title": "Benefits for the facility:",
+        "benefits": ["reduce dependence on manual visual inspection;", "accelerate inspection of large production runs;", "strengthen quality documentation;", "make production safer;", "facilitate anomaly identification."],
+        "cta": "Get a quote"
+      },
+      {
+        "slug": "wizer", "name": "WIZER",
+        "title": "WIZER: sachet organization, cutting, and management",
+        "subtitle": "Move from production to a distribution-ready workflow",
+        "paragraphs": ["Once sachets have been prepared and inspected, the facility must organize them efficiently for delivery to the relevant departments, units, or teams.", "WIZER automates selected operations for organizing, cutting, rolling, or separating finished sachets."],
+        "features_title": "Key features:",
+        "features": ["organization of finished sachets;", "separation of batches;", "cutting according to defined parameters;", "rolling or grouping;", "preparation of sachets for distribution."],
+        "benefits_title": "Benefits for the facility:",
+        "benefits": ["save time after production;", "facilitate internal distribution;", "improve presentation of sachet batches;", "reduce handling after packaging;", "streamline the transition from production to delivery to care departments."],
+        "cta": "Get a quote"
+      }
+    ],
+    "value": {
+      "title": "Added value for every stakeholder",
+      "audiences": [
+        { "title": "For facility management", "items": ["Modernize the hospital pharmacy", "Increase production capacity", "Support quality initiatives", "Strengthen medication-circuit safety", "Improve traceability", "Structure a visible technology investment", "Support activity growth"] },
+        { "title": "For the hospital pharmacy", "items": ["Reduce repetitive tasks", "Standardize preparation", "Gain production visibility", "Facilitate sachet inspection", "Document preparations more effectively", "Optimize team organization", "Focus more closely on validation and supervision"] },
+        { "title": "For care departments", "items": ["Receive more clearly identified sachets", "Facilitate treatment organization", "Reduce ambiguity at administration time", "Improve patient / department / schedule readability", "Streamline coordination with the pharmacy"] }
+      ]
+    },
+    "support": {
+      "eyebrow": "MediMesk support",
+      "title": "MediMesk helps your teams adopt the machines",
+      "subtitle": "Installation, training, and local support",
+      "paragraphs": ["MediMesk supports healthcare facilities deploying JVM machines in Morocco.", "Our role is to help you select the solution suited to your production needs, handle installation, train your teams, and support the operational adoption of automated PDA.", "MediMesk support may include:"],
+      "items": ["presentation of JVM machines;", "help selecting a solution based on volume and production objectives;", "installation coordination;", "machine commissioning;", "pharmacy team training;", "software training;", "training in automated-production best practices;", "launch support;", "preventive and corrective maintenance;", "local technical support."],
+      "disclaimer": "MediMesk is not intended to replace internal teams or audit the entire medication circuit. Our mission is to make automation accessible, understandable, and operational through JVM machines, training, and local support."
+    },
+    "meta": {
+      "title": "Automated PDA for Hospitals and Clinics | MediMesk",
+      "description": "Discover JVM ATDPS, MENITH, VIZEN, and WIZER machines for automating hospital PDA at scale."
     }
   },
   "about": {

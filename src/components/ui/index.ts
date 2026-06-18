@@ -6,6 +6,7 @@ export { default as SectionWrapper } from "./SectionWrapper";
 export { default as Badge } from "./Badge";
 
 export { default as ProductCard } from "./ProductCard";
+export { default as ProductSectionNav } from "./ProductSectionNav";
 
 export { default as Tag } from "./Tag";
 
