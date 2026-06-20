@@ -20,6 +20,11 @@ export default function LocaleLayout({
 
   return (
     <div className="flex min-h-screen flex-col">
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `document.documentElement.lang=${JSON.stringify(params.locale)}`,
+        }}
+      />
       <Navbar locale={params.locale} t={t} />
       <main className="flex-1">{children}</main>
       <Footer locale={params.locale} t={t} />

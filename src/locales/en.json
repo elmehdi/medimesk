@@ -27,13 +27,14 @@
   "cta": {
     "demo": "Request a Demo",
     "discover": "Discover Our Solutions",
-    "pharmacy_support": "Discover Our Pharmacy Support",
+    "pharmacy_support": "Discuss your project",
     "discover_products": "Discover Our Products",
     "quote": "Get a Quote",
     "demo_free": "Request a Free Demo",
     "contact_us": "Contact Us",
     "download_spec": "Download Spec Sheet",
-    "learn_more": "Learn More About MediMesk"
+    "learn_more": "Learn More About MediMesk",
+    "product_details": "View product"
   },
   "footer": {
     "tagline": "Innovative solutions for pharmacies in Morocco",

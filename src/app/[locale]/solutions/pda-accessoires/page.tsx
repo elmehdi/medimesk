@@ -90,8 +90,8 @@ export default function PdaAccessoriesPage({ params }: { params: { locale: Local
           <p className="mt-5 leading-relaxed text-dark-text/70">{p.range.intro}</p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-6xl overflow-x-auto rounded-2xl border border-light-teal bg-white shadow-sm">
-          <table className="w-full min-w-[850px] text-left">
+        <div className="mx-auto mt-12 max-w-6xl overflow-hidden rounded-2xl border border-light-teal bg-white shadow-sm">
+          <table className="responsive-product-table w-full text-left">
             <thead className="bg-primary-teal text-white">
               <tr>
                 <th className="w-[20%] px-5 py-4">{p.range.equipment_heading}</th>
@@ -102,9 +102,9 @@ export default function PdaAccessoriesPage({ params }: { params: { locale: Local
             <tbody>
               {p.range.rows.map((row, i) => (
                 <tr key={row.equipment} className={`border-b border-light-teal/70 last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-section-bg"}`}>
-                  <td className="px-5 py-4 font-semibold text-dark-text">{row.equipment}</td>
-                  <td className="px-5 py-4 text-dark-text/75">{row.role}</td>
-                  <td className="px-5 py-4 leading-relaxed text-dark-text/70">{row.value}</td>
+                  <td data-label={p.range.equipment_heading} className="px-5 py-4 font-semibold text-dark-text">{row.equipment}</td>
+                  <td data-label={p.range.role_heading} className="px-5 py-4 text-dark-text/75">{row.role}</td>
+                  <td data-label={p.range.value_heading} className="px-5 py-4 leading-relaxed text-dark-text/70">{row.value}</td>
                 </tr>
               ))}
             </tbody>

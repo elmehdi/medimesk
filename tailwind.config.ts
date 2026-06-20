@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "primary-teal": "#00A99D",
+        "primary-teal": "#007F78",
+        "accent-teal": "#00A99D",
         "dark-text": "#1A2332",
         "section-bg": "#F7F9FA",
         "cta-yellow": "#F5C518",
@@ -17,15 +18,15 @@ const config: Config = {
         "error-red": "#E63946",
       },
       fontFamily: {
-        playfair: ["var(--font-playfair)", "serif"],
-        sans: ["var(--font-dm-sans)", "sans-serif"],
+        playfair: ["Georgia", "Bitstream Charter", "DejaVu Serif", "serif"],
+        sans: ["Aptos", "Segoe UI", "Helvetica Neue", "Arial", "Liberation Sans", "sans-serif"],
       },
       fontSize: {
-        h1: ["3.5rem", { lineHeight: "1.2", fontWeight: "700" }],
-        "h1-sm": ["3rem", { lineHeight: "1.2", fontWeight: "700" }],
-        h2: ["2.25rem", { lineHeight: "1.3", fontWeight: "700" }],
-        "h2-sm": ["2rem", { lineHeight: "1.3", fontWeight: "700" }],
-        h3: ["1.5rem", { lineHeight: "1.4", fontWeight: "600" }],
+        h1: ["clamp(2.35rem, 4vw, 3.5rem)", { lineHeight: "1.12", fontWeight: "700" }],
+        "h1-sm": ["clamp(2.35rem, 4vw, 3.5rem)", { lineHeight: "1.12", fontWeight: "700" }],
+        h2: ["clamp(1.85rem, 2.8vw, 2.5rem)", { lineHeight: "1.2", fontWeight: "700" }],
+        "h2-sm": ["clamp(1.85rem, 2.8vw, 2.5rem)", { lineHeight: "1.2", fontWeight: "700" }],
+        h3: ["1.25rem", { lineHeight: "1.35", fontWeight: "700" }],
         body: ["1rem", { lineHeight: "1.7" }],
         small: ["0.8125rem", { lineHeight: "1.5" }],
       },

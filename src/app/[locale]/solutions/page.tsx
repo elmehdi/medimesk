@@ -52,6 +52,8 @@ export default function ProductsPage({ params }: { params: { locale: Locale } })
               title={card.title}
               benefits={card.benefits as [string, string, string]}
               href={`/${locale}${productCardMeta[i].href}`}
+              imageFit={productCardMeta[i].imageFit}
+              linkLabel={t.cta.product_details}
             />
           ))}
         </div>

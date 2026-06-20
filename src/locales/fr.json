@@ -27,13 +27,14 @@
   "cta": {
     "demo": "Demander une démo",
     "discover": "Découvrir nos solutions",
-    "pharmacy_support": "Découvrir notre accompagnement pharmacie",
+    "pharmacy_support": "Parler de votre projet",
     "discover_products": "Découvrir nos produits",
     "quote": "Obtenir un devis",
     "demo_free": "Demander une démo gratuite",
     "contact_us": "Nous contacter",
     "download_spec": "Télécharger la fiche technique",
-    "learn_more": "En savoir plus sur MediMesk"
+    "learn_more": "En savoir plus sur MediMesk",
+    "product_details": "Voir le produit"
   },
   "footer": {
     "tagline": "Solutions innovantes pour les pharmacies au Maroc",

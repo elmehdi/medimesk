@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { contactSchema, type ContactFormData } from "@/lib/schemas/contact";
+import { createContactSchema, type ContactFormData } from "@/lib/schemas/contact";
 import { SectionWrapper } from "@/components/ui";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
@@ -34,7 +34,7 @@ export default function ContactPage({
     formState: { errors, isSubmitting },
     reset,
   } = useForm<ContactFormData>({
-    resolver: zodResolver(contactSchema),
+    resolver: zodResolver(createContactSchema(locale)),
   });
 
   const onSubmit = async (data: ContactFormData) => {

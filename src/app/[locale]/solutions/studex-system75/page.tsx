@@ -116,13 +116,13 @@ export default function StudexPage({ params }: { params: { locale: Locale } }) {
           </div>
         </div>
         <div className="mx-auto mt-10 max-w-5xl overflow-hidden rounded-2xl border border-light-teal shadow-sm">
-          <table className="w-full text-left">
+          <table className="responsive-product-table w-full text-left">
             <thead className="bg-primary-teal text-white"><tr><th className="w-[34%] px-5 py-4">{p.offer.element_heading}</th><th className="px-5 py-4">{p.offer.role_heading}</th></tr></thead>
             <tbody>
               {p.offer.rows.map((row, i) => (
                 <tr key={row.element} className={`border-b border-light-teal/70 last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-section-bg"}`}>
-                  <td className="px-5 py-4 font-semibold text-dark-text">{row.element}</td>
-                  <td className="px-5 py-4 leading-relaxed text-dark-text/70">{row.role}</td>
+                  <td data-label={p.offer.element_heading} className="px-5 py-4 font-semibold text-dark-text">{row.element}</td>
+                  <td data-label={p.offer.role_heading} className="px-5 py-4 leading-relaxed text-dark-text/70">{row.role}</td>
                 </tr>
               ))}
             </tbody>

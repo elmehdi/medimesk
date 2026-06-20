@@ -13,7 +13,8 @@ interface ProductCardProps {
   /** Link to full product page */
   href: string;
   /** Link label */
-  linkLabel?: string;
+  linkLabel: string;
+  imageFit?: "cover" | "contain";
 }
 
 export default function ProductCard({
@@ -22,17 +23,18 @@ export default function ProductCard({
   title,
   benefits,
   href,
-  linkLabel = "En savoir plus",
+  linkLabel,
+  imageFit = "cover",
 }: ProductCardProps) {
   return (
-    <div className="group flex flex-col overflow-hidden rounded-xl border border-light-teal bg-white transition-shadow hover:shadow-lg">
+    <Link href={href} className="group flex flex-col overflow-hidden rounded-2xl border border-light-teal bg-white transition-all hover:-translate-y-1 hover:border-primary-teal/35 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-teal/40 focus:ring-offset-2">
       {/* Image */}
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-section-bg">
         <Image
           src={imageSrc}
           alt={imageAlt}
           fill
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          className={`${imageFit === "contain" ? "object-contain p-8" : "object-cover"} transition-transform duration-300 group-hover:scale-105`}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
         />
       </div>
@@ -62,13 +64,10 @@ export default function ProductCard({
           ))}
         </ul>
 
-        <Link
-          href={href}
-          className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-primary-teal hover:underline underline-offset-4 group/link"
-        >
+        <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-primary-teal group-hover:underline underline-offset-4">
           {linkLabel}
           <svg
-            className="h-4 w-4 transition-transform group-hover/link:translate-x-1"
+            className="h-4 w-4 transition-transform group-hover:translate-x-1"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -80,8 +79,8 @@ export default function ProductCard({
               d="M17 8l4 4m0 0l-4 4m4-4H3"
             />
           </svg>
-        </Link>
+        </span>
       </div>
-    </div>
+    </Link>
   );
 }

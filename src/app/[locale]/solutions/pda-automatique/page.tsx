@@ -30,12 +30,19 @@ type Machine = ReturnType<typeof getTranslations>["hospital"]["machines"][number
 function MachineSection({ machine, locale, alternate }: { machine: Machine; locale: Locale; alternate: boolean }) {
   return (
     <SectionWrapper alternate={alternate} id={machine.slug}>
-      <div className="mx-auto max-w-4xl text-center">
-        <Badge>{machine.name}</Badge>
-        <h2 className="mt-4 text-dark-text">{machine.title}</h2>
-        <p className="mt-4 text-xl font-semibold text-primary-teal">{machine.subtitle}</p>
-        <div className="mt-7 space-y-4 text-left leading-relaxed text-dark-text/70">
-          {machine.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+      <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-[0.36fr_0.64fr]">
+        <div className="relative overflow-hidden rounded-2xl bg-dark-text px-7 py-12 text-center shadow-lg">
+          <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-primary-teal/30 blur-2xl" />
+          <svg className="relative mx-auto h-12 w-12 text-accent-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.4} d="M4 7h16M6 3h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2zm2 8h3v6H8zm5 2h5m-5 4h5" /></svg>
+          <p className="relative mt-5 font-playfair text-3xl font-bold text-white">{machine.name}</p>
+        </div>
+        <div>
+          <Badge>{machine.name}</Badge>
+          <h2 className="mt-4 text-dark-text">{machine.title}</h2>
+          <p className="mt-4 text-xl font-semibold text-primary-teal">{machine.subtitle}</p>
+          <div className="mt-7 space-y-4 leading-relaxed text-dark-text/70">
+            {machine.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </div>
         </div>
       </div>
       <div className="mx-auto mt-12 grid max-w-5xl gap-8 lg:grid-cols-2">
@@ -96,7 +103,7 @@ export default function PdaAutomatiquePage({ params }: { params: { locale: Local
           <div className="relative mx-auto w-full max-w-xl">
             <div className="absolute -inset-6 rounded-full bg-light-teal/30 blur-3xl" />
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
-              <Image src="/images/pda-robot.webp" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+              <Image src="/images/timedi.png" alt={p.hero.image_alt} fill className="object-contain bg-white p-10" sizes="(max-width: 1024px) 100vw, 50vw" priority />
             </div>
           </div>
         </div>
@@ -127,15 +134,15 @@ export default function PdaAutomatiquePage({ params }: { params: { locale: Local
           <p className="mt-6 text-left leading-relaxed text-dark-text/70">{p.range.description}</p>
         </div>
         <div className="mx-auto mt-10 max-w-5xl overflow-hidden rounded-2xl border border-light-teal shadow-sm">
-          <table className="w-full text-left">
+          <table className="responsive-product-table w-full text-left">
             <thead className="bg-primary-teal text-white">
               <tr><th className="px-5 py-4 md:w-1/4">{p.range.machine_heading}</th><th className="px-5 py-4">{p.range.role_heading}</th></tr>
             </thead>
             <tbody>
               {p.range.rows.map((row, i) => (
                 <tr key={row.machine} className={i % 2 === 0 ? "bg-white" : "bg-section-bg"}>
-                  <td className="px-5 py-4 font-semibold text-dark-text">{row.machine}</td>
-                  <td className="px-5 py-4 text-dark-text/70">{row.role}</td>
+                  <td data-label={p.range.machine_heading} className="px-5 py-4 font-semibold text-dark-text">{row.machine}</td>
+                  <td data-label={p.range.role_heading} className="px-5 py-4 text-dark-text/70">{row.role}</td>
                 </tr>
               ))}
             </tbody>

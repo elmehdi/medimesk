@@ -10,15 +10,66 @@
   }
 
   h1 {
-    @apply font-playfair text-h1-sm md:text-h1;
+    @apply font-playfair text-h1;
   }
 
   h2 {
-    @apply font-playfair text-h2-sm md:text-h2;
+    @apply font-playfair text-h2;
   }
 
   h3 {
-    @apply font-playfair text-h3;
+    @apply font-sans text-h3;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+.reveal-section p {
+  max-width: 75ch;
+}
+
+@media (max-width: 767px) {
+  .responsive-product-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .responsive-product-table,
+  .responsive-product-table tbody,
+  .responsive-product-table tr,
+  .responsive-product-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .responsive-product-table tr {
+    padding: 1rem;
+    border-bottom: 1px solid #E0F5F3;
+  }
+
+  .responsive-product-table td {
+    display: grid;
+    grid-template-columns: minmax(7.5rem, 0.42fr) 1fr;
+    gap: 1rem;
+    padding: 0.55rem 0;
+  }
+
+  .responsive-product-table td::before {
+    content: attr(data-label);
+    color: #007F78;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
 }
 
@@ -46,18 +97,6 @@
   }
   .reveal-section {
     transition: none;
-  }
-}
-
-@media (min-width: 1280px) {
-  .product-section-nav {
-    left: 1.5rem;
-  }
-}
-
-@media (min-width: 1280px) and (max-width: 1535px) {
-  .product-section-nav ~ .reveal-section > div {
-    padding-left: 15rem;
   }
 }
 
