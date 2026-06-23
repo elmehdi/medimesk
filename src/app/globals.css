@@ -11,10 +11,14 @@
 
   h1 {
     @apply font-playfair text-h1;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
   }
 
   h2 {
     @apply font-playfair text-h2;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
   }
 
   h3 {
@@ -24,6 +28,17 @@
   p {
     text-wrap: pretty;
   }
+}
+
+.product-value-title {
+  max-width: 34ch;
+  color: #1A2332;
+  font-family: Georgia, "Bitstream Charter", "DejaVu Serif", serif;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  text-wrap: balance;
 }
 
 .reveal-section p {

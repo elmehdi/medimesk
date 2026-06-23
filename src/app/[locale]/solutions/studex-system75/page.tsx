@@ -4,10 +4,18 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import { Badge, Button, ProductSectionNav, SectionWrapper } from "@/components/ui";
+import { createSeoMetadata } from "@/lib/seo";
+import { contactHref } from "@/lib/contact-intents";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const p = getTranslations(params.locale).advanced_piercing;
-  return { title: p.meta.title, description: p.meta.description };
+  return createSeoMetadata({
+    locale: params.locale,
+    path: "/solutions/studex-system75",
+    title: p.meta.title,
+    description: p.meta.description,
+    image: "/images/studex-system75.webp",
+  });
 }
 
 function CheckList({ items }: { items: readonly string[] }) {
@@ -33,7 +41,7 @@ export default function StudexPage({ params }: { params: { locale: Locale } }) {
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: p.hero.title,
+    name: p.hero.product_name,
     description: p.hero.paragraphs.join(" "),
     image: "https://medimesk.ma/images/studex-system75.webp",
     brand: { "@type": "Brand", name: "STUDEX" },
@@ -71,14 +79,14 @@ export default function StudexPage({ params }: { params: { locale: Locale } }) {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <Badge>{p.hero.badge}</Badge>
-            <h1 className="mt-4 text-dark-text">{p.hero.title}</h1>
+            <h1 className="mt-4 text-dark-text">{p.hero.product_name}</h1>
             <p className="mt-4 text-xl font-semibold text-primary-teal">{p.hero.subtitle}</p>
             <div className="mt-6 space-y-4 leading-relaxed text-dark-text/70">
               {p.hero.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Button href={`/${locale}/contact`}>{p.hero.cta_primary}</Button>
-              <Button variant="secondary" href={`/${locale}/contact`}>{p.hero.cta_secondary}</Button>
+              <Button href={contactHref(locale, "studex-presentation")}>{p.hero.cta_primary}</Button>
+              <Button variant="secondary" href={contactHref(locale, "studex-callback")}>{p.hero.cta_secondary}</Button>
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-xl">

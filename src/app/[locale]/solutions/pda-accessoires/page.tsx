@@ -4,10 +4,18 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import { Badge, Button, ProductSectionNav, SectionWrapper } from "@/components/ui";
+import { createSeoMetadata } from "@/lib/seo";
+import { contactHref } from "@/lib/contact-intents";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const p = getTranslations(params.locale).accessories;
-  return { title: p.meta.title, description: p.meta.description };
+  return createSeoMetadata({
+    locale: params.locale,
+    path: "/solutions/pda-accessoires",
+    title: p.meta.title,
+    description: p.meta.description,
+    image: "/images/Vizen.png",
+  });
 }
 
 function CheckList({ items }: { items: readonly string[] }) {
@@ -58,28 +66,33 @@ export default function PdaAccessoriesPage({ params }: { params: { locale: Local
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <Badge>{p.hero.badge}</Badge>
-            <h1 className="mt-4 text-dark-text">{p.hero.title}</h1>
+            <h1 className="mt-4 text-dark-text">{p.hero.product_name}</h1>
             <p className="mt-4 text-xl font-semibold text-primary-teal">{p.hero.subtitle}</p>
             <div className="mt-6 space-y-4 leading-relaxed text-dark-text/70">
               {p.hero.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Button href={`/${locale}/contact`}>{p.hero.cta_primary}</Button>
-              <Button variant="secondary" href={`/${locale}/contact`}>{p.hero.cta_secondary}</Button>
+              <Button href={contactHref(locale, "accessories-range")}>{p.hero.cta_primary}</Button>
+              <Button variant="secondary" href={contactHref(locale, "accessories-advice")}>{p.hero.cta_secondary}</Button>
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-xl">
             <div className="absolute -inset-6 rounded-full bg-light-teal/30 blur-3xl" />
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
-              <Image src="/images/equipment-medical.jpg" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl">
+              <Image src="/images/Vizen.png" alt={p.hero.image_alt} fill className="object-contain p-6" sizes="(max-width: 1024px) 100vw, 50vw" priority />
             </div>
           </div>
         </div>
 
-        <div className="mt-14 rounded-2xl border border-light-teal bg-section-bg p-8 shadow-sm md:p-10">
-          <h2 className="font-playfair text-2xl font-bold text-dark-text md:text-3xl">{p.key_points.title}</h2>
-          <CheckList items={p.key_points.items} />
-          <p className="mt-8 border-l-4 border-primary-teal pl-5 text-lg leading-relaxed text-dark-text/75">{p.key_points.conclusion}</p>
+        <div className="mt-14 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div className="rounded-2xl border border-light-teal bg-section-bg p-8 shadow-sm md:p-10">
+            <h2 className="font-playfair text-2xl font-bold text-dark-text md:text-3xl">{p.key_points.title}</h2>
+            <CheckList items={p.key_points.items} />
+            <p className="mt-8 border-l-4 border-primary-teal pl-5 text-lg leading-relaxed text-dark-text/75">{p.key_points.conclusion}</p>
+          </div>
+          <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-light-teal bg-white shadow-sm">
+            <Image src="/images/VIZEN-EX-Features01.jpg" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+          </div>
         </div>
       </SectionWrapper>
 

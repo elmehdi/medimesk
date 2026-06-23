@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Translations } from "@/i18n/useTranslations";
+import { contactHref } from "@/lib/contact-intents";
 
 interface FooterProps {
   locale: string;
@@ -25,7 +26,7 @@ export default function Footer({ locale, t }: FooterProps) {
   const companyLinks = [
     { label: t.nav.about, href: `/${locale}/a-propos` },
     { label: t.footer.faq, href: `/${locale}/support#faq` },
-    { label: t.nav.contact, href: `/${locale}/contact` },
+    { label: t.nav.contact, href: contactHref(locale, "contact") },
   ];
 
   const legalLinks = [

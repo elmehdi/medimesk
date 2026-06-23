@@ -4,13 +4,18 @@ import { productCardMeta } from "@/lib/products";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import type { Metadata } from "next";
+import { createSeoMetadata } from "@/lib/seo";
+import { contactHref } from "@/lib/contact-intents";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const t = getTranslations(params.locale);
-  return {
+  return createSeoMetadata({
+    locale: params.locale,
+    path: "/solutions",
     title: t.products_page.meta.title,
     description: t.products_page.meta.description,
-  };
+    image: "/images/pda-robot.webp",
+  });
 }
 
 export default function ProductsPage({ params }: { params: { locale: Locale } }) {
@@ -68,10 +73,10 @@ export default function ProductsPage({ params }: { params: { locale: Locale } })
             {t.home.cta_banner.subtitle}
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button href={`/${locale}/contact`}>{t.cta.demo_free}</Button>
+            <Button href={contactHref(locale, "free-demo")}>{t.cta.demo_free}</Button>
             <Button
               variant="secondary"
-              href={`/${locale}/contact`}
+              href={contactHref(locale, "quote")}
               className="border-white text-white hover:bg-white hover:text-primary-teal"
             >
               {t.cta.quote}

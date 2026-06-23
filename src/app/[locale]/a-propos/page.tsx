@@ -2,10 +2,17 @@ import { Button, SectionWrapper, Badge } from "@/components/ui";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import type { Metadata } from "next";
+import { createSeoMetadata } from "@/lib/seo";
+import { contactHref } from "@/lib/contact-intents";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const t = getTranslations(params.locale);
-  return { title: t.about.meta.title, description: t.about.meta.description };
+  return createSeoMetadata({
+    locale: params.locale,
+    path: "/a-propos",
+    title: t.about.meta.title,
+    description: t.about.meta.description,
+  });
 }
 
 /* ── Value icons ─────────────────────────────────────── */
@@ -109,7 +116,7 @@ export default function AboutPage({
           <h2 className="text-white">{a.cta_banner.title}</h2>
           <p className="mt-4 text-white/60 leading-relaxed max-w-lg mx-auto">{a.cta_banner.subtitle}</p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button href={`/${locale}/contact`}>{t.cta.contact_us}</Button>
+            <Button href={contactHref(locale, "contact")}>{t.cta.contact_us}</Button>
             <Button variant="secondary" href={`/${locale}/solutions`} className="border-white text-white hover:bg-white hover:text-dark-text">
               {t.cta.discover}
             </Button>

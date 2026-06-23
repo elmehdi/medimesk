@@ -250,6 +250,7 @@
     "breadcrumb": "RDC 45",
     "hero": {
       "badge": "Preparation of Doses for Administration",
+      "product_name": "RDC 45",
       "title": "The compact sachet-based PDA solution for structuring your dose preparation service",
       "paragraphs": [
         "The RDC 45 enables pharmacies to professionalize dose preparation with a compact, scalable, semi-automated solution.",
@@ -575,6 +576,7 @@
       "breadcrumb": "Dual Blist - Blister",
       "hero": {
         "badge": "Preparation of Doses for Administration",
+        "product_name": "Dual Blist",
         "title": "Create, structure, and grow a professional PDA service in your pharmacy",
         "paragraphs": [
           "Dual Blist is a semi-automated PDA solution designed to help pharmacies provide a more structured, traceable, and efficient dose preparation service.",
@@ -751,6 +753,7 @@
     "breadcrumb": "Advanced Piercing with STUDEX",
     "hero": {
       "badge": "Advanced Piercing",
+      "product_name": "Advanced Piercing with STUDEX",
       "title": "Advanced Piercing with STUDEX",
       "subtitle": "Offer a premium, safe, and profitable piercing service",
       "paragraphs": [
@@ -798,6 +801,7 @@
     "breadcrumb": "PDA control devices and accessories",
     "hero": {
       "badge": "PDA control and accessories",
+      "product_name": "PDA control and accessories",
       "title": "PDA control devices and accessories",
       "subtitle": "Control, trace, and optimize your PDA operation",
       "paragraphs": [
@@ -845,6 +849,7 @@
     "breadcrumb": "Hospitals & clinics",
     "hero": {
       "badge": "Automated hospital PDA",
+      "product_name": "PDA for hospitals and clinics",
       "title": "Automate dose preparation at scale",
       "description": "MediMesk provides clinics, hospitals, and healthcare facilities with automated machines designed to prepare, package, identify, and inspect doses for administration in sachets.",
       "image_alt": "Automated PDA machine for hospitals and clinics"

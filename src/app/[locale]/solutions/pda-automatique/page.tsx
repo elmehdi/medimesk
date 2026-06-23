@@ -4,10 +4,18 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import { Badge, Button, ProductSectionNav, SectionWrapper } from "@/components/ui";
+import { createSeoMetadata } from "@/lib/seo";
+import { contactHref, type ContactIntent } from "@/lib/contact-intents";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const p = getTranslations(params.locale).hospital;
-  return { title: p.meta.title, description: p.meta.description };
+  return createSeoMetadata({
+    locale: params.locale,
+    path: "/solutions/pda-automatique",
+    title: p.meta.title,
+    description: p.meta.description,
+    image: "/images/timedi.png",
+  });
 }
 
 function CheckList({ items, large = false }: { items: readonly string[]; large?: boolean }) {
@@ -55,7 +63,7 @@ function MachineSection({ machine, locale, alternate }: { machine: Machine; loca
           <CheckList items={machine.benefits} />
         </article>
       </div>
-      <div className="mt-10 text-center"><Button href={`/${locale}/contact`}>{machine.cta}</Button></div>
+      <div className="mt-10 text-center"><Button href={contactHref(locale, `pda-auto-${machine.slug}` as ContactIntent)}>{machine.cta}</Button></div>
     </SectionWrapper>
   );
 }
@@ -97,7 +105,8 @@ export default function PdaAutomatiquePage({ params }: { params: { locale: Local
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <Badge>{p.hero.badge}</Badge>
-            <h1 className="mt-4 text-dark-text">{p.hero.title}</h1>
+            <h1 className="mt-4 text-dark-text">{p.hero.product_name}</h1>
+            <p className="product-value-title mt-4">{p.hero.title}</p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-dark-text/70">{p.hero.description}</p>
           </div>
           <div className="relative mx-auto w-full max-w-xl">
@@ -149,7 +158,7 @@ export default function PdaAutomatiquePage({ params }: { params: { locale: Local
           </table>
         </div>
         <p className="mx-auto mt-8 max-w-4xl leading-relaxed text-dark-text/70">{p.range.conclusion}</p>
-        <div className="mt-9 text-center"><Button href={`/${locale}/contact`}>{p.range.cta}</Button></div>
+        <div className="mt-9 text-center"><Button href={contactHref(locale, "pda-auto-range")}>{p.range.cta}</Button></div>
       </SectionWrapper>
 
       {p.machines.map((machine, i) => <MachineSection key={machine.slug} machine={machine} locale={locale} alternate={i % 2 === 0} />)}

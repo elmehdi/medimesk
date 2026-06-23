@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button, SectionWrapper, Badge } from "@/components/ui";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
+import { contactHref } from "@/lib/contact-intents";
 
 interface Spec {
   label: string;
@@ -114,10 +115,10 @@ export default function ProductDetailTemplate({
               {p.hero.description}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 lg:justify-start">
-              <Button href={`/${locale}/contact`}>{t.cta.demo}</Button>
+              <Button href={contactHref(locale, "demo")}>{t.cta.demo}</Button>
               <Button
                 variant="secondary"
-                href={`/${locale}/contact`}
+                href={contactHref(locale, "quote")}
               >
                 {t.cta.quote}
               </Button>
@@ -210,8 +211,8 @@ export default function ProductDetailTemplate({
           <h2 className="text-white">{p.cta_banner.title}</h2>
           <p className="mt-4 text-white/70 leading-relaxed max-w-lg mx-auto">{p.cta_banner.subtitle}</p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button href={`/${locale}/contact`}>{t.cta.demo_free}</Button>
-            <Button variant="secondary" href={`/${locale}/contact`} className="border-white text-white hover:bg-white hover:text-primary-teal">
+            <Button href={contactHref(locale, "free-demo")}>{t.cta.demo_free}</Button>
+            <Button variant="secondary" href={contactHref(locale, "quote")} className="border-white text-white hover:bg-white hover:text-primary-teal">
               {t.cta.quote}
             </Button>
           </div>

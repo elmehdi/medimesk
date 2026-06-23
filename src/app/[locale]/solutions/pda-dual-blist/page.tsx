@@ -4,10 +4,18 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import { Badge, Button, ProductSectionNav, SectionWrapper } from "@/components/ui";
+import { createSeoMetadata } from "@/lib/seo";
+import { contactHref } from "@/lib/contact-intents";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const p = getTranslations(params.locale).products.pdaDualBlist;
-  return { title: p.meta.title, description: p.meta.description };
+  return createSeoMetadata({
+    locale: params.locale,
+    path: "/solutions/pda-dual-blist",
+    title: p.meta.title,
+    description: p.meta.description,
+    image: "/images/DB2.png",
+  });
 }
 
 function CheckList({
@@ -72,19 +80,20 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <Badge>{p.hero.badge}</Badge>
-            <h1 className="mt-4 text-dark-text">{p.hero.title}</h1>
+            <h1 className="mt-4 text-dark-text">{p.hero.product_name}</h1>
+            <p className="product-value-title mt-4">{p.hero.title}</p>
             <div className="mt-6 space-y-4 text-dark-text/70 leading-relaxed">
               {p.hero.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Button href={`/${locale}/contact`}>{p.hero.cta_primary}</Button>
-              <Button variant="secondary" href={`/${locale}/contact`}>{p.hero.cta_secondary}</Button>
+              <Button href={contactHref(locale, "dual-blist-demo")}>{p.hero.cta_primary}</Button>
+              <Button variant="secondary" href={contactHref(locale, "dual-blist-sheet")}>{p.hero.cta_secondary}</Button>
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-xl">
             <div className="absolute -inset-6 rounded-full bg-light-teal/30 blur-3xl" />
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
-              <Image src="/images/pda-robot.webp" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+              <Image src="/images/DB2.png" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
             </div>
           </div>
         </div>
@@ -190,7 +199,7 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
           ))}
         </ol>
         <div className="mt-10 text-center">
-          <Button href={`/${locale}/contact`}>{p.workflow.cta}</Button>
+          <Button href={contactHref(locale, "dual-blist-sheet")}>{p.workflow.cta}</Button>
         </div>
       </SectionWrapper>
 
@@ -204,8 +213,8 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
               {p.support.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Button href={`/${locale}/contact`}>{p.support.cta_demo}</Button>
-              <Button variant="secondary" href={`/${locale}/contact`}>{p.support.cta_quote}</Button>
+              <Button href={contactHref(locale, "dual-blist-demo")}>{p.support.cta_demo}</Button>
+              <Button variant="secondary" href={contactHref(locale, "quote")}>{p.support.cta_quote}</Button>
             </div>
           </div>
           <div className="rounded-2xl border border-light-teal bg-section-bg p-7 shadow-sm md:p-8">

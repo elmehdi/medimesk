@@ -10,13 +10,16 @@ import { Reveal } from "@/components/ui";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import type { Metadata } from "next";
+import { createSeoMetadata } from "@/lib/seo";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const t = getTranslations(params.locale);
-  return {
+  return createSeoMetadata({
+    locale: params.locale,
     title: t.home.meta.title,
     description: t.home.meta.description,
-  };
+    image: "/images/pda-sachet.webp",
+  });
 }
 
 export default function HomePage({

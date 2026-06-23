@@ -4,10 +4,18 @@ import { Button, ProductSectionNav, SectionWrapper, Badge } from "@/components/u
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import type { Metadata } from "next";
+import { createSeoMetadata } from "@/lib/seo";
+import { contactHref } from "@/lib/contact-intents";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const t = getTranslations(params.locale);
-  return { title: t.pda.meta.title, description: t.pda.meta.description };
+  return createSeoMetadata({
+    locale: params.locale,
+    path: "/solutions/pda-rdc45",
+    title: t.pda.meta.title,
+    description: t.pda.meta.description,
+    image: "/images/pda-robot.webp",
+  });
 }
 
 function CheckList({ items, large = false }: { items: readonly string[]; large?: boolean }) {
@@ -35,7 +43,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: p.hero.title,
+    name: p.hero.product_name,
     description: p.hero.paragraphs.join(" "),
     image: "https://medimesk.ma/images/pda-robot.webp",
     brand: { "@type": "Brand", name: "MediMesk" },
@@ -76,13 +84,14 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
           <div className="flex-1 text-center lg:text-left">
             <Badge>{p.hero.badge}</Badge>
-            <h1 className="mt-4 text-dark-text">{p.hero.title}</h1>
+            <h1 className="mt-4 text-dark-text">{p.hero.product_name}</h1>
+            <p className="product-value-title mt-4">{p.hero.title}</p>
             <div className="mx-auto mt-5 max-w-xl space-y-4 leading-relaxed text-dark-text/70 lg:mx-0">
               {p.hero.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
-              <Button href={`/${locale}/contact`}>{p.hero.cta_demo}</Button>
-              <Button variant="secondary" href={`/${locale}/contact`}>{p.hero.cta_product_sheet}</Button>
+              <Button href={contactHref(locale, "rdc45-demo")}>{p.hero.cta_demo}</Button>
+              <Button variant="secondary" href={contactHref(locale, "rdc45-sheet")}>{p.hero.cta_product_sheet}</Button>
             </div>
           </div>
           <div className="relative w-full max-w-md flex-shrink-0 lg:max-w-lg">
@@ -177,7 +186,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
           ))}
         </div>
         <div className="mt-10 text-center">
-          <Button href={`/${locale}/contact`}>{p.features.cta}</Button>
+          <Button href={contactHref(locale, "rdc45-spec")}>{p.features.cta}</Button>
         </div>
       </SectionWrapper>
 
@@ -193,7 +202,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
           <CheckList items={p.ideal_for.items} large />
         </div>
         <div className="mt-10 text-center">
-          <Button href={`/${locale}/contact`}>{p.ideal_for.cta}</Button>
+          <Button href={contactHref(locale, "rdc45-potential")}>{p.ideal_for.cta}</Button>
         </div>
       </SectionWrapper>
 
@@ -207,8 +216,8 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
               {p.support.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Button href={`/${locale}/contact`}>{p.support.cta_demo}</Button>
-              <Button variant="secondary" href={`/${locale}/contact`}>{p.support.cta_quote}</Button>
+              <Button href={contactHref(locale, "rdc45-demo")}>{p.support.cta_demo}</Button>
+              <Button variant="secondary" href={contactHref(locale, "quote")}>{p.support.cta_quote}</Button>
             </div>
           </div>
           <div className="rounded-2xl border border-light-teal bg-white p-7 shadow-sm md:p-8">

@@ -250,6 +250,7 @@
     "breadcrumb": "RDC 45",
     "hero": {
       "badge": "Préparation des Doses à Administrer",
+      "product_name": "RDC 45",
       "title": "La solution compacte de PDA en sachets pour structurer votre service de préparation des doses à administrer",
       "paragraphs": [
         "Le RDC 45 permet aux pharmacies de professionnaliser la préparation des doses à administrer grâce à une solution semi-automatisée, compacte et évolutive.",
@@ -575,6 +576,7 @@
       "breadcrumb": "Dual Blist - Blister",
       "hero": {
         "badge": "Préparation des Doses à Administrer",
+        "product_name": "Dual Blist",
         "title": "Créer, structurer et développer une activité PDA professionnelle en pharmacie",
         "paragraphs": [
           "Dual Blist est une solution de PDA semi-automatisée conçue pour aider les pharmacies à proposer un service de préparation des doses à administrer plus structuré, plus traçable et plus efficace.",
@@ -751,6 +753,7 @@
     "breadcrumb": "Advanced Piercing avec STUDEX",
     "hero": {
       "badge": "Advanced Piercing",
+      "product_name": "Advanced Piercing avec STUDEX",
       "title": "Advanced Piercing avec STUDEX",
       "subtitle": "Proposez un service de perçage premium, sûr et rentable",
       "paragraphs": [
@@ -798,6 +801,7 @@
     "breadcrumb": "Appareils de contrôle et accessoires PDA",
     "hero": {
       "badge": "Contrôle et accessoires PDA",
+      "product_name": "Contrôle et accessoires PDA",
       "title": "Appareils de contrôle et accessoires PDA",
       "subtitle": "Contrôler, tracer et optimiser votre activité PDA",
       "paragraphs": [
@@ -845,6 +849,7 @@
     "breadcrumb": "Hôpitaux et cliniques",
     "hero": {
       "badge": "PDA hospitalière automatisée",
+      "product_name": "PDA pour hôpitaux et cliniques",
       "title": "Automatisez la préparation des doses à administrer à grande échelle",
       "description": "Medimesk propose aux cliniques, hôpitaux et établissements de santé des machines automatisées conçues pour préparer, conditionner, identifier et contrôler les doses à administrer en sachets.",
       "image_alt": "Machine automatisée de PDA pour hôpitaux et cliniques"

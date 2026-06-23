@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui";
 import type { Translations } from "@/i18n/useTranslations";
+import { contactHref } from "@/lib/contact-intents";
 
 export default function CTABanner({ locale, t }: { locale: string; t: Translations }) {
   const s = t.home.cta_banner;
@@ -12,10 +13,10 @@ export default function CTABanner({ locale, t }: { locale: string; t: Translatio
         <h2 className="text-white max-w-2xl mx-auto">{s.title}</h2>
         <p className="mt-5 text-white/60 leading-relaxed max-w-lg mx-auto">{s.subtitle}</p>
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button href={`/${locale}/contact`}>{t.cta.demo_free}</Button>
+          <Button href={contactHref(locale, "free-demo")}>{t.cta.demo_free}</Button>
           <Button
             variant="secondary"
-            href={`/${locale}/contact`}
+            href={contactHref(locale, "contact")}
             className="border-white/30 text-white hover:bg-white hover:text-dark-text"
           >
             {t.cta.contact_us}

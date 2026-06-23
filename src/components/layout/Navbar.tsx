@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import type { Translations } from "@/i18n/useTranslations";
+import { contactHref } from "@/lib/contact-intents";
 
 function getLocaleSwitchPath(pathname: string, currentLocale: string, targetLocale: string) {
   return pathname.replace(`/${currentLocale}`, `/${targetLocale}`) || `/${targetLocale}`;
@@ -55,11 +56,13 @@ export default function Navbar({ locale, t }: NavbarProps) {
     { label: t.nav.solutions, href: `/${locale}/solutions`, hasDropdown: true },
     { label: t.nav.about, href: `/${locale}/a-propos` },
     { label: t.nav.support, href: `/${locale}/support` },
-    { label: t.nav.contact, href: `/${locale}/contact` },
+    { label: t.nav.contact, href: contactHref(locale, "contact") },
   ];
 
-  const isActive = (href: string) =>
-    pathname === href || (href !== `/${locale}` && pathname.startsWith(href));
+  const isActive = (href: string) => {
+    const path = href.split("?")[0];
+    return pathname === path || (path !== `/${locale}` && pathname.startsWith(path));
+  };
 
   return (
     <>
@@ -84,8 +87,15 @@ export default function Navbar({ locale, t }: NavbarProps) {
               className="h-12 w-auto lg:h-14"
               priority
             />
-            <span className="text-xl font-bold font-playfair text-primary-teal tracking-tight lg:text-2xl">
-              Medi<span className="text-dark-text">Mesk</span>
+            <span className="relative block h-[19px] w-[140px] overflow-hidden lg:h-6 lg:w-[180px]">
+              <Image
+                src="/images/text logo.png"
+                alt=""
+                width={6250}
+                height={4018}
+                className="absolute -left-[19px] -top-[47px] h-auto w-[176px] max-w-none lg:-left-[24px] lg:-top-[61px] lg:w-[226px]"
+                priority
+              />
             </span>
           </Link>
 
@@ -211,7 +221,7 @@ export default function Navbar({ locale, t }: NavbarProps) {
 
             {/* CTA Button */}
             <Link
-              href={`/${locale}/contact`}
+              href={contactHref(locale, "project")}
               className="bg-cta-yellow text-dark-text font-semibold text-sm px-5 py-2.5 rounded-lg hover:shadow-md hover:brightness-95 active:scale-[0.98] transition-all"
             >
               {t.cta.pharmacy_support}
@@ -360,7 +370,7 @@ export default function Navbar({ locale, t }: NavbarProps) {
 
             {/* CTA */}
             <Link
-              href={`/${locale}/contact`}
+              href={contactHref(locale, "demo")}
               className="block w-full bg-cta-yellow text-dark-text font-semibold text-center py-3.5 rounded-lg hover:brightness-95 transition-all"
               onClick={closeMobile}
             >

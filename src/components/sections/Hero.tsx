@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui";
 import type { Translations } from "@/i18n/useTranslations";
+import { contactHref } from "@/lib/contact-intents";
 
 export default function Hero({ locale, t }: { locale: string; t: Translations }) {
   return (
@@ -27,7 +28,7 @@ export default function Hero({ locale, t }: { locale: string; t: Translations })
               </Button>
               <Button
                 variant="secondary"
-                href={`/${locale}/contact`}
+                href={contactHref(locale, "project")}
                 className="w-full border-white text-white hover:bg-white hover:text-primary-teal"
               >
                 {t.home.hero.cta_project}
@@ -39,7 +40,7 @@ export default function Hero({ locale, t }: { locale: string; t: Translations })
           <div className="relative mt-12 lg:mt-0 flex-shrink-0">
             <div className="absolute inset-0 -m-8 rounded-full bg-light-teal/15 blur-2xl pointer-events-none" />
             <Image
-              src="/images/pda-sachet.webp"
+              src="/images/heromedi.png"
               alt={t.home.hero.image_alt}
               width={600}
               height={500}

@@ -1,10 +1,10 @@
 import type { MetadataRoute } from "next";
+import { locales, type Locale } from "@/i18n/config";
+import { alternateLanguages, localizedPath, SITE_URL } from "@/lib/seo";
 
-const BASE_URL = "https://medimesk.ma";
+const LAST_MODIFIED = "2026-06-23";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const locales = ["fr", "en"] as const;
-
   const routes = [
     "",
     "/a-propos",
@@ -16,9 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/solutions/pda-automatique",
     "/solutions/pda-accessoires",
     "/solutions/studex-system75",
-    "/mentions-legales",
-    "/politique-confidentialite",
-    "/cgu",
   ];
 
   const entries: MetadataRoute.Sitemap = [];
@@ -26,10 +23,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const locale of locales) {
     for (const route of routes) {
       entries.push({
-        url: `${BASE_URL}/${locale}${route}`,
-        lastModified: new Date(),
+        url: `${SITE_URL}${localizedPath(locale as Locale, route)}`,
+        lastModified: LAST_MODIFIED,
         changeFrequency: route === "" ? "weekly" : "monthly",
         priority: route === "" ? 1 : route.startsWith("/solutions/") ? 0.8 : 0.6,
+        alternates: {
+          languages: Object.fromEntries(
+            Object.entries(alternateLanguages(route)).map(([language, path]) => [
+              language,
+              `${SITE_URL}${path}`,
+            ])
+          ),
+        },
       });
     }
   }
