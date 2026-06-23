@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { defaultLocale, locales, type Locale } from "@/i18n/config";
 
-export const SITE_URL = "https://medimesk.ma";
+export const SITE_URL = "https://medimesk.com";
 export const SITE_NAME = "MediMesk";
 export const DEFAULT_OG_IMAGE = "/images/logo.webp";
 
@@ -83,4 +83,32 @@ export function createSeoMetadata({
         }
       : undefined,
   };
+}
+
+/**
+ * Alternative builder used by updated pages – delegates to createSeoMetadata
+ * so that every page shares the same canonical/OG generation logic.
+ */
+export interface BuildPageMetadataProps {
+  locale: string;
+  title: string;
+  description: string;
+  path: string;
+  imageUrl?: string;
+}
+
+export function buildPageMetadata({
+  locale,
+  title,
+  description,
+  path,
+  imageUrl,
+}: BuildPageMetadataProps): Metadata {
+  return createSeoMetadata({
+    locale: locale as Locale,
+    title,
+    description,
+    path,
+    image: imageUrl,
+  });
 }

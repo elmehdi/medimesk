@@ -45,9 +45,9 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
     "@type": "Product",
     name: p.hero.product_name,
     description: p.hero.paragraphs.join(" "),
-    image: "https://medimesk.ma/images/pda-robot.webp",
+    image: "https://medimesk.com/images/pda-robot.webp",
     brand: { "@type": "Brand", name: "MediMesk" },
-    url: `https://medimesk.ma/${locale}/solutions/pda-rdc45`,
+    url: `https://medimesk.com/${locale}/solutions/pda-rdc45`,
   };
 
   return (

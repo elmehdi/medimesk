@@ -43,9 +43,9 @@ export default function StudexPage({ params }: { params: { locale: Locale } }) {
     "@type": "Product",
     name: p.hero.product_name,
     description: p.hero.paragraphs.join(" "),
-    image: "https://medimesk.ma/images/studex-system75.webp",
+    image: "https://medimesk.com/images/studex-system75.webp",
     brand: { "@type": "Brand", name: "STUDEX" },
-    url: `https://medimesk.ma/${locale}/solutions/studex-system75`,
+    url: `https://medimesk.com/${locale}/solutions/studex-system75`,
   };
 
   return (

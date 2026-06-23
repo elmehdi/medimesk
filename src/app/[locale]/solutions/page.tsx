@@ -22,8 +22,25 @@ export default function ProductsPage({ params }: { params: { locale: Locale } })
   const locale = params.locale;
   const t = getTranslations(locale);
 
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": t.home.solutions.title,
+    "description": t.home.solutions.subtitle,
+    "itemListElement": t.home.solutions.cards.map((card: { title: string }, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": card.title,
+      "url": `https://medimesk.com/${locale}${productCardMeta[i].href}`
+    }))
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }}
+      />
       {/* ─── Breadcrumb ─────────────────────────────── */}
       <div className="bg-section-bg border-b border-light-teal">
         <nav className="mx-auto max-w-container px-gutter py-3">

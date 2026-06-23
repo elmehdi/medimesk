@@ -30,8 +30,30 @@ export default function HomePage({
   const t = getTranslations(params.locale);
   const locale = params.locale;
 
+  const medicalBusinessLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "MediMesk",
+    "url": `https://medimesk.com/${locale}`,
+    "logo": "https://medimesk.com/images/logo.webp",
+    "image": "https://medimesk.com/images/pda-robot.webp",
+    "description": t.home.meta.description,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Résidence Meskellil Imm. 3 N°1, Av. Assabir, Hay Riad",
+      "addressLocality": "Rabat",
+      "addressCountry": "MA"
+    },
+    "telephone": "+212526272812",
+    "priceRange": "$$$"
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalBusinessLd) }}
+      />
       <Hero locale={locale} t={t} />
       <Reveal><TrustBar t={t} /></Reveal>
       <SolutionsOverview locale={locale} t={t} />

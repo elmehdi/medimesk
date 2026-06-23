@@ -72,9 +72,9 @@ export default function ProductDetailTemplate({
     "@type": "Product",
     name: p.hero.title,
     description: p.hero.description,
-    image: `https://medimesk.ma${image}`,
+    image: `https://medimesk.com${image}`,
     brand: { "@type": "Brand", name: "MediMesk" },
-    url: `https://medimesk.ma/${locale}/solutions/${slug}`,
+    url: `https://medimesk.com/${locale}/solutions/${slug}`,
   };
 
   return (

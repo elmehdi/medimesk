@@ -6,8 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/_next/", "/api/"],
       },
     ],
-    sitemap: "https://medimesk.ma/sitemap.xml",
+    sitemap: "https://medimesk.com/sitemap.xml",
   };
 }

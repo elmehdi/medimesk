@@ -12,16 +12,31 @@
     "equipment": "Équipement médical"
   },
   "products_dropdown": [
-    { "label": "Dual Blist", "sub": "" },
-    { "label": "RDC 45", "sub": "" },
-    { "label": "Automatisation pour hôpitaux et cliniques", "sub": "" },
-    { "label": "Appareils de contrôle et accessoires PDA", "sub": "" },
-    { "label": "Advanced Piercing avec STUDEX", "sub": "" }
+    {
+      "label": "Dual Blist",
+      "sub": ""
+    },
+    {
+      "label": "RDC 45",
+      "sub": ""
+    },
+    {
+      "label": "Automatisation pour hôpitaux et cliniques",
+      "sub": ""
+    },
+    {
+      "label": "Appareils de contrôle et accessoires PDA",
+      "sub": ""
+    },
+    {
+      "label": "Advanced Piercing avec STUDEX",
+      "sub": ""
+    }
   ],
   "products_page": {
     "meta": {
-      "title": "Nos Produits — Solutions PDA et perçage | MediMesk",
-      "description": "Découvrez la gamme MediMesk : Dual Blist, RDC 45, automatisation hospitalière, appareils de contrôle et Advanced Piercing avec STUDEX."
+      "title": "Matériel & Équipement Pharmaceutique au Maroc | Solutions PDA",
+      "description": "Gamme complète de matériel pour produits pharmaceutiques au Maroc : robots de dispensation RDC 45, Dual Blist, automates JVM et perçage d'oreilles Studex."
     }
   },
   "cta": {
@@ -242,8 +257,8 @@
       "subtitle": "Rejoignez les pharmaciens marocains qui ont choisi MediMesk pour améliorer leur pratique. Demandez une démonstration gratuite ou contactez notre équipe."
     },
     "meta": {
-      "title": "MediMesk — Solutions innovantes pour pharmacies au Maroc",
-      "description": "Automatisation officinale, perçage d'oreilles Studex et équipement médical. MediMesk accompagne les pharmacies marocaines vers l'excellence."
+      "title": "MediMesk — Automatisation de Pharmacie & Matériel Pharmaceutique au Maroc",
+      "description": "Leader de l'automatisation de pharmacie et de la préparation des doses à administrer (PDA) au Maroc. Découvrez nos robots de dispensation et équipements pour produits pharmaceutiques."
     }
   },
   "pda": {
@@ -328,27 +343,58 @@
       "groups": [
         {
           "title": "Préparation semi-automatisée",
-          "items": ["Accompagnement de la préparation", "Processus plus structuré qu’une préparation manuelle", "Adaptée aux pharmacies qui veulent monter progressivement en volume", "Solution compacte pour intégrer la PDA dans l’organisation officinale"]
+          "items": [
+            "Accompagnement de la préparation",
+            "Processus plus structuré qu’une préparation manuelle",
+            "Adaptée aux pharmacies qui veulent monter progressivement en volume",
+            "Solution compacte pour intégrer la PDA dans l’organisation officinale"
+          ]
         },
         {
           "title": "Format sachets",
-          "items": ["Doses préparées en sachets", "Format lisible pour le patient ou l’aidant", "Organisation par date et moment de prise", "Support adapté au suivi de traitements réguliers"]
+          "items": [
+            "Doses préparées en sachets",
+            "Format lisible pour le patient ou l’aidant",
+            "Organisation par date et moment de prise",
+            "Support adapté au suivi de traitements réguliers"
+          ]
         },
         {
           "title": "Scellage automatique",
-          "items": ["Fermeture automatisée des sachets", "Production plus homogène", "Meilleure présentation du service PDA", "Gain de professionnalisation par rapport à une préparation artisanale"]
+          "items": [
+            "Fermeture automatisée des sachets",
+            "Production plus homogène",
+            "Meilleure présentation du service PDA",
+            "Gain de professionnalisation par rapport à une préparation artisanale"
+          ]
         },
         {
           "title": "Personnalisation",
-          "items": ["Sachets personnalisables", "Informations patient", "Informations de prise", "Identification claire du traitement", "Possibilité d’intégrer l’identité de la pharmacie"]
+          "items": [
+            "Sachets personnalisables",
+            "Informations patient",
+            "Informations de prise",
+            "Identification claire du traitement",
+            "Possibilité d’intégrer l’identité de la pharmacie"
+          ]
         },
         {
           "title": "Capacité évolutive",
-          "items": ["Solution adaptée au démarrage ou à la structuration d’une activité PDA", "Capacité pouvant accompagner une montée en charge progressive", "Pertinente pour des pharmacies qui veulent tester, développer puis consolider leur service PDA"]
+          "items": [
+            "Solution adaptée au démarrage ou à la structuration d’une activité PDA",
+            "Capacité pouvant accompagner une montée en charge progressive",
+            "Pertinente pour des pharmacies qui veulent tester, développer puis consolider leur service PDA"
+          ]
         },
         {
           "title": "Logiciel et organisation",
-          "items": ["Gestion des patients", "Organisation des traitements", "Planification des prises", "Préparation plus lisible pour l’équipe", "Suivi plus clair du processus"]
+          "items": [
+            "Gestion des patients",
+            "Organisation des traitements",
+            "Planification des prises",
+            "Préparation plus lisible pour l’équipe",
+            "Suivi plus clair du processus"
+          ]
         }
       ],
       "cta": "Télécharger la fiche technique"
@@ -358,7 +404,15 @@
       "subtitle": "Une solution adaptée aux pharmacies qui veulent créer ou structurer leur service PDA",
       "description": "Le RDC 45 est particulièrement adapté aux pharmacies qui souhaitent se positionner tôt sur la PDA, créer un nouveau service différenciant et accompagner des patients dont les traitements nécessitent une organisation rigoureuse.",
       "list_intro": "La solution s’adresse aux pharmacies qui :",
-      "items": ["souhaitent lancer une activité PDA sans investir immédiatement dans une automatisation lourde ;", "accompagnent des patients polymédiqués ou chroniques ;", "veulent proposer un service utile aux familles et aux aidants ;", "cherchent à fidéliser une patientèle suivie au long cours ;", "souhaitent valoriser leur rôle dans le suivi pharmaceutique ;", "veulent structurer une préparation plus professionnelle que le manuel ;", "souhaitent monter progressivement en volume ;"],
+      "items": [
+        "souhaitent lancer une activité PDA sans investir immédiatement dans une automatisation lourde ;",
+        "accompagnent des patients polymédiqués ou chroniques ;",
+        "veulent proposer un service utile aux familles et aux aidants ;",
+        "cherchent à fidéliser une patientèle suivie au long cours ;",
+        "souhaitent valoriser leur rôle dans le suivi pharmaceutique ;",
+        "veulent structurer une préparation plus professionnelle que le manuel ;",
+        "souhaitent monter progressivement en volume ;"
+      ],
       "cta": "Évaluer le potentiel PDA de ma pharmacie"
     },
     "support": {
@@ -369,13 +423,23 @@
         "Medimesk accompagne les pharmacies dans le déploiement du RDC 45, de l’analyse du besoin jusqu’à la prise en main opérationnelle.",
         "L’accompagnement Medimesk peut inclure :"
       ],
-      "items": ["analyse du besoin et du volume potentiel ;", "choix de la solution adaptée ;", "installation de l’équipement ;", "formation de l’équipe officinale ;", "prise en main du logiciel ;", "organisation du circuit de préparation ;", "bonnes pratiques de traçabilité ;", "accompagnement au démarrage ;", "support technique après installation."],
+      "items": [
+        "analyse du besoin et du volume potentiel ;",
+        "choix de la solution adaptée ;",
+        "installation de l’équipement ;",
+        "formation de l’équipe officinale ;",
+        "prise en main du logiciel ;",
+        "organisation du circuit de préparation ;",
+        "bonnes pratiques de traçabilité ;",
+        "accompagnement au démarrage ;",
+        "support technique après installation."
+      ],
       "cta_demo": "Demander une démonstration RDC 45",
       "cta_quote": "Obtenir un devis"
     },
     "meta": {
-      "title": "PDA RDC-45 — Automate de dispensation | MediMesk",
-      "description": "Découvrez le robot RDC-45 : préparation automatisée des doses, fiabilité et gain de temps pour votre officine."
+      "title": "Robot PDA RDC 45 — Automatisation & Équipement Officinal Maroc",
+      "description": "Découvrez le robot compact de PDA en sachets RDC 45. Optimisez la dispensation de vos produits pharmaceutiques au Maroc avec fiabilité et traçabilité complète."
     }
   },
   "studex": {
@@ -458,8 +522,8 @@
       "subtitle": "Contactez-nous pour découvrir comment le SYSTEM 75 peut enrichir votre offre de services et fidéliser votre clientèle."
     },
     "meta": {
-      "title": "Studex System75 — Perçage d'oreilles professionnel | MediMesk",
-      "description": "Solution de perçage stérile et indolore Studex System75, idéale pour pharmacies et professionnels de santé."
+      "title": "Studex System 75 — Perçage Professionnel en Pharmacie au Maroc",
+      "description": "Perçage d'oreilles stérile, indolore et hygiénique avec le système Studex System 75. Solution clé en main pour pharmacies et professionnels au Maroc."
     }
   },
   "equipment": {
@@ -531,8 +595,8 @@
       "subtitle": "Contactez notre équipe pour une évaluation personnalisée de vos besoins et un devis adapté à votre officine."
     },
     "meta": {
-      "title": "Équipement médical — Fournitures professionnelles | MediMesk",
-      "description": "Gamme complète d'équipement médical pour pharmacies : diagnostic, mobilier et consommables de qualité."
+      "title": "Matériel & Équipement Médical pour Pharmacie au Maroc",
+      "description": "Gamme complète d'équipements et matériel pour produits pharmaceutiques au Maroc : diagnostic, mobilier de pharmacie, consommables et hygiène de qualité."
     }
   },
   "products": {
@@ -568,8 +632,8 @@
         "subtitle": "Contactez-nous pour découvrir comment lancer simplement la Préparation des Doses à Administrer dans votre officine."
       },
       "meta": {
-        "title": "PDA Manuelle — Préparation des doses | MediMesk",
-        "description": "Démarrez la Préparation des Doses à Administrer manuellement : organisation par jour et par prise, sans investissement lourd."
+        "title": "Pilulier PDA Manuelle — Préparation des Doses au Maroc",
+        "description": "Démarrez la préparation des doses à administrer (PDA) manuelle au Maroc. Piluliers et guides pour sécuriser l'observance de vos produits pharmaceutiques."
       }
     },
     "pdaDualBlist": {
@@ -611,13 +675,26 @@
           "title": "Pour le patient",
           "description": "La PDA rend le traitement plus lisible. Les doses sont organisées par moment de prise, identifiées et préparées selon un cadre défini. Elle peut aider les patients polymédiqués, les personnes âgées ou les patients chroniques à mieux se repérer dans leur traitement quotidien.",
           "list_title": "Bénéfices à mettre en avant :",
-          "items": ["meilleure lisibilité des prises ;", "réduction des confusions liées aux traitements multiples ;", "accompagnement des patients suivis au long cours ;", "soutien aux familles et aux aidants ;", "meilleure continuité dans le suivi du traitement."]
+          "items": [
+            "meilleure lisibilité des prises ;",
+            "réduction des confusions liées aux traitements multiples ;",
+            "accompagnement des patients suivis au long cours ;",
+            "soutien aux familles et aux aidants ;",
+            "meilleure continuité dans le suivi du traitement."
+          ]
         },
         "pharmacy": {
           "title": "Pour la pharmacie",
           "description": "La PDA permet à l’officine de développer un service professionnel, identifiable et valorisable. Elle renforce la relation patient et donne au pharmacien une place plus visible dans le suivi du traitement.",
           "list_title": "Bénéfices à mettre en avant :",
-          "items": ["création d’un service premium ;", "fidélisation des patients ;", "différenciation commerciale ;", "structuration d’une activité récurrente ;", "valorisation du conseil pharmaceutique ;", "meilleure organisation interne."]
+          "items": [
+            "création d’un service premium ;",
+            "fidélisation des patients ;",
+            "différenciation commerciale ;",
+            "structuration d’une activité récurrente ;",
+            "valorisation du conseil pharmaceutique ;",
+            "meilleure organisation interne."
+          ]
         }
       },
       "why": {
@@ -630,19 +707,90 @@
       },
       "comparison": {
         "manual_title": "Préparation manuelle",
-        "manual_items": ["Processus dépendant de l’organisation individuelle", "Temps de préparation difficile à maîtriser", "Traçabilité limitée", "Contrôle plus lourd à documenter", "Montée en volume difficile", "Service difficile à valoriser commercialement"],
+        "manual_items": [
+          "Processus dépendant de l’organisation individuelle",
+          "Temps de préparation difficile à maîtriser",
+          "Traçabilité limitée",
+          "Contrôle plus lourd à documenter",
+          "Montée en volume difficile",
+          "Service difficile à valoriser commercialement"
+        ],
         "dual_title": "Avec Dual Blist",
-        "dual_items": ["Processus guidé et standardisé", "Préparation plus fluide et organisée", "Traçabilité photo, rapports et historique", "Vérification et validation facilitées", "Préparation simultanée de deux PDA", "Service structuré, professionnel et premium"]
+        "dual_items": [
+          "Processus guidé et standardisé",
+          "Préparation plus fluide et organisée",
+          "Traçabilité photo, rapports et historique",
+          "Vérification et validation facilitées",
+          "Préparation simultanée de deux PDA",
+          "Service structuré, professionnel et premium"
+        ]
       },
       "features": {
         "title": "Les fonctionnalités clés de Dual Blist",
         "groups": [
-          { "title": "Préparation assistée", "description": "", "items": ["guidage LED ;", "assistance opérateur ;", "préparation plus fluide ;", "standardisation du geste de préparation."] },
-          { "title": "Double préparation simultanée", "description": "", "items": ["deux PDA préparées simultanément ;", "meilleure cadence de préparation ;", "solution adaptée à la montée en charge ;", "gain d’organisation pour les équipes."] },
-          { "title": "Logiciel PDA intégré", "description": "", "items": ["gestion des patients ;", "gestion des traitements ;", "planification des prises ;", "suivi des actions ;", "édition de rapports ;", "historique de préparation."] },
-          { "title": "Identification personnalisée", "description": "", "items": ["étiquettes personnalisables ;", "identification patient ;", "informations de prise ;", "meilleure lisibilité du traitement."] },
-          { "title": "Traçabilité avancée", "description": "", "items": ["enregistrement photographique ;", "lecture Datamatrix ;", "lots et dates d’expiration ;", "historique des actions ;", "rapports de préparation."] },
-          { "title": "Contrôle et validation", "description": "La vérification à distance par une deuxième personne permet de renforcer la logique de contrôle qualité. La pharmacie peut ainsi organiser un processus de validation plus robuste.", "items": ["vérification à distance ;", "double contrôle possible ;", "détection et marquage des erreurs ;", "validation documentée."] }
+          {
+            "title": "Préparation assistée",
+            "description": "",
+            "items": [
+              "guidage LED ;",
+              "assistance opérateur ;",
+              "préparation plus fluide ;",
+              "standardisation du geste de préparation."
+            ]
+          },
+          {
+            "title": "Double préparation simultanée",
+            "description": "",
+            "items": [
+              "deux PDA préparées simultanément ;",
+              "meilleure cadence de préparation ;",
+              "solution adaptée à la montée en charge ;",
+              "gain d’organisation pour les équipes."
+            ]
+          },
+          {
+            "title": "Logiciel PDA intégré",
+            "description": "",
+            "items": [
+              "gestion des patients ;",
+              "gestion des traitements ;",
+              "planification des prises ;",
+              "suivi des actions ;",
+              "édition de rapports ;",
+              "historique de préparation."
+            ]
+          },
+          {
+            "title": "Identification personnalisée",
+            "description": "",
+            "items": [
+              "étiquettes personnalisables ;",
+              "identification patient ;",
+              "informations de prise ;",
+              "meilleure lisibilité du traitement."
+            ]
+          },
+          {
+            "title": "Traçabilité avancée",
+            "description": "",
+            "items": [
+              "enregistrement photographique ;",
+              "lecture Datamatrix ;",
+              "lots et dates d’expiration ;",
+              "historique des actions ;",
+              "rapports de préparation."
+            ]
+          },
+          {
+            "title": "Contrôle et validation",
+            "description": "La vérification à distance par une deuxième personne permet de renforcer la logique de contrôle qualité. La pharmacie peut ainsi organiser un processus de validation plus robuste.",
+            "items": [
+              "vérification à distance ;",
+              "double contrôle possible ;",
+              "détection et marquage des erreurs ;",
+              "validation documentée."
+            ]
+          }
         ]
       },
       "workflow": {
@@ -650,12 +798,30 @@
         "subtitle": "Un workflow PDA clair, de la planification à la validation",
         "video_title": "Vidéo de démonstration Dual Blist",
         "steps": [
-          { "title": "Création du patient et intégration du traitement", "description": "La pharmacie renseigne les informations patient, les traitements et les moments de prise." },
-          { "title": "Planification de la préparation", "description": "Le logiciel organise les prises et prépare les informations nécessaires à la production." },
-          { "title": "Préparation guidée", "description": "L’équipe suit les indications du logiciel et le guidage LED pour préparer les doses." },
-          { "title": "Préparation simultanée de deux PDA", "description": "Dual Blist permet de travailler sur deux préparations en parallèle afin de fluidifier la production." },
-          { "title": "Identification et traçabilité", "description": "Les doses sont identifiées, les médicaments peuvent être enregistrés par photo, et les lots ainsi que dates d’expiration peuvent être documentés." },
-          { "title": "Contrôle, validation et édition des rapports", "description": "La préparation est vérifiée, validée et documentée pour conserver une trace claire du processus." }
+          {
+            "title": "Création du patient et intégration du traitement",
+            "description": "La pharmacie renseigne les informations patient, les traitements et les moments de prise."
+          },
+          {
+            "title": "Planification de la préparation",
+            "description": "Le logiciel organise les prises et prépare les informations nécessaires à la production."
+          },
+          {
+            "title": "Préparation guidée",
+            "description": "L’équipe suit les indications du logiciel et le guidage LED pour préparer les doses."
+          },
+          {
+            "title": "Préparation simultanée de deux PDA",
+            "description": "Dual Blist permet de travailler sur deux préparations en parallèle afin de fluidifier la production."
+          },
+          {
+            "title": "Identification et traçabilité",
+            "description": "Les doses sont identifiées, les médicaments peuvent être enregistrés par photo, et les lots ainsi que dates d’expiration peuvent être documentés."
+          },
+          {
+            "title": "Contrôle, validation et édition des rapports",
+            "description": "La préparation est vérifiée, validée et documentée pour conserver une trace claire du processus."
+          }
         ],
         "cta": "Télécharger la fiche produit"
       },
@@ -667,13 +833,23 @@
           "Medimesk accompagne les pharmacies dans le déploiement de Dual Blist, de l’analyse du besoin jusqu’à la prise en main opérationnelle.",
           "L’accompagnement Medimesk peut inclure :"
         ],
-        "items": ["analyse du besoin et du volume potentiel ;", "choix de la solution adaptée ;", "installation de l’équipement ;", "formation de l’équipe officinale ;", "prise en main du logiciel ;", "organisation du circuit de préparation ;", "bonnes pratiques de traçabilité ;", "accompagnement au démarrage ;", "support technique après installation."],
+        "items": [
+          "analyse du besoin et du volume potentiel ;",
+          "choix de la solution adaptée ;",
+          "installation de l’équipement ;",
+          "formation de l’équipe officinale ;",
+          "prise en main du logiciel ;",
+          "organisation du circuit de préparation ;",
+          "bonnes pratiques de traçabilité ;",
+          "accompagnement au démarrage ;",
+          "support technique après installation."
+        ],
         "cta_demo": "Demander une démonstration Dual Blist",
         "cta_quote": "Obtenir un devis"
       },
       "meta": {
-        "title": "Dual Blist — Solution PDA semi-automatisée | MediMesk",
-        "description": "Créez et structurez une activité PDA professionnelle avec Dual Blist : préparation guidée, double production, traçabilité et contrôle."
+        "title": "Dual Blist — Robot PDA & Matériel Pharmaceutique au Maroc",
+        "description": "Découvrez le robot PDA semi-automatisé Dual Blist. Sécurisez la préparation des doses de produits pharmaceutiques en pharmacie au Maroc avec traçabilité photo."
       }
     },
     "pdaAutomatique": {
@@ -708,8 +884,8 @@
         "subtitle": "Contactez-nous pour étudier une solution automatisée adaptée à votre clinique ou votre hôpital."
       },
       "meta": {
-        "title": "PDA Automatique — Cliniques et hôpitaux | MediMesk",
-        "description": "Système automatisé de Préparation des Doses à Administrer pour les volumes élevés des cliniques et hôpitaux."
+        "title": "Robots PDA Automatiques — Hôpital & Production Pharmaceutique Maroc",
+        "description": "Systèmes entièrement automatisés de Préparation des Doses (PDA) pour cliniques et production de produits pharmaceutiques au Maroc à haut débit."
       }
     },
     "pdaAccessoires": {
@@ -744,8 +920,8 @@
         "subtitle": "Contactez-nous pour découvrir nos appareils de contrôle et accessoires compatibles avec votre installation."
       },
       "meta": {
-        "title": "Appareils de contrôle et accessoires PDA | MediMesk",
-        "description": "Appareils de contrôle qualité et accessoires pour sécuriser votre chaîne de Préparation des Doses à Administrer."
+        "title": "Contrôle Qualité & Accessoires PDA | MediMesk Maroc",
+        "description": "Découvrez les appareils VIZEN, WIZER et accessoires pour contrôler et organiser votre production de produits pharmaceutiques sous PDA au Maroc."
       }
     }
   },
@@ -773,28 +949,59 @@
         "La boucle de perçage et son fermoir sont contenus dans une cartouche stérile à usage unique. La cartouche est insérée directement dans l’instrument, sans contact direct avec la boucle ou le fermoir. Lors du geste, l’oreille est percée, la boucle est positionnée et le fermoir est mis en place en une seule action."
       ],
       "benefits_intro": "Ce fonctionnement apporte plusieurs avantages :",
-      "benefits": ["hygiène renforcée grâce aux cartouches stériles individuelles ;", "absence de contact direct avec la boucle de perçage et le fermoir ;", "geste rapide et fluide ;", "positionnement précis ;", "fermeture automatique du fermoir ;", "système pratiquement silencieux ;", "expérience plus rassurante, notamment pour les enfants ;", "boucles de perçage hypoallergéniques et respectueuses de la peau ;", "designs variés pour enfants, adolescents et adultes."],
+      "benefits": [
+        "hygiène renforcée grâce aux cartouches stériles individuelles ;",
+        "absence de contact direct avec la boucle de perçage et le fermoir ;",
+        "geste rapide et fluide ;",
+        "positionnement précis ;",
+        "fermeture automatique du fermoir ;",
+        "système pratiquement silencieux ;",
+        "expérience plus rassurante, notamment pour les enfants ;",
+        "boucles de perçage hypoallergéniques et respectueuses de la peau ;",
+        "designs variés pour enfants, adolescents et adultes."
+      ],
       "conclusion": "Le système permet ainsi de proposer une expérience plus premium, plus rassurante et plus professionnelle que les méthodes de perçage traditionnelles."
     },
     "offer": {
       "title": "Une offre complète",
       "subtitle": "Instrument, cartouches, bijoux, soins et formation",
-      "paragraphs": ["Medimesk ne propose pas seulement un système de perçage. Nous accompagnons les professionnels dans la mise en place d’une offre complète, claire et exploitable commercialement.", "L’offre peut intégrer :"],
+      "paragraphs": [
+        "Medimesk ne propose pas seulement un système de perçage. Nous accompagnons les professionnels dans la mise en place d’une offre complète, claire et exploitable commercialement.",
+        "L’offre peut intégrer :"
+      ],
       "element_heading": "Élément",
       "role_heading": "Rôle",
       "rows": [
-        { "element": "Instrument STUDEX System75", "role": "Réaliser le perçage avec un outil professionnel, précis et pratiquement silencieux" },
-        { "element": "Cartouches stériles à usage unique", "role": "Garantir une hygiène optimale et éviter le contact direct avec les éléments de perçage" },
-        { "element": "Boucles de perçage hypoallergéniques", "role": "Proposer des bijoux adaptés, sûrs et esthétiques dès le premier perçage" },
-        { "element": "Gammes de bijoux", "role": "Offrir un choix attractif pour enfants, adolescents et adultes" },
-        { "element": "Produits de soin après-perçage", "role": "Accompagner le client après l’acte et favoriser les ventes complémentaires" },
-        { "element": "Formation des équipes", "role": "Sécuriser la prise en main, le geste, le conseil client et les recommandations après-perçage" }
+        {
+          "element": "Instrument STUDEX System75",
+          "role": "Réaliser le perçage avec un outil professionnel, précis et pratiquement silencieux"
+        },
+        {
+          "element": "Cartouches stériles à usage unique",
+          "role": "Garantir une hygiène optimale et éviter le contact direct avec les éléments de perçage"
+        },
+        {
+          "element": "Boucles de perçage hypoallergéniques",
+          "role": "Proposer des bijoux adaptés, sûrs et esthétiques dès le premier perçage"
+        },
+        {
+          "element": "Gammes de bijoux",
+          "role": "Offrir un choix attractif pour enfants, adolescents et adultes"
+        },
+        {
+          "element": "Produits de soin après-perçage",
+          "role": "Accompagner le client après l’acte et favoriser les ventes complémentaires"
+        },
+        {
+          "element": "Formation des équipes",
+          "role": "Sécuriser la prise en main, le geste, le conseil client et les recommandations après-perçage"
+        }
       ],
       "conclusion": "Cette approche permet au professionnel de proposer un service structuré, rentable et cohérent avec une image premium."
     },
     "meta": {
-      "title": "Advanced Piercing avec STUDEX System75 | MediMesk",
-      "description": "Développez un service de perçage d’oreilles premium avec STUDEX System75 : cartouches stériles, bijoux hypoallergéniques et formation."
+      "title": "Perçage d'Oreilles Advanced Piercing Studex | MediMesk Maroc",
+      "description": "Développez un service de perçage d’oreilles premium en pharmacie avec STUDEX System75 : cartouches stériles à usage unique, bijoux hypoallergéniques et formation."
     }
   },
   "accessories": {
@@ -814,7 +1021,16 @@
     },
     "key_points": {
       "title": "Points clés",
-      "items": ["Inspection optique des sachets", "Archivage photographique", "Détection des discordances", "Traçabilité des contrôles", "Enroulement et découpe des sachets", "Déconditionnement des médicaments", "Boîtes de dispensation patient", "Formation et support Medimesk"],
+      "items": [
+        "Inspection optique des sachets",
+        "Archivage photographique",
+        "Détection des discordances",
+        "Traçabilité des contrôles",
+        "Enroulement et découpe des sachets",
+        "Déconditionnement des médicaments",
+        "Boîtes de dispensation patient",
+        "Formation et support Medimesk"
+      ],
       "conclusion": "Les appareils de contrôle et accessoires PDA permettent de professionnaliser ces étapes et améliorent l’organisation quotidienne des équipes."
     },
     "range": {
@@ -824,25 +1040,77 @@
       "role_heading": "Rôle principal",
       "value_heading": "Intérêt pour votre activité PDA",
       "rows": [
-        { "equipment": "VIZEN IA", "role": "Archivage photographique et validation visuelle assistée", "value": "Documenter les sachets produits, faciliter la vérification et conserver une preuve visuelle des préparations" },
-        { "equipment": "VIZEN DE", "role": "Inspection automatique compacte", "value": "Contrôler les sachets dans un format adapté aux espaces réduits, avec stockage des images et résultats" },
-        { "equipment": "VIZEN EX", "role": "Inspection optique haute performance", "value": "Contrôler rapidement de grands volumes de sachets et détecter les discordances de forme, quantité ou taille" },
-        { "equipment": "VIZEN CAM", "role": "Documentation des corrections", "value": "Enregistrer les sachets modifiés après détection d’une erreur et renforcer la traçabilité du cycle correction-validation" },
-        { "equipment": "WIZER", "role": "Enroulement, découpe et organisation des sachets", "value": "Automatiser la gestion finale des bandes, organiser les séries et séparer les sachets à vérifier" },
-        { "equipment": "Kit Canister DIY", "role": "Configuration de canisters", "value": "Gagner en autonomie pour intégrer de nouveaux médicaments dans le flux automatisé" },
-        { "equipment": "Autocanister", "role": "Alimentation automatique sans canister fixe", "value": "Gérer avec plus de flexibilité les médicaments ponctuels, spécifiques ou à rotation variable" },
-        { "equipment": "Plateaux STS", "role": "Préparation des médicaments à faible rotation", "value": "Préparer les médicaments particuliers sans interrompre le flux principal de production" },
-        { "equipment": "I-Rolly et bobines", "role": "Enroulement automatique des bandes PDA", "value": "Faciliter le stockage, le transport et la transition entre production, inspection et dispensation" },
-        { "equipment": "Wizer DE", "role": "Enroulement semi-automatique flexible", "value": "Organiser les bandes par patient, unité, volume ou format de livraison" },
-        { "equipment": "Ez-CUT", "role": "Fractionnement et comptage automatisés", "value": "Couper, compter et manipuler les comprimés avec plus de régularité et moins de manipulation directe" },
-        { "equipment": "Déplisteurs", "role": "Extraction des médicaments de leur blister", "value": "Accélérer et sécuriser le déconditionnement avant préparation PDA" },
-        { "equipment": "Boîtes de dispensation", "role": "Organisation de la remise finale", "value": "Présenter, protéger et organiser les sachets pour le patient, l’aidant ou l’établissement partenaire" }
+        {
+          "equipment": "VIZEN IA",
+          "role": "Archivage photographique et validation visuelle assistée",
+          "value": "Documenter les sachets produits, faciliter la vérification et conserver une preuve visuelle des préparations"
+        },
+        {
+          "equipment": "VIZEN DE",
+          "role": "Inspection automatique compacte",
+          "value": "Contrôler les sachets dans un format adapté aux espaces réduits, avec stockage des images et résultats"
+        },
+        {
+          "equipment": "VIZEN EX",
+          "role": "Inspection optique haute performance",
+          "value": "Contrôler rapidement de grands volumes de sachets et détecter les discordances de forme, quantité ou taille"
+        },
+        {
+          "equipment": "VIZEN CAM",
+          "role": "Documentation des corrections",
+          "value": "Enregistrer les sachets modifiés après détection d’une erreur et renforcer la traçabilité du cycle correction-validation"
+        },
+        {
+          "equipment": "WIZER",
+          "role": "Enroulement, découpe et organisation des sachets",
+          "value": "Automatiser la gestion finale des bandes, organiser les séries et séparer les sachets à vérifier"
+        },
+        {
+          "equipment": "Kit Canister DIY",
+          "role": "Configuration de canisters",
+          "value": "Gagner en autonomie pour intégrer de nouveaux médicaments dans le flux automatisé"
+        },
+        {
+          "equipment": "Autocanister",
+          "role": "Alimentation automatique sans canister fixe",
+          "value": "Gérer avec plus de flexibilité les médicaments ponctuels, spécifiques ou à rotation variable"
+        },
+        {
+          "equipment": "Plateaux STS",
+          "role": "Préparation des médicaments à faible rotation",
+          "value": "Préparer les médicaments particuliers sans interrompre le flux principal de production"
+        },
+        {
+          "equipment": "I-Rolly et bobines",
+          "role": "Enroulement automatique des bandes PDA",
+          "value": "Faciliter le stockage, le transport et la transition entre production, inspection et dispensation"
+        },
+        {
+          "equipment": "Wizer DE",
+          "role": "Enroulement semi-automatique flexible",
+          "value": "Organiser les bandes par patient, unité, volume ou format de livraison"
+        },
+        {
+          "equipment": "Ez-CUT",
+          "role": "Fractionnement et comptage automatisés",
+          "value": "Couper, compter et manipuler les comprimés avec plus de régularité et moins de manipulation directe"
+        },
+        {
+          "equipment": "Déplisteurs",
+          "role": "Extraction des médicaments de leur blister",
+          "value": "Accélérer et sécuriser le déconditionnement avant préparation PDA"
+        },
+        {
+          "equipment": "Boîtes de dispensation",
+          "role": "Organisation de la remise finale",
+          "value": "Présenter, protéger et organiser les sachets pour le patient, l’aidant ou l’établissement partenaire"
+        }
       ],
       "conclusion": "Cette gamme peut être intégrée dès le lancement d’une activité PDA ou ajoutée progressivement, selon le volume, le niveau de contrôle recherché et les besoins d’organisation."
     },
     "meta": {
-      "title": "Appareils de contrôle et accessoires PDA | MediMesk",
-      "description": "Découvrez les appareils VIZEN, WIZER, canisters, déplisteurs et accessoires pour contrôler, tracer et organiser votre production PDA."
+      "title": "Contrôle Qualité & Accessoires PDA | MediMesk Maroc",
+      "description": "Découvrez les appareils VIZEN, WIZER et accessoires pour contrôler et organiser votre production de produits pharmaceutiques sous PDA au Maroc."
     }
   },
   "hospital": {
@@ -861,7 +1129,15 @@
         "Dans les cliniques et hôpitaux, la préparation des traitements implique des volumes importants, des prescriptions multiples, des changements fréquents et des exigences fortes de sécurité.",
         "Lorsque la préparation repose principalement sur des opérations manuelles, les équipes peuvent être confrontées à plusieurs limites :"
       ],
-      "limitations": ["temps important consacré au tri et au conditionnement ;", "dépendance aux gestes répétitifs ;", "difficulté à absorber une hausse du volume ;", "risque de confusion entre patients, médicaments ou moments de prise ;", "contrôle manuel chronophage ;", "traçabilité parfois insuffisamment structurée ;", "difficulté à standardiser la production entre plusieurs opérateurs."],
+      "limitations": [
+        "temps important consacré au tri et au conditionnement ;",
+        "dépendance aux gestes répétitifs ;",
+        "difficulté à absorber une hausse du volume ;",
+        "risque de confusion entre patients, médicaments ou moments de prise ;",
+        "contrôle manuel chronophage ;",
+        "traçabilité parfois insuffisamment structurée ;",
+        "difficulté à standardiser la production entre plusieurs opérateurs."
+      ],
       "conclusion": [
         "Nos machines automatisées répondent à ces enjeux en automatisant les étapes clés de la PDA hospitalière : distribution, conditionnement, impression, inspection, organisation des sachets et suivi de production.",
         "L’objectif n’est pas de remplacer le pharmacien ou l’équipe hospitalière. L’objectif est de leur donner des outils industriels pour produire davantage, mieux tracer et concentrer leur expertise sur le contrôle, la validation et la supervision."
@@ -874,11 +1150,26 @@
       "machine_heading": "Machine / solution",
       "role_heading": "Rôle principal",
       "rows": [
-        { "machine": "ATDPS", "role": "Automatiser la distribution et le conditionnement des médicaments en sachets" },
-        { "machine": "MENITH", "role": "Robotiser la préparation et le conditionnement pour les très gros volumes" },
-        { "machine": "VIZEN", "role": "Inspecter automatiquement les sachets préparés" },
-        { "machine": "WIZER", "role": "Organiser, découper, enrouler ou regrouper les sachets" },
-        { "machine": "OnCube", "role": "Piloter les machines, suivre la production et gérer les données" }
+        {
+          "machine": "ATDPS",
+          "role": "Automatiser la distribution et le conditionnement des médicaments en sachets"
+        },
+        {
+          "machine": "MENITH",
+          "role": "Robotiser la préparation et le conditionnement pour les très gros volumes"
+        },
+        {
+          "machine": "VIZEN",
+          "role": "Inspecter automatiquement les sachets préparés"
+        },
+        {
+          "machine": "WIZER",
+          "role": "Organiser, découper, enrouler ou regrouper les sachets"
+        },
+        {
+          "machine": "OnCube",
+          "role": "Piloter les machines, suivre la production et gérer les données"
+        }
       ],
       "conclusion": "Cette approche permet de construire une chaîne de production adaptée : de la machine de conditionnement automatisée jusqu’au contrôle et à l’organisation des sachets produits.",
       "cta": "Recevoir une présentation des machines JVM"
@@ -889,11 +1180,31 @@
         "name": "ATDPS",
         "title": "ATDPS : la machine de conditionnement automatisé en sachets",
         "subtitle": "Automatiser la préparation et le conditionnement des doses",
-        "paragraphs": ["Les systèmes ATDPS sont conçus pour automatiser la préparation des traitements à partir des ordres médicamenteux transmis à la machine.", "Ils permettent de distribuer les médicaments depuis des canisters, de les conditionner en sachets, d’imprimer les informations nécessaires sur chaque sachet et de suivre la production.", "Les ATDPS sont particulièrement adaptés aux établissements qui souhaitent passer à une production automatisée en sachets, avec une organisation plus fluide et plus traçable."],
+        "paragraphs": [
+          "Les systèmes ATDPS sont conçus pour automatiser la préparation des traitements à partir des ordres médicamenteux transmis à la machine.",
+          "Ils permettent de distribuer les médicaments depuis des canisters, de les conditionner en sachets, d’imprimer les informations nécessaires sur chaque sachet et de suivre la production.",
+          "Les ATDPS sont particulièrement adaptés aux établissements qui souhaitent passer à une production automatisée en sachets, avec une organisation plus fluide et plus traçable."
+        ],
         "features_title": "Fonctionnalités clés :",
-        "features": ["distribution automatisée des comprimés ;", "conditionnement en sachets ;", "impression des informations patient et traitement ;", "gestion des médicaments par canisters ;", "production par patient, horaire ou moment de prise ;", "contrôle du stock machine ;", "suivi de la production ;", "connexion possible au logiciel de pilotage."],
+        "features": [
+          "distribution automatisée des comprimés ;",
+          "conditionnement en sachets ;",
+          "impression des informations patient et traitement ;",
+          "gestion des médicaments par canisters ;",
+          "production par patient, horaire ou moment de prise ;",
+          "contrôle du stock machine ;",
+          "suivi de la production ;",
+          "connexion possible au logiciel de pilotage."
+        ],
         "benefits_title": "Bénéfices pour l’établissement :",
-        "benefits": ["augmenter la capacité de préparation ;", "réduire les tâches répétitives ;", "standardiser le conditionnement ;", "améliorer la lisibilité des doses ;", "renforcer la traçabilité ;", "professionnaliser la production hospitalière."],
+        "benefits": [
+          "augmenter la capacité de préparation ;",
+          "réduire les tâches répétitives ;",
+          "standardiser le conditionnement ;",
+          "améliorer la lisibilité des doses ;",
+          "renforcer la traçabilité ;",
+          "professionnaliser la production hospitalière."
+        ],
         "cta": "Obtenir un devis"
       },
       {
@@ -901,11 +1212,30 @@
         "name": "MENITH",
         "title": "MENITH : la solution robotisée pour très gros volumes",
         "subtitle": "Une machine hautement automatisée pour les productions intensives",
-        "paragraphs": ["MENITH est une solution robotisée JVM pensée pour les établissements ayant des besoins de production élevés.", "Elle automatise les étapes de remplacement, de placement, de dispensing, de conditionnement et d’inspection selon la configuration retenue. Elle s’adresse aux structures qui recherchent une capacité de production importante et un haut niveau d’automatisation dans une seule machine.", "MENITH est particulièrement pertinente pour les hôpitaux à fort volume, les cliniques avec production centralisée, les groupes de santé, les pharmacies hospitalières servant plusieurs unités et les organisations qui veulent structurer une production PDA intensive."],
+        "paragraphs": [
+          "MENITH est une solution robotisée JVM pensée pour les établissements ayant des besoins de production élevés.",
+          "Elle automatise les étapes de remplacement, de placement, de dispensing, de conditionnement et d’inspection selon la configuration retenue. Elle s’adresse aux structures qui recherchent une capacité de production importante et un haut niveau d’automatisation dans une seule machine.",
+          "MENITH est particulièrement pertinente pour les hôpitaux à fort volume, les cliniques avec production centralisée, les groupes de santé, les pharmacies hospitalières servant plusieurs unités et les organisations qui veulent structurer une production PDA intensive."
+        ],
         "features_title": "Fonctionnalités clés :",
-        "features": ["robotisation du dispensing ;", "conditionnement automatisé ;", "capacité élevée de production ;", "inspection intégrée selon configuration ;", "gestion optimisée des canisters ;", "production en sachets ;", "suivi et enregistrement des résultats."],
+        "features": [
+          "robotisation du dispensing ;",
+          "conditionnement automatisé ;",
+          "capacité élevée de production ;",
+          "inspection intégrée selon configuration ;",
+          "gestion optimisée des canisters ;",
+          "production en sachets ;",
+          "suivi et enregistrement des résultats."
+        ],
         "benefits_title": "Bénéfices pour l’établissement :",
-        "benefits": ["produire à grande échelle ;", "fluidifier les volumes importants ;", "réduire le temps passé sur les opérations répétitives ;", "renforcer le contrôle de production ;", "limiter les ruptures de flux ;", "disposer d’une solution pensée pour une automatisation hospitalière avancée."],
+        "benefits": [
+          "produire à grande échelle ;",
+          "fluidifier les volumes importants ;",
+          "réduire le temps passé sur les opérations répétitives ;",
+          "renforcer le contrôle de production ;",
+          "limiter les ruptures de flux ;",
+          "disposer d’une solution pensée pour une automatisation hospitalière avancée."
+        ],
         "cta": "Obtenir un devis"
       },
       {
@@ -913,11 +1243,26 @@
         "name": "VIZEN",
         "title": "VIZEN : inspection automatique des sachets",
         "subtitle": "Contrôler les sachets produits avec une solution dédiée",
-        "paragraphs": ["Dans une production automatisée, l’inspection est une étape essentielle. VIZEN permet d’inspecter automatiquement les sachets préparés afin de vérifier leur contenu selon les données disponibles dans la base médicament.", "La solution vient compléter les machines de conditionnement en ajoutant une couche de contrôle technique."],
+        "paragraphs": [
+          "Dans une production automatisée, l’inspection est une étape essentielle. VIZEN permet d’inspecter automatiquement les sachets préparés afin de vérifier leur contenu selon les données disponibles dans la base médicament.",
+          "La solution vient compléter les machines de conditionnement en ajoutant une couche de contrôle technique."
+        ],
         "features_title": "Fonctionnalités clés :",
-        "features": ["inspection automatique des sachets ;", "comparaison avec les informations médicament enregistrées ;", "détection des sachets non conformes selon configuration ;", "conservation des résultats d’inspection ;", "contribution à la traçabilité du processus."],
+        "features": [
+          "inspection automatique des sachets ;",
+          "comparaison avec les informations médicament enregistrées ;",
+          "détection des sachets non conformes selon configuration ;",
+          "conservation des résultats d’inspection ;",
+          "contribution à la traçabilité du processus."
+        ],
         "benefits_title": "Bénéfices pour l’établissement :",
-        "benefits": ["réduire la dépendance au contrôle visuel manuel ;", "accélérer le contrôle des productions importantes ;", "renforcer la documentation qualité ;", "mieux sécuriser la production ;", "faciliter l’identification des anomalies."],
+        "benefits": [
+          "réduire la dépendance au contrôle visuel manuel ;",
+          "accélérer le contrôle des productions importantes ;",
+          "renforcer la documentation qualité ;",
+          "mieux sécuriser la production ;",
+          "faciliter l’identification des anomalies."
+        ],
         "cta": "Obtenir un devis"
       },
       {
@@ -925,33 +1270,94 @@
         "name": "WIZER",
         "title": "WIZER : organisation, découpe et gestion des sachets",
         "subtitle": "Passer de la production au flux prêt à distribuer",
-        "paragraphs": ["Une fois les sachets préparés et contrôlés, l’établissement doit pouvoir les organiser efficacement pour les transmettre aux services, aux unités ou aux équipes concernées.", "WIZER permet d’automatiser certaines opérations d’organisation, de découpe, d’enroulement ou de séparation des sachets produits."],
+        "paragraphs": [
+          "Une fois les sachets préparés et contrôlés, l’établissement doit pouvoir les organiser efficacement pour les transmettre aux services, aux unités ou aux équipes concernées.",
+          "WIZER permet d’automatiser certaines opérations d’organisation, de découpe, d’enroulement ou de séparation des sachets produits."
+        ],
         "features_title": "Fonctionnalités clés :",
-        "features": ["organisation des sachets produits ;", "séparation des séries ;", "découpe selon les paramètres définis ;", "enroulement ou regroupement ;", "préparation des sachets pour la distribution."],
+        "features": [
+          "organisation des sachets produits ;",
+          "séparation des séries ;",
+          "découpe selon les paramètres définis ;",
+          "enroulement ou regroupement ;",
+          "préparation des sachets pour la distribution."
+        ],
         "benefits_title": "Bénéfices pour l’établissement :",
-        "benefits": ["gagner du temps après production ;", "faciliter la distribution interne ;", "améliorer la présentation des séries de sachets ;", "réduire les manipulations après conditionnement ;", "fluidifier le passage entre production et remise aux services."],
+        "benefits": [
+          "gagner du temps après production ;",
+          "faciliter la distribution interne ;",
+          "améliorer la présentation des séries de sachets ;",
+          "réduire les manipulations après conditionnement ;",
+          "fluidifier le passage entre production et remise aux services."
+        ],
         "cta": "Obtenir un devis"
       }
     ],
     "value": {
       "title": "Une valeur ajoutée pour chaque acteur",
       "audiences": [
-        { "title": "Pour la direction de l’établissement", "items": ["Moderniser la pharmacie hospitalière", "Augmenter la capacité de production", "Soutenir les démarches qualité", "Renforcer la sécurité du circuit du médicament", "Améliorer la traçabilité", "Structurer un investissement technologique visible", "Accompagner la croissance de l’activité"] },
-        { "title": "Pour la pharmacie hospitalière", "items": ["Réduire les tâches répétitives", "Standardiser la préparation", "Gagner en visibilité sur la production", "Faciliter le contrôle des sachets", "Mieux documenter les préparations", "Optimiser l’organisation des équipes", "Se concentrer davantage sur la validation et la supervision"] },
-        { "title": "Pour les services de soins", "items": ["Recevoir des sachets mieux identifiés", "Faciliter l’organisation des traitements", "Réduire les ambiguïtés au moment de l’administration", "Améliorer la lisibilité patient / service / horaire", "Fluidifier la relation avec la pharmacie"] }
+        {
+          "title": "Pour la direction de l’établissement",
+          "items": [
+            "Moderniser la pharmacie hospitalière",
+            "Augmenter la capacité de production",
+            "Soutenir les démarches qualité",
+            "Renforcer la sécurité du circuit du médicament",
+            "Améliorer la traçabilité",
+            "Structurer un investissement technologique visible",
+            "Accompagner la croissance de l’activité"
+          ]
+        },
+        {
+          "title": "Pour la pharmacie hospitalière",
+          "items": [
+            "Réduire les tâches répétitives",
+            "Standardiser la préparation",
+            "Gagner en visibilité sur la production",
+            "Faciliter le contrôle des sachets",
+            "Mieux documenter les préparations",
+            "Optimiser l’organisation des équipes",
+            "Se concentrer davantage sur la validation et la supervision"
+          ]
+        },
+        {
+          "title": "Pour les services de soins",
+          "items": [
+            "Recevoir des sachets mieux identifiés",
+            "Faciliter l’organisation des traitements",
+            "Réduire les ambiguïtés au moment de l’administration",
+            "Améliorer la lisibilité patient / service / horaire",
+            "Fluidifier la relation avec la pharmacie"
+          ]
+        }
       ]
     },
     "support": {
       "eyebrow": "Accompagnement Medimesk",
       "title": "Medimesk vous accompagne dans la prise en main des machines",
       "subtitle": "Installation, formation et support local",
-      "paragraphs": ["Medimesk accompagne les établissements de santé dans le déploiement des machines JVM au Maroc.", "Notre rôle est de vous aider à choisir la solution adaptée à votre besoin de production, d’assurer l’installation, de former vos équipes et de vous accompagner dans la prise en main opérationnelle de la PDA automatisée.", "L’accompagnement Medimesk peut inclure :"],
-      "items": ["présentation des machines JVM ;", "aide au choix de la solution selon le volume et les objectifs de production ;", "coordination de l’installation ;", "mise en service de la machine ;", "formation des équipes pharmaceutiques ;", "formation à l’utilisation du logiciel ;", "formation aux bonnes pratiques de production automatisée ;", "accompagnement au démarrage ;", "maintenance préventive et corrective ;", "support technique local."],
+      "paragraphs": [
+        "Medimesk accompagne les établissements de santé dans le déploiement des machines JVM au Maroc.",
+        "Notre rôle est de vous aider à choisir la solution adaptée à votre besoin de production, d’assurer l’installation, de former vos équipes et de vous accompagner dans la prise en main opérationnelle de la PDA automatisée.",
+        "L’accompagnement Medimesk peut inclure :"
+      ],
+      "items": [
+        "présentation des machines JVM ;",
+        "aide au choix de la solution selon le volume et les objectifs de production ;",
+        "coordination de l’installation ;",
+        "mise en service de la machine ;",
+        "formation des équipes pharmaceutiques ;",
+        "formation à l’utilisation du logiciel ;",
+        "formation aux bonnes pratiques de production automatisée ;",
+        "accompagnement au démarrage ;",
+        "maintenance préventive et corrective ;",
+        "support technique local."
+      ],
       "disclaimer": "Medimesk n’a pas vocation à remplacer les équipes internes ou à auditer l’ensemble du circuit médicament. Notre mission est de rendre l’automatisation accessible, compréhensible et opérationnelle grâce aux machines JVM, à la formation et au support de proximité."
     },
     "meta": {
-      "title": "PDA automatisée pour hôpitaux et cliniques | MediMesk",
-      "description": "Découvrez les machines JVM ATDPS, MENITH, VIZEN et WIZER pour automatiser la PDA hospitalière à grande échelle."
+      "title": "PDA Hospitalière — Matériel & Robots JVM au Maroc | MediMesk",
+      "description": "Découvrez les automates de dispensation et de conditionnement de produits pharmaceutiques au Maroc pour hôpitaux et cliniques."
     }
   },
   "about": {
@@ -1012,8 +1418,8 @@
       "subtitle": "Que vous soyez pharmacien, distributeur ou professionnel de santé, nous serions ravis d'échanger avec vous."
     },
     "meta": {
-      "title": "À propos de MediMesk — Notre histoire",
-      "description": "Découvrez l'équipe MediMesk et notre mission d'innover pour les pharmacies au Maroc."
+      "title": "À Propos de MediMesk — Équipement Pharmaceutique au Maroc",
+      "description": "Découvrez l'histoire de MediMesk, fondée par Dr. Hassan El Youssfi pour moderniser la dispensation de produits pharmaceutiques au Maroc."
     }
   },
   "contact": {
@@ -1063,8 +1469,8 @@
       "error_unknown": "Une erreur est survenue. Veuillez réessayer."
     },
     "meta": {
-      "title": "Contactez MediMesk — Demandez une démo",
-      "description": "Prenez contact avec notre équipe pour une démonstration ou un devis personnalisé."
+      "title": "Contactez MediMesk — Devis Matériel Pharmaceutique au Maroc",
+      "description": "Contactez notre équipe pour toute demande de devis de matériel pharmaceutique ou démonstration de robots PDA au Maroc."
     }
   },
   "support": {
@@ -1076,10 +1482,12 @@
       "title": "Questions fréquentes",
       "subtitle": "Les réponses aux questions les plus posées par nos clients.",
       "items": [
-        {          "q": "Qu'est-ce que la PDA ?",
+        {
+          "q": "Qu'est-ce que la PDA ?",
           "a": "La Préparation des Doses à Administrer (PDA) est un service pharmaceutique professionnel à forte valeur ajoutée. Elle consiste en un reconditionnement des médicaments solides oraux dans des dispositifs organisés par jours et prises pour une période déterminée. L'objectif de ces systèmes PDA est de maximiser l'observance thérapeutique et de garantir la sécurité du patient, en éliminant les risques liés à la manipulation de multiples conditionnements. Ce service transforme la pharmacie en un centre de santé proactif, en optimisant le suivi pharmacothérapeutique et en positionnant le professionnel comme un acteur clé de la pérennité du système de santé."
         },
-        {          "q": "Comment fonctionne le système de Préparation de Doses Administrées (PDA) RDC 45 ?",
+        {
+          "q": "Comment fonctionne le système de Préparation de Doses Administrées (PDA) RDC 45 ?",
           "a": "Le RDC 45 automatise la préparation de piluliers individuels en découpant les blisters d'origine. Le pharmacien programme les prescriptions via le logiciel intégré, et la machine prépare les doses avec une traçabilité complète — réduisant les erreurs de dispensation de plus de 99 %."
         },
         {
@@ -1110,8 +1518,8 @@
       "cta": "Ouvrir un ticket"
     },
     "meta": {
-      "title": "FAQ — MediMesk",
-      "description": "Retrouvez les réponses aux questions les plus fréquentes sur nos solutions et notre accompagnement."
+      "title": "FAQ & Support Client — Matériel Pharmaceutique & PDA Maroc",
+      "description": "Retrouvez les réponses à vos questions sur nos robots PDA et le support technique pour matériel pharmaceutique au Maroc."
     }
   }
 }

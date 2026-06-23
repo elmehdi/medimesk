@@ -73,8 +73,30 @@ export default function PdaAutomatiquePage({ params }: { params: { locale: Local
   const t = getTranslations(locale);
   const p = t.hospital;
 
+  const productLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": p.hero.product_name,
+    "image": "https://medimesk.com/images/timedi.png",
+    "description": p.meta.description,
+    "brand": {
+      "@type": "Brand",
+      "name": "MediMesk"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "MAD",
+      "availability": "https://schema.org/InStock",
+      "url": `https://medimesk.com/${locale}/solutions/pda-automatique`
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}
+      />
       <div className="border-b border-light-teal bg-section-bg">
         <nav className="mx-auto max-w-container px-gutter py-3" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-1.5 text-sm text-dark-text/50">
