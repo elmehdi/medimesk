@@ -15,6 +15,16 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     title: p.meta.title,
     description: p.meta.description,
     image: "/images/timedi.png",
+    keywords: [
+      "PDA automatique Maroc",
+      "automated PDA Morocco",
+      "PDA automatique Afrique",
+      "automated PDA Africa",
+      "pharmacie hospitalière Rabat",
+      "pharmacie hospitalière Casablanca",
+      "hospital pharmacy Rabat",
+      "hospital pharmacy Casablanca",
+    ],
   });
 }
 

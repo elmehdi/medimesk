@@ -15,6 +15,18 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     title: p.meta.title,
     description: p.meta.description,
     image: "/images/DB2.png",
+    keywords: [
+      "Dual Blist Maroc",
+      "Dual Blist Morocco",
+      "Dual Blist Africa",
+      "Dual Blist Afrique",
+      "Dual Blist pharmacie Rabat",
+      "Dual Blist pharmacie Casablanca",
+      "Dual Blist pharmacy Rabat",
+      "Dual Blist pharmacy Casablanca",
+      "PDA semi-automatisée Maroc",
+      "semi-automated PDA Morocco",
+    ],
   });
 }
 

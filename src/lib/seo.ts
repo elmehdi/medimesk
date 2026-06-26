@@ -11,8 +11,26 @@ type SeoMetadataInput = {
   title: string;
   description: string;
   image?: string;
+  keywords?: string[];
   noIndex?: boolean;
 };
+
+const sharedKeywords = [
+  "MediMesk Morocco",
+  "MediMesk Africa",
+  "pharmacy Rabat",
+  "pharmacy Casablanca",
+  "pharmacy Morocco",
+  "pharmacy automation Morocco",
+  "PDA Morocco",
+  "MediMesk Maroc",
+  "MediMesk Afrique",
+  "pharmacie Rabat",
+  "pharmacie Casablanca",
+  "pharmacie Maroc",
+  "automatisation pharmacie Maroc",
+  "PDA Maroc",
+];
 
 function normalizePath(path = "") {
   if (!path || path === "/") return "";
@@ -38,12 +56,36 @@ export function alternateLanguages(path = "") {
   };
 }
 
+export function localizedSeoKeywords(locale: Locale, keywords: string[] = []) {
+  const localeKeywords =
+    locale === "fr"
+      ? [
+          "MediMesk Maroc",
+          "MediMesk Afrique",
+          "pharmacie Rabat",
+          "pharmacie Casablanca",
+          "pharmacie Maroc",
+          "automatisation pharmacie Maroc",
+        ]
+      : [
+          "MediMesk Morocco",
+          "MediMesk Africa",
+          "pharmacy Rabat",
+          "pharmacy Casablanca",
+          "pharmacy Morocco",
+          "pharmacy automation Morocco",
+        ];
+
+  return Array.from(new Set([...localeKeywords, ...sharedKeywords, ...keywords]));
+}
+
 export function createSeoMetadata({
   locale,
   path = "",
   title,
   description,
   image = DEFAULT_OG_IMAGE,
+  keywords = [],
   noIndex = false,
 }: SeoMetadataInput): Metadata {
   const pathname = localizedPath(locale, path);
@@ -51,6 +93,7 @@ export function createSeoMetadata({
   return {
     title,
     description,
+    keywords: localizedSeoKeywords(locale, keywords),
     alternates: {
       canonical: pathname,
       languages: alternateLanguages(path),

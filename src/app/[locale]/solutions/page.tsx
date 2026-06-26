@@ -15,6 +15,18 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     title: t.products_page.meta.title,
     description: t.products_page.meta.description,
     image: "/images/pda-robot.webp",
+    keywords: [
+      "Dual Blist Maroc",
+      "Dual Blist Morocco",
+      "RDC 45 Maroc",
+      "RDC 45 Morocco",
+      "Studex Maroc",
+      "Studex Morocco",
+      "PDA pharmacie Rabat",
+      "PDA pharmacie Casablanca",
+      "pharmacy automation Africa",
+      "automatisation pharmacie Afrique",
+    ],
   });
 }
 

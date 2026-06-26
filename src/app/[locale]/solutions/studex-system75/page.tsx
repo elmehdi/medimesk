@@ -15,6 +15,18 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     title: p.meta.title,
     description: p.meta.description,
     image: "/images/studex-system75.webp",
+    keywords: [
+      "Studex Maroc",
+      "Studex Morocco",
+      "Studex Africa",
+      "Studex Afrique",
+      "Studex pharmacie Rabat",
+      "Studex pharmacie Casablanca",
+      "Studex pharmacy Rabat",
+      "Studex pharmacy Casablanca",
+      "perçage pharmacie Maroc",
+      "pharmacy ear piercing Morocco",
+    ],
   });
 }
 

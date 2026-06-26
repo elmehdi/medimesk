@@ -15,6 +15,16 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     title: p.meta.title,
     description: p.meta.description,
     image: "/images/Vizen.png",
+    keywords: [
+      "accessoires PDA Maroc",
+      "PDA accessories Morocco",
+      "accessoires PDA Afrique",
+      "PDA accessories Africa",
+      "PDA pharmacie Rabat",
+      "PDA pharmacie Casablanca",
+      "PDA pharmacy Rabat",
+      "PDA pharmacy Casablanca",
+    ],
   });
 }
 

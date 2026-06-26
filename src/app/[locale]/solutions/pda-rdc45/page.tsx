@@ -15,6 +15,16 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     title: t.pda.meta.title,
     description: t.pda.meta.description,
     image: "/images/pda-robot.webp",
+    keywords: [
+      "RDC 45 Maroc",
+      "RDC 45 Morocco",
+      "RDC 45 Africa",
+      "RDC 45 Afrique",
+      "PDA pharmacie Rabat",
+      "PDA pharmacie Casablanca",
+      "PDA pharmacy Rabat",
+      "PDA pharmacy Casablanca",
+    ],
   });
 }
 

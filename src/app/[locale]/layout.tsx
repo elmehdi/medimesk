@@ -6,13 +6,14 @@ import Footer from "@/components/layout/Footer";
 import RevealObserver from "@/hooks/useReveal";
 import "./../globals.css";
 import type { Metadata } from "next";
-import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo";
+import { DEFAULT_OG_IMAGE, localizedSeoKeywords, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "MediMesk — Solutions pour pharmacies",
   description:
     "MediMesk fournit des solutions innovantes d'automatisation et d'équipement médical pour les pharmacies au Maroc.",
+  keywords: localizedSeoKeywords("fr"),
   applicationName: SITE_NAME,
   openGraph: {
     type: "website",
