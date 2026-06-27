@@ -61,7 +61,7 @@
   },
   "home": {
     "hero": {
-      "title_line1": "Des solutions innovantes",
+      "title_line1": "Des solutions technologiques",
       "title_line2": "pour les professionnels de santé",
       "subtitle": "MediMesk accompagne les professionnels de santé avec des solutions technologiques fiables pour sécuriser leurs pratiques, optimiser leurs organisations et développer des services à forte valeur ajoutée au bénéfice des patients et des usagers.",
       "image_alt": "Sachets de médicaments personnalisés pour la PDA",
@@ -72,8 +72,7 @@
     },
     "trust_partners_label": "Partenaires",
     "trust": [
-      "Fondé par Dr. Hassan El Youssfi",
-      "40+ pharmacies équipées"
+      "Des solutions reconnues dans le monde"
     ],
     "solutions": {
       "title": "Nos Produits",
@@ -1054,7 +1053,6 @@
       ],
       "message": "Message",
       "message_placeholder": "Décrivez votre demande…",
-      "consent": "J'accepte d'être contacté par MediMesk suite à cette demande.",
       "submit": "Envoyer le message",
       "submitting": "Envoi en cours…",
       "success_title": "Message envoyé !",

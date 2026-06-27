@@ -87,15 +87,27 @@ export default function Navbar({ locale, t }: NavbarProps) {
               className="h-12 w-auto lg:h-14"
               priority
             />
-            <span className="relative block h-[19px] w-[140px] overflow-hidden lg:h-6 lg:w-[180px]">
-              <Image
-                src="/images/text logo.png"
-                alt=""
-                width={6250}
-                height={4018}
-                className="absolute -left-[19px] -top-[47px] h-auto w-[176px] max-w-none lg:-left-[24px] lg:-top-[61px] lg:w-[226px]"
-                priority
-              />
+            <span className="flex flex-col gap-0.5">
+              <span className="relative block h-[22px] w-[140px] overflow-hidden lg:h-[28px] lg:w-[180px]">
+                <Image
+                  src="/images/text logo.png"
+                  alt=""
+                  width={6250}
+                  height={4018}
+                  className="absolute -left-[19px] -top-[45px] h-auto w-[176px] max-w-none lg:-left-[24px] lg:-top-[58px] lg:w-[226px]"
+                  priority
+                />
+              </span>
+              <span className="relative block h-[9px] w-[140px] overflow-hidden lg:h-[11px] lg:w-[180px]">
+                <Image
+                  src="/images/Trust%20in%20every%20DOSE.png"
+                  alt="Trust in every dose"
+                  width={1920}
+                  height={1080}
+                  className="absolute -left-[8px] -top-[39px] h-auto w-[156px] max-w-none lg:-left-[10px] lg:-top-[50px] lg:w-[198px]"
+                  priority
+                />
+              </span>
             </span>
           </Link>
 

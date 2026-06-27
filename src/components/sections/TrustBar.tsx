@@ -25,25 +25,33 @@ export default function TrustBar({ t }: { t: Translations }) {
       <div className="mx-auto max-w-container px-gutter py-5">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-center sm:gap-0">
           {/* Partner logos */}
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
             <span className="text-xs font-semibold uppercase tracking-wider text-dark-text/40">
               {t.home.trust_partners_label}
             </span>
-            <span className="w-px h-5 bg-light-teal" />
-            <Image
-              src="/images/studex.png"
-              alt="Studex — Partenaire officiel"
-              width={475}
-              height={106}
-              className="w-[100px] h-auto"
-            />
             <span className="w-px h-5 bg-light-teal" />
             <Image
               src="/images/timedi.png"
               alt="TI-Medi"
               width={267}
               height={189}
-              className="w-[80px] h-auto"
+              className="w-[96px] h-auto object-contain"
+            />
+            <span className="w-px h-5 bg-light-teal" />
+            <Image
+              src="/images/jvm%20h.png"
+              alt="JVM"
+              width={280}
+              height={180}
+              className="w-[76px] h-auto object-contain"
+            />
+            <span className="w-px h-5 bg-light-teal" />
+            <Image
+              src="/images/studex.png"
+              alt="Studex — Partenaire officiel"
+              width={475}
+              height={106}
+              className="w-[100px] h-auto object-contain"
             />
           </div>
 

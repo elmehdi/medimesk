@@ -21,10 +21,6 @@ export function createContactSchema(locale: Locale) {
   message: z
     .string()
     .min(10, en ? "Message must contain at least 10 characters." : "Le message doit contenir au moins 10 caractères."),
-  consent: z
-    .literal(true, {
-      message: en ? "Please check this box to send your message." : "Veuillez cocher cette case pour envoyer votre message.",
-    }),
 });
 }
 

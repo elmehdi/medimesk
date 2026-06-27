@@ -72,8 +72,7 @@
     },
     "trust_partners_label": "Partners",
     "trust": [
-      "Founded by Dr. Hassan El Youssfi",
-      "40+ pharmacies equipped"
+      "Trusted worldwide solution"
     ],
     "solutions": {
       "title": "Our Products",
@@ -1044,7 +1043,6 @@
       ],
       "message": "Message",
       "message_placeholder": "Describe your request…",
-      "consent": "I agree to be contacted by MediMesk following this request.",
       "submit": "Send Message",
       "submitting": "Sending…",
       "success_title": "Message Sent!",

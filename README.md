@@ -29,6 +29,28 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Brevo Forms
+
+The newsletter and contact form use Brevo from the Cloudflare Pages Functions in `functions/api`.
+
+Required environment variables:
+
+```bash
+BREVO_API_KEY=your-brevo-api-key
+BREVO_LIST_ID=123
+BREVO_CONTACT_LIST_ID=456
+BREVO_SENDER_EMAIL=no-reply@medimesk.ma
+EMAIL_TO=contact@medimesk.ma
+```
+
+Optional environment variables:
+
+```bash
+BREVO_SENDER_NAME=MediMesk
+```
+
+`BREVO_LIST_ID` is used for FAQ newsletter subscribers. Contact-form submitters are added to both `BREVO_CONTACT_LIST_ID` and `BREVO_LIST_ID`, then the contact message is sent with Brevo transactional email.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
