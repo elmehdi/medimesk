@@ -72,14 +72,14 @@
     },
     "trust_partners_label": "Partners",
     "trust": [
-      "Trusted worldwide solution"
+      "+450,000 pharmacies equipped worldwide"
     ],
     "solutions": {
       "title": "Our Products",
       "subtitle": "Reliable and innovative solutions to modernize your pharmacy, improve operational efficiency, and deliver better service to your patients.",
       "cards": [
         {
-          "title": "Dual Blist — Semi-Automated PDA",
+          "title": "Dual Blist — Blister",
           "image_alt": "Dual Blist semi-automated PDA solution",
           "benefits": [
             "LED-guided preparation",
@@ -88,7 +88,7 @@
           ]
         },
         {
-          "title": "RDC 45 — Sachet-Based PDA",
+          "title": "RDC 45 — Sachet Doses",
           "image_alt": "Compact RDC 45 sachet-based PDA solution",
           "benefits": [
             "Compact, scalable solution",
@@ -97,7 +97,7 @@
           ]
         },
         {
-          "title": "Automated PDA — Hospitals & Clinics",
+          "title": "PDA — Hospitals & Clinics",
           "image_alt": "JVM automated PDA machines for hospitals and clinics",
           "benefits": [
             "Large-scale automated production",
@@ -157,30 +157,30 @@
     },
     "rdc45_spotlight": {
       "badge": "Flagship Product",
-      "title": "Structure your PDA service with a reliable, compact, and scalable solution",
-      "description": "Do your patients take several medications every day? The RDC 45 helps pharmacies make dose preparation safer, organize production more effectively, and provide a clear, personalized, and professional PDA service.",
-      "steps_intro": "Guided preparation in 4 steps:",
+      "title": "Structure your PDA service with a reliable, guided, and scalable solution",
+      "description": "With Dual Blist, pharmacies can develop a blister-based dose preparation service through a semi-automated solution designed to improve organization, safety, and professionalism. A practical answer to the needs of polymedicated patients, chronic treatments, and pharmacies looking to strengthen their role in pharmaceutical follow-up.",
+      "steps_intro": "From prescription to patient blister, a step-by-step guided preparation:",
       "steps": [
         {
-          "title": "Program the preparation",
-          "description": "The pharmacist enters the treatments, patients, and administration times into the software to set up production."
+          "title": "Organize treatments",
+          "description": "Organize treatments according to prescriptions and administration times."
         },
         {
-          "title": "Fill the cells",
-          "description": "Guided by the machine’s LEDs, the pharmacist loads the medicines into the indicated cells."
+          "title": "Prepare doses",
+          "description": "Prepare doses with clear, structured guidance."
         },
         {
-          "title": "Produce the dose sachets",
-          "description": "Once loading is complete, the RDC 45 automatically packages the medicines in printed, sealed sachets."
+          "title": "Package into blisters",
+          "description": "Package treatments into personalized, identified blisters."
         },
         {
-          "title": "Prepare delivery to the patient",
-          "description": "You check the finished sachets and place them in the MediMesk dispensing box before handing them to the patient."
+          "title": "Check and validate",
+          "description": "Check, validate, and deliver a clearly organized preparation to the patient or caregiver."
         }
       ],
-      "cta_spec": "Download the technical data sheet",
-      "cta_demo": "Watch the demonstration (video)",
-      "video_label": "RDC 45 Demo Video",
+      "cta_discover": "Discover Dual Blist",
+      "cta_demo": "Request a demonstration",
+      "video_label": "Dual Blist demonstration video",
       "specs": [
         {
           "label": "Patient Capacity",

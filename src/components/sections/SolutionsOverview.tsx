@@ -23,6 +23,7 @@ export default function SolutionsOverview({ locale, t }: { locale: string; t: Tr
             benefits={card.benefits as [string, string, string]}
             href={`/${locale}${productCardMeta[i].href}`}
             imageFit={productCardMeta[i].imageFit}
+            badge={productCardMeta[i].badge}
             linkLabel={t.cta.product_details}
           />
         ))}

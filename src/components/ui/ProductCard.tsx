@@ -15,6 +15,8 @@ interface ProductCardProps {
   /** Link label */
   linkLabel: string;
   imageFit?: "cover" | "contain";
+  /** Optional category band displayed on top-left of image */
+  badge?: string;
 }
 
 export default function ProductCard({
@@ -25,6 +27,7 @@ export default function ProductCard({
   href,
   linkLabel,
   imageFit = "cover",
+  badge,
 }: ProductCardProps) {
   return (
     <Link href={href} className="group flex flex-col overflow-hidden rounded-2xl border border-light-teal bg-white transition-all hover:-translate-y-1 hover:border-primary-teal/35 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-teal/40 focus:ring-offset-2">
@@ -37,6 +40,14 @@ export default function ProductCard({
           className={`${imageFit === "contain" ? "object-contain p-8" : "object-cover"} transition-transform duration-300 group-hover:scale-105`}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
         />
+        {/* Category badge band */}
+        {badge && (
+          <div className="absolute left-0 top-4 z-10">
+            <span className="inline-block bg-primary-teal px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white shadow-md rounded-r-full">
+              {badge}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Content */}

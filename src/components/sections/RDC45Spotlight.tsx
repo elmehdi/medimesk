@@ -1,18 +1,19 @@
 import Image from "next/image";
 import { SectionWrapper, Button, Badge } from "@/components/ui";
 import type { Translations } from "@/i18n/useTranslations";
+import { contactHref } from "@/lib/contact-intents";
 
 export default function RDC45Spotlight({ locale, t }: { locale: string; t: Translations }) {
   const s = t.home.rdc45_spotlight;
   return (
-    <SectionWrapper alternate>
+    <SectionWrapper>
       <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
         {/* Left — Image */}
         <div className="flex-1">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
             <Image
-              src="/images/pda-robot.webp"
-              alt={s.video_label}
+              src="/images/DB2.png"
+              alt="Dual Blist — Solution PDA semi-automatisée"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -44,10 +45,10 @@ export default function RDC45Spotlight({ locale, t }: { locale: string; t: Trans
           </ol>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <Button href={`/${locale}/solutions/pda-rdc45#specifications`}>
-              {s.cta_spec}
+            <Button href={`/${locale}/solutions/pda-dual-blist`}>
+              {s.cta_discover}
             </Button>
-            <Button variant="secondary" href={`/${locale}/solutions/pda-rdc45#demonstration`}>
+            <Button variant="secondary" href={contactHref(locale, "dual-blist-demo")}>
               {s.cta_demo}
             </Button>
           </div>
@@ -56,3 +57,4 @@ export default function RDC45Spotlight({ locale, t }: { locale: string; t: Trans
     </SectionWrapper>
   );
 }
+

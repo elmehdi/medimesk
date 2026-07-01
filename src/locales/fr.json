@@ -72,14 +72,14 @@
     },
     "trust_partners_label": "Partenaires",
     "trust": [
-      "Des solutions reconnues dans le monde"
+      "+450 000 pharmacies équipées dans le monde"
     ],
     "solutions": {
       "title": "Nos Produits",
       "subtitle": "Des solutions fiables et innovantes pour moderniser votre pharmacie, améliorer l'efficacité opérationnelle et offrir un meilleur service à vos patients.",
       "cards": [
         {
-          "title": "Dual Blist — PDA semi-automatisée",
+          "title": "Dual Blist — Blister",
           "image_alt": "Solution PDA semi-automatisée Dual Blist",
           "benefits": [
             "Préparation guidée par LED",
@@ -88,7 +88,7 @@
           ]
         },
         {
-          "title": "RDC 45 — PDA en sachets",
+          "title": "RDC 45 — Sachets Doses",
           "image_alt": "Solution compacte RDC 45 pour la PDA en sachets",
           "benefits": [
             "Solution compacte et évolutive",
@@ -97,7 +97,7 @@
           ]
         },
         {
-          "title": "Automatisation PDA — Hôpitaux et cliniques",
+          "title": "PDA — Hôpitaux et Cliniques",
           "image_alt": "Machines JVM de PDA automatisée pour hôpitaux et cliniques",
           "benefits": [
             "Production automatisée à grande échelle",
@@ -157,30 +157,30 @@
     },
     "rdc45_spotlight": {
       "badge": "Produit phare",
-      "title": "Structurez votre activité PDA avec une solution fiable, compacte et évolutive",
-      "description": "Vos patients prennent plusieurs traitements au quotidien ? Le RDC 45 aide les pharmacies à sécuriser la préparation des doses à administrer, à mieux organiser leur production et à proposer un service PDA clair, personnalisé et professionnel.",
-      "steps_intro": "Une préparation guidée en 4 étapes :",
+      "title": "Structurez votre activité PDA avec une solution fiable, guidée et évolutive",
+      "description": "Avec Dual Blist, les pharmacies peuvent développer un service de préparation des doses à administrer en blisters, grâce à une solution semi-automatisée pensée pour gagner en organisation, en sécurité et en professionnalisme. Une réponse concrète aux besoins des patients polymédiqués, des traitements chroniques et des officines qui souhaitent valoriser leur rôle dans le suivi pharmaceutique.",
+      "steps_intro": "De la prescription au blister patient, une préparation guidée étape par étape :",
       "steps": [
         {
-          "title": "Programmer la préparation",
-          "description": "Le pharmacien renseigne les traitements, les patients et les moments de prise dans le logiciel afin de préparer la production."
+          "title": "Organisez les traitements",
+          "description": "Organisez les traitements selon les prescriptions et les moments de prise."
         },
         {
-          "title": "Remplir les cellules",
-          "description": "Guidé par les LED de la machine, le pharmacien charge les médicaments dans les cellules indiquées."
+          "title": "Préparez les doses",
+          "description": "Préparez les doses avec un guidage clair et structuré."
         },
         {
-          "title": "Produire les sachets dose",
-          "description": "Une fois le chargement terminé, le RDC 45 conditionne automatiquement les médicaments dans des sachets imprimés et scellés."
+          "title": "Conditionnez en blisters",
+          "description": "Conditionnez les traitements en blisters personnalisés et identifiés."
         },
         {
-          "title": "Préparer la remise au patient",
-          "description": "Vous contrôlez les sachets produits puis les placez dans la boîte de dispensation MediMesk avant leur remise au patient."
+          "title": "Contrôlez et validez",
+          "description": "Contrôlez, validez et remettez une préparation lisible au patient ou à l'aidant."
         }
       ],
-      "cta_spec": "Télécharger la fiche technique",
-      "cta_demo": "Voir la démonstration (vidéo)",
-      "video_label": "Vidéo de démonstration RDC 45",
+      "cta_discover": "Découvrir Dual Blist",
+      "cta_demo": "Demander une démonstration",
+      "video_label": "Vidéo de démonstration Dual Blist",
       "specs": [
         {
           "label": "Capacité patients",
