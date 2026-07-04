@@ -26,10 +26,6 @@ export default function TrustBar({ t }: { t: Translations }) {
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-center sm:gap-0">
           {/* Partner logos */}
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
-            <span className="text-xs font-semibold uppercase tracking-wider text-dark-text/40">
-              {t.home.trust_partners_label}
-            </span>
-            <span className="w-px h-5 bg-light-teal" />
             <Image
               src="/images/timedi.png"
               alt="TI-Medi"

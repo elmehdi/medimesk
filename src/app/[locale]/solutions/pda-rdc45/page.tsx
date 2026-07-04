@@ -167,18 +167,6 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
             </li>
           ))}
         </ol>
-        <div className="mx-auto mt-14 max-w-4xl overflow-hidden rounded-2xl border border-light-teal bg-dark-text p-2 shadow-xl">
-          <div className="aspect-video overflow-hidden rounded-xl">
-            <iframe
-              className="h-full w-full"
-              src="https://www.youtube-nocookie.com/embed/Dfou_xl9Go0?rel=0"
-              title={p.workflow.video_title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-          </div>
-        </div>
       </SectionWrapper>
 
       {/* Block 4 — Key features */}
@@ -232,6 +220,25 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
           </div>
           <div className="rounded-2xl border border-light-teal bg-white p-7 shadow-sm md:p-8">
             <CheckList items={p.support.items} />
+          </div>
+        </div>
+      </SectionWrapper>
+
+      {/* Block 7 — Vidéo démonstration */}
+      <SectionWrapper id="demonstration">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-dark-text">{p.workflow.video_title}</h2>
+        </div>
+        <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl border border-light-teal bg-dark-text p-2 shadow-xl">
+          <div className="aspect-video overflow-hidden rounded-xl">
+            <iframe
+              className="h-full w-full"
+              src="https://www.youtube-nocookie.com/embed/Dfou_xl9Go0?rel=0"
+              title={p.workflow.video_title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
           </div>
         </div>
       </SectionWrapper>

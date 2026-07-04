@@ -89,11 +89,18 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
 
       {/* Block 1 — Hero */}
       <SectionWrapper id="apercu">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-16 lg:items-center">
           <div>
             <Badge>{p.hero.badge}</Badge>
             <h1 className="mt-4 text-dark-text">{p.hero.product_name}</h1>
             <p className="product-value-title mt-4">{p.hero.title}</p>
+            {/* Image visible only on mobile — between title and text */}
+            <div className="relative mx-auto mt-6 w-full max-w-xl lg:hidden">
+              <div className="absolute -inset-4 rounded-full bg-light-teal/30 blur-3xl" />
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
+                <Image src="/images/DB2.png" alt={p.hero.image_alt} fill className="object-cover" sizes="100vw" priority />
+              </div>
+            </div>
             <div className="mt-6 space-y-4 text-dark-text/70 leading-relaxed">
               {p.hero.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
@@ -102,7 +109,8 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
               <Button variant="secondary" href={contactHref(locale, "dual-blist-sheet")}>{p.hero.cta_secondary}</Button>
             </div>
           </div>
-          <div className="relative mx-auto w-full max-w-xl">
+          {/* Image hidden on mobile (shown above), visible on desktop */}
+          <div className="relative mx-auto hidden w-full max-w-xl lg:block">
             <div className="absolute -inset-6 rounded-full bg-light-teal/30 blur-3xl" />
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
               <Image src="/images/DB2.png" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
