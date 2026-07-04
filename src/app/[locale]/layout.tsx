@@ -31,6 +31,11 @@ export const metadata: Metadata = {
       "MediMesk fournit des solutions innovantes d'automatisation et d'équipement médical pour les pharmacies au Maroc.",
     images: [DEFAULT_OG_IMAGE],
   },
+  icons: {
+    icon: [{ url: "/images/logo.png", type: "image/png" }],
+    shortcut: ["/images/logo.png"],
+    apple: [{ url: "/images/logo.png", type: "image/png" }],
+  },
 };
 
 export function generateStaticParams() {
