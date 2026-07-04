@@ -14,8 +14,14 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     path: "/solutions/pda-rdc45",
     title: t.pda.meta.title,
     description: t.pda.meta.description,
-    image: "/images/pda-robot.webp",
+    image: "/images/RDC%2045%20Legende.png",
     keywords: [
+      "PDA Maroc",
+      "PDA Morocco",
+      "PDA au Maroc",
+      "Préparation des doses à administrer Maroc",
+      "préparation doses pharmacie Maroc",
+      "PDA automatisée Maroc",
       "RDC 45 Maroc",
       "RDC 45 Morocco",
       "RDC 45 Africa",
@@ -55,7 +61,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
     "@type": "Product",
     name: p.hero.product_name,
     description: p.hero.paragraphs.join(" "),
-    image: "https://medimesk.ma/images/pda-robot.webp",
+    image: "https://medimesk.ma/images/RDC%2045%20Legende.png",
     brand: { "@type": "Brand", name: "MediMesk" },
     url: `https://medimesk.ma/${locale}/solutions/pda-rdc45`,
   };
@@ -107,7 +113,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
           <div className="relative w-full max-w-md flex-shrink-0 lg:max-w-lg">
             <div className="pointer-events-none absolute -inset-6 rounded-full bg-light-teal/20 blur-3xl" />
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
-              <Image src="/images/pda-robot.webp" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 512px" priority />
+              <Image src="/images/RDC%2045%20Legende.png" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 512px" priority />
             </div>
           </div>
         </div>

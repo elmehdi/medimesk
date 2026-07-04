@@ -16,6 +16,12 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     description: p.meta.description,
     image: "/images/studex-system75.webp",
     keywords: [
+      "Piercing Maroc",
+      "Piercing Morocco",
+      "piercing au Maroc",
+      "perçage Maroc",
+      "perçage oreilles Maroc",
+      "piercing oreilles Maroc",
       "Studex Maroc",
       "Studex Morocco",
       "Studex Africa",
@@ -192,4 +198,3 @@ export default function StudexPage({ params }: { params: { locale: Locale } }) {
     </>
   );
 }
-

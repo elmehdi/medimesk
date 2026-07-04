@@ -16,6 +16,10 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     description: t.products_page.meta.description,
     image: "/images/pda-robot.webp",
     keywords: [
+      "PDA Maroc",
+      "PDA Morocco",
+      "Piercing Maroc",
+      "Piercing Morocco",
       "Dual Blist Maroc",
       "Dual Blist Morocco",
       "RDC 45 Maroc",
