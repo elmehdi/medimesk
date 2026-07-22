@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 export type ProductComparisonVariant = "slider" | "wipe" | "crossfade";
 
@@ -45,20 +48,77 @@ export default function ProductComparisonMedia({
   afterLabel,
   imageFit,
 }: ProductComparisonMediaProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [sliderValue, setSliderValue] = useState(82);
+  const [sliderEnteredView, setSliderEnteredView] = useState(false);
+  const [sliderAnimated, setSliderAnimated] = useState(false);
+  const [sliderTouched, setSliderTouched] = useState(false);
+
+  useEffect(() => {
+    if (variant !== "slider" || sliderEnteredView) {
+      return;
+    }
+
+    const container = containerRef.current;
+    if (!container) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setSliderEnteredView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.45 },
+    );
+
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, [sliderEnteredView, variant]);
+
   if (variant === "slider") {
+    const sliderIsAnimating = sliderEnteredView && !sliderAnimated && !sliderTouched;
+
     return (
-      <div className="absolute inset-0 bg-section-bg">
+      <div ref={containerRef} className="absolute inset-0 bg-section-bg">
         <ImageLayer src={afterSrc} alt={`${alt} - ${afterLabel}`} imageFit={imageFit} />
         <div
-          className="before-after-slider-clip absolute inset-0 overflow-hidden"
+          className={`${sliderIsAnimating ? "before-after-slider-clip" : ""} absolute inset-0 overflow-hidden`}
+          style={sliderIsAnimating ? undefined : { clipPath: `inset(0 ${100 - sliderValue}% 0 0)` }}
         >
           <ImageLayer src={beforeSrc} alt={`${alt} - ${beforeLabel}`} imageFit={imageFit} />
         </div>
-        <div className="before-after-slider-handle pointer-events-none absolute inset-y-0 z-10 w-0.5 bg-white shadow-[0_0_0_1px_rgba(26,35,50,0.12)]">
+        <div
+          className={`${sliderIsAnimating ? "before-after-slider-handle" : ""} pointer-events-none absolute inset-y-0 z-10 w-0.5 bg-white shadow-[0_0_0_1px_rgba(26,35,50,0.12)]`}
+          style={sliderIsAnimating ? undefined : { left: `${sliderValue}%` }}
+          onAnimationEnd={() => setSliderAnimated(true)}
+        >
           <div className="absolute left-1/2 top-1/2 grid h-9 w-9 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-white bg-primary-teal text-white shadow-lg">
             <span className="text-sm font-bold">↔</span>
           </div>
         </div>
+        <input
+          className="absolute inset-0 z-20 h-full w-full cursor-ew-resize opacity-0"
+          type="range"
+          min="0"
+          max="100"
+          value={sliderValue}
+          aria-label={`${beforeLabel} / ${afterLabel}`}
+          onClick={(event) => {
+            event.preventDefault();
+            event.stopPropagation();
+          }}
+          onPointerDown={(event) => {
+            event.stopPropagation();
+            setSliderTouched(true);
+          }}
+          onChange={(event) => {
+            setSliderTouched(true);
+            setSliderValue(Number(event.target.value));
+          }}
+        />
         <span className={`${labelClasses} absolute left-3 top-3 z-30`}>{beforeLabel}</span>
         <span className={`${labelClasses} absolute right-3 top-3 z-30`}>{afterLabel}</span>
       </div>

@@ -47,31 +47,23 @@
 
 @keyframes before-after-slider-clip {
   0%,
-  12%,
+  12% {
+    clip-path: inset(0 82% 0 0);
+  }
+  78%,
   100% {
-    clip-path: inset(0 82% 0 0);
-  }
-  42%,
-  58% {
     clip-path: inset(0 18% 0 0);
-  }
-  88% {
-    clip-path: inset(0 82% 0 0);
   }
 }
 
 @keyframes before-after-slider-handle {
   0%,
-  12%,
+  12% {
+    left: 18%;
+  }
+  78%,
   100% {
-    left: 18%;
-  }
-  42%,
-  58% {
     left: 82%;
-  }
-  88% {
-    left: 18%;
   }
 }
 
@@ -166,11 +158,11 @@
 }
 
 .before-after-slider-clip {
-  animation: before-after-slider-clip 6s ease-in-out infinite;
+  animation: before-after-slider-clip 2.8s ease-in-out 1 forwards;
 }
 
 .before-after-slider-handle {
-  animation: before-after-slider-handle 6s ease-in-out infinite;
+  animation: before-after-slider-handle 2.8s ease-in-out 1 forwards;
 }
 
 .before-after-wipe-clip {
