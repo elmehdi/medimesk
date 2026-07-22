@@ -57,7 +57,9 @@
   },
   "common": {
     "breadcrumb_home": "Home",
-    "breadcrumb_solutions": "Products"
+    "breadcrumb_solutions": "Products",
+    "before": "Before",
+    "after": "After"
   },
   "home": {
     "hero": {

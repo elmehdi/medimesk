@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import ProductComparisonMedia, { type ProductComparisonVariant } from "./ProductComparisonMedia";
 
 interface ProductCardProps {
   /** Product image src path */
-  imageSrc: string;
+  imageSrc?: string;
   /** Alt text for the image */
   imageAlt: string;
   /** Card headline */
@@ -14,9 +15,16 @@ interface ProductCardProps {
   href: string;
   /** Link label */
   linkLabel: string;
+  beforeLabel: string;
+  afterLabel: string;
   imageFit?: "cover" | "contain";
   /** Optional category band displayed on top-left of image */
   badge?: string;
+  comparison?: {
+    beforeSrc: string;
+    afterSrc: string;
+    variant: ProductComparisonVariant;
+  };
 }
 
 export default function ProductCard({
@@ -26,20 +34,35 @@ export default function ProductCard({
   benefits,
   href,
   linkLabel,
+  beforeLabel,
+  afterLabel,
   imageFit = "cover",
   badge,
+  comparison,
 }: ProductCardProps) {
   return (
     <Link href={href} className="group flex flex-col overflow-hidden rounded-2xl border border-light-teal bg-white transition-all hover:-translate-y-1 hover:border-primary-teal/35 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-teal/40 focus:ring-offset-2">
       {/* Image */}
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-section-bg">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          fill
-          className={`${imageFit === "contain" ? "object-contain p-8" : "object-cover"} transition-transform duration-300 group-hover:scale-105`}
-          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-        />
+        {comparison ? (
+          <ProductComparisonMedia
+            beforeSrc={comparison.beforeSrc}
+            afterSrc={comparison.afterSrc}
+            alt={imageAlt}
+            variant={comparison.variant}
+            beforeLabel={beforeLabel}
+            afterLabel={afterLabel}
+            imageFit={imageFit}
+          />
+        ) : imageSrc ? (
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            fill
+            className={`${imageFit === "contain" ? "object-contain p-8" : "object-cover"} transition-transform duration-300 group-hover:scale-105`}
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          />
+        ) : null}
         {/* Category badge band */}
         {badge && (
           <div className="absolute left-0 top-4 z-10">

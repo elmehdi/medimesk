@@ -45,6 +45,166 @@
   max-width: 75ch;
 }
 
+@keyframes before-after-slider-clip {
+  0%,
+  12%,
+  100% {
+    clip-path: inset(0 82% 0 0);
+  }
+  42%,
+  58% {
+    clip-path: inset(0 18% 0 0);
+  }
+  88% {
+    clip-path: inset(0 82% 0 0);
+  }
+}
+
+@keyframes before-after-slider-handle {
+  0%,
+  12%,
+  100% {
+    left: 18%;
+  }
+  42%,
+  58% {
+    left: 82%;
+  }
+  88% {
+    left: 18%;
+  }
+}
+
+@keyframes before-after-wipe-clip {
+  0%,
+  20%,
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+  48%,
+  72% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes before-after-wipe-line {
+  0%,
+  20%,
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+  24% {
+    opacity: 1;
+  }
+  48%,
+  72% {
+    left: 100%;
+    opacity: 1;
+  }
+  78% {
+    opacity: 0;
+  }
+}
+
+@keyframes before-after-before {
+  0%,
+  42% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50%,
+  92% {
+    opacity: 0;
+    transform: scale(1.025);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes before-after-after {
+  0%,
+  42% {
+    opacity: 0;
+    transform: scale(1.025);
+  }
+  50%,
+  92% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.025);
+  }
+}
+
+@keyframes before-label {
+  0%,
+  42%,
+  100% {
+    opacity: 1;
+  }
+  50%,
+  92% {
+    opacity: 0;
+  }
+}
+
+@keyframes after-label {
+  0%,
+  42%,
+  100% {
+    opacity: 0;
+  }
+  50%,
+  92% {
+    opacity: 1;
+  }
+}
+
+.before-after-slider-clip {
+  animation: before-after-slider-clip 6s ease-in-out infinite;
+}
+
+.before-after-slider-handle {
+  animation: before-after-slider-handle 6s ease-in-out infinite;
+}
+
+.before-after-wipe-clip {
+  animation: before-after-wipe-clip 5.75s ease-in-out infinite;
+}
+
+.before-after-wipe-line {
+  animation: before-after-wipe-line 5.75s ease-in-out infinite;
+}
+
+.before-after-wipe-before-label {
+  animation: before-label 5.75s ease-in-out infinite;
+}
+
+.before-after-wipe-after-label {
+  animation: after-label 5.75s ease-in-out infinite;
+}
+
+.animate-before-after-before {
+  animation: before-after-before 5.5s ease-in-out infinite;
+}
+
+.animate-before-after-after {
+  animation: before-after-after 5.5s ease-in-out infinite;
+}
+
+.animate-before-label {
+  animation: before-label 5.5s ease-in-out infinite;
+}
+
+.animate-after-label {
+  animation: after-label 5.5s ease-in-out infinite;
+}
+
 @media (max-width: 767px) {
   .responsive-product-table thead {
     position: absolute;
@@ -112,6 +272,35 @@
   }
   .reveal-section {
     transition: none;
+  }
+
+  .animate-before-after-before,
+  .animate-before-after-after,
+  .animate-before-label,
+  .animate-after-label,
+  .before-after-slider-clip,
+  .before-after-slider-handle,
+  .before-after-wipe-clip,
+  .before-after-wipe-line,
+  .before-after-wipe-before-label,
+  .before-after-wipe-after-label {
+    animation: none;
+  }
+
+  .animate-before-after-after,
+  .animate-after-label,
+  .before-after-wipe-clip,
+  .before-after-wipe-line,
+  .before-after-wipe-after-label {
+    opacity: 0;
+  }
+
+  .before-after-slider-clip {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  .before-after-slider-handle {
+    left: 50%;
   }
 }
 
