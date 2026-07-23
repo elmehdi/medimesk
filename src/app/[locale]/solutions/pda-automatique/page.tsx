@@ -45,14 +45,49 @@ function CheckList({ items, large = false }: { items: readonly string[]; large?:
 
 type Machine = ReturnType<typeof getTranslations>["hospital"]["machines"][number];
 
+const machineMedia: Record<string, { src: string; fit?: "cover" | "contain"; aspect?: string }> = {
+  atdps: {
+    src: "/images/Hospital clinic/atpds - reconnaissance des canisters.png",
+    fit: "cover",
+    aspect: "aspect-[16/10]",
+  },
+  menith: {
+    src: "/images/Hospital clinic/Menith.webp",
+    fit: "contain",
+    aspect: "aspect-[4/3]",
+  },
+  vizen: {
+    src: "/images/Hospital clinic/VIZEN.png",
+    fit: "contain",
+    aspect: "aspect-[4/3]",
+  },
+  wizer: {
+    src: "/images/Hospital clinic/JVM_WIZER.jpg",
+    fit: "contain",
+    aspect: "aspect-[3/4]",
+  },
+};
+
 function MachineSection({ machine, locale, alternate }: { machine: Machine; locale: Locale; alternate: boolean }) {
+  const media = machineMedia[machine.slug];
+
   return (
     <SectionWrapper alternate={alternate} id={machine.slug}>
       <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-[0.36fr_0.64fr]">
-        <div className="relative overflow-hidden rounded-2xl bg-dark-text px-7 py-12 text-center shadow-lg">
-          <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-primary-teal/30 blur-2xl" />
-          <svg className="relative mx-auto h-12 w-12 text-accent-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.4} d="M4 7h16M6 3h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2zm2 8h3v6H8zm5 2h5m-5 4h5" /></svg>
-          <p className="relative mt-5 font-playfair text-3xl font-bold text-white">{machine.name}</p>
+        <div className={`relative overflow-hidden rounded-2xl bg-white shadow-lg ${media?.aspect ?? "aspect-[4/3]"}`}>
+          {media ? (
+            <Image
+              src={media.src}
+              alt={machine.title}
+              fill
+              className={media.fit === "contain" ? "object-contain p-5" : "object-cover"}
+              sizes="(max-width: 1024px) 100vw, 36vw"
+            />
+          ) : (
+            <div className="grid h-full place-items-center bg-dark-text px-7 py-12 text-center">
+              <svg className="h-12 w-12 text-accent-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.4} d="M4 7h16M6 3h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2zm2 8h3v6H8zm5 2h5m-5 4h5" /></svg>
+            </div>
+          )}
         </div>
         <div>
           <Badge>{machine.name}</Badge>
@@ -122,7 +157,14 @@ export default function PdaAutomatiquePage({ params }: { params: { locale: Local
           <div className="relative mx-auto w-full max-w-xl">
             <div className="absolute -inset-6 rounded-full bg-light-teal/30 blur-3xl" />
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
-              <Image src="/images/timedi.png" alt={p.hero.image_alt} fill className="object-contain bg-white p-10" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+              <Image
+                src="/images/Hospital clinic/Menith copy.webp"
+                alt={p.hero.image_alt}
+                fill
+                className="object-contain bg-white p-8"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+              />
             </div>
           </div>
         </div>

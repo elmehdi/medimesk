@@ -112,8 +112,15 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
           </div>
           <div className="relative w-full max-w-md flex-shrink-0 lg:max-w-lg">
             <div className="pointer-events-none absolute -inset-6 rounded-full bg-light-teal/20 blur-3xl" />
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
-              <Image src="/images/RDC%2045%20Legende.png" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 512px" priority />
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-white">
+              <Image
+                src="/images/RDC/RDC45 sur meuble - systeme de transfert des donnees d'ordonnances.png"
+                alt={p.hero.image_alt}
+                fill
+                className="object-contain p-3"
+                sizes="(max-width: 1024px) 100vw, 512px"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -158,9 +165,23 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
 
       {/* Block 3 — Workflow */}
       <SectionWrapper id="fonctionnement">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-dark-text">{p.workflow.title}</h2>
-          <p className="mt-4 text-lg font-semibold text-primary-teal">{p.workflow.subtitle}</p>
+        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div className="relative mx-auto w-full max-w-lg">
+            <div className="pointer-events-none absolute -inset-5 rounded-full bg-light-teal/25 blur-3xl" />
+            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl shadow-xl">
+              <Image
+                src="/images/RDC/Alveoles a eclairage LED.jpg"
+                alt={p.hero.image_alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 42vw"
+              />
+            </div>
+          </div>
+          <div>
+            <h2 className="text-dark-text">{p.workflow.title}</h2>
+            <p className="mt-4 text-lg font-semibold text-primary-teal">{p.workflow.subtitle}</p>
+          </div>
         </div>
         <ol className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4">
           {p.workflow.steps.map((step, i) => (
@@ -224,8 +245,19 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
               <Button variant="secondary" href={contactHref(locale, "quote")}>{p.support.cta_quote}</Button>
             </div>
           </div>
-          <div className="rounded-2xl border border-light-teal bg-white p-7 shadow-sm md:p-8">
-            <CheckList items={p.support.items} />
+          <div className="overflow-hidden rounded-2xl border border-light-teal bg-white shadow-sm">
+            <div className="relative aspect-[16/9]">
+              <Image
+                src="/images/RDC/RDC Remplacement facile du ruban.png"
+                alt={p.hero.image_alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 42vw"
+              />
+            </div>
+            <div className="p-7 md:p-8">
+              <CheckList items={p.support.items} />
+            </div>
           </div>
         </div>
       </SectionWrapper>

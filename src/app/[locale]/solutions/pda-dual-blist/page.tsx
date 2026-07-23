@@ -97,8 +97,8 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
             {/* Image visible only on mobile — between title and text */}
             <div className="relative mx-auto mt-6 w-full max-w-xl lg:hidden">
               <div className="absolute -inset-4 rounded-full bg-light-teal/30 blur-3xl" />
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
-                <Image src="/images/DB2.png" alt={p.hero.image_alt} fill className="object-cover" sizes="100vw" priority />
+              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl shadow-xl">
+                <Image src="/images/Dualblist/2 DualBlist product.png" alt={p.hero.image_alt} fill className="object-cover" sizes="100vw" priority />
               </div>
             </div>
             <div className="mt-6 space-y-4 text-dark-text/70 leading-relaxed">
@@ -112,8 +112,8 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
           {/* Image hidden on mobile (shown above), visible on desktop */}
           <div className="relative mx-auto hidden w-full max-w-xl lg:block">
             <div className="absolute -inset-6 rounded-full bg-light-teal/30 blur-3xl" />
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
-              <Image src="/images/DB2.png" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+            <div className="relative aspect-[3/2] overflow-hidden rounded-2xl shadow-xl">
+              <Image src="/images/Dualblist/2 DualBlist product.png" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
             </div>
           </div>
         </div>
@@ -141,16 +141,32 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
 
       {/* Block 3 — Concrete benefits */}
       <SectionWrapper id="benefices">
-        <div className="text-center"><h2 className="text-dark-text">{p.concrete_benefits.title}</h2></div>
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          {[p.concrete_benefits.patient, p.concrete_benefits.pharmacy].map((audience) => (
-            <article key={audience.title} className="rounded-2xl border border-light-teal bg-white p-7 shadow-sm md:p-9">
-              <h3 className="text-dark-text">{audience.title}</h3>
-              <p className="mt-4 leading-relaxed text-dark-text/70">{audience.description}</p>
-              <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-primary-teal">{audience.list_title}</p>
-              <CheckList items={audience.items} />
-            </article>
-          ))}
+        <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+          <div>
+            <h2 className="text-dark-text">{p.concrete_benefits.title}</h2>
+            <div className="mt-10 grid gap-8">
+              {[p.concrete_benefits.patient, p.concrete_benefits.pharmacy].map((audience) => (
+                <article key={audience.title} className="rounded-2xl border border-light-teal bg-white p-7 shadow-sm md:p-9">
+                  <h3 className="text-dark-text">{audience.title}</h3>
+                  <p className="mt-4 leading-relaxed text-dark-text/70">{audience.description}</p>
+                  <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-primary-teal">{audience.list_title}</p>
+                  <CheckList items={audience.items} />
+                </article>
+              ))}
+            </div>
+          </div>
+          <div className="relative mx-auto w-full max-w-lg">
+            <div className="absolute -inset-5 rounded-full bg-light-teal/25 blur-3xl" />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
+              <Image
+                src="/images/DB2.png"
+                alt={p.hero.image_alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 42vw"
+              />
+            </div>
+          </div>
         </div>
       </SectionWrapper>
 
@@ -179,15 +195,31 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
 
       {/* Block 5 — Features */}
       <SectionWrapper id="fonctionnalites">
-        <div className="mx-auto max-w-3xl text-center"><h2 className="text-dark-text">{p.features.title}</h2></div>
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {p.features.groups.map((group) => (
-            <article key={group.title} className="rounded-2xl border border-light-teal p-6 transition-shadow hover:shadow-md">
-              <h3 className="font-sans text-lg font-semibold text-dark-text">{group.title}</h3>
-              {group.description && <p className="mt-3 text-sm leading-relaxed text-dark-text/65">{group.description}</p>}
-              <CheckList items={group.items} />
-            </article>
-          ))}
+        <div className="grid gap-10 lg:grid-cols-[1fr_0.82fr] lg:items-center">
+          <div>
+            <div className="max-w-3xl"><h2 className="text-dark-text">{p.features.title}</h2></div>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {p.features.groups.map((group) => (
+                <article key={group.title} className="rounded-2xl border border-light-teal p-6 transition-shadow hover:shadow-md">
+                  <h3 className="font-sans text-lg font-semibold text-dark-text">{group.title}</h3>
+                  {group.description && <p className="mt-3 text-sm leading-relaxed text-dark-text/65">{group.description}</p>}
+                  <CheckList items={group.items} />
+                </article>
+              ))}
+            </div>
+          </div>
+          <div className="relative mx-auto w-full max-w-lg">
+            <div className="absolute -inset-6 rounded-full bg-light-teal/25 blur-3xl" />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-section-bg">
+              <Image
+                src="/images/Dualblist/DualBlist 3 product.png"
+                alt={p.hero.image_alt}
+                fill
+                className="object-contain p-4"
+                sizes="(max-width: 1024px) 100vw, 42vw"
+              />
+            </div>
+          </div>
         </div>
       </SectionWrapper>
 

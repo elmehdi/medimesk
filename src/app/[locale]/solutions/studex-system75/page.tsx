@@ -163,15 +163,14 @@ export default function StudexPage({ params }: { params: { locale: Locale } }) {
           </h3>
           <div className="overflow-hidden rounded-2xl border border-light-teal shadow-lg">
             <iframe
-              src="https://drive.google.com/file/d/13o0U2H5wBqAL_ctM4l8CT3L1jaLuY822/preview#page=2"
+              src="/Catalogue studex.pdf#page=2"
               className="h-[700px] w-full"
-              allow="autoplay"
               title={locale === "fr" ? "Catalogue Studex" : "Studex Catalogue"}
             />
           </div>
           <div className="mt-4 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="https://drive.google.com/file/d/13o0U2H5wBqAL_ctM4l8CT3L1jaLuY822/view?usp=drive_link"
+              href="/Catalogue studex.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-primary-teal px-5 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-90 hover:shadow-md"
