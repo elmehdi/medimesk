@@ -45,28 +45,6 @@
   max-width: 75ch;
 }
 
-@keyframes before-after-slider-clip {
-  0%,
-  12% {
-    clip-path: inset(0 82% 0 0);
-  }
-  78%,
-  100% {
-    clip-path: inset(0 18% 0 0);
-  }
-}
-
-@keyframes before-after-slider-handle {
-  0%,
-  12% {
-    left: 18%;
-  }
-  78%,
-  100% {
-    left: 82%;
-  }
-}
-
 @keyframes before-after-wipe-clip {
   0%,
   20%,
@@ -99,40 +77,6 @@
   }
 }
 
-@keyframes before-after-before {
-  0%,
-  42% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50%,
-  92% {
-    opacity: 0;
-    transform: scale(1.025);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes before-after-after {
-  0%,
-  42% {
-    opacity: 0;
-    transform: scale(1.025);
-  }
-  50%,
-  92% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.025);
-  }
-}
-
 @keyframes before-label {
   0%,
   42%,
@@ -157,20 +101,14 @@
   }
 }
 
-.before-after-slider-clip {
-  animation: before-after-slider-clip 2.8s ease-in-out 1 forwards;
-}
-
-.before-after-slider-handle {
-  animation: before-after-slider-handle 2.8s ease-in-out 1 forwards;
-}
-
 .before-after-wipe-clip {
   animation: before-after-wipe-clip 5.75s ease-in-out infinite;
+  will-change: clip-path;
 }
 
 .before-after-wipe-line {
   animation: before-after-wipe-line 5.75s ease-in-out infinite;
+  will-change: left, opacity;
 }
 
 .before-after-wipe-before-label {
@@ -181,20 +119,67 @@
   animation: after-label 5.75s ease-in-out infinite;
 }
 
-.animate-before-after-before {
-  animation: before-after-before 5.5s ease-in-out infinite;
+.studex-pdf-viewer:fullscreen {
+  border: 0;
+  border-radius: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
-.animate-before-after-after {
-  animation: before-after-after 5.5s ease-in-out infinite;
+.studex-pdf-viewer:fullscreen .studex-pdf-frame-shell {
+  height: calc(100vh - 65px);
 }
 
-.animate-before-label {
-  animation: before-label 5.5s ease-in-out infinite;
+.studex-pdf-page {
+  cursor: ew-resize;
+  user-select: none;
 }
 
-.animate-after-label {
-  animation: after-label 5.5s ease-in-out infinite;
+.studex-pdf-page-pannable {
+  cursor: grab;
+}
+
+.studex-pdf-page-pannable:active {
+  cursor: grabbing;
+}
+
+.studex-pdf-page-next {
+  animation: studex-page-turn-next 0.48s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.studex-pdf-page-previous {
+  animation: studex-page-turn-previous 0.48s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes studex-page-turn-next {
+  from {
+    opacity: 0;
+    transform: translateX(4rem) rotateY(-8deg) scale(0.985);
+    transform-origin: right center;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg) scale(1);
+  }
+}
+
+@keyframes studex-page-turn-previous {
+  from {
+    opacity: 0;
+    transform: translateX(-4rem) rotateY(8deg) scale(0.985);
+    transform-origin: left center;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg) scale(1);
+  }
+}
+
+.before-after-wipe-clip,
+.before-after-wipe-line,
+.before-after-wipe-before-label,
+.before-after-wipe-after-label {
+  animation-delay: 0.5s;
 }
 
 @media (max-width: 767px) {
@@ -240,6 +225,16 @@
   }
 }
 
+@media (max-width: 767px) {
+  .before-after-wipe-clip,
+  .before-after-wipe-line,
+  .before-after-wipe-before-label,
+  .before-after-wipe-after-label {
+    animation-duration: 4.75s;
+    animation-iteration-count: 2;
+  }
+}
+
 /* ── Scroll-triggered reveal animations ─────────────── */
 /* Default: visible (SSR-safe). JS adds .reveal-hidden for off-screen elements */
 .reveal-section {
@@ -266,12 +261,11 @@
     transition: none;
   }
 
-  .animate-before-after-before,
-  .animate-before-after-after,
-  .animate-before-label,
-  .animate-after-label,
-  .before-after-slider-clip,
-  .before-after-slider-handle,
+  .studex-pdf-page-next,
+  .studex-pdf-page-previous {
+    animation: none;
+  }
+
   .before-after-wipe-clip,
   .before-after-wipe-line,
   .before-after-wipe-before-label,
@@ -279,20 +273,10 @@
     animation: none;
   }
 
-  .animate-before-after-after,
-  .animate-after-label,
   .before-after-wipe-clip,
   .before-after-wipe-line,
   .before-after-wipe-after-label {
     opacity: 0;
-  }
-
-  .before-after-slider-clip {
-    clip-path: inset(0 50% 0 0);
-  }
-
-  .before-after-slider-handle {
-    left: 50%;
   }
 }
 

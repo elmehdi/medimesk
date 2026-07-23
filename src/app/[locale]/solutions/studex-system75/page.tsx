@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import { Badge, Button, ProductSectionNav, SectionWrapper } from "@/components/ui";
+import PdfCatalogueViewer from "@/components/ui/PdfCatalogueViewer";
 import { createSeoMetadata } from "@/lib/seo";
 import { contactHref } from "@/lib/contact-intents";
 
@@ -161,13 +162,17 @@ export default function StudexPage({ params }: { params: { locale: Locale } }) {
           <h3 className="mb-6 text-center font-sans text-xl font-semibold text-dark-text">
             {locale === "fr" ? "Catalogue Studex" : "Studex Catalogue"}
           </h3>
-          <div className="overflow-hidden rounded-2xl border border-light-teal shadow-lg">
-            <iframe
-              src="/Catalogue studex.pdf#page=2"
-              className="h-[700px] w-full"
-              title={locale === "fr" ? "Catalogue Studex" : "Studex Catalogue"}
-            />
-          </div>
+          <PdfCatalogueViewer
+            pageImageBase="/images/studex-catalogue"
+            title={locale === "fr" ? "Catalogue Studex" : "Studex Catalogue"}
+            totalPages={6}
+            initialPage={2}
+            previousLabel={locale === "fr" ? "Page précédente" : "Previous page"}
+            nextLabel={locale === "fr" ? "Page suivante" : "Next page"}
+            fullscreenLabel={locale === "fr" ? "Plein écran" : "Fullscreen"}
+            exitFullscreenLabel={locale === "fr" ? "Quitter le plein écran" : "Exit fullscreen"}
+            pageLabel={locale === "fr" ? "Page" : "Page"}
+          />
           <div className="mt-4 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
               href="/Catalogue studex.pdf"

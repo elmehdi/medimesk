@@ -6,7 +6,7 @@ export interface ProductCardMeta {
   comparison?: {
     beforeSrc: string;
     afterSrc: string;
-    variant: "slider" | "wipe" | "crossfade";
+    variant: "wipe";
   };
 }
 
@@ -18,7 +18,7 @@ export const productCardMeta: ProductCardMeta[] = [
     comparison: {
       beforeSrc: "/images/Dualblist/Avant encart Dual Blist.png",
       afterSrc: "/images/Dualblist/Après Encart Dual Blist .jpg",
-      variant: "slider",
+      variant: "wipe",
     },
   },
   {
@@ -38,7 +38,7 @@ export const productCardMeta: ProductCardMeta[] = [
     comparison: {
       beforeSrc: "/images/Accessoires/accessoire avant.png",
       afterSrc: "/images/Accessoires/Encart accessoires apres.png",
-      variant: "crossfade",
+      variant: "wipe",
     },
   },
   { imageSrc: "/images/studex-system75.webp", href: "/solutions/studex-system75", badge: "Piercing" },
