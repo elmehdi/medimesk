@@ -14,7 +14,7 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     path: "/solutions/pda-accessoires",
     title: p.meta.title,
     description: p.meta.description,
-    image: "/images/Vizen.png",
+    image: "/images/Accessoires/accessoiress.png",
     keywords: [
       "accessoires PDA Maroc",
       "PDA accessories Morocco",
@@ -42,6 +42,30 @@ function CheckList({ items }: { items: readonly string[] }) {
     </ul>
   );
 }
+
+type EquipmentMedia = {
+  src: string;
+  fit?: "cover" | "contain";
+};
+
+const equipmentMedia: Record<string, readonly EquipmentMedia[]> = {
+  "vizen-de": [{ src: "/images/Accessoires/vizen DE.png" }],
+  "vizen-ex": [{ src: "/images/Accessoires/VIZEN-EX_02.png" }],
+  "vizen-cam": [{ src: "/images/Accessoires/VIZEN-CAM.png" }],
+  wizer: [{ src: "/images/Accessoires/wizer.jpeg" }],
+  autocanister: [{ src: "/images/Accessoires/Autocanister.png" }],
+  sts: [
+    { src: "/images/Accessoires/STS load station.png" },
+    { src: "/images/Accessoires/STS Load Station_02 (3)(1).png", fit: "cover" },
+  ],
+  "i-rolly": [{ src: "/images/Accessoires/i-rolly.png" }],
+  "wizer-de": [{ src: "/images/Accessoires/WIZER DE.png" }],
+  "ez-cut": [{ src: "/images/Accessoires/EZ-cut.png" }],
+  deblistering: [
+    { src: "/images/Accessoires/Accessoires - deblistereuse modele automatique.png" },
+    { src: "/images/Accessoires/Accessoires - deblistereuse modele petit.jpg", fit: "cover" },
+  ],
+};
 
 export default function PdaAccessoriesPage({ params }: { params: { locale: Locale } }) {
   const locale = params.locale;
@@ -89,7 +113,7 @@ export default function PdaAccessoriesPage({ params }: { params: { locale: Local
           <div className="relative mx-auto w-full max-w-xl">
             <div className="absolute -inset-6 rounded-full bg-light-teal/30 blur-3xl" />
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl">
-              <Image src="/images/Vizen.png" alt={p.hero.image_alt} fill className="object-contain p-6" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+              <Image src="/images/Accessoires/accessoiress.png" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
             </div>
           </div>
         </div>
@@ -113,25 +137,71 @@ export default function PdaAccessoriesPage({ params }: { params: { locale: Local
           <p className="mt-5 leading-relaxed text-dark-text/70">{p.range.intro}</p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-6xl overflow-hidden rounded-2xl border border-light-teal bg-white shadow-sm">
-          <table className="responsive-product-table w-full text-left">
-            <thead className="bg-primary-teal text-white">
-              <tr>
-                <th className="w-[20%] px-5 py-4">{p.range.equipment_heading}</th>
-                <th className="w-[27%] px-5 py-4">{p.range.role_heading}</th>
-                <th className="px-5 py-4">{p.range.value_heading}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {p.range.rows.map((row, i) => (
-                <tr key={row.equipment} className={`border-b border-light-teal/70 last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-section-bg"}`}>
-                  <td data-label={p.range.equipment_heading} className="px-5 py-4 font-semibold text-dark-text">{row.equipment}</td>
-                  <td data-label={p.range.role_heading} className="px-5 py-4 text-dark-text/75">{row.role}</td>
-                  <td data-label={p.range.value_heading} className="px-5 py-4 leading-relaxed text-dark-text/70">{row.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="mx-auto mt-12 grid max-w-6xl gap-7 md:grid-cols-2">
+          {p.range.rows.map((row) => {
+            const media = equipmentMedia[row.slug];
+            const hasFeaturedMediaLayout = row.slug === "deblistering" || row.slug === "sts";
+            const primaryMediaLabel = row.slug === "sts"
+              ? p.range.sts_station_label
+              : p.range.automatic_model_label;
+            const secondaryMediaLabel = row.slug === "sts"
+              ? p.range.sts_loading_label
+              : p.range.compact_model_label;
+
+            return (
+              <article key={row.slug} className="overflow-hidden rounded-2xl border border-light-teal bg-white shadow-sm transition-shadow hover:shadow-md">
+                {hasFeaturedMediaLayout && media ? (
+                  <div className="relative bg-gradient-to-br from-white to-section-bg px-5 pb-24 pt-5 sm:px-7 sm:pb-28 sm:pt-7">
+                    <div className="relative aspect-[16/10] overflow-hidden rounded-xl bg-white">
+                      <Image
+                        src={media[0].src}
+                        alt={`${row.equipment} — ${primaryMediaLabel}`}
+                        fill
+                        className="object-contain p-3"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                      <span className="absolute left-3 top-3 rounded-full bg-primary-teal px-3 py-1.5 text-xs font-semibold text-white shadow-sm">
+                        {primaryMediaLabel}
+                      </span>
+                    </div>
+                    <div className="absolute bottom-4 right-5 w-[42%] overflow-hidden rounded-xl border-4 border-white bg-white shadow-xl sm:bottom-5 sm:right-7">
+                      <div className="relative aspect-[4/3]">
+                        <Image
+                          src={media[1].src}
+                          alt={`${row.equipment} — ${secondaryMediaLabel}`}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 42vw, 21vw"
+                        />
+                      </div>
+                      <p className="px-2 py-2 text-center text-[11px] font-semibold text-dark-text sm:text-xs">
+                        {secondaryMediaLabel}
+                      </p>
+                    </div>
+                  </div>
+                ) : media ? (
+                  <div className={`grid ${media.length > 1 ? "grid-cols-2" : ""}`}>
+                    {media.map((item) => (
+                      <div key={item.src} className="relative aspect-[4/3] overflow-hidden bg-white">
+                        <Image
+                          src={item.src}
+                          alt={`${row.equipment} — ${row.role}`}
+                          fill
+                          className={item.fit === "cover" ? "object-cover" : "object-contain p-5"}
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+                <div className="p-7 md:p-8">
+                  <h3 className="font-sans text-xl font-semibold text-dark-text">{row.equipment}</h3>
+                  <p className="mt-3 font-semibold text-primary-teal">{row.role}</p>
+                  <p className="mt-4 leading-relaxed text-dark-text/70">{row.value}</p>
+                </div>
+              </article>
+            );
+          })}
         </div>
 
         <p className="mx-auto mt-9 max-w-4xl text-lg leading-relaxed text-dark-text/75">{p.range.conclusion}</p>

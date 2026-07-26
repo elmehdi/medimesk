@@ -2,6 +2,7 @@ import { Button, SectionWrapper, Badge } from "@/components/ui";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { createSeoMetadata } from "@/lib/seo";
 import { contactHref } from "@/lib/contact-intents";
 
@@ -96,10 +97,14 @@ export default function AboutPage({
 
         <div className="mt-12 flex justify-center">
           <div className="w-full max-w-sm rounded-2xl border border-light-teal bg-white p-8 text-center shadow-sm">
-            <div className="mx-auto h-32 w-32 rounded-full bg-light-teal flex items-center justify-center">
-              <svg className="h-16 w-16 text-primary-teal/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
+            <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-full border-4 border-light-teal bg-light-teal shadow-sm">
+              <Image
+                src="/images/founder/pdf.jpg"
+                alt={a.founder.name}
+                fill
+                className="object-cover object-[center_10%]"
+                sizes="160px"
+              />
             </div>
             <h3 className="mt-6 text-lg font-semibold text-dark-text font-sans">{a.founder.name}</h3>
             <p className="mt-1 text-sm text-primary-teal font-medium">{a.founder.role}</p>
