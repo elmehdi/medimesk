@@ -14,7 +14,7 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     path: "/solutions/pda-accessoires",
     title: p.meta.title,
     description: p.meta.description,
-    image: "/images/Accessoires/accessoiress.png",
+    image: "/images/Accessoires/accessoiress.webp",
     keywords: [
       "accessoires PDA Maroc",
       "PDA accessories Morocco",
@@ -49,21 +49,21 @@ type EquipmentMedia = {
 };
 
 const equipmentMedia: Record<string, readonly EquipmentMedia[]> = {
-  "vizen-de": [{ src: "/images/Accessoires/vizen DE.png" }],
-  "vizen-ex": [{ src: "/images/Accessoires/VIZEN-EX_02.png" }],
-  "vizen-cam": [{ src: "/images/Accessoires/VIZEN-CAM.png" }],
-  wizer: [{ src: "/images/Accessoires/wizer.jpeg" }],
-  autocanister: [{ src: "/images/Accessoires/Autocanister.png" }],
+  "vizen-de": [{ src: "/images/Accessoires/vizen DE.webp" }],
+  "vizen-ex": [{ src: "/images/Accessoires/VIZEN-EX_02.webp" }],
+  "vizen-cam": [{ src: "/images/Accessoires/VIZEN-CAM.webp" }],
+  wizer: [{ src: "/images/Accessoires/wizer.webp" }],
+  autocanister: [{ src: "/images/Accessoires/Autocanister.webp" }],
   sts: [
-    { src: "/images/Accessoires/STS load station.png" },
-    { src: "/images/Accessoires/STS Load Station_02 (3)(1).png", fit: "cover" },
+    { src: "/images/Accessoires/STS load station.webp" },
+    { src: "/images/Accessoires/STS Load Station_02 (3)(1).webp", fit: "cover" },
   ],
-  "i-rolly": [{ src: "/images/Accessoires/i-rolly.png" }],
-  "wizer-de": [{ src: "/images/Accessoires/WIZER DE.png" }],
-  "ez-cut": [{ src: "/images/Accessoires/EZ-cut.png" }],
+  "i-rolly": [{ src: "/images/Accessoires/i-rolly.webp" }],
+  "wizer-de": [{ src: "/images/Accessoires/WIZER DE.webp" }],
+  "ez-cut": [{ src: "/images/Accessoires/EZ-cut.webp" }],
   deblistering: [
-    { src: "/images/Accessoires/Accessoires - deblistereuse modele automatique.png" },
-    { src: "/images/Accessoires/Accessoires - deblistereuse modele petit.jpg", fit: "cover" },
+    { src: "/images/Accessoires/Accessoires - deblistereuse modele automatique.webp" },
+    { src: "/images/Accessoires/Accessoires - deblistereuse modele petit.webp", fit: "cover" },
   ],
 };
 
@@ -113,7 +113,7 @@ export default function PdaAccessoriesPage({ params }: { params: { locale: Local
           <div className="relative mx-auto w-full max-w-xl">
             <div className="absolute -inset-6 rounded-full bg-light-teal/30 blur-3xl" />
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-white shadow-xl">
-              <Image src="/images/Accessoires/accessoiress.png" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+              <Image src="/images/Accessoires/accessoiress.webp" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function PdaAccessoriesPage({ params }: { params: { locale: Local
             <p className="mt-8 border-l-4 border-primary-teal pl-5 text-lg leading-relaxed text-dark-text/75">{p.key_points.conclusion}</p>
           </div>
           <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-light-teal bg-white shadow-sm">
-            <Image src="/images/VIZEN-EX-Features01.jpg" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+            <Image src="/images/VIZEN-EX-Features01.webp" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
           </div>
         </div>
       </SectionWrapper>
