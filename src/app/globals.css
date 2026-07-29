@@ -226,6 +226,14 @@
 }
 
 @media (max-width: 767px) {
+  .reveal-section,
+  .reveal-section.reveal-hidden,
+  .reveal-section.revealed {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
   .before-after-wipe-clip,
   .before-after-wipe-line,
   .before-after-wipe-before-label,

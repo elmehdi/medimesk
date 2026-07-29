@@ -14,6 +14,17 @@ export default function RevealObserver() {
     const els = Array.from(
       document.querySelectorAll<HTMLElement>(".reveal-section:not(.revealed)"),
     );
+    const skipAnimation =
+      window.matchMedia("(max-width: 767px)").matches ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (skipAnimation) {
+      els.forEach((el) => {
+        el.classList.remove("reveal-hidden");
+        el.classList.add("revealed");
+      });
+      return;
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -25,7 +36,7 @@ export default function RevealObserver() {
           }
         });
       },
-      { threshold: 0.15 },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.01 },
     );
 
     els.forEach((el) => {
