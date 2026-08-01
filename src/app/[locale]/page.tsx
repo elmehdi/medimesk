@@ -6,6 +6,7 @@ import RDC45Spotlight from "@/components/sections/RDC45Spotlight";
 import Testimonials from "@/components/sections/Testimonials";
 import AboutTeaser from "@/components/sections/AboutTeaser";
 import CTABanner from "@/components/sections/CTABanner";
+import MobileLanding from "@/components/sections/MobileLanding";
 import { Reveal } from "@/components/ui";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
@@ -32,14 +33,17 @@ export default function HomePage({
 
   return (
     <>
-      <Hero locale={locale} t={t} />
-      <Reveal><TrustBar t={t} /></Reveal>
-      <SolutionsOverview locale={locale} t={t} />
-      <WhyMediMesk t={t} />
-      <RDC45Spotlight locale={locale} t={t} />
-      <Testimonials t={t} />
-      <AboutTeaser locale={locale} t={t} />
-      <Reveal><CTABanner locale={locale} t={t} /></Reveal>
+      <MobileLanding locale={locale} t={t} />
+      <div className="hidden md:block">
+        <Hero locale={locale} t={t} />
+        <Reveal><TrustBar t={t} /></Reveal>
+        <SolutionsOverview locale={locale} t={t} />
+        <WhyMediMesk t={t} />
+        <RDC45Spotlight locale={locale} t={t} />
+        <Testimonials t={t} />
+        <AboutTeaser locale={locale} t={t} />
+        <Reveal><CTABanner locale={locale} t={t} /></Reveal>
+      </div>
     </>
   );
 }

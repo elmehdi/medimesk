@@ -6,6 +6,7 @@ import { getTranslations } from "@/i18n/useTranslations";
 import { Badge, Button, ProductSectionNav, SectionWrapper } from "@/components/ui";
 import { createSeoMetadata } from "@/lib/seo";
 import { contactHref } from "@/lib/contact-intents";
+import { MobileAccessoriesPage } from "@/components/mobile/MobileCataloguePages";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const p = getTranslations(params.locale).accessories;
@@ -74,6 +75,8 @@ export default function PdaAccessoriesPage({ params }: { params: { locale: Local
 
   return (
     <>
+      <MobileAccessoriesPage locale={locale} t={t} />
+      <div className="hidden md:block">
       <div className="border-b border-light-teal bg-section-bg">
         <nav className="mx-auto max-w-container px-gutter py-3" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-1.5 text-sm text-dark-text/50">
@@ -206,6 +209,7 @@ export default function PdaAccessoriesPage({ params }: { params: { locale: Local
 
         <p className="mx-auto mt-9 max-w-4xl text-lg leading-relaxed text-dark-text/75">{p.range.conclusion}</p>
       </SectionWrapper>
+      </div>
     </>
   );
 }

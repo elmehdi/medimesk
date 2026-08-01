@@ -10,11 +10,11 @@ export default function Testimonials({ t }: { t: Translations }) {
         <p className="mt-4 text-dark-text/70 leading-relaxed">{s.subtitle}</p>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div className="-mx-5 mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:mx-0 md:mt-12 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:px-0 md:pb-0">
         {s.items.map((item, i) => (
           <blockquote
             key={i}
-            className="flex flex-col rounded-xl border border-light-teal bg-white p-6 transition-shadow hover:shadow-lg"
+            className="flex w-[82vw] max-w-[20rem] shrink-0 snap-center flex-col rounded-xl border border-light-teal bg-white p-5 md:w-auto md:max-w-none md:p-6 md:transition-shadow md:hover:shadow-lg"
           >
             {/* Quote icon */}
             <svg

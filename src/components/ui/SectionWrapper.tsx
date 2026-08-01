@@ -15,9 +15,9 @@ export default function SectionWrapper({
   return (
     <section
       id={id}
-      className={`reveal-section scroll-mt-36 py-16 md:py-24 ${alternate ? "bg-section-bg" : "bg-white"} ${className}`}
+      className={`reveal-section scroll-mt-36 py-12 sm:py-16 md:py-24 ${alternate ? "bg-section-bg" : "bg-white"} ${className}`}
     >
-      <div className="mx-auto max-w-container px-gutter">{children}</div>
+      <div className="mx-auto max-w-container px-5 sm:px-gutter">{children}</div>
     </section>
   );
 }

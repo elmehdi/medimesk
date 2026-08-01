@@ -6,10 +6,10 @@ export default function AboutTeaser({ locale, t }: { locale: string; t: Translat
   const s = t.home.about_teaser;
   return (
     <SectionWrapper alternate>
-      <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
+      <div className="flex flex-col items-center gap-7 sm:gap-12 lg:flex-row lg:gap-16">
         {/* Left — Logo */}
-        <div className="flex-shrink-0 w-full max-w-sm lg:max-w-md">
-          <div className="flex items-center justify-center aspect-square w-full rounded-2xl bg-white p-12">
+        <div className="flex-shrink-0 w-full max-w-[13rem] sm:max-w-sm lg:max-w-md">
+          <div className="flex items-center justify-center aspect-square w-full rounded-2xl bg-white p-7 sm:p-12">
             <Image
               src="/images/logo.webp"
               alt={s.photo_label}

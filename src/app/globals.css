@@ -238,8 +238,21 @@
   .before-after-wipe-line,
   .before-after-wipe-before-label,
   .before-after-wipe-after-label {
-    animation-duration: 4.75s;
-    animation-iteration-count: 2;
+    animation: none;
+    will-change: auto;
+  }
+
+  .before-after-wipe-clip {
+    clip-path: inset(0);
+  }
+
+  .before-after-wipe-line,
+  .before-after-wipe-before-label {
+    display: none;
+  }
+
+  .before-after-wipe-after-label {
+    opacity: 1;
   }
 }
 

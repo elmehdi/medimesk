@@ -6,6 +6,7 @@ import { getTranslations } from "@/i18n/useTranslations";
 import { Badge, Button, ProductSectionNav, SectionWrapper } from "@/components/ui";
 import { createSeoMetadata } from "@/lib/seo";
 import { contactHref, type ContactIntent } from "@/lib/contact-intents";
+import MobileAutomaticPage from "@/components/mobile/MobileAutomaticPage";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const p = getTranslations(params.locale).hospital;
@@ -120,6 +121,8 @@ export default function PdaAutomatiquePage({ params }: { params: { locale: Local
 
   return (
     <>
+      <MobileAutomaticPage locale={locale} t={t} />
+      <div className="hidden md:block">
       <div className="border-b border-light-teal bg-section-bg">
         <nav className="mx-auto max-w-container px-gutter py-3" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-1.5 text-sm text-dark-text/50">
@@ -245,6 +248,7 @@ export default function PdaAutomatiquePage({ params }: { params: { locale: Local
         </div>
         <p className="mx-auto mt-10 max-w-5xl border-l-4 border-primary-teal pl-5 leading-relaxed text-dark-text/75">{p.support.disclaimer}</p>
       </SectionWrapper>
+      </div>
     </>
   );
 }

@@ -13,22 +13,23 @@ export default function SolutionsOverview({ locale, t }: { locale: string; t: Tr
         </p>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="-mx-5 mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:mt-12 sm:grid sm:grid-cols-2 sm:gap-8 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3">
         {t.home.solutions.cards.map((card, i) => (
-          <ProductCard
-            key={productCardMeta[i].href}
-            imageSrc={productCardMeta[i].imageSrc}
-            imageAlt={card.image_alt}
-            title={card.title}
-            benefits={card.benefits as [string, string, string]}
-            href={`/${locale}${productCardMeta[i].href}`}
-            imageFit={productCardMeta[i].imageFit}
-            badge={productCardMeta[i].badge}
-            comparison={productCardMeta[i].comparison}
-            linkLabel={t.cta.product_details}
-            beforeLabel={t.common.before}
-            afterLabel={t.common.after}
-          />
+          <div key={productCardMeta[i].href} className="w-[84vw] max-w-[21rem] shrink-0 snap-center sm:w-auto sm:max-w-none">
+            <ProductCard
+              imageSrc={productCardMeta[i].imageSrc}
+              imageAlt={card.image_alt}
+              title={card.title}
+              benefits={card.benefits as [string, string, string]}
+              href={`/${locale}${productCardMeta[i].href}`}
+              imageFit={productCardMeta[i].imageFit}
+              badge={productCardMeta[i].badge}
+              comparison={productCardMeta[i].comparison}
+              linkLabel={t.cta.product_details}
+              beforeLabel={t.common.before}
+              afterLabel={t.common.after}
+            />
+          </div>
         ))}
       </div>
     </SectionWrapper>

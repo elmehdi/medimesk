@@ -7,6 +7,7 @@ import { Badge, Button, ProductSectionNav, SectionWrapper } from "@/components/u
 import PdfCatalogueViewer from "@/components/ui/PdfCatalogueViewer";
 import { createSeoMetadata } from "@/lib/seo";
 import { contactHref } from "@/lib/contact-intents";
+import { MobileStudexPage } from "@/components/mobile/MobileCataloguePages";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const p = getTranslations(params.locale).advanced_piercing;
@@ -70,6 +71,8 @@ export default function StudexPage({ params }: { params: { locale: Locale } }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }} />
+      <MobileStudexPage locale={locale} t={t} />
+      <div className="hidden md:block">
       <div className="border-b border-light-teal bg-section-bg">
         <nav className="mx-auto max-w-container px-gutter py-3" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-1.5 text-sm text-dark-text/50">
@@ -199,6 +202,7 @@ export default function StudexPage({ params }: { params: { locale: Locale } }) {
           </div>
         </div>
       </SectionWrapper>
+      </div>
     </>
   );
 }

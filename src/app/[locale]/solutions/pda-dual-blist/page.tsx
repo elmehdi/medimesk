@@ -6,6 +6,7 @@ import { getTranslations } from "@/i18n/useTranslations";
 import { Badge, Button, ProductSectionNav, SectionWrapper } from "@/components/ui";
 import { createSeoMetadata } from "@/lib/seo";
 import { contactHref } from "@/lib/contact-intents";
+import MobileDualBlistPage from "@/components/mobile/MobileDualBlistPage";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const p = getTranslations(params.locale).products.pdaDualBlist;
@@ -60,6 +61,8 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
 
   return (
     <>
+      <MobileDualBlistPage locale={locale} t={t} />
+      <div className="hidden md:block">
       <div className="border-b border-light-teal bg-section-bg">
         <nav className="mx-auto max-w-container px-gutter py-3" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-1.5 text-sm text-dark-text/50">
@@ -274,6 +277,7 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
           </div>
         </div>
       </SectionWrapper>
+      </div>
     </>
   );
 }

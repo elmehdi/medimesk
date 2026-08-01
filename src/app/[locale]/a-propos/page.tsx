@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { createSeoMetadata } from "@/lib/seo";
 import { contactHref } from "@/lib/contact-intents";
+import MobileAboutPage from "@/components/mobile/MobileAboutPage";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const t = getTranslations(params.locale);
@@ -38,6 +39,8 @@ export default function AboutPage({
 
   return (
     <>
+      <MobileAboutPage locale={locale} t={t} />
+      <div className="hidden md:block">
       {/* ─── Hero ───────────────────────────────────── */}
       <section className="relative overflow-hidden bg-primary-teal">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.12),transparent_60%)] pointer-events-none" />
@@ -128,6 +131,7 @@ export default function AboutPage({
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 }

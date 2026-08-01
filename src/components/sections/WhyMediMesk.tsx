@@ -20,11 +20,11 @@ export default function WhyMediMesk({ t }: { t: Translations }) {
         </p>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid grid-cols-1 gap-2 sm:mt-12 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
         {t.home.why.items.map((item, i) => (
           <div
             key={i}
-            className="flex gap-4 rounded-xl border border-transparent p-5 transition-all hover:border-light-teal hover:bg-light-teal/30"
+            className="flex gap-3 rounded-xl border border-light-teal/70 bg-section-bg/60 p-4 sm:gap-4 sm:border-transparent sm:bg-transparent sm:p-5 sm:transition-all sm:hover:border-light-teal sm:hover:bg-light-teal/30"
           >
             <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-light-teal text-primary-teal">
               {icons[i]}

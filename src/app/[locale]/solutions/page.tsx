@@ -6,6 +6,7 @@ import { getTranslations } from "@/i18n/useTranslations";
 import type { Metadata } from "next";
 import { createSeoMetadata } from "@/lib/seo";
 import { contactHref } from "@/lib/contact-intents";
+import MobileSolutionsPage from "@/components/mobile/MobileSolutionsPage";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const t = getTranslations(params.locale);
@@ -40,6 +41,8 @@ export default function ProductsPage({ params }: { params: { locale: Locale } })
 
   return (
     <>
+      <MobileSolutionsPage locale={locale} t={t} />
+      <div className="hidden md:block">
       {/* ─── Breadcrumb ─────────────────────────────── */}
       <div className="bg-section-bg border-b border-light-teal">
         <nav className="mx-auto max-w-container px-gutter py-3">
@@ -104,6 +107,7 @@ export default function ProductsPage({ params }: { params: { locale: Locale } })
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 }

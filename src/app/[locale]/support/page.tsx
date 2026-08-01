@@ -33,16 +33,16 @@ const newsletter = {
 
 function AccordionItem({ question, answer, isOpen, onToggle }: { question: string; answer: string; isOpen: boolean; onToggle: () => void }) {
   return (
-    <div className="border-b border-dark-text/10 last:border-b-0">
-      <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex w-full items-center justify-between gap-5 py-6 text-left transition-colors hover:text-primary-teal">
-        <span className="font-semibold text-dark-text sm:text-lg">{question}</span>
+    <div className="rounded-2xl border border-light-teal bg-white px-4 shadow-sm sm:rounded-none sm:border-x-0 sm:border-t-0 sm:px-0 sm:shadow-none last:sm:border-b-0">
+      <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex w-full items-center justify-between gap-4 py-4 text-left transition-colors hover:text-primary-teal sm:gap-5 sm:py-6">
+        <span className="text-sm font-semibold leading-5 text-dark-text sm:text-lg">{question}</span>
         <span className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-light-teal text-primary-teal transition-transform ${isOpen ? "rotate-45" : ""}`} aria-hidden="true">
           <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeWidth={2} d="M12 5v14M5 12h14" /></svg>
         </span>
       </button>
-      <div className={`grid transition-all duration-300 ${isOpen ? "grid-rows-[1fr] pb-6" : "grid-rows-[0fr]"}`}>
+      <div className={`grid transition-all duration-200 sm:duration-300 ${isOpen ? "grid-rows-[1fr] pb-4 sm:pb-6" : "grid-rows-[0fr]"}`}>
         <div className="overflow-hidden">
-          <p className="whitespace-pre-line pr-10 leading-relaxed text-dark-text/70">{answer}</p>
+          <p className="whitespace-pre-line pr-2 text-sm leading-6 text-dark-text/70 sm:pr-10 sm:text-base sm:leading-relaxed">{answer}</p>
         </div>
       </div>
     </div>
@@ -80,17 +80,17 @@ export default function SupportPage({ params }: { params: { locale: Locale } }) 
   }
 
   return (
-    <>
+    <div className="flex flex-col">
       {/* Block 1 — Brevo newsletter */}
-      <SectionWrapper alternate>
-        <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl bg-dark-text p-8 shadow-xl md:p-12">
+      <SectionWrapper alternate className="order-2 md:order-1">
+        <div className="mx-auto max-w-4xl overflow-hidden rounded-[1.6rem] bg-dark-text p-5 shadow-xl sm:p-8 md:p-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
             <div>
               <p className="font-semibold uppercase tracking-wider text-cta-yellow">{copy.eyebrow}</p>
               <h2 className="mt-3 text-white">{copy.title}</h2>
               <p className="mt-4 leading-relaxed text-white/70">{copy.subtitle}</p>
             </div>
-            <form onSubmit={subscribe} className="rounded-xl bg-white p-5" noValidate>
+            <form onSubmit={subscribe} className="rounded-2xl bg-white p-4 sm:rounded-xl sm:p-5" noValidate>
               <label htmlFor="newsletter-email" className="sr-only">Email</label>
               <input id="newsletter-email" type="email" required value={email} onChange={(event) => setEmail(event.target.value)} placeholder={copy.placeholder} className="w-full rounded-lg border border-dark-text/20 px-4 py-3 text-sm outline-none focus:border-primary-teal focus:ring-2 focus:ring-primary-teal/20" />
               <input name="website" type="text" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
@@ -109,17 +109,17 @@ export default function SupportPage({ params }: { params: { locale: Locale } }) 
       </SectionWrapper>
 
       {/* Block 2 — Questions and answers */}
-      <SectionWrapper id="faq">
+      <SectionWrapper id="faq" className="order-1 bg-[#f3f7f6] md:order-2 md:bg-white">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-center text-dark-text">{t.support.faq.title}</h2>
-          <p className="mt-3 text-center text-dark-text/60">{t.support.faq.subtitle}</p>
-          <div className="mt-10 rounded-2xl border border-light-teal bg-white px-5 shadow-sm sm:px-8">
+          <h2 className="text-left font-sans text-[1.8rem] font-bold tracking-[-0.035em] text-dark-text sm:text-center sm:font-playfair sm:text-h2">{t.support.faq.title}</h2>
+          <p className="mt-3 text-left text-sm leading-6 text-dark-text/60 sm:text-center sm:text-base">{t.support.faq.subtitle}</p>
+          <div className="mt-7 space-y-2.5 sm:mt-10 sm:space-y-0 sm:rounded-2xl sm:border sm:border-light-teal sm:bg-white sm:px-8 sm:shadow-sm">
             {items.map((faq, i) => (
               <AccordionItem key={faq.q} question={faq.q} answer={faq.a} isOpen={openIndex === i} onToggle={() => setOpenIndex(openIndex === i ? null : i)} />
             ))}
           </div>
         </div>
       </SectionWrapper>
-    </>
+    </div>
   );
 }

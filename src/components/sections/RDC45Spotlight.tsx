@@ -7,10 +7,10 @@ export default function RDC45Spotlight({ locale, t }: { locale: string; t: Trans
   const s = t.home.rdc45_spotlight;
   return (
     <SectionWrapper>
-      <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
+      <div className="flex flex-col gap-7 sm:gap-12 lg:flex-row lg:items-center lg:gap-16">
         {/* Left — Image */}
         <div className="flex-1">
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
+          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl sm:aspect-[4/3]">
             <Image
               src="/images/DB2.png"
               alt="Dual Blist — Solution PDA semi-automatisée"
@@ -30,7 +30,7 @@ export default function RDC45Spotlight({ locale, t }: { locale: string; t: Trans
           <h3 className="mt-7 text-lg font-semibold text-dark-text font-sans">
             {s.steps_intro}
           </h3>
-          <ol className="mt-5 grid gap-4 sm:grid-cols-2">
+          <ol className="mt-5 grid gap-3 sm:grid-cols-2 sm:gap-4">
             {s.steps.map((step, i) => (
               <li key={step.title} className="flex gap-3">
                 <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary-teal text-sm font-bold text-white">
@@ -44,7 +44,7 @@ export default function RDC45Spotlight({ locale, t }: { locale: string; t: Trans
             ))}
           </ol>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <div className="mt-7 grid grid-cols-2 gap-2.5 sm:mt-8 sm:flex sm:gap-4">
             <Button href={`/${locale}/solutions/pda-dual-blist`}>
               {s.cta_discover}
             </Button>
@@ -57,4 +57,3 @@ export default function RDC45Spotlight({ locale, t }: { locale: string; t: Trans
     </SectionWrapper>
   );
 }
-

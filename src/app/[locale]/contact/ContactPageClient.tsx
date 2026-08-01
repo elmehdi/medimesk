@@ -79,20 +79,21 @@ export default function ContactPage({
   return (
     <>
       {/* ─── Hero ───────────────────────────────────── */}
-      <section className="bg-primary-teal">
-        <div className="mx-auto max-w-container px-gutter py-16 md:py-20 text-center">
-          <h1 className="text-white">{c.hero.title}</h1>
-          <p className="mt-4 text-white/80 leading-relaxed max-w-xl mx-auto">
+      <section className="relative overflow-hidden bg-[#063f3c]">
+        <div className="absolute -right-24 -top-20 h-72 w-72 rounded-full bg-accent-teal/15 md:hidden" />
+        <div className="relative mx-auto max-w-container px-5 py-10 text-left sm:px-gutter md:py-20 md:text-center">
+          <h1 className="font-sans text-[2.35rem] leading-[1.03] tracking-[-0.045em] text-white md:font-playfair md:text-h1">{c.hero.title}</h1>
+          <p className="mt-4 max-w-xl text-sm leading-6 text-white/70 md:mx-auto md:text-base md:leading-relaxed">
             {c.hero.subtitle}
           </p>
         </div>
       </section>
 
       {/* ─── Content ────────────────────────────────── */}
-      <SectionWrapper>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-5 lg:gap-16">
+      <SectionWrapper className="bg-[#f3f7f6] md:bg-white">
+        <div className="grid grid-cols-1 gap-7 lg:grid-cols-5 lg:gap-16">
           {/* ── Left column: info + map ── */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="order-2 space-y-6 lg:order-1 lg:col-span-2 lg:space-y-8">
             <div>
               <h2 className="text-h3 text-dark-text">{c.info.title}</h2>
               <p className="mt-2 text-sm text-dark-text/60 leading-relaxed">
@@ -100,9 +101,9 @@ export default function ContactPage({
               </p>
             </div>
 
-            <ul className="space-y-5">
+            <ul className="grid gap-2.5 sm:space-y-5">
               {contactInfoItems.map((item, i) => (
-                <li key={item.label} className="flex items-start gap-4">
+                <li key={item.label} className="flex items-start gap-3 rounded-2xl border border-light-teal bg-white p-4 sm:gap-4 sm:border-0 sm:p-0">
                   <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-light-teal text-primary-teal">
                     {contactInfoIcons[i]}
                   </span>
@@ -115,8 +116,8 @@ export default function ContactPage({
             </ul>
 
             {/* Google Maps placeholder */}
-            <div className="overflow-hidden rounded-xl border border-light-teal bg-section-bg">
-              <div className="flex h-56 items-center justify-center text-dark-text/30">
+            <div className="overflow-hidden rounded-2xl border border-light-teal bg-section-bg">
+              <div className="flex h-40 items-center justify-center text-dark-text/30 md:h-56">
                 <div className="text-center">
                   <svg className="mx-auto h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -129,8 +130,8 @@ export default function ContactPage({
           </div>
 
           {/* ── Right column: form ── */}
-          <div className="lg:col-span-3">
-            <div className="rounded-2xl border border-light-teal bg-white p-6 sm:p-8 shadow-sm">
+          <div className="order-1 lg:order-2 lg:col-span-3">
+            <div className="rounded-[1.5rem] border border-light-teal bg-white p-5 shadow-sm sm:p-8">
               {submitted ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                   <span className="flex h-16 w-16 items-center justify-center rounded-full bg-light-teal text-primary-teal">
@@ -171,7 +172,7 @@ export default function ContactPage({
                     </div>
                   )}
 
-                  <div className="mt-6 space-y-5">
+                  <div className="mt-6 space-y-4 sm:space-y-5">
                     {/* Nom complet */}
                     <Field label={c.form.full_name} error={errors.fullName?.message}>
                       <input type="text" placeholder={c.form.full_name_placeholder} {...register("fullName")} className={inputClass(!!errors.fullName)} />
@@ -212,7 +213,7 @@ export default function ContactPage({
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="mt-8 w-full rounded-lg bg-cta-yellow px-6 py-3 text-sm font-bold text-dark-text transition-colors hover:bg-cta-yellow/90 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="mt-7 min-h-12 w-full rounded-xl bg-cta-yellow px-6 py-3 text-sm font-bold text-dark-text transition-colors hover:bg-cta-yellow/90 disabled:opacity-50 disabled:cursor-not-allowed sm:mt-8 sm:rounded-lg"
                   >
                     {isSubmitting ? c.form.submitting : c.form.submit}
                   </button>

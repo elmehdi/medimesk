@@ -41,7 +41,7 @@ export default function ProductCard({
   comparison,
 }: ProductCardProps) {
   return (
-    <Link href={href} className="group flex flex-col overflow-hidden rounded-2xl border border-light-teal bg-white transition-all hover:-translate-y-1 hover:border-primary-teal/35 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-teal/40 focus:ring-offset-2">
+    <Link href={href} className="group flex h-full flex-col overflow-hidden rounded-2xl border border-light-teal bg-white sm:transition-all sm:hover:-translate-y-1 sm:hover:border-primary-teal/35 sm:hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-teal/40 focus:ring-offset-2">
       {/* Image */}
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-section-bg">
         {comparison ? (
@@ -59,7 +59,7 @@ export default function ProductCard({
             src={imageSrc}
             alt={imageAlt}
             fill
-            className={`${imageFit === "contain" ? "object-contain p-8" : "object-cover"} transition-transform duration-300 group-hover:scale-105`}
+            className={`${imageFit === "contain" ? "object-contain p-6 sm:p-8" : "object-cover"} sm:transition-transform sm:duration-300 sm:group-hover:scale-105`}
             sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
           />
         ) : null}
@@ -74,7 +74,7 @@ export default function ProductCard({
       </div>
 
       {/* Content */}
-      <div className="flex flex-1 flex-col p-6">
+      <div className="flex flex-1 flex-col p-5 sm:p-6">
         <h3 className="text-dark-text">{title}</h3>
 
         <ul className="mt-4 flex-1 space-y-2">

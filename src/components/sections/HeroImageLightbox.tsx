@@ -28,7 +28,7 @@ export default function HeroImageLightbox({ alt }: { alt: string }) {
     <>
       <button
         type="button"
-        className="group relative block cursor-zoom-in rounded-2xl focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-primary-teal"
+        className="group relative block w-full cursor-zoom-in rounded-2xl focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-primary-teal sm:w-auto"
         onClick={() => setIsOpen(true)}
         aria-label="Open hero image"
       >
@@ -37,7 +37,7 @@ export default function HeroImageLightbox({ alt }: { alt: string }) {
           alt={alt}
           width={720}
           height={600}
-          className="relative h-auto w-[320px] rounded-2xl transition-transform duration-300 group-hover:scale-[1.02] sm:w-[460px] lg:w-[560px]"
+          className="relative h-auto w-full rounded-2xl sm:w-[460px] sm:transition-transform sm:duration-300 sm:group-hover:scale-[1.02] lg:w-[560px]"
           priority
         />
       </button>

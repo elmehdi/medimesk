@@ -6,6 +6,7 @@ import { getTranslations } from "@/i18n/useTranslations";
 import type { Metadata } from "next";
 import { createSeoMetadata } from "@/lib/seo";
 import { contactHref } from "@/lib/contact-intents";
+import MobileRdc45Page from "@/components/mobile/MobileRdc45Page";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const t = getTranslations(params.locale);
@@ -69,6 +70,8 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }} />
+      <MobileRdc45Page locale={locale} t={t} />
+      <div className="hidden md:block">
 
       <div className="border-b border-light-teal bg-section-bg">
         <nav className="mx-auto max-w-container px-gutter py-3" aria-label="Breadcrumb">
@@ -280,6 +283,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
           </div>
         </div>
       </SectionWrapper>
+      </div>
     </>
   );
 }

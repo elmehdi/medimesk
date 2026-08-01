@@ -22,8 +22,8 @@ const trustIcons = [
 export default function TrustBar({ t }: { t: Translations }) {
   return (
     <section className="border-y border-light-teal bg-white">
-      <div className="mx-auto max-w-container px-gutter py-5">
-        <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-center sm:gap-0">
+      <div className="mx-auto max-w-container px-5 py-4 sm:px-gutter sm:py-5">
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-0">
           {/* Partner logos */}
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
             <Image
@@ -52,17 +52,19 @@ export default function TrustBar({ t }: { t: Translations }) {
           </div>
 
           {/* Trust items */}
+          <div className="grid w-full grid-cols-3 gap-1 sm:contents">
           {t.home.trust.map((label, i) => (
-            <div key={i} className="flex items-center gap-2.5">
+            <div key={i} className="flex min-w-0 flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-2.5 sm:text-left">
               <span className="hidden sm:block w-px h-5 bg-light-teal mx-6" />
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-light-teal text-primary-teal flex-shrink-0">
                 {trustIcons[i]}
               </span>
-              <span className="text-sm font-medium text-dark-text whitespace-nowrap">
+              <span className="text-[11px] font-semibold leading-tight text-dark-text sm:text-sm sm:font-medium sm:whitespace-nowrap">
                 {label}
               </span>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </section>
