@@ -1,0 +1,308 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-body text-dark-text;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    @apply font-playfair text-h1;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  h2 {
+    @apply font-playfair text-h2;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  h3 {
+    @apply font-sans text-h3;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+.product-value-title {
+  max-width: 34ch;
+  color: #1A2332;
+  font-family: Georgia, "Bitstream Charter", "DejaVu Serif", serif;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.reveal-section p {
+  max-width: 75ch;
+}
+
+@keyframes before-after-wipe-clip {
+  0%,
+  20%,
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+  48%,
+  72% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes before-after-wipe-line {
+  0%,
+  20%,
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+  24% {
+    opacity: 1;
+  }
+  48%,
+  72% {
+    left: 100%;
+    opacity: 1;
+  }
+  78% {
+    opacity: 0;
+  }
+}
+
+@keyframes before-label {
+  0%,
+  42%,
+  100% {
+    opacity: 1;
+  }
+  50%,
+  92% {
+    opacity: 0;
+  }
+}
+
+@keyframes after-label {
+  0%,
+  42%,
+  100% {
+    opacity: 0;
+  }
+  50%,
+  92% {
+    opacity: 1;
+  }
+}
+
+.before-after-wipe-clip {
+  animation: before-after-wipe-clip 5.75s ease-in-out infinite;
+  will-change: clip-path;
+}
+
+.before-after-wipe-line {
+  animation: before-after-wipe-line 5.75s ease-in-out infinite;
+  will-change: left, opacity;
+}
+
+.before-after-wipe-before-label {
+  animation: before-label 5.75s ease-in-out infinite;
+}
+
+.before-after-wipe-after-label {
+  animation: after-label 5.75s ease-in-out infinite;
+}
+
+.studex-pdf-viewer:fullscreen {
+  border: 0;
+  border-radius: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.studex-pdf-viewer:fullscreen .studex-pdf-frame-shell {
+  height: calc(100vh - 65px);
+}
+
+.studex-pdf-page {
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.studex-pdf-page-pannable {
+  cursor: grab;
+}
+
+.studex-pdf-page-pannable:active {
+  cursor: grabbing;
+}
+
+.studex-pdf-page-next {
+  animation: studex-page-turn-next 0.48s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.studex-pdf-page-previous {
+  animation: studex-page-turn-previous 0.48s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes studex-page-turn-next {
+  from {
+    opacity: 0;
+    transform: translateX(4rem) rotateY(-8deg) scale(0.985);
+    transform-origin: right center;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg) scale(1);
+  }
+}
+
+@keyframes studex-page-turn-previous {
+  from {
+    opacity: 0;
+    transform: translateX(-4rem) rotateY(8deg) scale(0.985);
+    transform-origin: left center;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg) scale(1);
+  }
+}
+
+.before-after-wipe-clip,
+.before-after-wipe-line,
+.before-after-wipe-before-label,
+.before-after-wipe-after-label {
+  animation-delay: 0.5s;
+}
+
+@media (max-width: 767px) {
+  .responsive-product-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .responsive-product-table,
+  .responsive-product-table tbody,
+  .responsive-product-table tr,
+  .responsive-product-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .responsive-product-table tr {
+    padding: 1rem;
+    border-bottom: 1px solid #E0F5F3;
+  }
+
+  .responsive-product-table td {
+    display: grid;
+    grid-template-columns: minmax(7.5rem, 0.42fr) 1fr;
+    gap: 1rem;
+    padding: 0.55rem 0;
+  }
+
+  .responsive-product-table td::before {
+    content: attr(data-label);
+    color: #007F78;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 767px) {
+  .reveal-section,
+  .reveal-section.reveal-hidden,
+  .reveal-section.revealed {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .before-after-wipe-clip,
+  .before-after-wipe-line,
+  .before-after-wipe-before-label,
+  .before-after-wipe-after-label {
+    animation: none;
+    will-change: auto;
+  }
+
+  .before-after-wipe-clip {
+    clip-path: inset(0);
+  }
+
+  .before-after-wipe-line,
+  .before-after-wipe-before-label {
+    display: none;
+  }
+
+  .before-after-wipe-after-label {
+    opacity: 1;
+  }
+}
+
+/* ── Scroll-triggered reveal animations ─────────────── */
+/* Default: visible (SSR-safe). JS adds .reveal-hidden for off-screen elements */
+.reveal-section {
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal-section.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-hidden {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-section {
+    transition: none;
+  }
+
+  .studex-pdf-page-next,
+  .studex-pdf-page-previous {
+    animation: none;
+  }
+
+  .before-after-wipe-clip,
+  .before-after-wipe-line,
+  .before-after-wipe-before-label,
+  .before-after-wipe-after-label {
+    animation: none;
+  }
+
+  .before-after-wipe-clip,
+  .before-after-wipe-line,
+  .before-after-wipe-after-label {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1536px) {
+  .product-section-nav {
+    left: max(1.5rem, calc((100vw - 1280px) / 2 - 13.5rem));
+  }
+}
