@@ -15,7 +15,7 @@
     { "label": "Dual Blist", "sub": "" },
     { "label": "RDC 45", "sub": "" },
     { "label": "Automatisation pour hôpitaux et cliniques", "sub": "" },
-    { "label": "Appareils de contrôle et accessoires PDA", "sub": "" },
+    { "label": "Appareils de contrôle", "sub": "" },
     { "label": "Advanced Piercing avec STUDEX", "sub": "" }
   ],
   "products_page": {
@@ -108,8 +108,8 @@
           ]
         },
         {
-          "title": "Appareils de contrôle et accessoires PDA",
-          "image_alt": "Appareils de contrôle et accessoires PDA",
+          "title": "Appareils de contrôle",
+          "image_alt": "Appareils de contrôle PDA",
           "benefits": [
             "Inspection optique des sachets",
             "Archivage et traçabilité des contrôles",
@@ -799,11 +799,11 @@
     }
   },
   "accessories": {
-    "breadcrumb": "Appareils de contrôle et accessoires PDA",
+    "breadcrumb": "Appareils de contrôle",
     "hero": {
-      "badge": "Contrôle et accessoires PDA",
-      "product_name": "Contrôle et accessoires PDA",
-      "title": "Appareils de contrôle et accessoires PDA",
+      "badge": "Appareils de contrôle",
+      "product_name": "Appareils de contrôle",
+      "title": "Appareils de contrôle",
       "subtitle": "Contrôler, tracer et optimiser votre activité PDA",
       "paragraphs": [
         "Medimesk propose une gamme d’appareils de contrôle et d’accessoires PDA conçus pour renforcer la fiabilité, la traçabilité et l’efficacité de votre production.",
@@ -829,13 +829,6 @@
       "sts_station_label": "Station STS",
       "sts_loading_label": "Chargement guidé",
       "rows": [
-        { "slug": "vizen-ia", "equipment": "VIZEN IA", "role": "Archivage photographique et validation visuelle assistée", "value": "Documenter les sachets produits, faciliter la vérification et conserver une preuve visuelle des préparations" },
-        { "slug": "vizen-de", "equipment": "VIZEN DE", "role": "Inspection automatique compacte", "value": "Contrôler les sachets dans un format adapté aux espaces réduits, avec stockage des images et résultats" },
-        { "slug": "vizen-ex", "equipment": "VIZEN EX", "role": "Inspection optique haute performance", "value": "Contrôler rapidement de grands volumes de sachets et détecter les discordances de forme, quantité ou taille" },
-        { "slug": "vizen-cam", "equipment": "VIZEN CAM", "role": "Documentation des corrections", "value": "Enregistrer les sachets modifiés après détection d’une erreur et renforcer la traçabilité du cycle correction-validation" },
-        { "slug": "wizer", "equipment": "WIZER", "role": "Enroulement, découpe et organisation des sachets", "value": "Automatiser la gestion finale des bandes, organiser les séries et séparer les sachets à vérifier" },
-        { "slug": "canister-diy", "equipment": "Kit Canister DIY", "role": "Configuration de canisters", "value": "Gagner en autonomie pour intégrer de nouveaux médicaments dans le flux automatisé" },
-        { "slug": "autocanister", "equipment": "Autocanister", "role": "Alimentation automatique sans canister fixe", "value": "Gérer avec plus de flexibilité les médicaments ponctuels, spécifiques ou à rotation variable" },
         { "slug": "sts", "equipment": "Plateaux STS", "role": "Préparation des médicaments à faible rotation", "value": "Préparer les médicaments particuliers sans interrompre le flux principal de production" },
         { "slug": "i-rolly", "equipment": "I-Rolly et bobines", "role": "Enroulement automatique des bandes PDA", "value": "Faciliter le stockage, le transport et la transition entre production, inspection et dispensation" },
         { "slug": "wizer-de", "equipment": "Wizer DE", "role": "Enroulement semi-automatique flexible", "value": "Organiser les bandes par patient, unité, volume ou format de livraison" },
@@ -1032,7 +1025,7 @@
       "phone_label": "Téléphone",
       "email_label": "Email",
       "address_label": "Adresse",
-      "phone": "+212 526272812",
+      "phone": "+212 5 26 27 28 12",
       "email": "contact@medimesk.ma",
       "address": "Résidence Meskellil Imm. 3 N°1, Av. Assabir, Hay Riad, Rabat, Maroc",
       "map_title": "Google Maps",
@@ -1043,8 +1036,8 @@
       "required_note": "Les champs marqués d'un * sont obligatoires.",
       "full_name": "Nom complet",
       "full_name_placeholder": "Votre nom et prénom",
-      "pharmacy_name": "Nom de la pharmacie",
-      "pharmacy_placeholder": "Pharmacie …",
+      "pharmacy_name": "Nom de l'entreprise",
+      "pharmacy_placeholder": "Entreprise / Pharmacie …",
       "email": "Email",
       "email_placeholder": "vous@exemple.com",
       "phone": "Téléphone",
@@ -1054,6 +1047,7 @@
       "subjects": [
         "Demande de démo",
         "Demande de devis",
+        "Intérêt manuel",
         "Support",
         "Autre"
       ],

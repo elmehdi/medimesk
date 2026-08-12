@@ -78,7 +78,7 @@ export default function Footer({ locale, t }: FooterProps) {
               </a>
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/medimesk.ma"
+                href="https://www.instagram.com/medimesk_officiel/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"

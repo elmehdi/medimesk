@@ -144,30 +144,50 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
 
       {/* Block 3 — Concrete benefits */}
       <SectionWrapper id="benefices">
-        <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-          <div>
-            <h2 className="text-dark-text">{p.concrete_benefits.title}</h2>
-            <div className="mt-10 grid gap-8">
-              {[p.concrete_benefits.patient, p.concrete_benefits.pharmacy].map((audience) => (
-                <article key={audience.title} className="rounded-2xl border border-light-teal bg-white p-7 shadow-sm md:p-9">
-                  <h3 className="text-dark-text">{audience.title}</h3>
-                  <p className="mt-4 leading-relaxed text-dark-text/70">{audience.description}</p>
-                  <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-primary-teal">{audience.list_title}</p>
-                  <CheckList items={audience.items} />
-                </article>
-              ))}
+        <div>
+          <h2 className="text-dark-text text-center">{p.concrete_benefits.title}</h2>
+          <div className="mt-10 grid gap-12">
+            {/* Patient card + sachets image */}
+            <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+              <article className="rounded-2xl border border-light-teal bg-white p-7 shadow-sm md:p-9">
+                <h3 className="text-dark-text">{p.concrete_benefits.patient.title}</h3>
+                <p className="mt-4 leading-relaxed text-dark-text/70">{p.concrete_benefits.patient.description}</p>
+                <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-primary-teal">{p.concrete_benefits.patient.list_title}</p>
+                <CheckList items={p.concrete_benefits.patient.items} />
+              </article>
+              <div className="relative mx-auto w-full max-w-lg">
+                <div className="absolute -inset-5 rounded-full bg-light-teal/25 blur-3xl" />
+                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl bg-white">
+                  <Image
+                    src="/images/sachets-formats.png"
+                    alt={p.concrete_benefits.patient.title}
+                    fill
+                    className="object-contain p-3"
+                    sizes="(max-width: 1024px) 100vw, 42vw"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="relative mx-auto w-full max-w-lg">
-            <div className="absolute -inset-5 rounded-full bg-light-teal/25 blur-3xl" />
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
-              <Image
-                src="/images/DB2.png"
-                alt={p.hero.image_alt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 42vw"
-              />
+            {/* Pharmacy card + DB2 image */}
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1fr] lg:items-center">
+              <div className="relative mx-auto w-full max-w-lg order-2 lg:order-1">
+                <div className="absolute -inset-5 rounded-full bg-light-teal/25 blur-3xl" />
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
+                  <Image
+                    src="/images/DB2.png"
+                    alt={p.concrete_benefits.pharmacy.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 42vw"
+                  />
+                </div>
+              </div>
+              <article className="rounded-2xl border border-light-teal bg-white p-7 shadow-sm md:p-9 order-1 lg:order-2">
+                <h3 className="text-dark-text">{p.concrete_benefits.pharmacy.title}</h3>
+                <p className="mt-4 leading-relaxed text-dark-text/70">{p.concrete_benefits.pharmacy.description}</p>
+                <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-primary-teal">{p.concrete_benefits.pharmacy.list_title}</p>
+                <CheckList items={p.concrete_benefits.pharmacy.items} />
+              </article>
             </div>
           </div>
         </div>

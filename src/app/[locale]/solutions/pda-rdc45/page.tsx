@@ -117,7 +117,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
             <div className="pointer-events-none absolute -inset-6 rounded-full bg-light-teal/20 blur-3xl" />
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-white">
               <Image
-                src="/images/RDC/RDC45 sur meuble - systeme de transfert des donnees d'ordonnances.png"
+                src="/images/RDC/ff.png"
                 alt={p.hero.image_alt}
                 fill
                 className="object-contain p-3"
@@ -251,7 +251,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
           <div className="overflow-hidden rounded-2xl border border-light-teal bg-white shadow-sm">
             <div className="relative aspect-[16/9]">
               <Image
-                src="/images/RDC/RDC Remplacement facile du ruban.png"
+                src="/images/RDC/Apres RDC.jpg"
                 alt={p.hero.image_alt}
                 fill
                 className="object-cover"

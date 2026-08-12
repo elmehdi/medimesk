@@ -32,6 +32,7 @@ export default function ContactPage({
 
   const [submitted, setSubmitted] = useState(false);
   const [serverError, setServerError] = useState("");
+  const [newsletterConsent, setNewsletterConsent] = useState(false);
 
   const {
     register,
@@ -207,6 +208,22 @@ export default function ContactPage({
                     <Field label={c.form.message} error={errors.message?.message}>
                       <textarea rows={4} placeholder={c.form.message_placeholder} {...register("message")} className={`${inputClass(!!errors.message)} resize-y`} />
                     </Field>
+
+                    {/* Consentement Newsletter */}
+                    <label className="mt-2 flex cursor-pointer items-start gap-3 rounded-xl border border-light-teal bg-section-bg p-4 transition-colors hover:bg-light-teal/20">
+                      <input
+                        type="checkbox"
+                        checked={newsletterConsent}
+                        onChange={(e) => setNewsletterConsent(e.target.checked)}
+                        className="mt-0.5 h-4 w-4 flex-shrink-0 cursor-pointer rounded border-dark-text/30 text-primary-teal accent-primary-teal"
+                      />
+                      <span className="text-sm leading-relaxed text-dark-text/70">
+                        {locale === "fr"
+                          ? "J'accepte de me faire contacter par MédiMesk en m'inscrivant à sa Newsletter"
+                          : "I agree to be contacted by MediMesk by subscribing to its Newsletter"}
+                      </span>
+                    </label>
+
                   </div>
 
                   {/* Submit */}

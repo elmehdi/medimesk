@@ -50,11 +50,6 @@ type EquipmentMedia = {
 };
 
 const equipmentMedia: Record<string, readonly EquipmentMedia[]> = {
-  "vizen-de": [{ src: "/images/Accessoires/vizen DE.webp" }],
-  "vizen-ex": [{ src: "/images/Accessoires/VIZEN-EX_02.webp" }],
-  "vizen-cam": [{ src: "/images/Accessoires/VIZEN-CAM.webp" }],
-  wizer: [{ src: "/images/Accessoires/wizer.webp" }],
-  autocanister: [{ src: "/images/Accessoires/Autocanister.webp" }],
   sts: [
     { src: "/images/Accessoires/STS load station.webp" },
     { src: "/images/Accessoires/STS Load Station_02 (3)(1).webp", fit: "cover" },

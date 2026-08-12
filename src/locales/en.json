@@ -15,7 +15,7 @@
     { "label": "Dual Blist", "sub": "" },
     { "label": "RDC 45", "sub": "" },
     { "label": "Hospital and clinic automation", "sub": "" },
-    { "label": "PDA control devices and accessories", "sub": "" },
+    { "label": "PDA Control Devices", "sub": "" },
     { "label": "Advanced Piercing with STUDEX", "sub": "" }
   ],
   "products_page": {
@@ -42,7 +42,7 @@
     "company_heading": "Company",
     "contact_heading": "Contact",
     "address": "Résidence Meskellil Bldg. 3 N°1, Av. Assabir, Hay Riad, Rabat, Morocco",
-    "phone": "+212 526272812",
+    "phone": "+212 5 26 27 28 12",
     "email": "contact@medimesk.ma",
     "legal": "Legal Notice",
     "privacy": "Privacy Policy",
@@ -108,8 +108,8 @@
           ]
         },
         {
-          "title": "PDA Control Devices & Accessories",
-          "image_alt": "PDA control devices and accessories",
+          "title": "PDA Control Devices",
+          "image_alt": "PDA control devices",
           "benefits": [
             "Optical sachet inspection",
             "Inspection archiving and traceability",
@@ -799,11 +799,11 @@
     }
   },
   "accessories": {
-    "breadcrumb": "PDA control devices and accessories",
+    "breadcrumb": "PDA Control Devices",
     "hero": {
-      "badge": "PDA control and accessories",
-      "product_name": "PDA control and accessories",
-      "title": "PDA control devices and accessories",
+      "badge": "PDA Control Devices",
+      "product_name": "PDA Control Devices",
+      "title": "PDA Control Devices",
       "subtitle": "Control, trace, and optimize your PDA operation",
       "paragraphs": [
         "MediMesk offers a range of PDA control devices and accessories designed to strengthen the reliability, traceability, and efficiency of your production.",
@@ -829,13 +829,6 @@
       "sts_station_label": "STS station",
       "sts_loading_label": "Guided loading",
       "rows": [
-        { "slug": "vizen-ia", "equipment": "VIZEN IA", "role": "Photographic archiving and assisted visual validation", "value": "Document finished sachets, facilitate verification, and retain visual proof of preparations" },
-        { "slug": "vizen-de", "equipment": "VIZEN DE", "role": "Compact automatic inspection", "value": "Inspect sachets in a format suited to limited spaces, with image and result storage" },
-        { "slug": "vizen-ex", "equipment": "VIZEN EX", "role": "High-performance optical inspection", "value": "Rapidly inspect high sachet volumes and detect discrepancies in shape, quantity, or size" },
-        { "slug": "vizen-cam", "equipment": "VIZEN CAM", "role": "Correction documentation", "value": "Record sachets modified after an error is detected and strengthen traceability across the correction-validation cycle" },
-        { "slug": "wizer", "equipment": "WIZER", "role": "Sachet rolling, cutting, and organization", "value": "Automate final strip management, organize batches, and separate sachets requiring verification" },
-        { "slug": "canister-diy", "equipment": "DIY Canister Kit", "role": "Canister configuration", "value": "Gain autonomy when integrating new medicines into the automated workflow" },
-        { "slug": "autocanister", "equipment": "Autocanister", "role": "Automatic feeding without a fixed canister", "value": "Handle occasional, specific, or variably used medicines more flexibly" },
         { "slug": "sts", "equipment": "STS Trays", "role": "Preparation of low-turnover medicines", "value": "Prepare special medicines without interrupting the main production flow" },
         { "slug": "i-rolly", "equipment": "I-Rolly and reels", "role": "Automatic rolling of PDA strips", "value": "Facilitate storage, transport, and the transition between production, inspection, and dispensing" },
         { "slug": "wizer-de", "equipment": "Wizer DE", "role": "Flexible semi-automatic rolling", "value": "Organize strips by patient, unit, volume, or delivery format" },
@@ -1022,7 +1015,7 @@
       "phone_label": "Phone",
       "email_label": "Email",
       "address_label": "Address",
-      "phone": "+212 526272812",
+      "phone": "+212 5 26 27 28 12",
       "email": "contact@medimesk.ma",
       "address": "Résidence Meskellil Bldg. 3 N°1, Av. Assabir, Hay Riad, Rabat, Morocco",
       "map_title": "Google Maps",
@@ -1033,8 +1026,8 @@
       "required_note": "Fields marked with * are required.",
       "full_name": "Full Name",
       "full_name_placeholder": "Your first and last name",
-      "pharmacy_name": "Pharmacy Name",
-      "pharmacy_placeholder": "Pharmacy …",
+      "pharmacy_name": "Company Name",
+      "pharmacy_placeholder": "Company / Pharmacy …",
       "email": "Email",
       "email_placeholder": "you@example.com",
       "phone": "Phone",
@@ -1044,6 +1037,7 @@
       "subjects": [
         "Demo Request",
         "Quote Request",
+        "Manual Interest",
         "Support",
         "Other"
       ],
