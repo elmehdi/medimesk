@@ -15,8 +15,9 @@
     { "label": "Dual Blist", "sub": "" },
     { "label": "RDC 45", "sub": "" },
     { "label": "Hospital and clinic automation", "sub": "" },
-    { "label": "PDA Control Devices", "sub": "" },
-    { "label": "Advanced Piercing with STUDEX", "sub": "" }
+    { "label": "PDA Accessories", "sub": "" },
+    { "label": "Advanced Piercing with STUDEX", "sub": "" },
+    { "label": "Venalink PDA Pill Organisers", "sub": "" }
   ],
   "products_page": {
     "meta": {
@@ -108,8 +109,8 @@
           ]
         },
         {
-          "title": "PDA Control Devices",
-          "image_alt": "PDA control devices",
+          "title": "PDA Accessories",
+          "image_alt": "PDA accessories",
           "benefits": [
             "Optical sachet inspection",
             "Inspection archiving and traceability",
@@ -123,6 +124,15 @@
             "Sterile single-use cartridges",
             "Premium, profitable service",
             "MediMesk training and support"
+          ]
+        },
+        {
+          "title": "Venalink PDA Pill Organisers",
+          "image_alt": "Venalink PDA pill organisers for manual dose preparation",
+          "benefits": [
+            "First step toward PDA without a machine",
+            "Qube and Flex formats adapted to patients",
+            "Full MediMesk support"
           ]
         }
       ]
@@ -799,11 +809,11 @@
     }
   },
   "accessories": {
-    "breadcrumb": "PDA Control Devices",
+    "breadcrumb": "PDA Accessories",
     "hero": {
-      "badge": "PDA Control Devices",
-      "product_name": "PDA Control Devices",
-      "title": "PDA Control Devices",
+      "badge": "PDA Accessories",
+      "product_name": "PDA Accessories",
+      "title": "PDA Accessories",
       "subtitle": "Control, trace, and optimize your PDA operation",
       "paragraphs": [
         "MediMesk offers a range of PDA control devices and accessories designed to strengthen the reliability, traceability, and efficiency of your production.",
@@ -1100,6 +1110,98 @@
     "meta": {
       "title": "FAQ — MediMesk",
       "description": "Find answers to the most common questions about our solutions and our support."
+    }
+  },
+  "venalink": {
+    "breadcrumb": "Venalink PDA Pill Organisers",
+    "meta": {
+      "title": "Venalink PDA Pill Organisers — Manual PDA | MediMesk",
+      "description": "Launch a professional PDA service with Venalink pill organisers: Qube and Flex formats, accessories, training and MediMesk support."
+    },
+    "hero": {
+      "badge": "Manual PDA",
+      "product_name": "Venalink PDA Pill Organisers",
+      "title": "Venalink: the best pill organiser to develop unit dose dispensing (PDA)",
+      "paragraphs": [
+        "Venalink manual PDA allows pharmacies to offer a unit dose dispensing service without immediately investing in an automated machine.",
+        "With Venalink pill organisers, the pharmacist can organise a patient's treatments by day and intake time, in a clear, practical and personalised format. It is an ideal solution to progressively structure a PDA activity, support chronic or polymedicated patients, help families and enhance the pharmacy's advisory role.",
+        "With MediMesk, pharmacies have a complete solution: pill organisers, consumables, accessories, training and service setup support.",
+        "A reliable, professional and scalable first step for integrating PDA into your pharmacy. Compatible with scaling up toward semi-automation or full automation."
+      ],
+      "image_alt": "Venalink PDA pill organiser — personalised dosing system",
+      "cta_primary": "Launch my manual PDA service",
+      "cta_secondary": "Request a callback from MediMesk"
+    },
+    "why": {
+      "title": "Why choose manual PDA?",
+      "subtitle": "Start a PDA service without waiting for a machine",
+      "paragraphs": [
+        "Not every pharmacy needs to start with an automated solution. For some pharmacies, the priority is first to test demand, select the first patients, organise the team and build a reliable preparation method.",
+        "Venalink manual PDA meets precisely this need: it allows you to launch a professional service with a more progressive investment, while maintaining the safety, readability and personalisation expected by patients.",
+        "It is particularly relevant for pharmacies that wish to:"
+      ],
+      "items": [
+        "Start a PDA activity progressively",
+        "Support elderly, chronic or polymedicated patients",
+        "Offer a useful service to families and carers",
+        "Better organise complex treatments",
+        "Build patient loyalty over the long term",
+        "Enhance their pharmaceutical advisory role",
+        "Test the commercial potential of PDA before automating",
+        "Diversify their revenue streams"
+      ],
+      "conclusion": [
+        "Manual PDA is not a \u201cless professional\u201d solution. It is often the first structured level of a well-built PDA service.",
+        "It allows the pharmacy to move from a box-centred delivery to a clearer logic for the patient: the right medicine, at the right time, in a prepared and identified support."
+      ]
+    },
+    "solution": {
+      "title": "The Venalink Solution",
+      "subtitle": "Pill organisers designed to organise treatments by intake",
+      "paragraphs": [
+        "The Venalink solution is based on pill organisers consisting of a card and a thermoformed tray. Medicines are prepared in compartments to organise intakes according to the prescribed schedule: day, time, or moment of intake.",
+        "This organisation makes the treatment easier to understand for the patient, carer or partner facility."
+      ],
+      "format_heading": "Format",
+      "usage_heading": "Recommended use",
+      "formats": [
+        { "format": "Qube", "usage": "Visual and comfortable format, suited to treatments involving several medicines to repackage" },
+        { "format": "Flex", "usage": "Discreet and practical format, with pre-cut compartments for easier separation by intake or by day" }
+      ],
+      "patients_title": "A solution adapted to patients",
+      "patients_items": [
+        "Patients taking multiple medicines",
+        "Elderly people",
+        "Patients with chronic conditions",
+        "Patients who have difficulty organising their intakes",
+        "Family carers",
+        "Facilities requiring a more readable preparation"
+      ]
+    },
+    "accessories": {
+      "title": "Venalink Accessories and Consumables",
+      "subtitle": "Everything needed to prepare, correct, organise and hand over PDA",
+      "description": "To go further in structuring their PDA service, pharmacies can complement Venalink pill organisers with a range of accessories designed to facilitate preparation, support treatment adjustments, organise pill organisers and improve patient handover.",
+      "accessory_heading": "Accessory",
+      "role_heading": "Role",
+      "rows": [
+        { "accessory": "Corrective labels", "role": "Correct an error or treatment change on an already sealed pill organiser" },
+        { "accessory": "Adhesive labels", "role": "Personalise pill organisers with patient details, pharmacy logo or a QR code" },
+        { "accessory": "Medicine crushers", "role": "Facilitate crushing when treatment and professional practice allow" },
+        { "accessory": "Tablet cutters", "role": "Split tablets requiring precise division" },
+        { "accessory": "Tweezers", "role": "Handle medicines with greater precision and hygiene" },
+        { "accessory": "Medication trolleys", "role": "Organise and transport pill organisers and medicines in a facility" },
+        { "accessory": "FlexRx™ Light binders", "role": "Store and organise prepared pill organisers" },
+        { "accessory": "PDA trays", "role": "Transport and store pill organisers more conveniently" },
+        { "accessory": "Dispensing boxes", "role": "Organise treatment handover over a period of 1 to 4 weeks" }
+      ]
+    },
+    "starter": {
+      "eyebrow": "Starter Offer",
+      "title": "MediMesk helps you launch your manual PDA service",
+      "subtitle": "From selecting the first patients to setting up the service, our team supports you at every step.",
+      "cta_primary": "Launch my manual PDA service",
+      "cta_secondary": "Request a callback from MediMesk"
     }
   }
 }

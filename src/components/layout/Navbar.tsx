@@ -22,6 +22,7 @@ const productsDropdownMeta: { href: string; subHref?: string }[] = [
   { href: "/solutions/pda-automatique" },
   { href: "/solutions/pda-accessoires" },
   { href: "/solutions/studex-system75" },
+  { href: "/solutions/pda-venalink" },
 ];
 
 export default function Navbar({ locale, t }: NavbarProps) {

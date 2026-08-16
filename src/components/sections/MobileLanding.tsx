@@ -45,7 +45,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
 
           <div className="relative mt-7 overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/8 p-2 shadow-2xl shadow-black/25">
             <Image
-              src="/images/heromedi.png"
+              src="/images/heromedi2.png"
               alt={t.home.hero.image_alt}
               width={720}
               height={600}

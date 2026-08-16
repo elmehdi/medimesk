@@ -15,8 +15,9 @@
     { "label": "Dual Blist", "sub": "" },
     { "label": "RDC 45", "sub": "" },
     { "label": "Automatisation pour hôpitaux et cliniques", "sub": "" },
-    { "label": "Appareils de contrôle", "sub": "" },
-    { "label": "Advanced Piercing avec STUDEX", "sub": "" }
+    { "label": "Accessoires PDA", "sub": "" },
+    { "label": "Advanced Piercing avec STUDEX", "sub": "" },
+    { "label": "Piluliers PDA Venalink", "sub": "" }
   ],
   "products_page": {
     "meta": {
@@ -108,8 +109,8 @@
           ]
         },
         {
-          "title": "Appareils de contrôle",
-          "image_alt": "Appareils de contrôle PDA",
+          "title": "Accessoires PDA",
+          "image_alt": "Accessoires PDA",
           "benefits": [
             "Inspection optique des sachets",
             "Archivage et traçabilité des contrôles",
@@ -123,6 +124,15 @@
             "Cartouches stériles à usage unique",
             "Service premium et rentable",
             "Formation et accompagnement Medimesk"
+          ]
+        },
+        {
+          "title": "Piluliers PDA Venalink",
+          "image_alt": "Piluliers PDA Venalink pour la préparation manuelle des doses",
+          "benefits": [
+            "Première étape vers la PDA sans machine",
+            "Formats Qube et Flex adaptés aux patients",
+            "Accompagnement complet Medimesk"
           ]
         }
       ]
@@ -799,11 +809,11 @@
     }
   },
   "accessories": {
-    "breadcrumb": "Appareils de contrôle",
+    "breadcrumb": "Accessoires PDA",
     "hero": {
-      "badge": "Appareils de contrôle",
-      "product_name": "Appareils de contrôle",
-      "title": "Appareils de contrôle",
+      "badge": "Accessoires PDA",
+      "product_name": "Accessoires PDA",
+      "title": "Accessoires PDA",
       "subtitle": "Contrôler, tracer et optimiser votre activité PDA",
       "paragraphs": [
         "Medimesk propose une gamme d’appareils de contrôle et d’accessoires PDA conçus pour renforcer la fiabilité, la traçabilité et l’efficacité de votre production.",
@@ -1110,6 +1120,98 @@
     "meta": {
       "title": "FAQ — MediMesk",
       "description": "Retrouvez les réponses aux questions les plus fréquentes sur nos solutions et notre accompagnement."
+    }
+  },
+  "venalink": {
+    "breadcrumb": "Piluliers PDA Venalink",
+    "meta": {
+      "title": "Piluliers PDA Venalink — PDA Manuelle | MediMesk",
+      "description": "Lancez un service PDA professionnel avec les piluliers Venalink : formats Qube et Flex, accessoires, formation et accompagnement Medimesk."
+    },
+    "hero": {
+      "badge": "PDA Manuelle",
+      "product_name": "Piluliers PDA Venalink",
+      "title": "Venalink : le meilleur pilulier pour développer la préparation des doses à administrer (PDA)",
+      "paragraphs": [
+        "La PDA manuelle Venalink permet aux pharmacies de proposer un service de préparation des doses à administrer sans investir immédiatement dans une machine automatisée.",
+        "Grâce aux piluliers Venalink, le pharmacien peut organiser les traitements d’un patient par jour et par moment de prise, dans un format clair, pratique et personnalisé. C’est une solution idéale pour structurer progressivement une activité PDA, accompagner les patients chroniques ou polymédiqués, soutenir les familles et valoriser le rôle de conseil de l’officine.",
+        "Avec Medimesk, les pharmacies disposent d’une solution complète : piluliers, consommables, accessoires, formation et accompagnement à la mise en place du service.",
+        "Une première étape fiable, professionnelle et évolutive pour intégrer la PDA dans votre pharmacie. Compatible avec une montée en puissance vers la semi-automatisation ou l’automatisation."
+      ],
+      "image_alt": "Pilulier PDA Venalink — système personnalisé de dosification",
+      "cta_primary": "Lancer mon service PDA manuelle",
+      "cta_secondary": "Être rappelé par Medimesk"
+    },
+    "why": {
+      "title": "Pourquoi choisir une PDA manuelle ?",
+      "subtitle": "Créer un service PDA sans attendre d’être équipé d’une machine",
+      "paragraphs": [
+        "Toutes les pharmacies n’ont pas besoin de commencer par une solution automatisée. Pour certaines officines, la priorité est d’abord de tester la demande, sélectionner les premiers patients, organiser l’équipe et construire une méthode de préparation fiable.",
+        "La PDA manuelle Venalink répond précisément à ce besoin : elle permet de lancer un service professionnel avec un investissement plus progressif, tout en conservant l’exigence de sécurité, de lisibilité et de personnalisation attendue par les patients.",
+        "Elle est particulièrement pertinente pour les pharmacies qui souhaitent :"
+      ],
+      "items": [
+        "Démarrer une activité PDA progressivement",
+        "Accompagner des patients âgés, chroniques ou polymédiqués",
+        "Proposer un service utile aux familles et aux aidants",
+        "Mieux organiser les traitements complexes",
+        "Fidéliser une patientèle suivie au long cours",
+        "Valoriser leur rôle de conseil pharmaceutique",
+        "Tester le potentiel commercial de la PDA avant d’automatiser",
+        "Diversifier leurs revenus"
+      ],
+      "conclusion": [
+        "La PDA manuelle n’est pas une solution \u201cmoins professionnelle\u201d. C’est souvent le premier niveau structuré d’un service PDA bien construit.",
+        "Elle permet à la pharmacie de passer d’une délivrance centrée sur la boîte à une logique plus lisible pour le patient : le bon médicament, au bon moment, dans un support préparé et identifié."
+      ]
+    },
+    "solution": {
+      "title": "La solution Venalink",
+      "subtitle": "Des piluliers conçus pour organiser les traitements par prise",
+      "paragraphs": [
+        "La solution Venalink repose sur des piluliers composés d’une carte et d’une plaquette thermoformée. Les médicaments sont préparés dans des compartiments permettant d’organiser les prises selon le schéma prescrit : jour, horaire ou moment de prise.",
+        "Cette organisation facilite la compréhension du traitement pour le patient, l’aidant ou la structure partenaire."
+      ],
+      "format_heading": "Format",
+      "usage_heading": "Usage recommandé",
+      "formats": [
+        { "format": "Qube", "usage": "Format visuel et confortable, adapté aux traitements comprenant plusieurs médicaments à reconditionner" },
+        { "format": "Flex", "usage": "Format discret et pratique, avec alvéoles prédécoupées permettant une séparation plus facile par prise ou par jour" }
+      ],
+      "patients_title": "Une solution adaptée aux patients",
+      "patients_items": [
+        "Les patients prenant plusieurs médicaments",
+        "Les personnes âgées",
+        "Les patients atteints de maladies chroniques",
+        "Les patients ayant des difficultés à organiser leurs prises",
+        "Les aidants familiaux",
+        "Les structures souhaitant une préparation plus lisible"
+      ]
+    },
+    "accessories": {
+      "title": "Accessoires et consommables Venalink",
+      "subtitle": "Tout le nécessaire pour préparer, corriger, organiser et remettre les PDA",
+      "description": "Pour aller plus loin dans la structuration de leur service PDA, les pharmacies peuvent compléter les piluliers Venalink avec une gamme d’accessoires pensés pour faciliter la préparation, accompagner les ajustements de traitement, organiser les piluliers et améliorer la remise au patient.",
+      "accessory_heading": "Accessoire",
+      "role_heading": "Rôle",
+      "rows": [
+        { "accessory": "Étiquettes correctrices", "role": "Corriger une erreur ou une modification de traitement sur un pilulier déjà scelé" },
+        { "accessory": "Étiquettes adhésives", "role": "Personnaliser les piluliers avec les informations patient, le logo de la pharmacie ou un QR code" },
+        { "accessory": "Broyeurs de médicaments", "role": "Faciliter le broyage lorsque le traitement et la pratique professionnelle le permettent" },
+        { "accessory": "Coupe-comprimés", "role": "Fractionner les comprimés nécessitant une division précise" },
+        { "accessory": "Pinces", "role": "Manipuler les médicaments avec plus de précision et d’hygiène" },
+        { "accessory": "Chariots de médication", "role": "Organiser et transporter les piluliers et médicaments en établissement" },
+        { "accessory": "Classeurs FlexRx™ Light", "role": "Ranger et organiser les piluliers préparés" },
+        { "accessory": "Plateaux PDA", "role": "Transporter et stocker les piluliers de manière plus pratique" },
+        { "accessory": "Boîtes distributrices", "role": "Organiser la remise des traitements sur une période de 1 à 4 semaines" }
+      ]
+    },
+    "starter": {
+      "eyebrow": "Offre Starter",
+      "title": "Medimesk vous aide à lancer votre service PDA manuelle",
+      "subtitle": "De la sélection des premiers patients à la mise en place du service, notre équipe vous accompagne à chaque étape.",
+      "cta_primary": "Lancer mon service PDA manuelle",
+      "cta_secondary": "Être rappelé par Medimesk"
     }
   }
 }

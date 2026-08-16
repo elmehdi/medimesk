@@ -25,16 +25,24 @@ export const productCardMeta: ProductCardMeta[] = [
     href: "/solutions/pda-rdc45",
     badge: "PDA Semi-automatisée",
     comparison: {
-      beforeSrc: "/images/RDC/Avant encart RDC.webp",
-      afterSrc: "/images/RDC/Apres RDC.webp",
+      beforeSrc: "/images/RDC/Après encart rdc.png",
+      afterSrc: "/images/RDC/RDC 45-07.png",
       variant: "wipe",
     },
   },
-  { imageSrc: "/images/hopitaux et cliniques produit.webp", href: "/solutions/pda-automatique", badge: "PDA Automatisée" },
+  {
+    href: "/solutions/pda-automatique",
+    badge: "PDA Automatisée",
+    comparison: {
+      beforeSrc: "/images/Hospital clinic/jvm-machines.png.png",
+      afterSrc: "/images/hopitaux et cliniques produit.webp",
+      variant: "wipe",
+    },
+  },
   {
     href: "/solutions/pda-accessoires",
     imageFit: "contain",
-    badge: "PDA Semi-auto & Auto",
+    badge: "Accessoires PDA",
     comparison: {
       beforeSrc: "/images/Accessoires/accessoire avant.webp",
       afterSrc: "/images/Accessoires/Encart accessoires apres.webp",
@@ -42,4 +50,5 @@ export const productCardMeta: ProductCardMeta[] = [
     },
   },
   { imageSrc: "/images/studex-system75.webp", href: "/solutions/studex-system75", badge: "Piercing" },
+  { imageSrc: "/images/studex-placehollder.jpeg", href: "/solutions/pda-venalink", badge: "PDA Manuelle", imageFit: "contain" },
 ];
