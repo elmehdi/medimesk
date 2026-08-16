@@ -20,7 +20,11 @@ export type ContactIntent =
   | "accessories-range"
   | "accessories-advice"
   | "studex-presentation"
-  | "studex-callback";
+  | "studex-callback"
+  | "venalink-demo"
+  | "venalink-info"
+  | "venalink-starter"
+  | "venalink-callback";
 
 type ContactTemplate = {
   subject: string;
@@ -124,6 +128,22 @@ const templates: Record<Locale, Record<ContactIntent, ContactTemplate>> = {
       subject: subjects.fr.other,
       message: "Bonjour,\n\nJe souhaite être rappelé par MediMesk au sujet de l'offre Advanced Piercing avec STUDEX.\n\nMerci de me recontacter.\n\nCordialement,",
     },
+    "venalink-demo": {
+      subject: subjects.fr.demo,
+      message: "Bonjour,\n\nJe souhaite demander une démonstration de la solution Venalink.\n\nPouvez-vous me recontacter pour organiser une présentation ?\n\nCordialement,",
+    },
+    "venalink-info": {
+      subject: subjects.fr.other,
+      message: "Bonjour,\n\nJe souhaite recevoir des informations complémentaires sur la solution Venalink.\n\nPouvez-vous me recontacter ?\n\nCordialement,",
+    },
+    "venalink-starter": {
+      subject: subjects.fr.demo,
+      message: "Bonjour,\n\nJe souhaite démarrer avec la solution Venalink et obtenir plus d'informations sur l'offre Starter.\n\nPouvez-vous me recontacter ?\n\nCordialement,",
+    },
+    "venalink-callback": {
+      subject: subjects.fr.other,
+      message: "Bonjour,\n\nJe souhaite être rappelé par MediMesk au sujet de la solution Venalink.\n\nMerci de me recontacter.\n\nCordialement,",
+    },
   },
   en: {
     contact: {
@@ -205,6 +225,22 @@ const templates: Record<Locale, Record<ContactIntent, ContactTemplate>> = {
     "studex-callback": {
       subject: subjects.en.other,
       message: "Hello,\n\nI would like to be called back by MediMesk about the Advanced Piercing offer with STUDEX.\n\nPlease contact me.\n\nBest regards,",
+    },
+    "venalink-demo": {
+      subject: subjects.en.demo,
+      message: "Hello,\n\nI would like to request a demonstration of the Venalink solution.\n\nCould you please contact me to arrange a presentation?\n\nBest regards,",
+    },
+    "venalink-info": {
+      subject: subjects.en.other,
+      message: "Hello,\n\nI would like to receive additional information about the Venalink solution.\n\nCould you please contact me?\n\nBest regards,",
+    },
+    "venalink-starter": {
+      subject: subjects.en.demo,
+      message: "Hello,\n\nI would like to get started with the Venalink solution and learn more about the Starter offer.\n\nCould you please contact me?\n\nBest regards,",
+    },
+    "venalink-callback": {
+      subject: subjects.en.other,
+      message: "Hello,\n\nI would like to be called back by MediMesk about the Venalink solution.\n\nPlease contact me.\n\nBest regards,",
     },
   },
 };
