@@ -159,7 +159,7 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
                 <div className="absolute -inset-5 rounded-full bg-light-teal/25 blur-3xl" />
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl bg-white">
                   <Image
-                    src="/images/sachets-formats.png"
+                    src="/images/Dualblist/4.jpg"
                     alt={p.concrete_benefits.patient.title}
                     fill
                     className="object-contain p-3"
