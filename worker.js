@@ -21,6 +21,12 @@ export default {
       return route.handler({ request, env, ctx });
     }
 
+    // Check if ASSETS binding exists
+    if (!env.ASSETS) {
+      console.error("ASSETS binding is not configured");
+      return new Response("Not Found", { status: 404 });
+    }
+
     return env.ASSETS.fetch(request);
   },
 };
