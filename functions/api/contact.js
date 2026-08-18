@@ -5,7 +5,7 @@ export async function onRequestPost(context) {
     const body = await context.request.json();
 
     // Basic validation
-    const { fullName, pharmacyName, email, phone, subject, message } = body;
+    const { fullName, pharmacyName, email, phone, subject, message, newsletterConsent } = body;
     if (
       !fullName ||
       typeof email !== "string" ||
@@ -73,7 +73,7 @@ export async function onRequestPost(context) {
       apiKey,
       listIds: [
         Number(env.BREVO_CONTACT_LIST_ID),
-        Number(env.BREVO_LIST_ID),
+        ...(newsletterConsent ? [Number(env.BREVO_LIST_ID)] : []),
       ],
       email,
     });

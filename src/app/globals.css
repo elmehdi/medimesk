@@ -49,7 +49,7 @@
   0%,
   20%,
   100% {
-    clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 0 0 100%);
   }
   48%,
   72% {
@@ -61,7 +61,7 @@
   0%,
   20%,
   100% {
-    left: 0;
+    left: 100%;
     opacity: 0;
   }
   24% {
@@ -69,35 +69,15 @@
   }
   48%,
   72% {
+    left: 0;
+    opacity: 1;
+  }
+  96% {
     left: 100%;
     opacity: 1;
   }
-  78% {
-    opacity: 0;
-  }
-}
-
-@keyframes before-label {
-  0%,
-  42%,
-  100% {
-    opacity: 1;
-  }
-  50%,
-  92% {
-    opacity: 0;
-  }
-}
-
-@keyframes after-label {
-  0%,
-  42%,
   100% {
     opacity: 0;
-  }
-  50%,
-  92% {
-    opacity: 1;
   }
 }
 
@@ -111,15 +91,9 @@
   will-change: left, opacity;
 }
 
-.before-after-wipe-before-label {
-  animation: before-label 5.75s ease-in-out infinite;
-}
-
-.before-after-wipe-after-label {
-  animation: after-label 5.75s ease-in-out infinite;
-}
-
 .studex-pdf-viewer:fullscreen {
+  display: flex;
+  flex-direction: column;
   border: 0;
   border-radius: 0;
   height: 100vh;
@@ -127,7 +101,8 @@
 }
 
 .studex-pdf-viewer:fullscreen .studex-pdf-frame-shell {
-  height: calc(100vh - 65px);
+  height: auto;
+  flex: 1 1 auto;
 }
 
 .studex-pdf-page {
@@ -176,10 +151,9 @@
 }
 
 .before-after-wipe-clip,
-.before-after-wipe-line,
-.before-after-wipe-before-label,
-.before-after-wipe-after-label {
+.before-after-wipe-line {
   animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
 @media (max-width: 767px) {
@@ -234,26 +208,6 @@
     transition: none;
   }
 
-  .before-after-wipe-clip,
-  .before-after-wipe-line,
-  .before-after-wipe-before-label,
-  .before-after-wipe-after-label {
-    animation: none;
-    will-change: auto;
-  }
-
-  .before-after-wipe-clip {
-    clip-path: inset(0);
-  }
-
-  .before-after-wipe-line,
-  .before-after-wipe-before-label {
-    display: none;
-  }
-
-  .before-after-wipe-after-label {
-    opacity: 1;
-  }
 }
 
 /* ── Scroll-triggered reveal animations ─────────────── */
@@ -288,15 +242,12 @@
   }
 
   .before-after-wipe-clip,
-  .before-after-wipe-line,
-  .before-after-wipe-before-label,
-  .before-after-wipe-after-label {
+  .before-after-wipe-line {
     animation: none;
   }
 
   .before-after-wipe-clip,
-  .before-after-wipe-line,
-  .before-after-wipe-after-label {
+  .before-after-wipe-line {
     opacity: 0;
   }
 }

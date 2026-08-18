@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Translations } from "@/i18n/useTranslations";
 import { productCardMeta } from "@/lib/products";
 import { contactHref } from "@/lib/contact-intents";
+import ProductComparisonMedia from "@/components/ui/ProductComparisonMedia";
 
 const Arrow = () => (
   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -66,6 +67,22 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
               {t.home.hero.pda_definition}
             </p>
           </details>
+
+          <div className="mt-3 flex justify-end">
+            <a
+              href="https://www.youtube.com/watch?v=PmMIpPxUlUw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex min-h-12 w-fit items-center justify-center gap-2.5 rounded-full border border-white/20 bg-white/10 px-5 text-sm font-bold text-white"
+            >
+              {t.home.hero.watch_video}
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-[#063f3c]">
+                <svg className="ml-0.5 h-3 w-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -129,12 +146,14 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
               >
                 <div className="relative aspect-[16/11] bg-[#e8f2f0]">
                   {meta.comparison ? (
-                    <Image
-                      src={meta.comparison.afterSrc}
+                    <ProductComparisonMedia
+                      beforeSrc={meta.comparison.beforeSrc}
+                      afterSrc={meta.comparison.afterSrc}
                       alt={card.image_alt}
-                      fill
-                      className={meta.imageFit === "contain" ? "object-contain p-4" : "object-cover"}
-                      sizes="78vw"
+                      beforeLabel={t.common.before}
+                      afterLabel={t.common.after}
+                      imageFit={meta.imageFit}
+                      variant={meta.comparison.variant}
                     />
                   ) : meta.imageSrc ? (
                     <Image

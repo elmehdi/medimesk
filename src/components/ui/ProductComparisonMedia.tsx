@@ -12,8 +12,6 @@ interface ProductComparisonMediaProps {
   imageFit?: "cover" | "contain";
 }
 
-const labelClasses = "rounded-full bg-dark-text/75 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white shadow-sm";
-
 function ImageLayer({
   src,
   alt,
@@ -47,12 +45,18 @@ export default function ProductComparisonMedia({
   return (
     <div className="absolute inset-0 bg-section-bg">
       <ImageLayer src={beforeSrc} alt={`${alt} - ${beforeLabel}`} imageFit={imageFit} />
-      <div className="before-after-wipe-clip absolute inset-0 overflow-hidden">
+      <div className="before-after-wipe-clip absolute inset-0 overflow-hidden bg-section-bg">
         <ImageLayer src={afterSrc} alt={`${alt} - ${afterLabel}`} imageFit={imageFit} />
       </div>
-      <div className="before-after-wipe-line absolute inset-y-0 z-10 w-1 bg-white/90 shadow-lg" />
-      <span className={`${labelClasses} before-after-wipe-before-label absolute left-3 top-3 z-20`}>{beforeLabel}</span>
-      <span className={`${labelClasses} before-after-wipe-after-label absolute right-3 top-3 z-20 opacity-0`}>{afterLabel}</span>
+      <div className="before-after-wipe-line absolute inset-y-0 z-10 w-1 bg-white/90 shadow-lg">
+        <div className="before-after-wipe-control absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-1.5 whitespace-nowrap rounded-full border border-white/70 bg-white/80 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-dark-text shadow-lg backdrop-blur-md">
+          <span>{beforeLabel}</span>
+          <svg className="h-3.5 w-3.5 text-primary-teal" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M2 5.5h12M11 2.5l3 3-3 3M14 10.5H2M5 7.5l-3 3 3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          <span>{afterLabel}</span>
+        </div>
+      </div>
     </div>
   );
 }

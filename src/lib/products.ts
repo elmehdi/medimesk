@@ -16,8 +16,8 @@ export const productCardMeta: ProductCardMeta[] = [
     href: "/solutions/pda-dual-blist",
     badge: "PDA Semi-automatisée",
     comparison: {
-      beforeSrc: "/images/Dualblist/Avant encart Dual Blist.webp",
-      afterSrc: "/images/Dualblist/Après Encart Dual Blist .webp",
+      beforeSrc: "/images/Dualblist/Après Encart Dual Blist .webp",
+      afterSrc: "/images/Dualblist/Avant encart Dual Blist.webp",
       variant: "wipe",
     },
   },
@@ -25,8 +25,8 @@ export const productCardMeta: ProductCardMeta[] = [
     href: "/solutions/pda-rdc45",
     badge: "PDA Semi-automatisée",
     comparison: {
-      beforeSrc: "/images/RDC/Après encart rdc.png",
-      afterSrc: "/images/RDC/RDC 45-07.png",
+      beforeSrc: "/images/RDC/Avant encart RDC.jpg",
+      afterSrc: "/images/RDC/after RDC.png",
       variant: "wipe",
     },
   },
@@ -34,8 +34,8 @@ export const productCardMeta: ProductCardMeta[] = [
     href: "/solutions/pda-automatique",
     badge: "PDA Automatisée",
     comparison: {
-      beforeSrc: "/images/Hospital clinic/jvm-machines.png.png",
-      afterSrc: "/images/hopitaux et cliniques produit.webp",
+      beforeSrc: "/images/hopitaux et cliniques produit.webp",
+      afterSrc: "/images/Hospital clinic/jvm-machines.png.png",
       variant: "wipe",
     },
   },
@@ -44,11 +44,19 @@ export const productCardMeta: ProductCardMeta[] = [
     imageFit: "contain",
     badge: "Accessoires PDA",
     comparison: {
-      beforeSrc: "/images/Accessoires/accessoire avant.webp",
-      afterSrc: "/images/Accessoires/Encart accessoires apres.webp",
+      beforeSrc: "/images/Accessoires/Encart accessoires apres.webp",
+      afterSrc: "/images/Accessoires/accessoire avant.webp",
       variant: "wipe",
     },
   },
-  { imageSrc: "/images/studex-system75.webp", href: "/solutions/studex-system75", badge: "Piercing" },
+  {
+    href: "/solutions/studex-system75",
+    badge: "Piercing",
+    comparison: {
+      beforeSrc: "/images/studex-system75.webp",
+      afterSrc: "/images/After studex.png",
+      variant: "wipe",
+    },
+  },
   { imageSrc: "/images/studex-placehollder.jpeg", href: "/solutions/pda-venalink", badge: "PDA Manuelle", imageFit: "contain" },
 ];

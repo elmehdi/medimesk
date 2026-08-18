@@ -38,3 +38,6 @@ next-env.d.ts
 # temp build
 /tmp
 
+# claude
+CLAUDE.md
+

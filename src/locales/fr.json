@@ -71,7 +71,8 @@
       "cta_solutions": "Découvrir nos solutions",
       "cta_project": "Parler de votre projet",
       "pda_question": "Qu'est-ce que la PDA ?",
-      "pda_definition": "La Préparation des Doses à Administrer (PDA) est un service pharmaceutique qui consiste à organiser les médicaments solides administrés par voie orale dans des dispositifs personnalisés pour une meilleure observance thérapeutique, afin d’augmenter la sécurité et l’efficacité des traitements pharmacothérapeutiques du patient."
+      "pda_definition": "La Préparation des Doses à Administrer (PDA) est un service pharmaceutique qui consiste à organiser les médicaments solides administrés par voie orale dans des dispositifs personnalisés pour une meilleure observance thérapeutique, afin d’augmenter la sécurité et l’efficacité des traitements pharmacothérapeutiques du patient.",
+      "watch_video": "Voir la vidéo"
     },
     "trust_partners_label": "Partenaires",
     "trust": [
@@ -1038,8 +1039,7 @@
       "phone": "+212 5 26 27 28 12",
       "email": "contact@medimesk.ma",
       "address": "Résidence Meskellil Imm. 3 N°1, Av. Assabir, Hay Riad, Rabat, Maroc",
-      "map_title": "Google Maps",
-      "map_subtitle": "Intégration carte ici"
+      "map_title": "Google Maps"
     },
     "form": {
       "title": "Envoyez-nous un message",

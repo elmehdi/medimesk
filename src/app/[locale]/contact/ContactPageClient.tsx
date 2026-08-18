@@ -6,6 +6,7 @@ import { useForm, type UseFormGetValues, type UseFormSetValue, type UseFormWatch
 import { zodResolver } from "@hookform/resolvers/zod";
 import { createContactSchema, type ContactFormData } from "@/lib/schemas/contact";
 import { SectionWrapper } from "@/components/ui";
+import LocationMap from "@/components/ui/LocationMap";
 import type { Locale } from "@/i18n/config";
 import { getTranslations } from "@/i18n/useTranslations";
 import {
@@ -20,6 +21,9 @@ const contactInfoIcons = [
   <svg key="1" className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
   <svg key="2" className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>,
 ];
+
+const OFFICE_LOCATION = { lat: 33.9474768, lng: -6.8608782 };
+const OFFICE_MAPS_LINK = "https://maps.app.goo.gl/aVUtpYGVTkusoEsK6";
 
 /* ── Page ─────────────────────────────────────────────── */
 export default function ContactPage({
@@ -56,7 +60,7 @@ export default function ContactPage({
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, newsletterConsent }),
       });
       if (!res.ok) {
         const json = await res.json();
@@ -64,6 +68,7 @@ export default function ContactPage({
       }
       setSubmitted(true);
       reset();
+      setNewsletterConsent(false);
     } catch (err) {
       setServerError(
         err instanceof Error ? err.message : c.form.error_unknown,
@@ -116,17 +121,22 @@ export default function ContactPage({
               ))}
             </ul>
 
-            {/* Google Maps placeholder */}
-            <div className="overflow-hidden rounded-2xl border border-light-teal bg-section-bg">
-              <div className="flex h-40 items-center justify-center text-dark-text/30 md:h-56">
-                <div className="text-center">
-                  <svg className="mx-auto h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                  </svg>
-                  <p className="mt-2 text-sm font-medium">{c.info.map_title}</p>
-                  <p className="text-xs">{c.info.map_subtitle}</p>
-                </div>
-              </div>
+            {/* Location map */}
+            <div className="relative overflow-hidden rounded-2xl border border-light-teal">
+              <LocationMap
+                lat={OFFICE_LOCATION.lat}
+                lng={OFFICE_LOCATION.lng}
+                label="MediMesk"
+                className="h-56 w-full md:h-72"
+              />
+              <a
+                href={OFFICE_MAPS_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute right-3 top-3 z-[1001] rounded-lg bg-white px-3 py-1.5 text-xs font-semibold text-primary-teal shadow-md transition-colors hover:bg-light-teal"
+              >
+                {c.info.map_title}
+              </a>
             </div>
           </div>
 
@@ -206,7 +216,7 @@ export default function ContactPage({
 
                     {/* Message */}
                     <Field label={c.form.message} error={errors.message?.message}>
-                      <textarea rows={4} placeholder={c.form.message_placeholder} {...register("message")} className={`${inputClass(!!errors.message)} resize-y`} />
+                      <textarea rows={7} placeholder={c.form.message_placeholder} {...register("message")} className={`${inputClass(!!errors.message)} min-h-[10rem] resize-y`} />
                     </Field>
 
                     {/* Consentement Newsletter */}
@@ -323,7 +333,7 @@ function Field({
 
 /* ── Input class helper ──────────────────────────────── */
 function inputClass(hasError: boolean) {
-  return `block w-full rounded-lg border px-3.5 py-2.5 text-sm text-dark-text placeholder:text-dark-text/30 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal ${
+  return `block w-full rounded-lg border px-3.5 py-3 text-base text-dark-text placeholder:text-dark-text/30 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-teal/30 focus:border-primary-teal sm:py-2.5 sm:text-sm ${
     hasError
       ? "border-error-red focus:ring-error-red/30 focus:border-error-red"
       : "border-dark-text/20"

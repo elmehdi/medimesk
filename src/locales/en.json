@@ -71,7 +71,8 @@
       "cta_solutions": "Discover our solutions",
       "cta_project": "Discuss your project",
       "pda_question": "What is PDA?",
-      "pda_definition": "Preparation of Doses for Administration (PDA) is a pharmaceutical service that organizes orally administered solid medicines into personalized dispensing devices to improve treatment adherence and enhance the safety and effectiveness of a patient’s pharmacotherapy."
+      "pda_definition": "Preparation of Doses for Administration (PDA) is a pharmaceutical service that organizes orally administered solid medicines into personalized dispensing devices to improve treatment adherence and enhance the safety and effectiveness of a patient’s pharmacotherapy.",
+      "watch_video": "Watch the video"
     },
     "trust_partners_label": "Partners",
     "trust": [
@@ -1028,8 +1029,7 @@
       "phone": "+212 5 26 27 28 12",
       "email": "contact@medimesk.ma",
       "address": "Résidence Meskellil Bldg. 3 N°1, Av. Assabir, Hay Riad, Rabat, Morocco",
-      "map_title": "Google Maps",
-      "map_subtitle": "Map integration here"
+      "map_title": "Google Maps"
     },
     "form": {
       "title": "Send Us a Message",

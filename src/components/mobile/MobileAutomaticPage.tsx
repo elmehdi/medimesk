@@ -7,7 +7,7 @@ import { MobileBackLink, MobileEyebrow, MobileSectionTitle, MobileStickyActions 
 const media: Record<string, { src: string; contain?: boolean }> = {
   atdps: { src: "/images/Hospital clinic/atpds - reconnaissance des canisters.png" },
   menith: { src: "/images/Hospital clinic/Menith.webp", contain: true },
-  vizen: { src: "/images/Hospital clinic/VIZEN.png", contain: true },
+  vizen: { src: "/images/Hospital clinic/VIZEN-EX-Front.png", contain: true },
   wizer: { src: "/images/Hospital clinic/JVM_WIZER.jpg", contain: true },
 };
 

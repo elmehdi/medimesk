@@ -57,6 +57,22 @@ export default function Hero({ locale, t }: { locale: string; t: Translations })
                 {t.home.hero.pda_definition}
               </p>
             </details>
+
+            <div className="mx-auto mt-3 flex w-full justify-end sm:mt-4 sm:w-[460px] lg:w-[560px]">
+              <a
+                href="https://www.youtube.com/watch?v=PmMIpPxUlUw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex w-fit items-center justify-center gap-2.5 rounded-full border border-white/40 bg-white/10 px-5 py-3 text-sm font-semibold text-white shadow-lg backdrop-blur-sm transition-colors hover:bg-white/20 sm:text-base"
+              >
+                {t.home.hero.watch_video}
+                <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white text-primary-teal transition-transform group-hover:scale-105">
+                  <svg className="ml-0.5 h-3 w-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

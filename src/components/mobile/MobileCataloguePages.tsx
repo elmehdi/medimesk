@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Translations } from "@/i18n/useTranslations";
 import { contactHref } from "@/lib/contact-intents";
+import PdfCatalogueViewer from "@/components/ui/PdfCatalogueViewer";
 import { MobileBackLink, MobileEyebrow, MobileSectionTitle, MobileStickyActions } from "./MobilePrimitives";
 
 const accessoryImages: Record<string, string> = {
@@ -58,7 +59,18 @@ export function MobileStudexPage({ locale, t }: { locale: string; t: Translation
         <MobileSectionTitle title={p.offer.title} subtitle={p.offer.subtitle} />
         <div className="mt-6 space-y-2.5">{p.offer.rows.map((row, i) => <article key={row.element} className="rounded-2xl border border-[#eadfe3] bg-[#faf7f8] p-4"><div className="flex items-center gap-3"><span className="text-xs font-black text-[#a04d6b]">0{i + 1}</span><h3 className="font-sans text-sm font-bold text-[#31252b]">{row.element}</h3></div><p className="mt-2 text-[11px] leading-4 text-[#75666d]">{row.role}</p></article>)}</div>
         <div className="mt-7 overflow-hidden rounded-[1.5rem] bg-[#311f29] p-4 text-white">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-white"><Image src="/images/studex-catalogue/page-2.png" alt="Studex catalogue" fill className="object-contain" sizes="100vw" /></div>
+          <PdfCatalogueViewer
+            pageImageBase="/images/studex-catalogue"
+            title={locale === "fr" ? "Catalogue Studex" : "Studex Catalogue"}
+            totalPages={6}
+            initialPage={2}
+            previousLabel={locale === "fr" ? "Page précédente" : "Previous page"}
+            nextLabel={locale === "fr" ? "Page suivante" : "Next page"}
+            fullscreenLabel={locale === "fr" ? "Plein écran" : "Fullscreen"}
+            exitFullscreenLabel={locale === "fr" ? "Quitter le plein écran" : "Exit fullscreen"}
+            pageLabel={locale === "fr" ? "Page" : "Page"}
+            simple
+          />
           <a href="/Catalogue studex.pdf" target="_blank" rel="noopener noreferrer" className="mt-4 flex min-h-12 items-center justify-center rounded-xl bg-white text-xs font-black text-[#311f29]">{locale === "fr" ? "Télécharger le catalogue" : "Download catalogue"}</a>
         </div>
       </section>

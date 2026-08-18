@@ -58,7 +58,7 @@ const machineMedia: Record<string, { src: string; fit?: "cover" | "contain"; asp
     aspect: "aspect-[4/3]",
   },
   vizen: {
-    src: "/images/Hospital clinic/VIZEN copy.png",
+    src: "/images/Hospital clinic/VIZEN-EX-Front.png",
     fit: "contain",
     aspect: "aspect-[4/3]",
   },

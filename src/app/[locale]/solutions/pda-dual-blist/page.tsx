@@ -155,14 +155,14 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
                 <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-primary-teal">{p.concrete_benefits.patient.list_title}</p>
                 <CheckList items={p.concrete_benefits.patient.items} />
               </article>
-              <div className="relative mx-auto w-full max-w-lg">
+              <div className="relative mx-auto w-full max-w-sm">
                 <div className="absolute -inset-5 rounded-full bg-light-teal/25 blur-3xl" />
-                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl bg-white">
+                <div className="relative aspect-[2/3] overflow-hidden rounded-2xl shadow-xl bg-white">
                   <Image
-                    src="/images/Dualblist/4.jpg"
+                    src={locale === "fr" ? "/images/Dualblist/dosing_chart_french.png" : "/images/Dualblist/dosing_chart_english.png"}
                     alt={p.concrete_benefits.patient.title}
                     fill
-                    className="object-contain p-3"
+                    className="object-contain"
                     sizes="(max-width: 1024px) 100vw, 42vw"
                   />
                 </div>

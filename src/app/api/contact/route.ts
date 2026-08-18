@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { fullName, pharmacyName, email, phone, subject, message } = body;
+    const { fullName, pharmacyName, email, phone, subject, message, newsletterConsent } = body;
 
     if (
       !fullName ||
@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
       apiKey,
       listIds: [
         Number(process.env.BREVO_CONTACT_LIST_ID),
-        Number(process.env.BREVO_LIST_ID),
+        ...(newsletterConsent ? [Number(process.env.BREVO_LIST_ID)] : []),
       ],
       email,
     });
