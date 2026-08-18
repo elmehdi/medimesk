@@ -65,10 +65,13 @@ export default function PdaVenalinkPage({ params }: { params: { locale: Locale }
               <h1 className="mt-4 text-dark-text">{p.hero.product_name}</h1>
               <p className="product-value-title mt-4">{p.hero.title}</p>
               <div className="mt-6 space-y-4 text-lg leading-relaxed text-dark-text/70">
-                {p.hero.paragraphs.map((para) => (
+                {p.hero.paragraphs.slice(0, -1).map((para) => (
                   <p key={para}>{para}</p>
                 ))}
               </div>
+              <p className="mt-6 border-l-4 border-primary-teal pl-5 text-lg font-medium leading-relaxed text-dark-text">
+                {p.hero.paragraphs[p.hero.paragraphs.length - 1]}
+              </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button href={contactHref(locale, "venalink-demo")}>{p.hero.cta_primary}</Button>
                 <Button variant="secondary" href={contactHref(locale, "venalink-info")}>{p.hero.cta_secondary}</Button>
@@ -183,7 +186,7 @@ export default function PdaVenalinkPage({ params }: { params: { locale: Locale }
           <div className="absolute top-0 right-0 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
           <div className="absolute bottom-0 left-0 h-48 w-48 rounded-full bg-white/5 blur-3xl" />
           <div className="relative mx-auto max-w-container px-gutter py-20 text-center">
-            <Badge className="bg-white/20 text-white border-white/30">{p.starter.eyebrow}</Badge>
+            <p className="font-bold uppercase tracking-wider text-cta-yellow">{p.starter.eyebrow}</p>
             <h2 className="mt-6 text-white">{p.starter.title}</h2>
             <p className="mt-4 text-white/80 leading-relaxed max-w-xl mx-auto">{p.starter.subtitle}</p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
