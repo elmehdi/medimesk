@@ -91,7 +91,7 @@ export default function Navbar({ locale, t }: NavbarProps) {
             <span className="flex flex-col gap-0.5">
               <span className="relative block h-[22px] w-[140px] overflow-hidden lg:h-[28px] lg:w-[180px]">
                 <Image
-                  src="/images/text logo.png"
+                  src="/images/text logo.webp"
                   alt=""
                   width={6250}
                   height={4018}
@@ -101,7 +101,7 @@ export default function Navbar({ locale, t }: NavbarProps) {
               </span>
               <span className="relative block h-[9px] w-[140px] overflow-hidden lg:h-[11px] lg:w-[180px]">
                 <Image
-                  src="/images/Trust%20in%20every%20DOSE.png"
+                  src="/images/Trust%20in%20every%20DOSE.webp"
                   alt="Trust in every dose"
                   width={1920}
                   height={1080}

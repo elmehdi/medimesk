@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     path: "/solutions/pda-automatique",
     title: p.meta.title,
     description: p.meta.description,
-    image: "/images/timedi.png",
+    image: "/images/timedi.webp",
     keywords: [
       "PDA automatique Maroc",
       "automated PDA Morocco",
@@ -48,7 +48,7 @@ type Machine = ReturnType<typeof getTranslations>["hospital"]["machines"][number
 
 const machineMedia: Record<string, { src: string; fit?: "cover" | "contain"; aspect?: string }> = {
   atdps: {
-    src: "/images/Hospital clinic/atpds - reconnaissance des canisters.png",
+    src: "/images/Hospital clinic/atpds - reconnaissance des canisters.webp",
     fit: "cover",
     aspect: "aspect-[16/10]",
   },
@@ -58,12 +58,12 @@ const machineMedia: Record<string, { src: string; fit?: "cover" | "contain"; asp
     aspect: "aspect-[4/3]",
   },
   vizen: {
-    src: "/images/Hospital clinic/VIZEN-EX-Front.png",
+    src: "/images/Hospital clinic/VIZEN-EX-Front.webp",
     fit: "contain",
     aspect: "aspect-[4/3]",
   },
   wizer: {
-    src: "/images/Hospital clinic/JVM_WIZER.jpg",
+    src: "/images/Hospital clinic/JVM_WIZER.webp",
     fit: "contain",
     aspect: "aspect-[3/4]",
   },

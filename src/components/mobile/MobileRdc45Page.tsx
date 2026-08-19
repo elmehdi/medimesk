@@ -17,7 +17,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
         <h1 className="mt-3 font-sans text-[2.45rem] font-bold leading-none tracking-[-0.05em]">{p.hero.product_name}</h1>
         <p className="mt-3 text-[1.05rem] font-semibold leading-6 text-[#8ce4dc]">{p.hero.title}</p>
         <div className="relative mt-6 aspect-[4/4.3] overflow-hidden rounded-[1.65rem] bg-white">
-          <Image src="/images/RDC/RDC 45-07.png" alt={p.hero.image_alt} fill priority className="object-contain p-3" sizes="100vw" />
+          <Image src="/images/RDC/RDC 45-07.webp" alt={p.hero.image_alt} fill priority className="object-contain p-3" sizes="100vw" />
         </div>
         <p className="mt-5 text-sm leading-6 text-white/65">{p.hero.paragraphs[0]}</p>
       </section>
@@ -39,7 +39,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
       <section className="bg-white px-5 py-12">
         <MobileSectionTitle title={p.workflow.title} subtitle={p.workflow.subtitle} />
         <div className="relative mt-6 aspect-[16/10] overflow-hidden rounded-[1.5rem]">
-          <Image src="/images/RDC/Alveoles a eclairage LED.jpg" alt={p.hero.image_alt} fill className="object-cover" sizes="100vw" />
+          <Image src="/images/RDC/Alveoles a eclairage LED.webp" alt={p.hero.image_alt} fill className="object-cover" sizes="100vw" />
         </div>
         <ol className="mt-6 space-y-2.5">
           {p.workflow.steps.map((step, index) => (
@@ -76,7 +76,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
       <section className="bg-white px-5 py-12">
         <MobileSectionTitle eyebrow={p.support.eyebrow} title={p.support.title} subtitle={p.support.paragraphs[0]} />
         <div className="relative mt-6 aspect-video overflow-hidden rounded-[1.5rem]">
-          <Image src="/images/RDC/Après encart rdc.png" alt={p.hero.image_alt} fill className="object-cover" sizes="100vw" />
+          <Image src="/images/RDC/Après encart rdc.webp" alt={p.hero.image_alt} fill className="object-cover" sizes="100vw" />
         </div>
         <div className="mt-4 overflow-hidden rounded-[1.4rem] bg-[#102c2b] p-1.5">
           <div className="aspect-video overflow-hidden rounded-[1.05rem]">

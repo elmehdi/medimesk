@@ -5,10 +5,10 @@ import { contactHref, type ContactIntent } from "@/lib/contact-intents";
 import { MobileBackLink, MobileEyebrow, MobileSectionTitle, MobileStickyActions } from "./MobilePrimitives";
 
 const media: Record<string, { src: string; contain?: boolean }> = {
-  atdps: { src: "/images/Hospital clinic/atpds - reconnaissance des canisters.png" },
+  atdps: { src: "/images/Hospital clinic/atpds - reconnaissance des canisters.webp" },
   menith: { src: "/images/Hospital clinic/Menith.webp", contain: true },
-  vizen: { src: "/images/Hospital clinic/VIZEN-EX-Front.png", contain: true },
-  wizer: { src: "/images/Hospital clinic/JVM_WIZER.jpg", contain: true },
+  vizen: { src: "/images/Hospital clinic/VIZEN-EX-Front.webp", contain: true },
+  wizer: { src: "/images/Hospital clinic/JVM_WIZER.webp", contain: true },
 };
 
 export default function MobileAutomaticPage({ locale, t }: { locale: string; t: Translations }) {

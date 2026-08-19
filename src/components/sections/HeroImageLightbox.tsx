@@ -33,7 +33,7 @@ export default function HeroImageLightbox({ alt }: { alt: string }) {
         aria-label="Open hero image"
       >
         <Image
-          src="/images/heromedi2.png"
+          src="/images/heromedi2.webp"
           alt={alt}
           width={720}
           height={600}
@@ -60,7 +60,7 @@ export default function HeroImageLightbox({ alt }: { alt: string }) {
           </button>
           <div className="relative max-h-[90vh] w-full max-w-[1080px]" onClick={(event) => event.stopPropagation()}>
             <Image
-              src="/images/heromedi2.png"
+              src="/images/heromedi2.webp"
               alt={alt}
               width={1200}
               height={1000}

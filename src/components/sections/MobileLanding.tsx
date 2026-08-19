@@ -46,7 +46,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
 
           <div className="relative mt-7 overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/8 p-2 shadow-2xl shadow-black/25">
             <Image
-              src="/images/heromedi2.png"
+              src="/images/heromedi2.webp"
               alt={t.home.hero.image_alt}
               width={720}
               height={600}
@@ -90,7 +90,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
         <div className="overflow-hidden rounded-2xl border border-[#dce9e7] bg-white shadow-sm">
           <div className="flex items-center justify-center gap-3 px-4 py-4">
             <Image
-              src="/images/timedi.png"
+              src="/images/timedi.webp"
               alt="TI-Medi"
               width={267}
               height={189}
@@ -98,7 +98,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
             />
             <span className="h-5 w-px bg-[#dce9e7]" />
             <Image
-              src="/images/jvm%20h.png"
+              src="/images/jvm%20h.webp"
               alt="JVM"
               width={280}
               height={180}
@@ -106,7 +106,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
             />
             <span className="h-5 w-px bg-[#dce9e7]" />
             <Image
-              src="/images/studex.png"
+              src="/images/studex.webp"
               alt="Studex"
               width={475}
               height={106}
@@ -185,7 +185,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
 
       <section className="mx-5 overflow-hidden rounded-[1.75rem] bg-[#102c2b] text-white shadow-xl shadow-[#163d39]/15">
         <div className="relative aspect-[16/10]">
-          <Image src="/images/DB2.png" alt={featured.title} fill className="object-cover" sizes="100vw" />
+          <Image src="/images/DB2.webp" alt={featured.title} fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#102c2b] via-transparent to-transparent" />
           <span className="absolute left-4 top-4 rounded-full bg-[#f5c518] px-3 py-1 text-[10px] font-extrabold uppercase tracking-wide text-[#1a2332]">
             {featured.badge}

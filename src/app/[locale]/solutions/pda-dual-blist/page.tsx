@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     path: "/solutions/pda-dual-blist",
     title: p.meta.title,
     description: p.meta.description,
-    image: "/images/DB2.png",
+    image: "/images/DB2.webp",
     keywords: [
       "Dual Blist Maroc",
       "Dual Blist Morocco",
@@ -101,7 +101,7 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
             <div className="relative mx-auto mt-6 w-full max-w-xl lg:hidden">
               <div className="absolute -inset-4 rounded-full bg-light-teal/30 blur-3xl" />
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl shadow-xl">
-                <Image src="/images/Dualblist/2 DualBlist product.png" alt={p.hero.image_alt} fill className="object-cover" sizes="100vw" priority />
+                <Image src="/images/Dualblist/2 DualBlist product.webp" alt={p.hero.image_alt} fill className="object-cover" sizes="100vw" priority />
               </div>
             </div>
             <div className="mt-6 space-y-4 text-dark-text/70 leading-relaxed">
@@ -116,7 +116,7 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
           <div className="relative mx-auto hidden w-full max-w-xl lg:block">
             <div className="absolute -inset-6 rounded-full bg-light-teal/30 blur-3xl" />
             <div className="relative aspect-[3/2] overflow-hidden rounded-2xl shadow-xl">
-              <Image src="/images/Dualblist/2 DualBlist product.png" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+              <Image src="/images/Dualblist/2 DualBlist product.webp" alt={p.hero.image_alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
                 <div className="absolute -inset-5 rounded-full bg-light-teal/25 blur-3xl" />
                 <div className="relative aspect-[2/3] overflow-hidden rounded-2xl shadow-xl bg-white">
                   <Image
-                    src={locale === "fr" ? "/images/Dualblist/dosing_chart_french.png" : "/images/Dualblist/dosing_chart_english.png"}
+                    src={locale === "fr" ? "/images/Dualblist/dosing_chart_french.webp" : "/images/Dualblist/dosing_chart_english.webp"}
                     alt={p.concrete_benefits.patient.title}
                     fill
                     className="object-contain"
@@ -174,7 +174,7 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
                 <div className="absolute -inset-5 rounded-full bg-light-teal/25 blur-3xl" />
                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
                   <Image
-                    src="/images/DB2.png"
+                    src="/images/DB2.webp"
                     alt={p.concrete_benefits.pharmacy.title}
                     fill
                     className="object-cover"
@@ -235,7 +235,7 @@ export default function PdaDualBlistPage({ params }: { params: { locale: Locale 
             <div className="absolute -inset-6 rounded-full bg-light-teal/25 blur-3xl" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-section-bg">
               <Image
-                src="/images/Dualblist/DualBlist 3 product.png"
+                src="/images/Dualblist/DualBlist 3 product.webp"
                 alt={p.hero.image_alt}
                 fill
                 className="object-contain p-4"

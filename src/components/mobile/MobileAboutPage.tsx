@@ -48,7 +48,7 @@ export default function MobileAboutPage({ locale, t }: { locale: string; t: Tran
         <h2 className="font-sans text-[1.75rem] font-bold text-[#15242d]">{a.founder.title}</h2>
         <p className="mt-3 text-sm leading-6 text-[#64747a]">{a.founder.subtitle}</p>
         <div className="mt-7 rounded-[1.6rem] bg-white p-5 shadow-sm">
-          <div className="relative mx-auto h-28 w-28 overflow-hidden rounded-[1.5rem] bg-[#e0f5f3]"><Image src="/images/founder/pdf.jpg" alt={a.founder.name} fill className="object-cover object-[center_10%]" sizes="112px" /></div>
+          <div className="relative mx-auto h-28 w-28 overflow-hidden rounded-[1.5rem] bg-[#e0f5f3]"><Image src="/images/founder/pdf.webp" alt={a.founder.name} fill className="object-cover object-[center_10%]" sizes="112px" /></div>
           <h3 className="mt-4 font-sans text-lg font-bold text-[#15242d]">{a.founder.name}</h3>
           <p className="mt-1 text-xs font-bold text-[#007f78]">{a.founder.role}</p>
           <p className="mt-4 text-xs leading-5 text-[#64747a]">{a.founder.bio}</p>

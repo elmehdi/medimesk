@@ -102,7 +102,7 @@ export default function AboutPage({
           <div className="w-full max-w-sm rounded-2xl border border-light-teal bg-white p-8 text-center shadow-sm">
             <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-full border-4 border-light-teal bg-light-teal shadow-sm">
               <Image
-                src="/images/founder/pdf.jpg"
+                src="/images/founder/pdf.webp"
                 alt={a.founder.name}
                 fill
                 className="object-cover object-[center_10%]"

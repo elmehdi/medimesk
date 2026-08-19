@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     path: "/solutions/pda-venalink",
     title: p.meta.title,
     description: p.meta.description,
-    image: "/images/timedi.png",
+    image: "/images/timedi.webp",
   });
 }
 
@@ -81,7 +81,7 @@ export default function PdaVenalinkPage({ params }: { params: { locale: Locale }
               <div className="absolute -inset-6 rounded-full bg-light-teal/30 blur-3xl" />
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-xl bg-white">
                 <Image
-                  src="/images/studex-placehollder.jpeg"
+                  src="/images/studex-placehollder.webp"
                   alt={p.hero.image_alt}
                   fill
                   className="object-contain p-4"

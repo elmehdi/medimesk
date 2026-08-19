@@ -27,7 +27,7 @@ export default function TrustBar({ t }: { t: Translations }) {
           {/* Partner logos */}
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
             <Image
-              src="/images/timedi.png"
+              src="/images/timedi.webp"
               alt="TI-Medi"
               width={267}
               height={189}
@@ -35,7 +35,7 @@ export default function TrustBar({ t }: { t: Translations }) {
             />
             <span className="w-px h-5 bg-light-teal" />
             <Image
-              src="/images/jvm%20h.png"
+              src="/images/jvm%20h.webp"
               alt="JVM"
               width={280}
               height={180}
@@ -43,7 +43,7 @@ export default function TrustBar({ t }: { t: Translations }) {
             />
             <span className="w-px h-5 bg-light-teal" />
             <Image
-              src="/images/studex.png"
+              src="/images/studex.webp"
               alt="Studex — Partenaire officiel"
               width={475}
               height={106}

@@ -12,7 +12,7 @@ export default function RDC45Spotlight({ locale, t }: { locale: string; t: Trans
         <div className="flex-1">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl sm:aspect-[4/3]">
             <Image
-              src="/images/DB2.png"
+              src="/images/DB2.webp"
               alt="Dual Blist — Solution PDA semi-automatisée"
               fill
               className="object-cover"

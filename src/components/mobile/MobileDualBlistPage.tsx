@@ -37,7 +37,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
 
           <div className="relative mt-6 overflow-hidden rounded-[1.65rem] border border-white/10 bg-white/5 p-2 shadow-2xl shadow-black/25">
             <Image
-              src="/images/Dualblist/2 DualBlist product.png"
+              src="/images/Dualblist/2 DualBlist product.webp"
               alt={p.hero.image_alt}
               width={900}
               height={600}
@@ -97,7 +97,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
       <section className="bg-[#102c2b] px-5 py-12 text-white">
         <h2 className="mt-2 font-sans text-[1.75rem] font-bold leading-tight">{p.features.title}</h2>
         <div className="relative mt-6 aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-white/5">
-          <Image src="/images/Dualblist/DualBlist 3 product.png" alt={p.hero.image_alt} fill className="object-contain p-4" sizes="100vw" />
+          <Image src="/images/Dualblist/DualBlist 3 product.webp" alt={p.hero.image_alt} fill className="object-contain p-4" sizes="100vw" />
         </div>
         <div className="mt-4 grid grid-cols-2 gap-2.5">
           {p.features.groups.map((group) => (

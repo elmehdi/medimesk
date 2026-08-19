@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: { locale: Locale } }): Me
     path: "/solutions/pda-rdc45",
     title: t.pda.meta.title,
     description: t.pda.meta.description,
-    image: "/images/RDC%2045%20Legende.png",
+    image: "/images/RDC%2045%20Legende.webp",
     keywords: [
       "PDA Maroc",
       "PDA Morocco",
@@ -62,7 +62,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
     "@type": "Product",
     name: p.hero.product_name,
     description: p.hero.paragraphs.join(" "),
-    image: "https://medimesk.ma/images/RDC%2045%20Legende.png",
+    image: "https://medimesk.ma/images/RDC%2045%20Legende.webp",
     brand: { "@type": "Brand", name: "MediMesk" },
     url: `https://medimesk.ma/${locale}/solutions/pda-rdc45`,
   };
@@ -117,7 +117,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
             <div className="pointer-events-none absolute -inset-6 rounded-full bg-light-teal/20 blur-3xl" />
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-white">
               <Image
-                src="/images/RDC/RDC 45-07.png"
+                src="/images/RDC/RDC 45-07.webp"
                 alt={p.hero.image_alt}
                 fill
                 className="object-contain p-3"
@@ -173,7 +173,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
             <div className="pointer-events-none absolute -inset-5 rounded-full bg-light-teal/25 blur-3xl" />
             <div className="relative aspect-[3/2] overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/images/RDC/Alveoles a eclairage LED.jpg"
+                src="/images/RDC/Alveoles a eclairage LED.webp"
                 alt={p.hero.image_alt}
                 fill
                 className="object-cover"
@@ -251,7 +251,7 @@ export default function PdaRdc45Page({ params }: { params: { locale: Locale } })
           <div className="overflow-hidden rounded-2xl border border-light-teal bg-white shadow-sm">
             <div className="relative aspect-[16/9]">
               <Image
-                src="/images/RDC/Après encart rdc.png"
+                src="/images/RDC/Après encart rdc.webp"
                 alt={p.hero.image_alt}
                 fill
                 className="object-cover"
