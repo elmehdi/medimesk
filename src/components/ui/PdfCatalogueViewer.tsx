@@ -272,8 +272,12 @@ export default function PdfCatalogueViewer({
       )}
       <div
         ref={frameRef}
-        className={`studex-pdf-frame-shell relative touch-pan-y bg-neutral-100 ${
-          fakeFullscreen ? "flex-1" : "h-[420px] sm:h-[560px] md:h-[700px]"
+        className={`studex-pdf-frame-shell relative [touch-action:pan-y_pinch-zoom] bg-neutral-100 ${
+          fakeFullscreen
+            ? "flex-1"
+            : simple
+              ? "aspect-[1190/842]"
+              : "h-[420px] sm:h-[560px] md:h-[700px]"
         } ${zoom > 1 ? "overflow-auto" : "overflow-hidden"}`}
         onPointerDown={handlePointerDown}
         onPointerCancel={() => {
