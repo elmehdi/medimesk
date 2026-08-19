@@ -25,30 +25,56 @@ export default function NotFound() {
         404
       </p>
 
-      <div className="mt-6 max-w-md space-y-2">
-        <h1 className="text-h3 text-dark-text">Page introuvable</h1>
-        <p className="text-body text-dark-text/70">
-          La page que vous recherchez n&apos;existe pas ou a été déplacée.
-        </p>
+      <div id="notfound-fr" data-lang-block="fr" className="hidden">
+        <div className="mt-6 max-w-md space-y-2">
+          <h1 className="text-h3 text-dark-text">Page introuvable</h1>
+          <p className="text-body text-dark-text/70">
+            La page que vous recherchez n&apos;existe pas ou a été déplacée.
+          </p>
+        </div>
+        <div className="mt-12">
+          <Button href="/fr" variant="primary">
+            Retour à l&apos;accueil
+          </Button>
+        </div>
       </div>
 
-      <div className="my-6 h-px w-16 bg-light-teal" />
-
-      <div className="max-w-md space-y-2">
-        <h2 className="text-h3 text-dark-text">Page not found</h2>
-        <p className="text-body text-dark-text/70">
-          The page you&apos;re looking for doesn&apos;t exist or has been moved.
-        </p>
+      <div id="notfound-en" data-lang-block="en" className="hidden">
+        <div className="mt-6 max-w-md space-y-2">
+          <h1 className="text-h3 text-dark-text">Page not found</h1>
+          <p className="text-body text-dark-text/70">
+            The page you&apos;re looking for doesn&apos;t exist or has been moved.
+          </p>
+        </div>
+        <div className="mt-12">
+          <Button href="/en" variant="primary">
+            Back to homepage
+          </Button>
+        </div>
       </div>
 
-      <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
-        <Button href="/fr" variant="primary">
-          Accueil — FR
-        </Button>
-        <Button href="/en" variant="secondary">
-          Home — EN
-        </Button>
-      </div>
+      <noscript>
+        <div className="mt-6 max-w-md space-y-2">
+          <h1 className="text-h3 text-dark-text">Page introuvable</h1>
+          <p className="text-body text-dark-text/70">
+            La page que vous recherchez n&apos;existe pas ou a été déplacée.
+          </p>
+        </div>
+        <div className="mt-12">
+          <a
+            href="/fr"
+            className="inline-flex items-center justify-center rounded-lg bg-cta-yellow px-6 py-3 font-semibold text-dark-text"
+          >
+            Retour à l&apos;accueil
+          </a>
+        </div>
+      </noscript>
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(){var l=((navigator.language||"fr").toLowerCase().indexOf("en")===0)?"en":"fr";var el=document.getElementById("notfound-"+l);if(el)el.classList.remove("hidden");})();`,
+        }}
+      />
     </div>
   );
 }
