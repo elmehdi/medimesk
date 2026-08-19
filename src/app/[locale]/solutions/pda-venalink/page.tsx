@@ -6,6 +6,7 @@ import { getTranslations } from "@/i18n/useTranslations";
 import { Badge, Button, SectionWrapper } from "@/components/ui";
 import { createSeoMetadata } from "@/lib/seo";
 import { contactHref } from "@/lib/contact-intents";
+import MobileVenalinkPage from "@/components/mobile/MobileVenalinkPage";
 
 export function generateMetadata({ params }: { params: { locale: Locale } }): Metadata {
   const t = getTranslations(params.locale);
@@ -43,6 +44,7 @@ export default function PdaVenalinkPage({ params }: { params: { locale: Locale }
 
   return (
     <>
+      <MobileVenalinkPage locale={locale} t={t} />
       <div className="hidden md:block">
         {/* Breadcrumb */}
         <div className="border-b border-light-teal bg-section-bg">
