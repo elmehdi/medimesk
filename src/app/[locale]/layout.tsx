@@ -4,7 +4,6 @@ import { getTranslations } from "@/i18n/useTranslations";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import RevealObserver from "@/hooks/useReveal";
-import "./../globals.css";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE, localizedSeoKeywords, SITE_NAME, SITE_URL } from "@/lib/seo";
 
@@ -50,7 +49,7 @@ export default function LocaleLayout({
   params: { locale: Locale };
 }) {
   const t = getTranslations(params.locale);
-  const htmlLang = params.locale === "fr" ? "fr-MA" : "en";
+  const htmlLang = params.locale === "en" ? "en" : "fr-MA";
   const organizationLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -75,19 +74,22 @@ export default function LocaleLayout({
   };
 
   return (
-    <html lang={htmlLang}>
-      <body className="antialiased">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
-        />
-        <div className="flex min-h-screen flex-col">
-          <Navbar locale={params.locale} t={t} />
-          <main className="flex-1">{children}</main>
-          <Footer locale={params.locale} t={t} />
-          <RevealObserver />
-        </div>
-      </body>
-    </html>
+    <>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `document.documentElement.lang=${JSON.stringify(htmlLang)};`,
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
+      />
+      <div className="flex min-h-screen flex-col">
+        <Navbar locale={params.locale} t={t} />
+        <main className="flex-1">{children}</main>
+        <Footer locale={params.locale} t={t} />
+        <RevealObserver />
+      </div>
+    </>
   );
 }

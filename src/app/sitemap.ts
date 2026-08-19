@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { locales, type Locale } from "@/i18n/config";
 import { alternateLanguages, localizedPath, SITE_URL } from "@/lib/seo";
 
-const LAST_MODIFIED = "2026-06-23";
+const LAST_MODIFIED = "2026-08-19";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
