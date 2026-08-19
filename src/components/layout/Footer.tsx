@@ -17,6 +17,7 @@ export default function Footer({ locale, t }: FooterProps) {
     "/solutions/pda-automatique",
     "/solutions/pda-accessoires",
     "/solutions/studex-system75",
+    "/solutions/pda-venalink",
   ];
   const solutionsLinks = t.home.solutions.cards.map((product, index) => ({
     label: product.title,

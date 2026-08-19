@@ -16,8 +16,8 @@ export const productCardMeta: ProductCardMeta[] = [
     href: "/solutions/pda-dual-blist",
     badge: "PDA Semi-automatisée",
     comparison: {
-      beforeSrc: "/images/Dualblist/Après Encart Dual Blist .webp",
-      afterSrc: "/images/Dualblist/Avant encart Dual Blist.webp",
+      beforeSrc: "/images/Dualblist/Avant encart Dual Blist.webp",
+      afterSrc: "/images/Dualblist/Après Encart Dual Blist .webp",
       variant: "wipe",
     },
   },

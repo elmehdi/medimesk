@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/solutions/pda-automatique",
     "/solutions/pda-accessoires",
     "/solutions/studex-system75",
+    "/solutions/pda-venalink",
   ];
 
   const entries: MetadataRoute.Sitemap = [];
