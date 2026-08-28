@@ -22,7 +22,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
 
   return (
     <div className="mobile-landing overflow-hidden bg-section-bg md:hidden">
-      <section className="relative overflow-hidden bg-deep-teal px-5 pb-6 pt-8 text-white">
+      <section className="relative overflow-hidden bg-primary-teal px-5 pb-6 pt-8 text-white">
         <div className="absolute -right-20 -top-16 h-64 w-64 rounded-full bg-accent-teal/20 blur-3xl" />
 
         <div className="relative">
@@ -75,7 +75,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
               className="flex min-h-12 w-fit items-center justify-center gap-2.5 rounded-full border border-white/20 bg-white/10 px-5 text-sm font-bold text-white"
             >
               {t.home.hero.watch_video}
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-deep-teal">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-primary-teal">
                 <svg className="ml-0.5 h-3 w-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M8 5v14l11-7z" />
                 </svg>
@@ -163,7 +163,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
                       sizes="78vw"
                     />
                   ) : null}
-                  <span className="absolute left-3 top-3 rounded-full bg-deep-teal/90 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white">
+                  <span className="absolute left-3 top-3 rounded-full bg-primary-teal/90 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white">
                     {meta.badge || `0${index + 1}`}
                   </span>
                 </div>
@@ -182,7 +182,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
         </div>
       </section>
 
-      <section className="mx-5 overflow-hidden rounded-[1.75rem] bg-ink-teal text-white shadow-xl shadow-deep-teal/15">
+      <section className="mx-5 overflow-hidden rounded-[1.75rem] bg-ink-teal text-white shadow-xl shadow-primary-teal/15">
         <div className="relative aspect-[16/10]">
           <Image src="/images/DB2.webp" alt={featured.title} fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-teal via-transparent to-transparent" />

@@ -8,7 +8,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
   const p = t.pda;
   return (
     <div className="overflow-hidden bg-section-bg pb-24 md:hidden">
-      <section className="relative bg-deep-teal px-5 pb-7 pt-5 text-white">
+      <section className="relative bg-primary-teal px-5 pb-7 pt-5 text-white">
         <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
         <div className="mt-7 flex items-center justify-between">
           <MobileEyebrow light>{p.hero.badge}</MobileEyebrow>
@@ -51,7 +51,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
         </ol>
       </section>
 
-      <section className="bg-deep-teal px-5 py-12 text-white">
+      <section className="bg-primary-teal px-5 py-12 text-white">
         <h2 className="mt-2 font-sans text-[1.75rem] font-bold leading-tight">{p.features.title}</h2>
         <p className="mt-3 text-sm text-white/55">{p.features.subtitle}</p>
         <div className="mt-6 grid grid-cols-2 gap-2.5">

@@ -15,7 +15,7 @@ export default function MobileAutomaticPage({ locale, t }: { locale: string; t: 
   const p = t.hospital;
   return (
     <div className="overflow-hidden bg-section-bg pb-24 md:hidden">
-      <section className="relative overflow-hidden bg-deep-teal px-5 pb-7 pt-5 text-white">
+      <section className="relative overflow-hidden bg-primary-teal px-5 pb-7 pt-5 text-white">
         <div className="relative">
           <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
           <div className="mt-7"><MobileEyebrow light>{p.hero.badge}</MobileEyebrow></div>
@@ -60,7 +60,7 @@ export default function MobileAutomaticPage({ locale, t }: { locale: string; t: 
             <article id={`mobile-machine-${machine.slug}`} key={machine.slug} className="scroll-mt-24 overflow-hidden rounded-[1.6rem] border border-hairline bg-white shadow-sm">
               <div className="relative aspect-[16/11] bg-hairline">
                 {image && <Image src={image.src} alt={machine.title} fill className={image.contain ? "object-contain p-5" : "object-cover"} sizes="100vw" />}
-                <span className="absolute left-4 top-4 rounded-full bg-deep-teal/90 px-3 py-1 text-xs font-black text-white">{machine.name}</span>
+                <span className="absolute left-4 top-4 rounded-full bg-primary-teal/90 px-3 py-1 text-xs font-black text-white">{machine.name}</span>
               </div>
               <div className="p-5">
                 <div className="flex items-start justify-between gap-3">

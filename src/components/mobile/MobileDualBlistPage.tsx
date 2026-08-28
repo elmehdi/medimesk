@@ -24,7 +24,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
 
   return (
     <div className="overflow-hidden bg-section-bg pb-24 md:hidden">
-      <section className="relative overflow-hidden bg-deep-teal px-5 pb-7 pt-5 text-white">
+      <section className="relative overflow-hidden bg-primary-teal px-5 pb-7 pt-5 text-white">
         <div className="relative">
           <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
           <div className="mt-7 flex items-center justify-between">
@@ -63,7 +63,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
         <div className="mt-6 flex snap-x snap-mandatory gap-3 overflow-x-auto pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {[p.concrete_benefits.patient, p.concrete_benefits.pharmacy].map((audience, index) => (
             <article key={audience.title} className="w-[82vw] max-w-[20rem] shrink-0 snap-center rounded-[1.5rem] bg-section-bg p-5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-deep-teal text-sm font-black text-white">0{index + 1}</span>
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-teal text-sm font-black text-white">0{index + 1}</span>
               <h3 className="mt-4 font-sans text-xl font-bold text-dark-text">{audience.title}</h3>
               <p className="mt-2 text-xs leading-5 text-muted-text">{audience.description}</p>
               <CompactList items={audience.items} />
@@ -79,7 +79,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
             <p className="text-[11px] font-extrabold uppercase tracking-wider text-muted-text">{p.comparison.manual_title}</p>
             <CompactList items={p.comparison.manual_items} />
           </div>
-          <div className="bg-deep-teal p-5 text-white">
+          <div className="bg-primary-teal p-5 text-white">
             <p className="text-[11px] font-extrabold uppercase tracking-wider text-mint">{p.comparison.dual_title}</p>
             <ul className="mt-4 space-y-2.5">
               {p.comparison.dual_items.map((item) => (

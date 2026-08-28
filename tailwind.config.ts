@@ -16,7 +16,6 @@ const config: Config = {
         "cta-yellow": "#F5C518",
         "light-teal": "#E0F5F3",
         "error-red": "#E63946",
-        "deep-teal": "#063F3C",
         "ink-teal": "#102C2B",
         mint: "#83DDD4",
         "muted-text": "#5F7077",
