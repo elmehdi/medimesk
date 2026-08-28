@@ -46,7 +46,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
               sizes="100vw"
             />
           </div>
-          <p className="mt-5 text-sm leading-6 text-white/68">{p.hero.paragraphs[0]}</p>
+          <p className="mt-5 text-sm leading-6 text-white/65">{p.hero.paragraphs[0]}</p>
         </div>
       </section>
 
@@ -56,7 +56,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
           <p className="font-sans text-lg font-bold leading-tight text-[#15242d]">{p.opportunity.list_intro}</p>
           <CompactList items={p.opportunity.items} />
         </div>
-        <p className="mt-5 border-l-3 border-[#007f78] pl-4 text-sm font-semibold leading-6 text-[#30444b]">{p.opportunity.conclusion}</p>
+        <p className="mt-5 border-l-4 border-[#007f78] pl-4 text-sm font-semibold leading-6 text-[#30444b]">{p.opportunity.conclusion}</p>
       </section>
 
       <section className="bg-white px-5 py-12">

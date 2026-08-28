@@ -43,7 +43,7 @@ export default function MobileVenalinkPage({ locale, t }: { locale: string; t: T
               sizes="100vw"
             />
           </div>
-          <p className="mt-5 text-sm leading-6 text-white/68">{p.hero.paragraphs[0]}</p>
+          <p className="mt-5 text-sm leading-6 text-white/65">{p.hero.paragraphs[0]}</p>
         </div>
       </section>
 
@@ -52,7 +52,7 @@ export default function MobileVenalinkPage({ locale, t }: { locale: string; t: T
         <div className="mt-6 rounded-[1.5rem] border border-[#dce9e7] bg-white p-5 shadow-sm">
           <CompactList items={p.why.items} />
         </div>
-        <p className="mt-5 border-l-3 border-[#007f78] pl-4 text-sm font-semibold leading-6 text-[#30444b]">
+        <p className="mt-5 border-l-4 border-[#007f78] pl-4 text-sm font-semibold leading-6 text-[#30444b]">
           {p.why.conclusion[0]}
         </p>
       </section>

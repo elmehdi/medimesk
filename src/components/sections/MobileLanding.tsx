@@ -30,7 +30,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
           <h1 className="max-w-[20rem] font-sans text-[2.35rem] font-bold leading-[1.02] tracking-[-0.045em]">
             {t.home.hero.title_line1} {t.home.hero.title_line2}
           </h1>
-          <p className="mt-4 max-w-[22rem] text-[15px] leading-6 text-white/72">
+          <p className="mt-4 max-w-[22rem] text-[15px] leading-6 text-white/70">
             {t.home.hero.subtitle}
           </p>
 
@@ -44,7 +44,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
             </Link>
           </div>
 
-          <div className="relative mt-7 overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/8 p-2 shadow-2xl shadow-black/25">
+          <div className="relative mt-7 overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/10 p-2 shadow-2xl shadow-black/25">
             <Image
               src="/images/heromedi2.webp"
               alt={t.home.hero.image_alt}
@@ -193,7 +193,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
         </div>
         <div className="-mt-6 relative px-5 pb-6">
           <h2 className="font-sans text-2xl font-bold leading-tight tracking-[-0.025em]">{featured.title}</h2>
-          <p className="mt-3 text-sm leading-6 text-white/68">{featured.description}</p>
+          <p className="mt-3 text-sm leading-6 text-white/65">{featured.description}</p>
           <div className="mt-5 grid grid-cols-2 gap-2.5">
             <Link href={`/${locale}/solutions/pda-dual-blist`} className="flex min-h-11 items-center justify-center rounded-xl bg-white px-3 text-center text-xs font-bold text-[#102c2b]">
               {featured.cta_discover}
