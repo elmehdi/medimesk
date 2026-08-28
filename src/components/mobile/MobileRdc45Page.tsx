@@ -49,7 +49,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
         </ol>
       </section>
 
-      <section className="bg-deep-teal px-5 py-12 text-white">
+      <section className="bg-ink-teal px-5 py-12 text-white">
         <h2 className="mt-2 font-sans text-[1.75rem] font-bold leading-tight">{p.features.title}</h2>
         <p className="mt-3 text-sm text-white/55">{p.features.subtitle}</p>
         <div className="mt-6 grid grid-cols-2 gap-2.5">
