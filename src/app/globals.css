@@ -90,12 +90,12 @@
 }
 
 .before-after-wipe-clip {
-  animation: before-after-wipe-clip 2.5s ease-in-out infinite;
+  animation: before-after-wipe-clip 4s ease-in-out infinite;
   will-change: clip-path;
 }
 
 .before-after-wipe-line {
-  animation: before-after-wipe-line 2.5s ease-in-out infinite;
+  animation: before-after-wipe-line 4s ease-in-out infinite;
   will-change: left, opacity;
 }
 
