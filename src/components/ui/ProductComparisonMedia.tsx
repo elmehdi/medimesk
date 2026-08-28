@@ -30,6 +30,11 @@ function ImageLayer({
       fill
       className={`${imageFit === "contain" ? "object-contain p-6" : "object-cover"} ${className}`}
       sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+      // The "after" layer sits inside a clip-path'd container. Chrome treats a
+      // fully-clipped element as having no visible area and defers its lazy load
+      // indefinitely, so the image only appears once something forces that card
+      // to repaint (e.g. hover). Firefox's heuristics differ, hence Chrome-only.
+      loading="eager"
     />
   );
 }
