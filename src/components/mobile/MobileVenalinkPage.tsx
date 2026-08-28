@@ -25,7 +25,7 @@ export default function MobileVenalinkPage({ locale, t }: { locale: string; t: T
 
   return (
     <div className="overflow-hidden bg-section-bg pb-24 md:hidden">
-      <section className="relative overflow-hidden bg-primary-teal px-5 pb-7 pt-5 text-white">
+      <section className="relative overflow-hidden bg-deep-teal px-5 pb-7 pt-5 text-white">
         <div className="relative">
           <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
           <div className="mt-7"><MobileEyebrow light>{p.hero.badge}</MobileEyebrow></div>
@@ -90,7 +90,7 @@ export default function MobileVenalinkPage({ locale, t }: { locale: string; t: T
         </div>
       </section>
 
-      <section className="bg-primary-teal px-5 py-12 text-center text-white">
+      <section className="bg-deep-teal px-5 py-12 text-center text-white">
         <p className="font-bold uppercase tracking-wider text-cta-yellow">{p.starter.eyebrow}</p>
         <h2 className="mt-4 font-sans text-2xl font-bold leading-tight">{p.starter.title}</h2>
         <p className="mt-3 text-sm leading-6 text-white/80">{p.starter.subtitle}</p>

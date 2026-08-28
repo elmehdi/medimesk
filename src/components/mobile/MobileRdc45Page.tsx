@@ -8,7 +8,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
   const p = t.pda;
   return (
     <div className="overflow-hidden bg-section-bg pb-24 md:hidden">
-      <section className="relative bg-primary-teal px-5 pb-7 pt-5 text-white">
+      <section className="relative bg-deep-teal px-5 pb-7 pt-5 text-white">
         <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
         <div className="mt-7"><MobileEyebrow light>{p.hero.badge}</MobileEyebrow></div>
         <h1 className="mt-3 font-sans text-[2.45rem] font-bold leading-none tracking-[-0.05em]">{p.hero.product_name}</h1>
@@ -26,7 +26,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
             <p className="text-[11px] font-black uppercase tracking-wide text-muted-text">{p.why_rdc45.manual_title}</p>
             <ul className="mt-4 space-y-3">{p.why_rdc45.manual_items.slice(0, 3).map(x => <li key={x} className="text-xs leading-4 text-muted-text">• {x}</li>)}</ul>
           </div>
-          <div className="bg-primary-teal p-4">
+          <div className="bg-deep-teal p-4">
             <p className="text-[11px] font-black uppercase tracking-wide text-white">{p.why_rdc45.rdc_title}</p>
             <ul className="mt-4 space-y-3">{p.why_rdc45.rdc_items.slice(0, 3).map(x => <li key={x} className="text-xs leading-4 text-white/75">✓ {x}</li>)}</ul>
           </div>
@@ -48,7 +48,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
         </ol>
       </section>
 
-      <section className="bg-primary-teal px-5 py-12 text-white">
+      <section className="bg-deep-teal px-5 py-12 text-white">
         <h2 className="mt-2 font-sans text-[1.75rem] font-bold leading-tight">{p.features.title}</h2>
         <p className="mt-3 text-sm text-white/55">{p.features.subtitle}</p>
         <div className="mt-6 grid grid-cols-2 gap-2.5">

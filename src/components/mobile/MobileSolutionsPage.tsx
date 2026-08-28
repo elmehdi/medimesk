@@ -8,7 +8,7 @@ import { MobileArrow, MobileBackLink } from "./MobilePrimitives";
 export default function MobileSolutionsPage({ locale, t }: { locale: string; t: Translations }) {
   return (
     <div className="overflow-hidden bg-section-bg pb-8 md:hidden">
-      <section className="relative overflow-hidden bg-primary-teal px-5 pb-10 pt-5 text-white">
+      <section className="relative overflow-hidden bg-deep-teal px-5 pb-10 pt-5 text-white">
         <div className="relative">
           <MobileBackLink href={`/${locale}`} label={t.common.breadcrumb_home} />
           <div className="mt-8">

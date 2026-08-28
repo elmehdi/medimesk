@@ -24,7 +24,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
 
   return (
     <div className="overflow-hidden bg-section-bg pb-24 md:hidden">
-      <section className="relative overflow-hidden bg-primary-teal px-5 pb-7 pt-5 text-white">
+      <section className="relative overflow-hidden bg-deep-teal px-5 pb-7 pt-5 text-white">
         <div className="relative">
           <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
           <div className="mt-7"><MobileEyebrow light>{p.hero.badge}</MobileEyebrow></div>
@@ -76,7 +76,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
             <p className="text-[11px] font-extrabold uppercase tracking-wider text-muted-text">{p.comparison.manual_title}</p>
             <CompactList items={p.comparison.manual_items} />
           </div>
-          <div className="bg-primary-teal p-5 text-white">
+          <div className="bg-deep-teal p-5 text-white">
             <p className="text-[11px] font-extrabold uppercase tracking-wider text-mint">{p.comparison.dual_title}</p>
             <ul className="mt-4 space-y-2.5">
               {p.comparison.dual_items.map((item) => (

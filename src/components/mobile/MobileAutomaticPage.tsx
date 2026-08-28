@@ -15,7 +15,7 @@ export default function MobileAutomaticPage({ locale, t }: { locale: string; t: 
   const p = t.hospital;
   return (
     <div className="overflow-hidden bg-section-bg pb-24 md:hidden">
-      <section className="relative overflow-hidden bg-primary-teal px-5 pb-7 pt-5 text-white">
+      <section className="relative overflow-hidden bg-deep-teal px-5 pb-7 pt-5 text-white">
         <div className="relative">
           <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
           <div className="mt-7"><MobileEyebrow light>{p.hero.badge}</MobileEyebrow></div>
