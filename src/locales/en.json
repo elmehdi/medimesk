@@ -774,7 +774,7 @@
         "A turnkey solution for developing an additional service with high perceived value, building customer loyalty, and strengthening your image as a well-equipped, trained, and exacting professional."
       ],
       "image_alt": "STUDEX System75 professional piercing system",
-      "cta_primary": "Request a STUDEX presentation",
+      "cta_primary": "Request a presentation",
       "cta_secondary": "Request a callback from MediMesk"
     },
     "system": {
@@ -821,7 +821,7 @@
         "This equipment complements automated and semi-automated PDA solutions at essential process stages: sachet inspection, photographic archiving, correction, rolling, cutting, deblistering, organization, and dispensing."
       ],
       "image_alt": "PDA control devices and accessories",
-      "cta_primary": "Request a range presentation",
+      "cta_primary": "Request a presentation",
       "cta_secondary": "Get advice from MediMesk"
     },
     "key_points": {
@@ -884,7 +884,7 @@
         { "machine": "OnCube", "role": "Control machines, monitor production, and manage data" }
       ],
       "conclusion": "This approach makes it possible to build a tailored production line, from automated packaging through inspection and organization of the finished sachets.",
-      "cta": "Receive a presentation of the JVM machines"
+      "cta": "Receive a presentation"
     },
     "machines": [
       {
@@ -1200,7 +1200,7 @@
       "eyebrow": "Starter Offer",
       "title": "MediMesk helps you launch your manual PDA service",
       "subtitle": "From selecting the first patients to setting up the service, our team supports you at every step.",
-      "cta_primary": "Launch my manual PDA service",
+      "cta_primary": "Start my PDA service",
       "cta_secondary": "Request a callback from MediMesk"
     }
   }

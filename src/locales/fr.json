@@ -774,7 +774,7 @@
         "Une solution clé en main pour développer un service additionnel à forte valeur perçue, fidéliser votre clientèle et renforcer votre image de professionnel équipé, formé et exigeant."
       ],
       "image_alt": "Système professionnel de perçage STUDEX System75",
-      "cta_primary": "Demander une présentation STUDEX",
+      "cta_primary": "Demander une présentation",
       "cta_secondary": "Être rappelé par Medimesk"
     },
     "system": {
@@ -821,7 +821,7 @@
         "Ces équipements complètent les solutions de PDA automatisée ou semi-automatisée en intervenant sur les étapes essentielles du processus : inspection des sachets, archivage photographique, correction, enroulement, découpe, déconditionnement, organisation et dispensation."
       ],
       "image_alt": "Appareils de contrôle et accessoires pour la PDA",
-      "cta_primary": "Demander une présentation de la gamme",
+      "cta_primary": "Demander une présentation",
       "cta_secondary": "Être conseillé par Medimesk"
     },
     "key_points": {
@@ -890,7 +890,7 @@
         { "machine": "OnCube", "role": "Piloter les machines, suivre la production et gérer les données" }
       ],
       "conclusion": "Cette approche permet de construire une chaîne de production adaptée : de la machine de conditionnement automatisée jusqu’au contrôle et à l’organisation des sachets produits.",
-      "cta": "Recevoir une présentation des machines JVM"
+      "cta": "Recevoir une présentation"
     },
     "machines": [
       {
@@ -1210,7 +1210,7 @@
       "eyebrow": "Offre Starter",
       "title": "Medimesk vous aide à lancer votre service PDA manuelle",
       "subtitle": "De la sélection des premiers patients à la mise en place du service, notre équipe vous accompagne à chaque étape.",
-      "cta_primary": "Lancer mon service PDA manuelle",
+      "cta_primary": "Démarrer mon service PDA",
       "cta_secondary": "Être rappelé par Medimesk"
     }
   }
