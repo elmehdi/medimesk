@@ -8,7 +8,8 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
   const p = t.pda;
   return (
     <div className="overflow-hidden bg-section-bg pb-24 md:hidden">
-      <section className="relative bg-deep-teal px-5 pb-7 pt-5 text-white">
+      <section className="relative overflow-hidden bg-deep-teal px-5 pb-7 pt-5 text-white">
+        <div className="absolute -right-20 -top-16 -z-10 h-64 w-64 rounded-full bg-accent-teal/20 blur-3xl" />
         <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
         <div className="mt-7"><MobileEyebrow light>{p.hero.badge}</MobileEyebrow></div>
         <h1 className="mt-3 font-sans text-[2.45rem] font-bold leading-none tracking-[-0.05em]">{p.hero.product_name}</h1>
