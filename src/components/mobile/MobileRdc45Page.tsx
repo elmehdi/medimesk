@@ -10,9 +10,9 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
     <div className="overflow-hidden bg-section-bg pb-24 md:hidden">
       <section className="relative bg-primary-teal px-5 pb-7 pt-5 text-white">
         <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
-        <div className="mt-7 flex items-center justify-between">
+        <div className="mt-7 flex flex-wrap items-center justify-between gap-2">
           <MobileEyebrow light>{p.hero.badge}</MobileEyebrow>
-          <span className="rounded-full border border-mint/25 px-3 py-1 text-xs font-black text-mint">RDC 45</span>
+          <span className="shrink-0 whitespace-nowrap rounded-full border border-mint/25 px-3 py-1 text-xs font-black text-mint">RDC 45</span>
         </div>
         <h1 className="mt-3 font-sans text-[2.45rem] font-bold leading-none tracking-[-0.05em]">{p.hero.product_name}</h1>
         <p className="mt-3 text-[1.05rem] font-semibold leading-6 text-mint">{p.hero.title}</p>
