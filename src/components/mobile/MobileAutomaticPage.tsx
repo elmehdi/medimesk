@@ -16,7 +16,6 @@ export default function MobileAutomaticPage({ locale, t }: { locale: string; t: 
   return (
     <div className="overflow-hidden bg-section-bg pb-24 md:hidden">
       <section className="relative overflow-hidden bg-deep-teal px-5 pb-7 pt-5 text-white">
-        <div className="absolute -right-20 top-12 h-64 w-64 rounded-full bg-primary-teal/20" />
         <div className="relative">
           <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
           <div className="mt-7"><MobileEyebrow light>{p.hero.badge}</MobileEyebrow></div>

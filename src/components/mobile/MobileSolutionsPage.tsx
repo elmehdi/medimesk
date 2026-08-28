@@ -9,7 +9,6 @@ export default function MobileSolutionsPage({ locale, t }: { locale: string; t: 
   return (
     <div className="overflow-hidden bg-section-bg pb-8 md:hidden">
       <section className="relative overflow-hidden bg-deep-teal px-5 pb-10 pt-5 text-white">
-        <div className="absolute -right-24 -top-20 h-72 w-72 rounded-full bg-accent-teal/15" />
         <div className="relative">
           <MobileBackLink href={`/${locale}`} label={t.common.breadcrumb_home} />
           <div className="mt-8">

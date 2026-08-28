@@ -23,8 +23,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
   return (
     <div className="mobile-landing overflow-hidden bg-section-bg md:hidden">
       <section className="relative overflow-hidden bg-deep-teal px-5 pb-6 pt-8 text-white">
-        <div className="absolute -right-20 -top-16 h-64 w-64 rounded-full bg-accent-teal/20" />
-        <div className="absolute -left-24 bottom-16 h-48 w-48 rounded-full bg-white/5" />
+        <div className="absolute -right-20 -top-16 h-64 w-64 rounded-full bg-accent-teal/20 blur-3xl" />
 
         <div className="relative">
           <h1 className="max-w-[20rem] font-sans text-[2.35rem] font-bold leading-[1.02] tracking-[-0.045em]">
