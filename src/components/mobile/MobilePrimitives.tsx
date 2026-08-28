@@ -13,7 +13,7 @@ export function MobileBackLink({ href, label }: { href: string; label: string })
 
 export function MobileEyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
   return (
-    <p className={`text-[10px] font-extrabold uppercase tracking-[0.18em] ${light ? "text-[#7fe1d8]" : "text-[#007f78]"}`}>
+    <p className={`text-[10px] font-extrabold uppercase tracking-[0.18em] ${light ? "text-mint" : "text-primary-teal"}`}>
       {children}
     </p>
   );
@@ -31,8 +31,8 @@ export function MobileSectionTitle({
   return (
     <div>
       {eyebrow && <MobileEyebrow>{eyebrow}</MobileEyebrow>}
-      <h2 className="mt-2 font-sans text-[1.7rem] font-bold leading-[1.12] tracking-[-0.035em] text-[#15242d]">{title}</h2>
-      {subtitle && <p className="mt-3 text-sm leading-6 text-[#64747a]">{subtitle}</p>}
+      <h2 className="mt-2 font-sans text-[1.7rem] font-bold leading-[1.12] tracking-[-0.035em] text-dark-text">{title}</h2>
+      {subtitle && <p className="mt-3 text-sm leading-6 text-muted-text">{subtitle}</p>}
     </div>
   );
 }
@@ -57,14 +57,14 @@ export function MobileStickyActions({
   secondaryLabel?: string;
 }) {
   return (
-    <div className="mobile-sticky-bar fixed inset-x-0 bottom-0 z-30 border-t border-[#dce9e7] bg-white/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2.5 shadow-[0_-8px_30px_rgba(18,53,49,0.08)] md:hidden">
+    <div className="mobile-sticky-bar fixed inset-x-0 bottom-0 z-30 border-t border-hairline bg-white/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2.5 shadow-[0_-8px_30px_rgba(18,53,49,0.08)] md:hidden">
       <div className="mx-auto grid max-w-md grid-cols-[1fr_auto] gap-2">
-        <Link href={primaryHref} className="flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#007f78] px-4 text-sm font-bold text-white">
+        <Link href={primaryHref} className="flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary-teal px-4 text-sm font-bold text-white">
           {primaryLabel}
           <MobileArrow />
         </Link>
         {secondaryHref && secondaryLabel && (
-          <Link href={secondaryHref} className="flex min-h-12 items-center justify-center rounded-xl border border-[#cfe2df] px-4 text-xs font-bold text-[#007f78]">
+          <Link href={secondaryHref} className="flex min-h-12 items-center justify-center rounded-xl border border-hairline px-4 text-xs font-bold text-primary-teal">
             {secondaryLabel}
           </Link>
         )}

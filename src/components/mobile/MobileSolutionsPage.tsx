@@ -7,9 +7,9 @@ import { MobileArrow, MobileBackLink } from "./MobilePrimitives";
 
 export default function MobileSolutionsPage({ locale, t }: { locale: string; t: Translations }) {
   return (
-    <div className="overflow-hidden bg-[#f3f7f6] pb-8 md:hidden">
-      <section className="relative overflow-hidden bg-[#063f3c] px-5 pb-10 pt-5 text-white">
-        <div className="absolute -right-24 -top-20 h-72 w-72 rounded-full bg-[#19b5a8]/15" />
+    <div className="overflow-hidden bg-section-bg pb-8 md:hidden">
+      <section className="relative overflow-hidden bg-deep-teal px-5 pb-10 pt-5 text-white">
+        <div className="absolute -right-24 -top-20 h-72 w-72 rounded-full bg-accent-teal/15" />
         <div className="relative">
           <MobileBackLink href={`/${locale}`} label={t.common.breadcrumb_home} />
           <div className="mt-8">
@@ -36,10 +36,10 @@ export default function MobileSolutionsPage({ locale, t }: { locale: string; t: 
             <article
               id={`solution-${index}`}
               key={meta.href}
-              className="scroll-mt-24 overflow-hidden rounded-[1.65rem] border border-[#dce9e7] bg-white shadow-[0_10px_35px_rgba(24,62,58,0.07)]"
+              className="scroll-mt-24 overflow-hidden rounded-[1.65rem] border border-hairline bg-white shadow-[0_10px_35px_rgba(24,62,58,0.07)]"
             >
               <Link href={`/${locale}${meta.href}`} className="block">
-                <div className="relative aspect-[16/10] bg-[#e9f2f0]">
+                <div className="relative aspect-[16/10] bg-hairline">
                   {source && (
                     <Image
                       src={source}
@@ -49,20 +49,20 @@ export default function MobileSolutionsPage({ locale, t }: { locale: string; t: 
                       sizes="100vw"
                     />
                   )}
-                  <span className="absolute left-4 top-4 rounded-full bg-[#063f3c]/90 px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-wide text-white">
+                  <span className="absolute left-4 top-4 rounded-full bg-deep-teal/90 px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-wide text-white">
                     {meta.badge || card.title}
                   </span>
-                  <span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-white text-xs font-black text-[#007f78] shadow">
+                  <span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-white text-xs font-black text-primary-teal shadow">
                     0{index + 1}
                   </span>
                 </div>
               </Link>
               <div className="p-5">
-                <h2 className="font-sans text-xl font-bold leading-tight tracking-[-0.02em] text-[#15242d]">{card.title}</h2>
+                <h2 className="font-sans text-xl font-bold leading-tight tracking-[-0.02em] text-dark-text">{card.title}</h2>
                 <ul className="mt-4 space-y-2.5">
                   {card.benefits.map((benefit) => (
-                    <li key={benefit} className="flex items-start gap-2.5 text-xs leading-5 text-[#627278]">
-                      <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#e0f5f3] text-[#007f78]">
+                    <li key={benefit} className="flex items-start gap-2.5 text-xs leading-5 text-muted-text">
+                      <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-light-teal text-primary-teal">
                         <svg className="h-2.5 w-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="m5 12 4 4L19 6" />
                         </svg>
@@ -71,7 +71,7 @@ export default function MobileSolutionsPage({ locale, t }: { locale: string; t: 
                     </li>
                   ))}
                 </ul>
-                <Link href={`/${locale}${meta.href}`} className="mt-5 flex min-h-11 items-center justify-between rounded-xl bg-[#eef6f5] px-4 text-xs font-extrabold text-[#007f78]">
+                <Link href={`/${locale}${meta.href}`} className="mt-5 flex min-h-11 items-center justify-between rounded-xl bg-section-bg px-4 text-xs font-extrabold text-primary-teal">
                   {t.cta.product_details}
                   <MobileArrow />
                 </Link>
@@ -81,11 +81,11 @@ export default function MobileSolutionsPage({ locale, t }: { locale: string; t: 
         })}
       </div>
 
-      <section className="mx-5 mb-8 mt-12 rounded-[1.75rem] bg-[#102c2b] px-5 py-7 text-white">
+      <section className="mx-5 mb-8 mt-12 rounded-[1.75rem] bg-ink-teal px-5 py-7 text-white">
         <h2 className="mt-2 font-sans text-2xl font-bold leading-tight">{t.home.cta_banner.title}</h2>
         <p className="mt-3 text-sm leading-6 text-white/65">{t.home.cta_banner.subtitle}</p>
         <div className="mt-5 grid grid-cols-2 gap-2.5">
-          <Link href={contactHref(locale, "free-demo")} className="flex min-h-12 items-center justify-center rounded-xl bg-[#f5c518] px-3 text-center text-xs font-extrabold text-[#1a2332]">
+          <Link href={contactHref(locale, "free-demo")} className="flex min-h-12 items-center justify-center rounded-xl bg-cta-yellow px-3 text-center text-xs font-extrabold text-dark-text">
             {t.cta.demo_free}
           </Link>
           <Link href={contactHref(locale, "quote")} className="flex min-h-12 items-center justify-center rounded-xl border border-white/20 bg-white/10 px-3 text-center text-xs font-bold text-white">

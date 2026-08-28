@@ -21,9 +21,9 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
   const featured = t.home.rdc45_spotlight;
 
   return (
-    <div className="mobile-landing overflow-hidden bg-[#f3f7f6] md:hidden">
-      <section className="relative overflow-hidden bg-[#063f3c] px-5 pb-6 pt-8 text-white">
-        <div className="absolute -right-20 -top-16 h-64 w-64 rounded-full bg-[#19b5a8]/20" />
+    <div className="mobile-landing overflow-hidden bg-section-bg md:hidden">
+      <section className="relative overflow-hidden bg-deep-teal px-5 pb-6 pt-8 text-white">
+        <div className="absolute -right-20 -top-16 h-64 w-64 rounded-full bg-accent-teal/20" />
         <div className="absolute -left-24 bottom-16 h-48 w-48 rounded-full bg-white/5" />
 
         <div className="relative">
@@ -37,7 +37,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
           <div className="mt-6">
             <Link
               href={contactHref(locale, "project")}
-              className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#f5c518] px-4 text-sm font-bold text-[#1a2332]"
+              className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-cta-yellow px-4 text-sm font-bold text-dark-text"
             >
               {t.home.hero.cta_project}
               <Arrow />
@@ -57,13 +57,13 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
           </div>
 
           <details className="group mt-3 overflow-hidden rounded-2xl border border-white/15 bg-white/10 open:bg-white">
-            <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-bold text-white group-open:text-[#007f78] [&::-webkit-details-marker]:hidden">
+            <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-bold text-white group-open:text-primary-teal [&::-webkit-details-marker]:hidden">
               {t.home.hero.pda_question}
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/15 text-lg leading-none group-open:rotate-45 group-open:bg-[#e0f5f3]">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/15 text-lg leading-none group-open:rotate-45 group-open:bg-light-teal">
                 +
               </span>
             </summary>
-            <p className="px-4 pb-4 text-xs leading-5 text-[#5f7077]">
+            <p className="px-4 pb-4 text-xs leading-5 text-muted-text">
               {t.home.hero.pda_definition}
             </p>
           </details>
@@ -76,7 +76,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
               className="flex min-h-12 w-fit items-center justify-center gap-2.5 rounded-full border border-white/20 bg-white/10 px-5 text-sm font-bold text-white"
             >
               {t.home.hero.watch_video}
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-[#063f3c]">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-deep-teal">
                 <svg className="ml-0.5 h-3 w-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M8 5v14l11-7z" />
                 </svg>
@@ -87,7 +87,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
       </section>
 
       <section className="px-5 py-5">
-        <div className="overflow-hidden rounded-2xl border border-[#dce9e7] bg-white shadow-sm">
+        <div className="overflow-hidden rounded-2xl border border-hairline bg-white shadow-sm">
           <div className="flex items-center justify-center gap-3 px-4 py-4">
             <Image
               src="/images/timedi.webp"
@@ -96,7 +96,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
               height={189}
               className="h-auto w-[78px] object-contain"
             />
-            <span className="h-5 w-px bg-[#dce9e7]" />
+            <span className="h-5 w-px bg-hairline" />
             <Image
               src="/images/jvm%20h.webp"
               alt="JVM"
@@ -104,7 +104,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
               height={180}
               className="h-auto w-[62px] object-contain"
             />
-            <span className="h-5 w-px bg-[#dce9e7]" />
+            <span className="h-5 w-px bg-hairline" />
             <Image
               src="/images/studex.webp"
               alt="Studex"
@@ -113,13 +113,13 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
               className="h-auto w-[82px] object-contain"
             />
           </div>
-          <div className={`grid border-t border-[#e4eeec] ${
+          <div className={`grid border-t border-hairline ${
             t.home.trust.length === 1 ? "grid-cols-1" : t.home.trust.length === 2 ? "grid-cols-2" : "grid-cols-3"
           }`}>
             {t.home.trust.map((label, index) => (
-              <div key={label} className={`flex min-h-[5.5rem] flex-col items-center justify-center px-4 py-4 text-center ${index !== 0 ? "border-l border-[#e4eeec]" : ""}`}>
-                <span className="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-[#e0f5f3] text-[#007f78]"><Check /></span>
-                <p className="mt-1.5 max-w-[15rem] text-[11px] font-semibold leading-4 text-[#4c5b62]">{label}</p>
+              <div key={label} className={`flex min-h-[5.5rem] flex-col items-center justify-center px-4 py-4 text-center ${index !== 0 ? "border-l border-hairline" : ""}`}>
+                <span className="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-light-teal text-primary-teal"><Check /></span>
+                <p className="mt-1.5 max-w-[15rem] text-[11px] font-semibold leading-4 text-muted-text">{label}</p>
               </div>
             ))}
           </div>
@@ -129,7 +129,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
       <section id="mobile-solutions" className="scroll-mt-24 pb-12 pt-5">
         <div className="flex items-end justify-between px-5">
           <div>
-            <h2 className="mt-1.5 max-w-[17rem] font-sans text-[1.75rem] font-bold leading-tight tracking-[-0.035em] text-[#15242d]">
+            <h2 className="mt-1.5 max-w-[17rem] font-sans text-[1.75rem] font-bold leading-tight tracking-[-0.035em] text-dark-text">
               {t.home.solutions.title}
             </h2>
           </div>
@@ -144,7 +144,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
                 href={`/${locale}${meta.href}`}
                 className="w-[78vw] max-w-[19rem] shrink-0 snap-center overflow-hidden rounded-[1.4rem] bg-white shadow-[0_10px_35px_rgba(24,62,58,0.09)]"
               >
-                <div className="relative aspect-[16/11] bg-[#e8f2f0]">
+                <div className="relative aspect-[16/11] bg-section-bg">
                   {meta.comparison ? (
                     <ProductComparisonMedia
                       beforeSrc={meta.comparison.beforeSrc}
@@ -164,15 +164,15 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
                       sizes="78vw"
                     />
                   ) : null}
-                  <span className="absolute left-3 top-3 rounded-full bg-[#063f3c]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
+                  <span className="absolute left-3 top-3 rounded-full bg-deep-teal/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
                     {meta.badge || `0${index + 1}`}
                   </span>
                 </div>
                 <div className="p-4">
-                  <h3 className="font-sans text-lg font-bold leading-tight text-[#15242d]">{card.title}</h3>
+                  <h3 className="font-sans text-lg font-bold leading-tight text-dark-text">{card.title}</h3>
                   <div className="mt-3 flex items-center justify-between">
-                    <span className="text-xs font-bold text-[#007f78]">{t.cta.product_details}</span>
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#e0f5f3] text-[#007f78]">
+                    <span className="text-xs font-bold text-primary-teal">{t.cta.product_details}</span>
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-light-teal text-primary-teal">
                       <Arrow />
                     </span>
                   </div>
@@ -183,11 +183,11 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
         </div>
       </section>
 
-      <section className="mx-5 overflow-hidden rounded-[1.75rem] bg-[#102c2b] text-white shadow-xl shadow-[#163d39]/15">
+      <section className="mx-5 overflow-hidden rounded-[1.75rem] bg-ink-teal text-white shadow-xl shadow-deep-teal/15">
         <div className="relative aspect-[16/10]">
           <Image src="/images/DB2.webp" alt={featured.title} fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#102c2b] via-transparent to-transparent" />
-          <span className="absolute left-4 top-4 rounded-full bg-[#f5c518] px-3 py-1 text-[10px] font-extrabold uppercase tracking-wide text-[#1a2332]">
+          <div className="absolute inset-0 bg-gradient-to-t from-ink-teal via-transparent to-transparent" />
+          <span className="absolute left-4 top-4 rounded-full bg-cta-yellow px-3 py-1 text-[10px] font-extrabold uppercase tracking-wide text-dark-text">
             {featured.badge}
           </span>
         </div>
@@ -195,7 +195,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
           <h2 className="font-sans text-2xl font-bold leading-tight tracking-[-0.025em]">{featured.title}</h2>
           <p className="mt-3 text-sm leading-6 text-white/65">{featured.description}</p>
           <div className="mt-5 grid grid-cols-2 gap-2.5">
-            <Link href={`/${locale}/solutions/pda-dual-blist`} className="flex min-h-11 items-center justify-center rounded-xl bg-white px-3 text-center text-xs font-bold text-[#102c2b]">
+            <Link href={`/${locale}/solutions/pda-dual-blist`} className="flex min-h-11 items-center justify-center rounded-xl bg-white px-3 text-center text-xs font-bold text-ink-teal">
               {featured.cta_discover}
             </Link>
             <Link href={contactHref(locale, "dual-blist-demo")} className="flex min-h-11 items-center justify-center rounded-xl border border-white/20 bg-white/10 px-3 text-center text-xs font-bold text-white">
@@ -206,18 +206,18 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
       </section>
 
       <section className="px-5 py-14">
-        <h2 className="mt-2 font-sans text-[1.75rem] font-bold leading-tight tracking-[-0.035em] text-[#15242d]">
+        <h2 className="mt-2 font-sans text-[1.75rem] font-bold leading-tight tracking-[-0.035em] text-dark-text">
           {t.home.why.title}
         </h2>
         <div className="mt-6 space-y-2.5">
           {t.home.why.items.slice(0, 4).map((item, index) => (
-            <div key={item.title} className="flex items-center gap-3.5 rounded-2xl border border-[#dce9e7] bg-white p-4">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#e0f5f3] text-sm font-extrabold text-[#007f78]">
+            <div key={item.title} className="flex items-center gap-3.5 rounded-2xl border border-hairline bg-white p-4">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-light-teal text-sm font-extrabold text-primary-teal">
                 0{index + 1}
               </span>
               <div>
-                <h3 className="font-sans text-[15px] font-bold text-[#15242d]">{item.title}</h3>
-                <p className="mt-0.5 line-clamp-2 text-xs leading-5 text-[#66757b]">{item.description}</p>
+                <h3 className="font-sans text-[15px] font-bold text-dark-text">{item.title}</h3>
+                <p className="mt-0.5 line-clamp-2 text-xs leading-5 text-muted-text">{item.description}</p>
               </div>
             </div>
           ))}
@@ -225,21 +225,21 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
       </section>
 
       <section className="bg-white px-5 py-14 text-center">
-        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#e0f5f3]">
+        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-light-teal">
           <Image src="/images/logo.webp" alt="MediMesk" width={609} height={662} className="h-12 w-auto" />
         </div>
-        <h2 className="mx-auto mt-5 max-w-[19rem] font-sans text-[1.8rem] font-bold leading-tight tracking-[-0.035em] text-[#15242d]">
+        <h2 className="mx-auto mt-5 max-w-[19rem] font-sans text-[1.8rem] font-bold leading-tight tracking-[-0.035em] text-dark-text">
           {t.home.cta_banner.title}
         </h2>
-        <p className="mx-auto mt-3 max-w-[21rem] text-sm leading-6 text-[#66757b]">{t.home.cta_banner.subtitle}</p>
+        <p className="mx-auto mt-3 max-w-[21rem] text-sm leading-6 text-muted-text">{t.home.cta_banner.subtitle}</p>
         <Link
           href={contactHref(locale, "free-demo")}
-          className="mt-6 flex min-h-13 w-full items-center justify-center gap-2 rounded-xl bg-[#007f78] px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#007f78]/20"
+          className="mt-6 flex min-h-13 w-full items-center justify-center gap-2 rounded-xl bg-primary-teal px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary-teal/20"
         >
           {t.cta.demo_free}
           <Arrow />
         </Link>
-        <Link href={contactHref(locale, "contact")} className="mt-3 inline-flex py-2 text-sm font-bold text-[#007f78]">
+        <Link href={contactHref(locale, "contact")} className="mt-3 inline-flex py-2 text-sm font-bold text-primary-teal">
           {t.cta.contact_us}
         </Link>
       </section>
