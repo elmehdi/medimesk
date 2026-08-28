@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Translations } from "@/i18n/useTranslations";
 import { contactHref } from "@/lib/contact-intents";
+import FooterLocaleSwitch from "@/components/layout/FooterLocaleSwitch";
 
 interface FooterProps {
   locale: string;
@@ -192,29 +193,7 @@ export default function Footer({ locale, t }: FooterProps) {
             <span>
               © {currentYear} {t.footer.copyright}
             </span>
-            <div className="flex items-center gap-1">
-              <Link
-                href={`/fr${typeof window !== "undefined" ? "" : ""}`}
-                className={`px-2 py-1 rounded text-xs font-medium transition-colors ${
-                  locale === "fr"
-                    ? "text-primary-teal"
-                    : "text-white/40 hover:text-white/70"
-                }`}
-              >
-                FR
-              </Link>
-              <span className="text-white/20">|</span>
-              <Link
-                href={`/en`}
-                className={`px-2 py-1 rounded text-xs font-medium transition-colors ${
-                  locale === "en"
-                    ? "text-primary-teal"
-                    : "text-white/40 hover:text-white/70"
-                }`}
-              >
-                EN
-              </Link>
-            </div>
+            <FooterLocaleSwitch locale={locale} />
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ export function MobileStickyActions({
   secondaryLabel?: string;
 }) {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-30 border-t border-[#dce9e7] bg-white/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2.5 shadow-[0_-8px_30px_rgba(18,53,49,0.08)] md:hidden">
+    <div className="mobile-sticky-bar fixed inset-x-0 bottom-0 z-30 border-t border-[#dce9e7] bg-white/95 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2.5 shadow-[0_-8px_30px_rgba(18,53,49,0.08)] md:hidden">
       <div className="mx-auto grid max-w-md grid-cols-[1fr_auto] gap-2">
         <Link href={primaryHref} className="flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#007f78] px-4 text-sm font-bold text-white">
           {primaryLabel}

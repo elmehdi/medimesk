@@ -6,10 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import type { Translations } from "@/i18n/useTranslations";
 import { contactHref } from "@/lib/contact-intents";
-
-function getLocaleSwitchPath(pathname: string, currentLocale: string, targetLocale: string) {
-  return pathname.replace(`/${currentLocale}`, `/${targetLocale}`) || `/${targetLocale}`;
-}
+import { getLocaleSwitchPath } from "@/lib/locale-path";
 
 interface NavbarProps {
   locale: string;

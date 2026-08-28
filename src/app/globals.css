@@ -30,6 +30,14 @@
   }
 }
 
+/* Sticky mobile CTA bar overlays the footer; give the footer clearance
+   only on pages that actually render the bar. */
+@media (max-width: 767px) {
+  main:has(.mobile-sticky-bar) ~ footer {
+    padding-bottom: 5rem;
+  }
+}
+
 .product-value-title {
   max-width: 34ch;
   color: #1A2332;
