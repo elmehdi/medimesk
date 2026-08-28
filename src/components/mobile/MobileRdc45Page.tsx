@@ -12,7 +12,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
         <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
         <div className="mt-7 flex items-center justify-between">
           <MobileEyebrow light>{p.hero.badge}</MobileEyebrow>
-          <span className="rounded-full border border-mint/25 px-3 py-1 text-[10px] font-black text-mint">RDC 45</span>
+          <span className="rounded-full border border-mint/25 px-3 py-1 text-xs font-black text-mint">RDC 45</span>
         </div>
         <h1 className="mt-3 font-sans text-[2.45rem] font-bold leading-none tracking-[-0.05em]">{p.hero.product_name}</h1>
         <p className="mt-3 text-[1.05rem] font-semibold leading-6 text-mint">{p.hero.title}</p>
@@ -26,12 +26,12 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
         <MobileSectionTitle title={p.why_rdc45.title} subtitle={p.why_rdc45.subtitle} />
         <div className="mt-6 grid grid-cols-2 overflow-hidden rounded-[1.5rem] border border-hairline">
           <div className="bg-white p-4">
-            <p className="text-[10px] font-black uppercase tracking-wide text-muted-text">{p.why_rdc45.manual_title}</p>
-            <ul className="mt-4 space-y-3">{p.why_rdc45.manual_items.slice(0, 3).map(x => <li key={x} className="text-[11px] leading-4 text-muted-text">• {x}</li>)}</ul>
+            <p className="text-[11px] font-black uppercase tracking-wide text-muted-text">{p.why_rdc45.manual_title}</p>
+            <ul className="mt-4 space-y-3">{p.why_rdc45.manual_items.slice(0, 3).map(x => <li key={x} className="text-xs leading-4 text-muted-text">• {x}</li>)}</ul>
           </div>
           <div className="bg-primary-teal p-4">
-            <p className="text-[10px] font-black uppercase tracking-wide text-white">{p.why_rdc45.rdc_title}</p>
-            <ul className="mt-4 space-y-3">{p.why_rdc45.rdc_items.slice(0, 3).map(x => <li key={x} className="text-[11px] leading-4 text-white/75">✓ {x}</li>)}</ul>
+            <p className="text-[11px] font-black uppercase tracking-wide text-white">{p.why_rdc45.rdc_title}</p>
+            <ul className="mt-4 space-y-3">{p.why_rdc45.rdc_items.slice(0, 3).map(x => <li key={x} className="text-xs leading-4 text-white/75">✓ {x}</li>)}</ul>
           </div>
         </div>
       </section>
@@ -45,7 +45,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
           {p.workflow.steps.map((step, index) => (
             <li key={step.title} className="flex gap-3 rounded-2xl bg-section-bg p-4">
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-ink-teal text-xs font-black text-white">{String(index + 1).padStart(2, "0")}</span>
-              <div><h3 className="font-sans text-sm font-bold text-dark-text">{step.title}</h3><p className="mt-1 text-[11px] leading-4 text-muted-text">{step.description}</p></div>
+              <div><h3 className="font-sans text-sm font-bold text-dark-text">{step.title}</h3><p className="mt-1 text-xs leading-4 text-muted-text">{step.description}</p></div>
             </li>
           ))}
         </ol>
@@ -59,7 +59,7 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
             <article key={group.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
               <span className="text-xs font-black text-cta-yellow">0{index + 1}</span>
               <h3 className="mt-2 font-sans text-sm font-bold leading-tight">{group.title}</h3>
-              <p className="mt-2 line-clamp-3 text-[10px] leading-4 text-white/50">{group.items.join(" · ")}</p>
+              <p className="mt-2 line-clamp-3 text-xs leading-4 text-white/50">{group.items.join(" · ")}</p>
             </article>
           ))}
         </div>

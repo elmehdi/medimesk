@@ -34,7 +34,7 @@ export default function MobileAutomaticPage({ locale, t }: { locale: string; t: 
           {p.why.limitations.slice(0, 4).map((item, index) => (
             <article key={item} className="rounded-2xl border border-hairline bg-white p-4">
               <span className="text-xs font-black text-primary-teal">0{index + 1}</span>
-              <p className="mt-2 text-[11px] font-semibold leading-4 text-muted-text">{item}</p>
+              <p className="mt-2 text-xs font-semibold leading-4 text-muted-text">{item}</p>
             </article>
           ))}
         </div>
@@ -60,16 +60,16 @@ export default function MobileAutomaticPage({ locale, t }: { locale: string; t: 
             <article id={`mobile-machine-${machine.slug}`} key={machine.slug} className="scroll-mt-24 overflow-hidden rounded-[1.6rem] border border-hairline bg-white shadow-sm">
               <div className="relative aspect-[16/11] bg-hairline">
                 {image && <Image src={image.src} alt={machine.title} fill className={image.contain ? "object-contain p-5" : "object-cover"} sizes="100vw" />}
-                <span className="absolute left-4 top-4 rounded-full bg-deep-teal/90 px-3 py-1 text-[10px] font-black text-white">{machine.name}</span>
+                <span className="absolute left-4 top-4 rounded-full bg-deep-teal/90 px-3 py-1 text-xs font-black text-white">{machine.name}</span>
               </div>
               <div className="p-5">
                 <div className="flex items-start justify-between gap-3">
-                  <div><span className="text-[10px] font-black text-primary-teal">0{index + 1}</span><h2 className="mt-1 font-sans text-xl font-bold leading-tight text-dark-text">{machine.title}</h2></div>
+                  <div><span className="text-xs font-black text-primary-teal">0{index + 1}</span><h2 className="mt-1 font-sans text-xl font-bold leading-tight text-dark-text">{machine.title}</h2></div>
                 </div>
                 <p className="mt-2 text-xs font-semibold leading-5 text-primary-teal">{machine.subtitle}</p>
                 <div className="mt-4 grid grid-cols-2 gap-2">
                   {[machine.features[0], machine.benefits[0]].map((item, i) => (
-                    <p key={i} className="rounded-xl bg-section-bg p-3 text-[10px] leading-4 text-muted-text">{item}</p>
+                    <p key={i} className="rounded-xl bg-section-bg p-3 text-xs leading-4 text-muted-text">{item}</p>
                   ))}
                 </div>
                 <Link href={contactHref(locale, `pda-auto-${machine.slug}` as ContactIntent)} className="mt-4 flex min-h-11 items-center justify-center rounded-xl bg-primary-teal text-xs font-black text-white">{machine.cta}</Link>
@@ -86,7 +86,7 @@ export default function MobileAutomaticPage({ locale, t }: { locale: string; t: 
           {p.value.audiences.map((audience, index) => (
             <article key={audience.title} className="flex gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-cta-yellow text-xs font-black text-ink-teal">0{index + 1}</span>
-              <div><h3 className="font-sans text-sm font-bold">{audience.title}</h3><p className="mt-1 text-[11px] leading-4 text-white/55">{audience.items[0]}</p></div>
+              <div><h3 className="font-sans text-sm font-bold">{audience.title}</h3><p className="mt-1 text-xs leading-4 text-white/55">{audience.items[0]}</p></div>
             </article>
           ))}
         </div>

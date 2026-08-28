@@ -10,7 +10,7 @@ export default function MobileAboutPage({ locale, t }: { locale: string; t: Tran
     <div className="overflow-hidden bg-section-bg md:hidden">
       <section className="relative overflow-hidden bg-deep-teal px-5 pb-10 pt-9 text-white">
         <div className="relative">
-          <span className="inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-mint">{a.hero.badge}</span>
+          <span className="inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-mint">{a.hero.badge}</span>
           <h1 className="mt-5 max-w-[21rem] font-sans text-[2.4rem] font-bold leading-[1.02] tracking-[-0.05em]">{a.hero.title_line1} {a.hero.title_line2}</h1>
           <p className="mt-4 text-sm leading-6 text-white/65">{a.hero.subtitle}</p>
           <div className="mt-7 flex items-center gap-4 rounded-[1.5rem] border border-white/10 bg-white/5 p-4">

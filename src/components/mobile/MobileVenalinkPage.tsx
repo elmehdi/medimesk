@@ -62,7 +62,7 @@ export default function MobileVenalinkPage({ locale, t }: { locale: string; t: T
           {p.solution.formats.map((row) => (
             <article key={row.format} className="rounded-2xl border border-hairline bg-section-bg p-4">
               <h3 className="font-sans text-lg font-black text-dark-text">{row.format}</h3>
-              <p className="mt-2 text-[11px] leading-4 text-muted-text">{row.usage}</p>
+              <p className="mt-2 text-xs leading-4 text-muted-text">{row.usage}</p>
             </article>
           ))}
         </div>
@@ -78,12 +78,12 @@ export default function MobileVenalinkPage({ locale, t }: { locale: string; t: T
         <div className="mt-6 space-y-2.5">
           {p.accessories.rows.map((row, index) => (
             <article key={row.accessory} className="flex gap-3 rounded-2xl border border-hairline bg-white p-4">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-light-teal text-[10px] font-black text-primary-teal">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-light-teal text-xs font-black text-primary-teal">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <div>
                 <h3 className="font-sans text-sm font-bold text-dark-text">{row.accessory}</h3>
-                <p className="mt-1 text-[11px] leading-4 text-muted-text">{row.role}</p>
+                <p className="mt-1 text-xs leading-4 text-muted-text">{row.role}</p>
               </div>
             </article>
           ))}

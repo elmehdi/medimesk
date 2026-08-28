@@ -48,7 +48,7 @@ export default function MobileSolutionsPage({ locale, t }: { locale: string; t: 
                       sizes="100vw"
                     />
                   )}
-                  <span className="absolute left-4 top-4 rounded-full bg-deep-teal/90 px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-wide text-white">
+                  <span className="absolute left-4 top-4 rounded-full bg-deep-teal/90 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-wide text-white">
                     {meta.badge || card.title}
                   </span>
                   <span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-white text-xs font-black text-primary-teal shadow">

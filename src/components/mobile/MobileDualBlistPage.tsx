@@ -29,7 +29,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
           <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
           <div className="mt-7 flex items-center justify-between">
             <MobileEyebrow light>{p.hero.badge}</MobileEyebrow>
-            <span className="rounded-full border border-white/15 px-2.5 py-1 text-[10px] font-bold text-white/65">Dual Blist</span>
+            <span className="rounded-full border border-white/15 px-2.5 py-1 text-xs font-bold text-white/65">Dual Blist</span>
           </div>
           <h1 className="mt-3 font-sans text-[2.4rem] font-bold leading-none tracking-[-0.045em]">{p.hero.product_name}</h1>
           <p className="mt-3 max-w-[21rem] text-[1.08rem] font-semibold leading-6 text-mint">{p.hero.title}</p>
@@ -76,11 +76,11 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
         <MobileSectionTitle title={p.why.title} subtitle={p.why.subtitle} />
         <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-hairline">
           <div className="bg-white p-5">
-            <p className="text-[10px] font-extrabold uppercase tracking-wider text-muted-text">{p.comparison.manual_title}</p>
+            <p className="text-[11px] font-extrabold uppercase tracking-wider text-muted-text">{p.comparison.manual_title}</p>
             <CompactList items={p.comparison.manual_items} />
           </div>
           <div className="bg-deep-teal p-5 text-white">
-            <p className="text-[10px] font-extrabold uppercase tracking-wider text-mint">{p.comparison.dual_title}</p>
+            <p className="text-[11px] font-extrabold uppercase tracking-wider text-mint">{p.comparison.dual_title}</p>
             <ul className="mt-4 space-y-2.5">
               {p.comparison.dual_items.map((item) => (
                 <li key={item} className="flex items-start gap-2.5 text-xs leading-5 text-white/75">
@@ -102,7 +102,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
           {p.features.groups.map((group) => (
             <article key={group.title} className="rounded-2xl border border-white/10 bg-white/5 p-4">
               <h3 className="font-sans text-sm font-bold leading-tight text-white">{group.title}</h3>
-              <p className="mt-2 line-clamp-3 text-[11px] leading-4 text-white/55">{group.description || group.items[0]}</p>
+              <p className="mt-2 line-clamp-3 text-xs leading-4 text-white/55">{group.description || group.items[0]}</p>
             </article>
           ))}
         </div>
@@ -129,7 +129,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary-teal text-xs font-black text-white">{String(index + 1).padStart(2, "0")}</span>
               <div>
                 <h3 className="font-sans text-sm font-bold text-dark-text">{step.title}</h3>
-                <p className="mt-1 text-[11px] leading-4 text-muted-text">{step.description}</p>
+                <p className="mt-1 text-xs leading-4 text-muted-text">{step.description}</p>
               </div>
             </li>
           ))}

@@ -26,12 +26,12 @@ export function MobileAccessoriesPage({ locale, t }: { locale: string; t: Transl
       </section>
       <section className="px-5 py-12">
         <MobileSectionTitle title={p.key_points.title} />
-        <div className="mt-6 grid grid-cols-2 gap-2.5">{p.key_points.items.map((item, i) => <div key={item} className="rounded-2xl bg-white p-4"><span className="text-xs font-black text-primary-teal">0{i + 1}</span><p className="mt-2 text-[11px] font-semibold leading-4 text-muted-text">{item}</p></div>)}</div>
+        <div className="mt-6 grid grid-cols-2 gap-2.5">{p.key_points.items.map((item, i) => <div key={item} className="rounded-2xl bg-white p-4"><span className="text-xs font-black text-primary-teal">0{i + 1}</span><p className="mt-2 text-xs font-semibold leading-4 text-muted-text">{item}</p></div>)}</div>
       </section>
       <section className="bg-white px-5 py-12">
         <MobileSectionTitle title={p.range.title} subtitle={p.range.intro} />
         <div className="mt-6 grid grid-cols-2 gap-3">
-          {p.range.rows.map((row) => <article key={row.slug} className="overflow-hidden rounded-2xl border border-hairline bg-section-bg"><div className="relative aspect-square bg-white"><Image src={accessoryImages[row.slug]} alt={row.equipment} fill className="object-contain p-3" sizes="50vw" /></div><div className="p-3.5"><h2 className="font-sans text-sm font-bold leading-tight text-dark-text">{row.equipment}</h2><p className="mt-1.5 line-clamp-2 text-[10px] leading-4 text-primary-teal">{row.role}</p></div></article>)}
+          {p.range.rows.map((row) => <article key={row.slug} className="overflow-hidden rounded-2xl border border-hairline bg-section-bg"><div className="relative aspect-square bg-white"><Image src={accessoryImages[row.slug]} alt={row.equipment} fill className="object-contain p-3" sizes="50vw" /></div><div className="p-3.5"><h2 className="font-sans text-sm font-bold leading-tight text-dark-text">{row.equipment}</h2><p className="mt-1.5 line-clamp-2 text-xs leading-4 text-primary-teal">{row.role}</p></div></article>)}
         </div>
       </section>
       <MobileStickyActions primaryHref={contactHref(locale, "accessories-range")} primaryLabel={p.hero.cta_primary} secondaryHref={contactHref(locale, "accessories-advice")} secondaryLabel={p.hero.cta_secondary} />
@@ -57,7 +57,7 @@ export function MobileStudexPage({ locale, t }: { locale: string; t: Translation
       </section>
       <section className="bg-white px-5 py-12">
         <MobileSectionTitle title={p.offer.title} subtitle={p.offer.subtitle} />
-        <div className="mt-6 space-y-2.5">{p.offer.rows.map((row, i) => <article key={row.element} className="rounded-2xl border border-hairline bg-section-bg p-4"><div className="flex items-center gap-3"><span className="text-xs font-black text-primary-teal">0{i + 1}</span><h3 className="font-sans text-sm font-bold text-dark-text">{row.element}</h3></div><p className="mt-2 text-[11px] leading-4 text-muted-text">{row.role}</p></article>)}</div>
+        <div className="mt-6 space-y-2.5">{p.offer.rows.map((row, i) => <article key={row.element} className="rounded-2xl border border-hairline bg-section-bg p-4"><div className="flex items-center gap-3"><span className="text-xs font-black text-primary-teal">0{i + 1}</span><h3 className="font-sans text-sm font-bold text-dark-text">{row.element}</h3></div><p className="mt-2 text-xs leading-4 text-muted-text">{row.role}</p></article>)}</div>
         <div className="mt-7 overflow-hidden rounded-[1.5rem] bg-ink-teal p-4 text-white">
           <PdfCatalogueViewer
             pageImageBase="/images/studex-catalogue"

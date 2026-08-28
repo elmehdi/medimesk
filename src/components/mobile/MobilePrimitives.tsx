@@ -13,7 +13,7 @@ export function MobileBackLink({ href, label }: { href: string; label: string })
 
 export function MobileEyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
   return (
-    <p className={`text-[10px] font-extrabold uppercase tracking-[0.18em] ${light ? "text-mint" : "text-primary-teal"}`}>
+    <p className={`text-[11px] font-extrabold uppercase tracking-[0.18em] ${light ? "text-mint" : "text-primary-teal"}`}>
       {children}
     </p>
   );

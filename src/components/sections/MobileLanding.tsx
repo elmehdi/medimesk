@@ -118,7 +118,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
             {t.home.trust.map((label, index) => (
               <div key={label} className={`flex min-h-[5.5rem] flex-col items-center justify-center px-4 py-4 text-center ${index !== 0 ? "border-l border-hairline" : ""}`}>
                 <span className="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-light-teal text-primary-teal"><Check /></span>
-                <p className="mt-1.5 max-w-[15rem] text-[11px] font-semibold leading-4 text-muted-text">{label}</p>
+                <p className="mt-1.5 max-w-[15rem] text-xs font-semibold leading-4 text-muted-text">{label}</p>
               </div>
             ))}
           </div>
@@ -163,7 +163,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
                       sizes="78vw"
                     />
                   ) : null}
-                  <span className="absolute left-3 top-3 rounded-full bg-deep-teal/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white">
+                  <span className="absolute left-3 top-3 rounded-full bg-deep-teal/90 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white">
                     {meta.badge || `0${index + 1}`}
                   </span>
                 </div>
@@ -186,7 +186,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
         <div className="relative aspect-[16/10]">
           <Image src="/images/DB2.webp" alt={featured.title} fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-teal via-transparent to-transparent" />
-          <span className="absolute left-4 top-4 rounded-full bg-cta-yellow px-3 py-1 text-[10px] font-extrabold uppercase tracking-wide text-dark-text">
+          <span className="absolute left-4 top-4 rounded-full bg-cta-yellow px-3 py-1 text-[11px] font-extrabold uppercase tracking-wide text-dark-text">
             {featured.badge}
           </span>
         </div>
