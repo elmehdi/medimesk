@@ -27,10 +27,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
       <section className="relative overflow-hidden bg-primary-teal px-5 pb-7 pt-5 text-white">
         <div className="relative">
           <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
-          <div className="mt-7 flex flex-wrap items-center justify-between gap-2">
-            <MobileEyebrow light>{p.hero.badge}</MobileEyebrow>
-            <span className="shrink-0 whitespace-nowrap rounded-full border border-white/15 px-2.5 py-1 text-xs font-bold text-white/65">Dual Blist</span>
-          </div>
+          <div className="mt-7"><MobileEyebrow light>{p.hero.badge}</MobileEyebrow></div>
           <h1 className="mt-3 font-sans text-[2.4rem] font-bold leading-none tracking-[-0.045em]">{p.hero.product_name}</h1>
           <p className="mt-3 max-w-[21rem] text-[1.08rem] font-semibold leading-6 text-mint">{p.hero.title}</p>
 
