@@ -14,7 +14,7 @@ const media: Record<string, { src: string; contain?: boolean }> = {
 export default function MobileAutomaticPage({ locale, t }: { locale: string; t: Translations }) {
   const p = t.hospital;
   return (
-    <main className="overflow-hidden bg-[#f3f7f6] pb-24 md:hidden">
+    <div className="overflow-hidden bg-[#f3f7f6] pb-24 md:hidden">
       <section className="relative overflow-hidden bg-[#081f2d] px-5 pb-7 pt-5 text-white">
         <div className="absolute -right-20 top-12 h-64 w-64 rounded-full bg-[#007f78]/20" />
         <div className="relative">
@@ -101,6 +101,6 @@ export default function MobileAutomaticPage({ locale, t }: { locale: string; t: 
       </section>
 
       <MobileStickyActions primaryHref={contactHref(locale, "pda-auto-range")} primaryLabel={p.range.cta} secondaryHref={contactHref(locale, "quote")} secondaryLabel={t.cta.quote} />
-    </main>
+    </div>
   );
 }

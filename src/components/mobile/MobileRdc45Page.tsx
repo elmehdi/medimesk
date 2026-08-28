@@ -7,7 +7,7 @@ import { MobileBackLink, MobileEyebrow, MobileSectionTitle, MobileStickyActions 
 export default function MobileRdc45Page({ locale, t }: { locale: string; t: Translations }) {
   const p = t.pda;
   return (
-    <main className="overflow-hidden bg-[#f2f6f5] pb-24 md:hidden">
+    <div className="overflow-hidden bg-[#f2f6f5] pb-24 md:hidden">
       <section className="relative bg-[#102c2b] px-5 pb-7 pt-5 text-white">
         <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
         <div className="mt-7 flex items-center justify-between">
@@ -87,6 +87,6 @@ export default function MobileRdc45Page({ locale, t }: { locale: string; t: Tran
       </section>
 
       <MobileStickyActions primaryHref={contactHref(locale, "rdc45-demo")} primaryLabel={p.hero.cta_demo} secondaryHref={contactHref(locale, "rdc45-sheet")} secondaryLabel={p.hero.cta_product_sheet} />
-    </main>
+    </div>
   );
 }

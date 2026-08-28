@@ -24,7 +24,7 @@ export default function MobileVenalinkPage({ locale, t }: { locale: string; t: T
   const p = t.venalink;
 
   return (
-    <main className="overflow-hidden bg-[#f3f7f6] pb-24 md:hidden">
+    <div className="overflow-hidden bg-[#f3f7f6] pb-24 md:hidden">
       <section className="relative overflow-hidden bg-[#063f3c] px-5 pb-7 pt-5 text-white">
         <div className="absolute -right-20 top-4 h-64 w-64 rounded-full bg-[#19b5a8]/15" />
         <div className="relative">
@@ -103,6 +103,6 @@ export default function MobileVenalinkPage({ locale, t }: { locale: string; t: T
         secondaryHref={contactHref(locale, "venalink-callback")}
         secondaryLabel={p.starter.cta_secondary}
       />
-    </main>
+    </div>
   );
 }

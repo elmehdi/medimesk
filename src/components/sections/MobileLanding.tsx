@@ -21,7 +21,7 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
   const featured = t.home.rdc45_spotlight;
 
   return (
-    <main className="mobile-landing overflow-hidden bg-[#f3f7f6] md:hidden">
+    <div className="mobile-landing overflow-hidden bg-[#f3f7f6] md:hidden">
       <section className="relative overflow-hidden bg-[#063f3c] px-5 pb-6 pt-8 text-white">
         <div className="absolute -right-20 -top-16 h-64 w-64 rounded-full bg-[#19b5a8]/20" />
         <div className="absolute -left-24 bottom-16 h-48 w-48 rounded-full bg-white/5" />
@@ -243,6 +243,6 @@ export default function MobileLanding({ locale, t }: { locale: string; t: Transl
           {t.cta.contact_us}
         </Link>
       </section>
-    </main>
+    </div>
   );
 }

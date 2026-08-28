@@ -7,7 +7,7 @@ import { MobileArrow, MobileEyebrow } from "./MobilePrimitives";
 export default function MobileAboutPage({ locale, t }: { locale: string; t: Translations }) {
   const a = t.about;
   return (
-    <main className="overflow-hidden bg-[#f3f7f6] md:hidden">
+    <div className="overflow-hidden bg-[#f3f7f6] md:hidden">
       <section className="relative overflow-hidden bg-[#063f3c] px-5 pb-10 pt-9 text-white">
         <div className="absolute -right-24 -top-16 h-72 w-72 rounded-full bg-[#19b5a8]/15" />
         <div className="relative">
@@ -61,6 +61,6 @@ export default function MobileAboutPage({ locale, t }: { locale: string; t: Tran
         <Link href={contactHref(locale, "contact")} className="mt-6 flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#f5c518] text-sm font-black text-[#1a2332]">{t.cta.contact_us}<MobileArrow /></Link>
         <Link href={`/${locale}/solutions`} className="mt-3 inline-flex py-2 text-sm font-bold text-white">{t.cta.discover}</Link>
       </section>
-    </main>
+    </div>
   );
 }

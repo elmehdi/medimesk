@@ -7,7 +7,7 @@ import { MobileArrow, MobileBackLink } from "./MobilePrimitives";
 
 export default function MobileSolutionsPage({ locale, t }: { locale: string; t: Translations }) {
   return (
-    <main className="overflow-hidden bg-[#f3f7f6] pb-8 md:hidden">
+    <div className="overflow-hidden bg-[#f3f7f6] pb-8 md:hidden">
       <section className="relative overflow-hidden bg-[#063f3c] px-5 pb-10 pt-5 text-white">
         <div className="absolute -right-24 -top-20 h-72 w-72 rounded-full bg-[#19b5a8]/15" />
         <div className="relative">
@@ -93,6 +93,6 @@ export default function MobileSolutionsPage({ locale, t }: { locale: string; t: 
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

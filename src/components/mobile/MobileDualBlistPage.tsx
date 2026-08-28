@@ -23,7 +23,7 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
   const p = t.products.pdaDualBlist;
 
   return (
-    <main className="overflow-hidden bg-[#f3f7f6] pb-24 md:hidden">
+    <div className="overflow-hidden bg-[#f3f7f6] pb-24 md:hidden">
       <section className="relative overflow-hidden bg-[#063f3c] px-5 pb-7 pt-5 text-white">
         <div className="absolute -right-20 top-4 h-64 w-64 rounded-full bg-[#19b5a8]/15" />
         <div className="relative">
@@ -154,6 +154,6 @@ export default function MobileDualBlistPage({ locale, t }: { locale: string; t: 
         secondaryHref={contactHref(locale, "dual-blist-sheet")}
         secondaryLabel={p.hero.cta_secondary}
       />
-    </main>
+    </div>
   );
 }

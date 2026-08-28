@@ -15,7 +15,7 @@ const accessoryImages: Record<string, string> = {
 export function MobileAccessoriesPage({ locale, t }: { locale: string; t: Translations }) {
   const p = t.accessories;
   return (
-    <main className="overflow-hidden bg-[#f3f7f6] pb-24 md:hidden">
+    <div className="overflow-hidden bg-[#f3f7f6] pb-24 md:hidden">
       <section className="bg-[#102c2b] px-5 pb-7 pt-5 text-white">
         <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
         <div className="mt-7"><MobileEyebrow light>{p.hero.badge}</MobileEyebrow></div>
@@ -35,14 +35,14 @@ export function MobileAccessoriesPage({ locale, t }: { locale: string; t: Transl
         </div>
       </section>
       <MobileStickyActions primaryHref={contactHref(locale, "accessories-range")} primaryLabel={p.hero.cta_primary} secondaryHref={contactHref(locale, "accessories-advice")} secondaryLabel={p.hero.cta_secondary} />
-    </main>
+    </div>
   );
 }
 
 export function MobileStudexPage({ locale, t }: { locale: string; t: Translations }) {
   const p = t.advanced_piercing;
   return (
-    <main className="overflow-hidden bg-[#f7f4f5] pb-24 md:hidden">
+    <div className="overflow-hidden bg-[#f7f4f5] pb-24 md:hidden">
       <section className="bg-[#311f29] px-5 pb-7 pt-5 text-white">
         <MobileBackLink href={`/${locale}/solutions`} label={t.common.breadcrumb_solutions} />
         <div className="mt-7"><MobileEyebrow light>{p.hero.badge}</MobileEyebrow></div>
@@ -75,6 +75,6 @@ export function MobileStudexPage({ locale, t }: { locale: string; t: Translation
         </div>
       </section>
       <MobileStickyActions primaryHref={contactHref(locale, "studex-presentation")} primaryLabel={p.hero.cta_primary} secondaryHref={contactHref(locale, "studex-callback")} secondaryLabel={p.hero.cta_secondary} />
-    </main>
+    </div>
   );
 }
