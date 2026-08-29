@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -26,7 +26,16 @@ export default function Navbar({ locale, t }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const closeTimer = useRef<ReturnType<typeof setTimeout>>();
   const pathname = usePathname();
+
+  const openSolutions = useCallback(() => {
+    clearTimeout(closeTimer.current);
+    setSolutionsOpen(true);
+  }, []);
+  const closeSolutionsSoon = useCallback(() => {
+    closeTimer.current = setTimeout(() => setSolutionsOpen(false), 200);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -115,12 +124,8 @@ export default function Navbar({ locale, t }: NavbarProps) {
               <li
                 key={link.href}
                 className="relative"
-                onMouseEnter={() =>
-                  link.hasDropdown && setSolutionsOpen(true)
-                }
-                onMouseLeave={() =>
-                  link.hasDropdown && setSolutionsOpen(false)
-                }
+                onMouseEnter={() => link.hasDropdown && openSolutions()}
+                onMouseLeave={() => link.hasDropdown && closeSolutionsSoon()}
               >
                 <Link
                   href={link.href}
