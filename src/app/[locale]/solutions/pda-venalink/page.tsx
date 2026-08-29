@@ -188,16 +188,16 @@ export default function PdaVenalinkPage({ params }: { params: { locale: Locale }
           <div className="absolute top-0 right-0 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
           <div className="absolute bottom-0 left-0 h-48 w-48 rounded-full bg-white/5 blur-3xl" />
           <div className="relative mx-auto max-w-container px-gutter py-20">
-            <div className="mx-auto max-w-xl overflow-hidden rounded-2xl bg-white text-center shadow-2xl shadow-black/25">
-              <p className="bg-cta-yellow py-2.5 text-xs font-extrabold uppercase tracking-wider text-dark-text">{p.starter.eyebrow}</p>
-              <div className="px-8 py-10 sm:px-10">
+            <div className="mx-auto max-w-2xl overflow-hidden rounded-2xl bg-white text-center shadow-2xl shadow-black/25">
+              <p className="bg-cta-yellow py-3.5 text-sm font-extrabold uppercase tracking-wider text-dark-text">{p.starter.eyebrow}</p>
+              <div className="px-10 py-14 sm:px-16">
                 <h2 className="text-dark-text">{p.starter.title}</h2>
-                <p className="mt-4 text-dark-text/70 leading-relaxed">{p.starter.subtitle}</p>
-                <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                  <Button href={contactHref(locale, "venalink-starter")}>
+                <p className="mt-5 text-lg text-dark-text/70 leading-relaxed">{p.starter.subtitle}</p>
+                <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <Button href={contactHref(locale, "venalink-starter")} className="text-base px-8 py-3.5">
                     {p.starter.cta_primary}
                   </Button>
-                  <Button variant="secondary" href={contactHref(locale, "venalink-callback")}>
+                  <Button variant="secondary" href={contactHref(locale, "venalink-callback")} className="text-base px-8 py-3.5">
                     {p.starter.cta_secondary}
                   </Button>
                 </div>

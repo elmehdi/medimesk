@@ -93,10 +93,10 @@ export default function MobileVenalinkPage({ locale, t }: { locale: string; t: T
 
       <section className="bg-deep-teal px-5 py-12">
         <div className="overflow-hidden rounded-2xl bg-white text-center shadow-2xl shadow-black/25">
-          <p className="bg-cta-yellow py-2 text-[11px] font-extrabold uppercase tracking-wider text-dark-text">{p.starter.eyebrow}</p>
-          <div className="px-6 py-8">
-            <h2 className="font-sans text-2xl font-bold leading-tight text-dark-text">{p.starter.title}</h2>
-            <p className="mt-3 text-sm leading-6 text-muted-text">{p.starter.subtitle}</p>
+          <p className="bg-cta-yellow py-3 text-xs font-extrabold uppercase tracking-wider text-dark-text">{p.starter.eyebrow}</p>
+          <div className="px-7 py-10">
+            <h2 className="font-sans text-[1.7rem] font-bold leading-tight text-dark-text">{p.starter.title}</h2>
+            <p className="mt-4 text-base leading-6 text-muted-text">{p.starter.subtitle}</p>
           </div>
         </div>
       </section>
